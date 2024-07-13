@@ -1,0 +1,1 @@
+const int g_MyAvatarToken_Reflesh_Time = 1000 * 60 * 5;
