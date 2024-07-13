@@ -20,19 +20,44 @@ MonoBehaviour:
     m_Url: https://packages.unity.com
     m_Scopes: []
     m_IsDefault: 1
-  m_UserSelectedRegistryName: 
+  - m_Id: scoped:VketCloudSDK Install Wizard
+    m_Name: VketCloudSDK Install Wizard
+    m_Url: https://registry.npmjs.com
+    m_Scopes:
+    - com.hikky.vketcloudsdk-install-wizard
+    m_IsDefault: 0
+  - m_Id: scoped:VketCloudSDK
+    m_Name: VketCloudSDK
+    m_Url: https://registry.npmjs.org
+    m_Scopes:
+    - com.hikky.vketcloudsdk
+    m_IsDefault: 0
+  - m_Id: scoped:Deeplink
+    m_Name: Deeplink
+    m_Url: https://package.openupm.com
+    m_Scopes:
+    - com.needle.deeplink
+    m_IsDefault: 0
+  - m_Id: scoped:EditorTutorialSystem
+    m_Name: EditorTutorialSystem
+    m_Url: https://registry.npmjs.org
+    m_Scopes:
+    - com.hikky.editortutorialsystem
+    m_IsDefault: 0
+  m_UserSelectedRegistryName: VketCloudSDK Install Wizard
   m_UserAddingNewScopedRegistry: 0
   m_RegistryInfoDraft:
     m_ErrorMessage: 
     m_Original:
-      m_Id: 
-      m_Name: 
-      m_Url: 
-      m_Scopes: []
+      m_Id: scoped:VketCloudSDK Install Wizard
+      m_Name: VketCloudSDK Install Wizard
+      m_Url: https://registry.npmjs.com
+      m_Scopes:
+      - com.hikky.vketcloudsdk-install-wizard
       m_IsDefault: 0
     m_Modified: 0
-    m_Name: 
-    m_Url: 
+    m_Name: VketCloudSDK Install Wizard
+    m_Url: https://registry.npmjs.com
     m_Scopes:
-    - 
+    - com.hikky.vketcloudsdk-install-wizard
     m_SelectedScopeIndex: 0
