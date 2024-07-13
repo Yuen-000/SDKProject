@@ -876,7 +876,7 @@ MonoBehaviour:
   _heliodorScripts: []
   _field:
     name: World
-    filename: Field/World.heo
+    filename: Field/World/World.heo
     components:
     - ItemShak
     - ItemShake
