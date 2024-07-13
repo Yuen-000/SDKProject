@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+    <meta name="robots" content="noindex" />
+    <title>Loading...|Vket Cloud</title>
+    <script>
+      window._configOverride = window._configOverride || {};
+      window._configOverride.disableInitializeFirebase = true;
+    </script>
+    <script src="https://cdn.vket.com/heliport/common/heliport-latest.js"></script>
+  </head>
+
+  <style>
+    html,
+    body,
+    #app {
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      position: relative;
+      background-color: #191919;
+    }
+  </style>
+
+  <body>
+    <div class="app" id="app"></div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue3-sfc-loader/dist/vue3-sfc-loader.js"></script>
+    <script>
+      // https://www.jsdelivr.com/package/npm/vue3-sfc-loader
+      const options = {
+        moduleCache: {
+          vue: Vue,
+        },
+        async getFile(url) {
+          const res = await fetch(url);
+          if (!res.ok)
+            throw Object.assign(new Error(res.statusText + " " + url), { res });
+          return {
+            getContentData: (asBinary) =>
+              asBinary ? res.arrayBuffer() : res.text(),
+          };
+        },
+        addStyle(textContent) {
+          const style = Object.assign(document.createElement("style"), {
+            textContent,
+          });
+          const ref = document.head.getElementsByTagName("style")[0] || null;
+          document.head.insertBefore(style, ref);
+        },
+      };
+
+      const { loadModule } = window["vue3-sfc-loader"];
+
+      const app = Vue.createApp({
+        components: {
+          "ht-loader": Vue.defineAsyncComponent(() =>
+            loadModule("./loading/HtLoader.vue", options)
+          ),
+        },
+        template: "<ht-loader></ht-loader>",
+      });
+
+      app.mount("#app");
+    </script>
+  </body>
+</html>

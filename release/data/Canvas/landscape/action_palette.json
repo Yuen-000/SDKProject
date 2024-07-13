@@ -1,0 +1,672 @@
+{
+  "Version": 1,
+  "Z": 3,
+  "Scripts":[
+    "Canvas/HeliScript/Action/ActionPalette.hs",
+    "Canvas/HeliScript/Action/ActionList.hs"
+  ],
+  "Layout": [
+  {
+    "Name": "action_palette",
+    "Show": false,
+    "Z": 2,
+    "Components":[
+      "ActionPalette"
+    ],
+    "AutoLoading":false,
+    "Gui": [
+      {
+        "Comment": "背景にレイキャストをとばさないためのダミーボタン",
+        "Name": "action_palette_base",
+        "Language": "",
+        "Portrait": "",
+        "Type": "button",
+        "Show": false,
+        "Pos":[ -89, -10],
+        "Size":[ 336, 80],
+        "Z": 1,
+        "Pivot":[1.0, 1.0],
+        "Anchor":"RB"
+      },
+    {
+      "Comment": "アクションパレット背景",
+      "Name": "action_palette_base",
+      "Language": "",
+      "Portrait": "",
+      "Type": "image",
+      "Show": false,
+      "Pos":[ -89, -40],
+      "Size":[ 336, 62],
+      "Z": 2,
+      "Pivot":[1.0, 0.5],
+      "Anchor":"RB",
+      "ParamImage": {
+        "Uri": "gui2023/action/action_bg_9s.png",
+        "LTRB": [10,10,10,10]
+      },
+      "Animation":{
+        "State" : {
+          "Begin":{
+            "Pos": [ -89, 124]
+          },
+          "End":{
+            "Pos": [ -89, 124]
+          }
+        }
+      }
+    },
+    {
+      "Comment": "エモートタブON",
+        "Name": "action_emote_on_tab",
+        "Language": "",
+        "Portrait": "",
+        "Type": "button",
+        "Show": false,
+        "Pos":[ -415, -70],
+        "Size":[ 88, 21],
+        "Z": 3,
+        "Pivot":[0.0, 1.0],
+        "Anchor":"RB",
+        "ParamButton": {
+          "FileName": "gui2023/action/action_emote_on.png"
+        },
+        "Animation":{
+          "State" : {
+            "Begin":{
+              "Pos": [ -412, 95]
+            },
+            "End":{
+              "Pos": [ -412, 95]
+            }
+          }
+        },
+        "Toggle": [
+          {"Name": "Emote_Tab_On_Toggle","State": true}
+        ]
+    },
+    {
+      "Comment": "エモートタブOFF",
+        "Name": "action_emote_off_tab",
+        "Language": "",
+        "Portrait": "",
+        "Type": "button",
+        "Show": false,
+        "Pos":[ -415, -70],
+        "Size":[ 88, 21],
+        "Z": 3,
+        "Pivot":[0.0, 1.0],
+        "Anchor":"RB",
+        "ParamButton": {
+          "FileName": "gui2023/action/action_emote_off.png"
+        },
+        "Animation":{
+          "State" : {
+            "Begin":{
+              "Pos": [ -412, 95]
+            },
+            "End":{
+              "Pos": [ -412, 95]
+            }
+          }
+        },
+        "Toggle": [
+          {"Name": "Face_Tab_On_Toggle","State": false}
+        ]
+    },
+    {
+      "Comment": "フェイスタブON",
+        "Name": "action_face_on_tab",
+        "Language": "",
+        "Portrait": "",
+        "Type": "button",
+        "Show": false,
+        "Pos":[ -327, -70],
+        "Size":[ 88, 21],
+        "Z": 3,
+        "Pivot":[0.0, 1.0],
+        "Anchor":"RB",
+        "ParamButton": {
+          "FileName": "gui2023/action/action_face_on.png"
+        },
+        "Animation":{
+          "State" : {
+            "Begin":{
+              "Pos": [ -327, 95]
+            },
+            "End":{
+              "Pos": [ -327, 95]
+            }
+          }
+        },
+        "Toggle": [
+          {"Name": "Face_Tab_On_Toggle","State": false}
+        ]
+    },
+    {
+      "Comment": "フェイスタブOFF",
+        "Name": "action_face_off_tab",
+        "Language": "",
+        "Portrait": "",
+        "Type": "button",
+        "Show": false,
+        "Pos":[ -327, -70],
+        "Size":[ 88, 21],
+        "Z": 3,
+        "Pivot":[0.0, 1.0],
+        "Anchor":"RB",
+        "ParamButton": {
+          "FileName": "gui2023/action/action_face_off.png"
+        },
+        "Animation":{
+          "State" : {
+            "Begin":{
+              "Pos": [ -327, 95]
+            },
+            "End":{
+              "Pos": [ -327, 95]
+            }
+          }
+        },
+        "Toggle": [
+          {"Name": "Emote_Tab_On_Toggle","State": true}
+        ]
+    },
+    {
+      "Comment": "指差し背景",
+      "Name": "action_palette_button1_base",
+      "Language": "",
+      "Portrait": "",
+      "Type": "image",
+      "Show": true,
+      "Pos":[ -395, -40],
+      "Size":[ 42, 42],
+      "Z": 3,
+      "Pivot":[0.5, 0.5],
+      "Anchor":"RB",
+      "ParamImage": {
+        "Uri": "gui2023/action/action_item_base.png"
+      },
+      "Animation":{
+        "State" : {
+          "Begin":{
+            "Pos": [ -395, 120]
+          },
+          "End":{
+            "Pos": [ -395, 120]
+          }
+        }
+      }
+    },
+    {
+        "Comment": "指差し",
+        "Name": "action_palette_button1",
+        "Language": "",
+        "Portrait": "",
+        "Type": "button",
+        "Show": false,
+        "Pos":[ -395, -40],
+        "Size":[ 42, 42],
+        "Z": 3,
+        "Pivot":[0.5, 0.5],
+        "Anchor":"RB",
+
+        "Animation":{
+          "State" : {
+            "Begin":{
+              "Pos": [ -395, 120]
+            },
+            "End":{
+              "Pos": [ -395, 120]
+            }
+          }
+        },
+        "Toggle": [
+          {"Name": "Emote_Tab_On_Toggle","State": true}
+        ]
+      },
+      {
+        "Comment": "サムズアップ背景",
+        "Name": "action_palette_button2_base",
+        "Language": "",
+        "Portrait": "",
+        "Type": "image",
+        "Show": true,
+        "Pos":[ -349, -40],
+        "Size":[ 42, 42],
+        "Z": 3,
+        "Pivot":[0.5, 0.5],
+        "Anchor":"RB",
+        "ParamImage": {
+          "Uri": "gui2023/action/action_item_base.png"
+        },
+        "Animation":{
+          "State" : {
+            "Begin":{
+              "Pos": [ -349, 120]
+            },
+            "End":{
+              "Pos": [ -349, 120]
+            }
+          }
+        }
+      },
+      {
+          "Comment": "サムズアップ",
+          "Name": "action_palette_button2",
+          "Language": "",
+          "Portrait": "",
+          "Type": "button",
+          "Show": false,
+          "Pos":[ -349, -40],
+          "Size":[ 42, 42],
+          "Z": 3,
+          "Pivot":[0.5, 0.5],
+          "Anchor":"RB",
+
+          "Animation":{
+            "State" : {
+              "Begin":{
+                "Pos": [ -349, 120]
+              },
+              "End":{
+                "Pos": [ -349, 120]
+              }
+            }
+          },
+          "Toggle": [
+            {"Name": "Emote_Tab_On_Toggle","State": true}
+          ]
+      },
+      {
+        "Comment": "手を振る背景",
+        "Name": "action_palette_button3_base",
+        "Language": "",
+        "Portrait": "",
+        "Type": "image",
+        "Show": true,
+        "Pos":[ -303, -40],
+        "Size":[ 42, 42],
+        "Z": 3,
+        "Pivot":[0.5, 0.5],
+        "Anchor":"RB",
+        "ParamImage": {
+          "Uri": "gui2023/action/action_item_base.png"
+        },
+        "Animation":{
+          "State" : {
+            "Begin":{
+              "Pos": [ -303, 120]
+            },
+            "End":{
+              "Pos": [ -303, 120]
+            }
+          }
+        }
+      },
+      {
+          "Comment": "手を振る",
+          "Name": "action_palette_button3",
+          "Language": "",
+          "Portrait": "",
+          "Type": "button",
+          "Show": false,
+          "Pos":[ -303, -40],
+          "Size":[ 42, 42],
+          "Z": 3,
+          "Pivot":[0.5, 0.5],
+          "Anchor":"RB",
+
+          "Animation":{
+            "State" : {
+              "Begin":{
+                "Pos": [ -303, 120]
+              },
+              "End":{
+                "Pos": [ -303, 120]
+              }
+            }
+          },
+          "Toggle": [
+            {"Name": "Emote_Tab_On_Toggle","State": true}
+          ]
+      },
+      {
+        "Comment": "祈り背景",
+        "Name": "action_palette_button4_base",
+        "Language": "",
+        "Portrait": "",
+        "Type": "image",
+        "Show": true,
+        "Pos":[ -256, -40],
+        "Size":[ 42, 42],
+        "Z": 3,
+        "Pivot":[0.5, 0.5],
+        "Anchor":"RB",
+        "ParamImage": {
+          "Uri": "gui2023/action/action_item_base.png"
+        },
+        "Animation":{
+          "State" : {
+            "Begin":{
+              "Pos": [ -256, 120]
+            },
+            "End":{
+              "Pos": [ -256, 120]
+            }
+          }
+        }
+      },
+      {
+          "Comment": "祈り",
+          "Name": "action_palette_button4",
+          "Language": "",
+          "Portrait": "",
+          "Type": "button",
+          "Show": false,
+          "Pos":[ -256, -40],
+          "Size":[ 42, 42],
+          "Z": 3,
+          "Pivot":[0.5, 0.5],
+          "Anchor":"RB",
+          "Animation":{
+            "State" : {
+              "Begin":{
+                "Pos": [ -256, 120]
+              },
+              "End":{
+                "Pos": [ -256, 120]
+              }
+            }
+          },
+          "Toggle": [
+            {"Name": "Emote_Tab_On_Toggle","State": true}
+          ]
+      },
+      {
+        "Comment": "ダンス背景",
+        "Name": "action_palette_button5_base",
+        "Language": "",
+        "Portrait": "",
+        "Type": "image",
+        "Show": true,
+        "Pos":[ -210, -40],
+        "Size":[ 42, 42],
+        "Z": 3,
+        "Pivot":[0.5, 0.5],
+        "Anchor":"RB",
+        "ParamImage": {
+          "Uri": "gui2023/action/action_item_base.png"
+        },
+        "Animation":{
+          "State" : {
+            "Begin":{
+              "Pos": [ -210, 120]
+            },
+            "End":{
+              "Pos": [ -210, 120]
+            }
+          }
+        }
+      },
+      {
+          "Comment": "ダンス",
+          "Name": "action_palette_button5",
+          "Language": "",
+          "Portrait": "",
+          "Type": "button",
+          "Show": false,
+          "Pos":[ -210, -40],
+          "Size":[ 42, 42],
+          "Z": 3,
+          "Pivot":[0.5, 0.5],
+          "Anchor":"RB",
+          "Animation":{
+            "State" : {
+              "Begin":{
+                "Pos": [ -210, 120]
+              },
+              "End":{
+                "Pos": [ -210, 120]
+              }
+            }
+          },
+          "Toggle": [
+            {"Name": "Emote_Tab_On_Toggle","State": true}
+          ]
+      },
+      {
+        "Comment": "丸背景",
+        "Name": "action_palette_button6_base",
+        "Language": "",
+        "Portrait": "",
+        "Type": "image",
+        "Show": true,
+        "Pos":[ -164, -40],
+        "Size":[ 42, 42],
+        "Z": 3,
+        "Pivot":[0.5, 0.5],
+        "Anchor":"RB",
+        "ParamImage": {
+          "Uri": "gui2023/action/action_item_base.png"
+        },
+        "Animation":{
+          "State" : {
+            "Begin":{
+              "Pos": [ -164, 120]
+            },
+            "End":{
+              "Pos": [ -164, 120]
+            }
+          }
+        }
+      },
+      {
+          "Comment": "丸",
+          "Name": "action_palette_button6",
+          "Language": "",
+          "Portrait": "",
+          "Type": "button",
+          "Show": false,
+          "Pos":[ -164, -40],
+          "Size":[ 42, 42],
+          "Z": 3,
+          "Pivot":[0.5, 0.5],
+          "Anchor":"RB",
+
+          "Animation":{
+            "State" : {
+              "Begin":{
+                "Pos": [ -164, 120]
+              },
+              "End":{
+                "Pos": [ -164, 120]
+              }
+            }
+          },
+          "Toggle": [
+            {"Name": "Emote_Tab_On_Toggle","State": true}
+          ]
+      },
+      {
+        "Comment": "追加枠",
+          "Name": "action_add_item_btn",
+          "Language": "",
+          "Portrait": "",
+          "Type": "button",
+          "Show": false,
+          "Pos":[ -117, -40],
+          "Size":[ 42, 42],
+          "Z": 3,
+          "Pivot":[0.5, 0.5],
+          "Anchor":"RB",
+          "ParamButton": {
+            "FileName": "gui2023/action/action_add_item_btn.png"
+          },
+          "Animation":{
+            "State" : {
+              "Begin":{
+                "Pos": [ -117, 120]
+              },
+              "End":{
+                "Pos": [ -117, 120]
+              }
+            }
+          },
+          "GUIAction" :[
+            {"SetShowLayer" : {"Name" : "action_list","Show":true}}
+          ],
+          "Toggle": [
+            {"Name": "Emote_Tab_On_Toggle","State": true}
+          ]
+      },
+
+
+      {
+        "Comment": "フェイス・Neutral",
+        "Name": "action_palette_neutral",
+        "Language": "",
+        "Portrait": "",
+        "Type": "button",
+        "Show": false,
+        "Pos":[ -395, -40],
+        "Size":[ 42, 42],
+        "Z": 3,
+        "Pivot":[0.5, 0.5],
+        "Anchor":"RB",
+        "ParamButton": {
+          "FileName": "gui2023/action/action_face_neutral.png"
+        },
+        "Animation":{
+          "State" : {
+            "Begin":{
+              "Pos": [ -395, 120]
+            },
+            "End":{
+              "Pos": [ -395, 120]
+            }
+          }
+        },
+        "Toggle": [
+          {"Name": "Face_Tab_On_Toggle","State": false}
+        ]
+      },
+      {
+        "Comment": "フェイス・Joy",
+        "Name": "action_palette_joy",
+        "Language": "",
+        "Portrait": "",
+        "Type": "button",
+        "Show": false,
+        "Pos":[ -349, -40],
+        "Size":[ 42, 42],
+        "Z": 3,
+        "Pivot":[0.5, 0.5],
+        "Anchor":"RB",
+        "ParamButton": {
+          "FileName": "gui2023/action/action_face_joy.png"
+        },
+        "Animation":{
+          "State" : {
+            "Begin":{
+              "Pos": [ -349, 120]
+            },
+            "End":{
+              "Pos": [ -349, 120]
+            }
+          }
+        },
+        "Toggle": [
+          {"Name": "Face_Tab_On_Toggle","State": false}
+        ]
+    },
+    {
+      "Comment": "フェイス・Angry",
+      "Name": "action_palette_angry",
+      "Language": "",
+      "Portrait": "",
+      "Type": "button",
+      "Show": false,
+      "Pos":[ -303, -40],
+      "Size":[ 42, 42],
+      "Z": 3,
+      "Pivot":[0.5, 0.5],
+      "Anchor":"RB",
+      "ParamButton": {
+        "FileName": "gui2023/action/action_face_angry.png"
+      },
+      "Animation":{
+        "State" : {
+          "Begin":{
+            "Pos": [ -303, 120]
+          },
+          "End":{
+            "Pos": [ -303, 120]
+          }
+        }
+      },
+      "Toggle": [
+        {"Name": "Face_Tab_On_Toggle","State": false}
+      ]
+    },
+    {
+      "Comment": "フェイス・Sorrow",
+      "Name": "action_palette_sorrow",
+      "Language": "",
+      "Portrait": "",
+      "Type": "button",
+      "Show": false,
+      "Pos":[ -256, -40],
+      "Size":[ 42, 42],
+      "Z": 3,
+      "Pivot":[0.5, 0.5],
+      "Anchor":"RB",
+      "ParamButton": {
+        "FileName": "gui2023/action/action_face_sorrow.png"
+      },
+      "Animation":{
+        "State" : {
+          "Begin":{
+            "Pos": [ -256, 120]
+          },
+          "End":{
+            "Pos": [ -256, 120]
+          }
+        }
+      },
+      "Toggle": [
+        {"Name": "Face_Tab_On_Toggle","State": false}
+      ]
+    },
+    {
+      "Comment": "フェイス・Fun",
+      "Name": "action_palette_fun",
+      "Language": "",
+      "Portrait": "",
+      "Type": "button",
+      "Show": false,
+      "Pos":[ -210, -40],
+      "Size":[ 42, 42],
+      "Z": 3,
+      "Pivot":[0.5, 0.5],
+      "Anchor":"RB",
+      "ParamButton": {
+        "FileName": "gui2023/action/action_face_fun.png"
+      },
+      "Animation":{
+        "State" : {
+          "Begin":{
+            "Pos": [ -210, 120]
+          },
+          "End":{
+            "Pos": [ -210, 120]
+          }
+        }
+      },
+      "Toggle": [
+        {"Name": "Face_Tab_On_Toggle","State": false}
+      ]
+    }
+    ]
+  }
+  ]
+}
