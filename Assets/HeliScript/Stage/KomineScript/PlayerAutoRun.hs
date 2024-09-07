@@ -7,13 +7,15 @@ component PlayerAutoRun
     Vector3 newPlayerPos;
     int movementFrame;
     int playerLane;
+    int direction;
     const int movementCoolTime = 30;
+    const int movementAnimeTime = 10;
     const int laneNumMax = 1;
     const float laneDistance = 1.5f;
 
     public PlayerAutoRun()
     {
-        hsSystemOutput("testversion3!\n");
+        hsSystemOutput("testversion4!\n");
         myPlayer = new Player();
         myPlayer = hsPlayerGet();
         myPlayer.SetMoveSpeed(0.0f);
@@ -26,6 +28,8 @@ component PlayerAutoRun
 
         newPlayerPos = new Vector3();
         newPlayerPos = previousPlayerPos;
+
+        direction = 0;
 
         movementFrame = 0;
         playerLane = 0;
@@ -40,19 +44,27 @@ component PlayerAutoRun
         if(movementFrame == 0){
             if((currentPlayerPos.x - previousPlayerPos.x) < -0.01 && playerLane > -laneNumMax){
                 playerLane--;
+                direction = -1;
                 movementFrame++;
             }else if((currentPlayerPos.x - previousPlayerPos.x) > 0.01 && playerLane < laneNumMax){
                 playerLane++;
+                direction = 1;
                 movementFrame++;
+            }else{
+                newPlayerPos.x = playerLane * laneDistance;
             }
         }else if(movementFrame > 0){
             movementFrame++;
+            if(movementFrame <= movementAnimeTime){
+                newPlayerPos.x = previousPlayerPos.x + laneDistance / movementAnimeTime * direction;
+            }else{
+                newPlayerPos.x = playerLane * laneDistance;
+            }
             if(movementFrame >= movementCoolTime){
                 movementFrame = 0;
+                direction = 0;
             }
         }
-
-        newPlayerPos.x = playerLane * laneDistance;
 
         if (currentPlayerPos.y > 1){
             newPlayerPos.z = previousPlayerPos.z;
