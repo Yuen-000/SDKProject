@@ -123,7 +123,7 @@ NavMeshSettings:
   m_NavMeshData: {fileID: 0}
 --- !u!1 &261335427
 GameObject:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -140,7 +140,7 @@ GameObject:
   m_IsActive: 1
 --- !u!114 &261335428
 MonoBehaviour:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -156,9 +156,9 @@ MonoBehaviour:
       nsfw: 0
       polygon: 50000
     motions:
-    - hem: {fileID: 8549007397814093194, guid: 9450f5ffd5455354f8ab48b1d9eda7b6, type: 3}
+    - hem: {fileID: 8549007397814093194, guid: 633c5714d85053c438e6c6073ce29096, type: 3}
       motionName: Idle
-      _filename: Motion/VketCloud_Idle.hem
+      _filename: Motion/VketCloud_Run.hem
       loop: 1
       actions: []
       isUseAction: 0
@@ -260,7 +260,7 @@ MonoBehaviour:
     version: 1
 --- !u!4 &261335429
 Transform:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -378,13 +378,13 @@ MonoBehaviour:
     lookatcamera: 0
   LoadCollider: []
   UnLoadCollider: []
-  _isAdvancedFoldout: 0
+  _isAdvancedFoldout: 1
   _Priority: 0
   references:
     version: 1
 --- !u!1 &503935993
 GameObject:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -401,7 +401,7 @@ GameObject:
   m_IsActive: 1
 --- !u!114 &503935994
 MonoBehaviour:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -415,7 +415,7 @@ MonoBehaviour:
   _dummyAvatars:
   - heo: {fileID: 8794674264650990340, guid: 596cee25068cbf644975c3e584984667, type: 3}
   _avatarFiles:
-  - {fileID: 11400000, guid: ebb24f4484d4e384fb5e3138ac27a347, type: 2}
+  - {fileID: 11400000, guid: f64d85da514bbf04eb2ba319de68a2ae, type: 2}
   - {fileID: 11400000, guid: fbb0eee0ffc184b2cb10fc2e5f3a13d1, type: 2}
   - {fileID: 11400000, guid: ff2e7b11c699f494daaf3dc5e0c17604, type: 2}
   - {fileID: 11400000, guid: d0c35206219564360be95cdb0648e57b, type: 2}
@@ -424,7 +424,7 @@ MonoBehaviour:
     version: 1
 --- !u!4 &503935995
 Transform:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -657,7 +657,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1038110816}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -10, z: 0}
+  m_LocalPosition: {x: 0, y: -20, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1972182359}
@@ -675,11 +675,11 @@ MonoBehaviour:
   m_Script: {fileID: -1556685592, guid: aceab675429f9e946b912a758820ab12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _areaSize: {x: 100, y: 100}
+  _areaSize: {x: 0, y: 0}
   tempAreaCollider: {fileID: 0}
 --- !u!1 &1143593716
 GameObject:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -696,7 +696,7 @@ GameObject:
   m_IsActive: 1
 --- !u!114 &1143593717
 MonoBehaviour:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -717,7 +717,7 @@ MonoBehaviour:
   _raycastmaxdistance: 50
 --- !u!4 &1143593718
 Transform:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -731,7 +731,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1146929028
 GameObject:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -748,7 +748,7 @@ GameObject:
   m_IsActive: 1
 --- !u!114 &1146929029
 MonoBehaviour:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -813,7 +813,13 @@ MonoBehaviour:
       _iblspecularmipmapcount: 6
       _ibldiffuseIndex: 0
       _iblspecularIndex: 0
-      _cubemap_diffuse: []
+      _cubemap_diffuse:
+      - ibl/diffuse/ibl_diffuse_cube_0.png
+      - ibl/diffuse/ibl_diffuse_cube_0.png
+      - ibl/diffuse/ibl_diffuse_cube_0.png
+      - ibl/diffuse/ibl_diffuse_cube_0.png
+      - ibl/diffuse/ibl_diffuse_cube_0.png
+      - ibl/diffuse/ibl_diffuse_cube_0.png
       _cubemap_specular: []
     ssao:
       use: 0
@@ -830,7 +836,7 @@ MonoBehaviour:
   LightColorDir: {x: -1, y: -2, z: -1}
 --- !u!4 &1146929030
 Transform:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1079,6 +1085,7 @@ MonoBehaviour:
   HeliScript: {fileID: 0}
   Scripts:
   - HeliScript/PlayerAutoRun.hs
+  - HeliScript/HitBoxActionArea.hs
   SpatiumCode: default
 --- !u!4 &1690123602
 Transform:
@@ -1141,6 +1148,7 @@ MonoBehaviour:
   _iconFieldPath: 
   _heoScripts:
   - {fileID: 469074977633818552, guid: 8f301081be68ca84e8b029db38b22707, type: 3}
+  - {fileID: 469074977633818552, guid: 5f839c3d2bb5bd84799f32ca20624ac6, type: 3}
 --- !u!4 &1957313049
 Transform:
   m_ObjectHideFlags: 0
@@ -1184,7 +1192,7 @@ MonoBehaviour:
   m_Script: {fileID: -1949491277, guid: aceab675429f9e946b912a758820ab12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AdvancedMode: 0
+  AdvancedMode: 1
   WorldCameraSetting: {fileID: 1143593717}
   AvatarFieldSetting: {fileID: 503935994}
   RenderingSetting: {fileID: 1146929029}

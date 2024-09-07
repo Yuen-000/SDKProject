@@ -15,7 +15,9 @@ component PlayerAutoRun
 
     public PlayerAutoRun()
     {
-        hsSystemOutput("testversion4!\n");
+        hsSystemOutput("Date:20240907\n");
+        hsSystemOutput("Version:5.1\n");
+        hsSystemOutput("Update Content:Limited forward and backward movement\n");
         myPlayer = new Player();
         myPlayer = hsPlayerGet();
         myPlayer.SetMoveSpeed(0.0f);
@@ -66,13 +68,12 @@ component PlayerAutoRun
             }
         }
 
-        if (currentPlayerPos.y > 1){
-            newPlayerPos.z = previousPlayerPos.z;
-        }
+        newPlayerPos.z = previousPlayerPos.z;
 
         Vector3 autoRunDistance = makeVector3(0.0f,0.0f,0.1f);
         newPlayerPos.Add(autoRunDistance);
         myPlayer.SetPos(newPlayerPos);
         previousPlayerPos = newPlayerPos;
+        myPlayer.SetRotate(0.0f);
     }
 }
