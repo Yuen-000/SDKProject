@@ -283,7 +283,7 @@ GameObject:
   - component: {fileID: 357862342}
   - component: {fileID: 357862343}
   - component: {fileID: 357862345}
-  - component: {fileID: 357862344}
+  - component: {fileID: 357862347}
   m_Layer: 0
   m_Name: PlayerSettings
   m_TagString: Untagged
@@ -333,28 +333,11 @@ MonoBehaviour:
     jump: 1
     jumpvelocity: 4.5
     crpmode: 0
-    movespeed: 7
+    movespeed: 0
     movespeedupratio: 2
   guiSkin: {fileID: 0}
   _tpsRotateInEditor: {x: 0, y: 0, z: 0}
   _isAdvancedFoldout: 1
---- !u!114 &357862344
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 357862341}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  selectedIndex: 0
-  ScriptName: PlayerAutoRun
-  _heliScript: {fileID: 469074977633818552, guid: 8f301081be68ca84e8b029db38b22707,
-    type: 3}
-  hsComponent: PlayerAutoRun
 --- !u!114 &357862345
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -370,7 +353,7 @@ MonoBehaviour:
   _heliodorScripts: []
   _field:
     name: PlayerSettings
-    filename: Field/PlayerSettings/PlayerSettings.heo
+    filename: Field/PlayerSettings.heo
     components:
     - PlayerAutoRun
     overrides: []
@@ -382,6 +365,22 @@ MonoBehaviour:
   _Priority: 0
   references:
     version: 1
+--- !u!114 &357862347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 357862341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  ScriptName: 
+  _heliScript: {fileID: 0}
+  hsComponent: PlayerAutoRun
 --- !u!1 &503935993
 GameObject:
   m_ObjectHideFlags: 0
