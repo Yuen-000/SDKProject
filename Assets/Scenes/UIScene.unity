@@ -566,7 +566,8 @@ MonoBehaviour:
   _isDirWorldName: 0
   _useGamePad: 0
   _iconFieldPath: 
-  _heoScripts: []
+  _heoScripts:
+  - {fileID: 469074977633818552, guid: b1d21e9bd5900da47acd217ba16d6c76, type: 3}
 --- !u!4 &900730818
 Transform:
   m_ObjectHideFlags: 0
@@ -970,6 +971,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1566114842}
+  - component: {fileID: 1566114843}
   m_Layer: 0
   m_Name: coin
   m_TagString: Untagged
@@ -993,6 +995,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1566114843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1566114841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  ScriptName: CoinUI
+  _heliScript: {fileID: 469074977633818552, guid: b1d21e9bd5900da47acd217ba16d6c76,
+    type: 3}
+  hsComponent: CoinUI
 --- !u!1 &1634929647
 GameObject:
   m_ObjectHideFlags: 0
@@ -1120,7 +1139,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HeliScript: {fileID: 0}
-  Scripts: []
+  Scripts:
+  - HeliScript/CoinUI.hs
   SpatiumCode: default
 --- !u!4 &1875556869
 Transform:
