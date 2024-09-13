@@ -40,7 +40,6 @@ component PlayerAutoRun
         hsSystemOutput("Update Content:Compatible with the latest version\n");
         myPlayer = new Player();
         myPlayer = hsPlayerGet();
-        myPlayer.SetMoveSpeed(0.5f);
 
         previousPlayerPos = new Vector3();
         previousPlayerPos = myPlayer.GetPos();
