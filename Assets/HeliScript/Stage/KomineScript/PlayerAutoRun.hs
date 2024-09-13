@@ -31,16 +31,16 @@ component PlayerAutoRun
     const int laneNumMax = 1;
 
     //レーンの間の距離　要調整
-    const float laneDistance = 1.5f;
+    const float laneDistance = 1.4f;
 
     public PlayerAutoRun()
     {
-        hsSystemOutput("Date:20240909\n");
-        hsSystemOutput("Version:5.1.2\n");
-        hsSystemOutput("Update Content:Writing comments\n");
+        hsSystemOutput("Date:20240913\n");
+        hsSystemOutput("Version:5.1.5\n");
+        hsSystemOutput("Update Content:Compatible with the latest version\n");
         myPlayer = new Player();
         myPlayer = hsPlayerGet();
-        myPlayer.SetMoveSpeed(0.0f);
+        myPlayer.SetMoveSpeed(0.5f);
 
         previousPlayerPos = new Vector3();
         previousPlayerPos = myPlayer.GetPos();
@@ -65,7 +65,7 @@ component PlayerAutoRun
         currentPlayerPos = myPlayer.GetPos();
         newPlayerPos = currentPlayerPos;
 
-        if(movementFrame == 0){ //移動していないときの挙動
+        if(movementFrame == 0){ //レーン移動していないときの挙動
             if((currentPlayerPos.x - previousPlayerPos.x) < -0.01 && playerLane > -laneNumMax){ //左
                 playerLane--;
                 direction = -1;
@@ -96,13 +96,13 @@ component PlayerAutoRun
         //前に進むベクトル
         Vector3 autoRunDistance = makeVector3(0.0f,0.0f,0.1f);
         newPlayerPos.Add(autoRunDistance);
-        
+
         //ここで位置をセット
         myPlayer.SetPos(newPlayerPos);
-        
+
         //今の位置を次使う前の位置に
         previousPlayerPos = newPlayerPos;
-        
+
         //念のためもう一度向きを前に（効果ないかも）
         myPlayer.SetRotate(0.0f);
     }
