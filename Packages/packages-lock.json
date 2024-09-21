@@ -1,17 +1,28 @@
 {
   "dependencies": {
-    "com.hikky.editortutorialsystem": {
-      "version": "1.0.1",
-      "depth": 0,
+    "com.autodesk.fbx": {
+      "version": "4.2.1",
+      "depth": 2,
       "source": "registry",
       "dependencies": {},
-      "url": "https://registry.npmjs.org"
+      "url": "https://packages.unity.com"
     },
-    "com.hikky.vketcloudsdk": {
-      "version": "12.3.4",
+    "com.hikky.editortutorialsystem": {
+      "version": "1.2.2",
       "depth": 0,
       "source": "registry",
       "dependencies": {
+        "com.unity.nuget.newtonsoft-json": "3.0.2"
+      },
+      "url": "https://registry.npmjs.org"
+    },
+    "com.hikky.vketcloudsdk": {
+      "version": "13.7.7",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.formats.fbx": "4.2.1",
+        "com.unity.editorcoroutines": "1.0.0",
         "com.unity.nuget.newtonsoft-json": "3.0.2"
       },
       "url": "https://registry.npmjs.org"
@@ -49,6 +60,16 @@
       "depth": 1,
       "source": "registry",
       "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.formats.fbx": {
+      "version": "4.2.1",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.autodesk.fbx": "4.2.1",
+        "com.unity.timeline": "1.7.1"
+      },
       "url": "https://packages.unity.com"
     },
     "com.unity.ide.rider": {
@@ -104,13 +125,13 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.timeline": {
-      "version": "1.2.18",
-      "depth": 0,
+      "version": "1.7.1",
+      "depth": 2,
       "source": "registry",
       "dependencies": {
+        "com.unity.modules.audio": "1.0.0",
         "com.unity.modules.director": "1.0.0",
         "com.unity.modules.animation": "1.0.0",
-        "com.unity.modules.audio": "1.0.0",
         "com.unity.modules.particlesystem": "1.0.0"
       },
       "url": "https://packages.unity.com"
