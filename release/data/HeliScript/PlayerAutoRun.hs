@@ -33,11 +33,15 @@ component PlayerAutoRun
     //レーンの間の距離　要調整
     const float laneDistance = 1.4f;
 
+    //連打エリアに突入するZ座標のリスト
+    list<float> hitBoxAreaList;
+
     public PlayerAutoRun()
     {
-        hsSystemOutput("Date:20240913\n");
-        hsSystemOutput("Version:5.1.5\n");
-        hsSystemOutput("Update Content:Compatible with the latest version\n");
+        hsSystemOutput("Script:PlayerAutoRun\n");
+        hsSystemOutput("Date:20240914\n");
+        hsSystemOutput("Version:6.0.1\n");
+        hsSystemOutput("Update Content:Add elements for massing area\n");
         myPlayer = new Player();
         myPlayer = hsPlayerGet();
 
@@ -49,6 +53,8 @@ component PlayerAutoRun
 
         newPlayerPos = new Vector3();
         newPlayerPos = previousPlayerPos;
+
+        hitBoxAreaList = new list<float>(0);
 
         direction = 0;
 
@@ -104,5 +110,10 @@ component PlayerAutoRun
 
         //念のためもう一度向きを前に（効果ないかも）
         myPlayer.SetRotate(0.0f);
+    }
+
+    public void hitBoxAreaCoordinate(float zCoor){
+        hitBoxAreaList.Add(zCoor);
+        hsSystemOutput(string(zCoor));
     }
 }
