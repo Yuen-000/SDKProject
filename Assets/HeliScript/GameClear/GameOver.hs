@@ -40,7 +40,7 @@ component GameOver
         camera.SetCamera();
     }
 
-    //ボックスのどこかをクリックしたらリトライを行うための関数
+    //ボックスをクリックしたらリトライ
     public void OnClickNode()
     {
         SetRetry();
