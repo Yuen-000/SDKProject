@@ -36,6 +36,9 @@ component PlayerAutoRun
     //連打エリアに突入するZ座標のリスト
     list<float> hitBoxAreaList;
 
+    //連打アクション中か
+    bool isActionTime;
+
     public PlayerAutoRun()
     {
         hsSystemOutput("Script:PlayerAutoRun\n");
@@ -54,12 +57,15 @@ component PlayerAutoRun
         newPlayerPos = new Vector3();
         newPlayerPos = previousPlayerPos;
 
-        hitBoxAreaList = new list<float>(0);
+        hitBoxAreaList = new list<float>(1);
+        hitBoxAreaList[0] = 30.0f;
 
         direction = 0;
 
         movementFrame = 0;
         playerLane = 0;
+
+        isActionTime = false;
     }
 
     public void Update()
@@ -69,6 +75,10 @@ component PlayerAutoRun
 
         currentPlayerPos = myPlayer.GetPos();
         newPlayerPos = currentPlayerPos;
+
+        if(isActionTime){
+            //hsSystemOutput("True");
+        }
 
         if(movementFrame == 0){ //レーン移動していないときの挙動
             if((currentPlayerPos.x - previousPlayerPos.x) < -0.01 && playerLane > -laneNumMax){ //左
@@ -112,8 +122,12 @@ component PlayerAutoRun
         myPlayer.SetRotate(0.0f);
     }
 
-    public void hitBoxAreaCoordinate(float zCoor){
-        hitBoxAreaList.Add(zCoor);
-        hsSystemOutput(string(zCoor));
+    public void startActionTime(){
+        isActionTime = true;
     }
+
+    //public void hitBoxAreaCoordinate(float zCoor){
+    //    hitBoxAreaList.Add(zCoor);
+    //    hsSystemOutput(string(zCoor));
+    //}
 }
