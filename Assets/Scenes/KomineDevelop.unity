@@ -353,12 +353,20 @@ MonoBehaviour:
   _heliodorScripts: []
   _field:
     name: PlayerSettings
-    filename: Field/PlayerSettings.heo
+    filename: Field/PlayerSettings/PlayerSettings.heo
     components:
     - PlayerAutoRun
     overrides: []
     autoloading: 1
     lookatcamera: 0
+    alphaanim: 0
+    collisiondetection: 1
+    showphotomode: 1
+    clickable: 0
+    show: 1
+    clickableui:
+      _images: []
+      _clickableItems: []
   LoadCollider: []
   UnLoadCollider: []
   _isAdvancedFoldout: 1
@@ -378,9 +386,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectedIndex: 0
-  ScriptName: 
-  _heliScript: {fileID: 0}
+  selectedIndexes: 00000000
+  ScriptName: PlayerAutoRun
+  _heliScript: {fileID: 469074977633818552, guid: 8f301081be68ca84e8b029db38b22707,
+    type: 3}
   hsComponent: PlayerAutoRun
+  hsComponents:
+  - componentName: PlayerAutoRun
+    selectedIndex: 0
 --- !u!1 &503935993
 GameObject:
   m_ObjectHideFlags: 0
@@ -571,6 +584,10 @@ MonoBehaviour:
   EnableBody: 1
   mass: 1
   restitution: 1
+  AllowCrossOver: 0
+  CrossOverRate: 0.75
+  ExtrudeSpeed: 1
+  GroundingDetection: 0
 --- !u!65 &964845916
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -597,7 +614,7 @@ MeshRenderer:
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
+  m_ReflectionProbeUsage: 3
   m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
@@ -713,6 +730,7 @@ MonoBehaviour:
     photoradius: 20
     tpspitchmaxangle: 6
     tpsmaxdistance: 10
+    tpsxrotateenable: 1
   _raycastmaxdistance: 50
 --- !u!4 &1143593718
 Transform:
@@ -900,6 +918,10 @@ MonoBehaviour:
   EnableBody: 1
   mass: 1
   restitution: 1
+  AllowCrossOver: 0
+  CrossOverRate: 0.75
+  ExtrudeSpeed: 1
+  GroundingDetection: 0
 --- !u!65 &1368201769
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -926,7 +948,7 @@ MeshRenderer:
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
+  m_ReflectionProbeUsage: 3
   m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
@@ -1063,7 +1085,7 @@ GameObject:
   - component: {fileID: 1690123602}
   - component: {fileID: 1690123601}
   m_Layer: 0
-  m_Name: VketCloudScriptSettings
+  m_Name: ScriptManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1078,14 +1100,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1690123600}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -489526812, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Script: {fileID: -1918169039, guid: aceab675429f9e946b912a758820ab12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   HeliScript: {fileID: 0}
   Scripts:
   - HeliScript/PlayerAutoRun.hs
   - HeliScript/HitBoxActionArea.hs
-  SpatiumCode: default
+  spatiumCode: default
 --- !u!4 &1690123602
 Transform:
   m_ObjectHideFlags: 1
@@ -1148,6 +1170,8 @@ MonoBehaviour:
   _heoScripts:
   - {fileID: 469074977633818552, guid: 8f301081be68ca84e8b029db38b22707, type: 3}
   - {fileID: 469074977633818552, guid: 5f839c3d2bb5bd84799f32ca20624ac6, type: 3}
+  _fileDeploymentConfig: {fileID: 0}
+  _deploymentMode: 0
 --- !u!4 &1957313049
 Transform:
   m_ObjectHideFlags: 0
@@ -1197,7 +1221,7 @@ MonoBehaviour:
   RenderingSetting: {fileID: 1146929029}
   MyAvatarsSetting: {fileID: 261335428}
   BaseSetting: {fileID: 1957313048}
-  VketCloudScriptSetting: {fileID: 1690123601}
+  ScriptManager: {fileID: 1690123601}
 --- !u!4 &1972182359
 Transform:
   m_ObjectHideFlags: 0
@@ -1257,6 +1281,14 @@ MonoBehaviour:
     overrides: []
     autoloading: 1
     lookatcamera: 0
+    alphaanim: 0
+    collisiondetection: 1
+    showphotomode: 1
+    clickable: 0
+    show: 1
+    clickableui:
+      _images: []
+      _clickableItems: []
   LoadCollider: []
   UnLoadCollider: []
   _isAdvancedFoldout: 0
