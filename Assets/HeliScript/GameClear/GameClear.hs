@@ -1,4 +1,4 @@
-﻿component GameClear
+component GameClear
 {
     Item gameClearCream;
 
