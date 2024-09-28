@@ -1,0 +1,552 @@
+{
+  "version": 0,
+  "physics": {
+    "use": false
+  },
+  "voiceattenuation": {
+    "use": true,
+    "maxdistance": 10.0,
+    "mindistance": 5.0
+  },
+  "worldname": "world",
+  "spatiumcode": "default",
+  "debugmode": true,
+  "useavatarclick": true,
+  "vrmdrop": false,
+  "occlusionculling": true,
+  "usegamepad": false,
+  "rendering": {
+    "pbr": true,
+    "lightdir": [
+      -1.0,
+      -2.0,
+      -1.0
+    ],
+    "lightcolor": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "bgcolor": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "lightintensity": 1.0,
+    "lightmapintensity": 1.0,
+    "fadeintime": 2.0,
+    "shadowtype": "round",
+    "shadowbias": 0.001,
+    "shadowareasize": 3.0,
+    "shadowfadesize": 1.0,
+    "projectionnear": 0.1,
+    "projectionfar": 500.0,
+    "projectiondeg": 70.0,
+    "bloom": {
+      "use": false,
+      "intensity": 0.0,
+      "threshold": 0.0
+    },
+    "lightscattering": {
+      "use": false,
+      "betar": 0.0,
+      "betam": 0.0,
+      "g": 0.0,
+      "distance": 0.0,
+      "lightcolor": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "suncolor": [
+        0.85,
+        0.85,
+        0.85
+      ]
+    },
+    "ibl": {
+      "use": false,
+      "ibldiffuse": "",
+      "iblspecular": "",
+      "ibldiffusesize": 0,
+      "iblspecularsize": 0,
+      "iblspecularmipmapcount": 0
+    },
+    "ssao": {
+      "use": false,
+      "radius": 0.7,
+      "selfshadowcounter": 0.2,
+      "attenuation": 3.0,
+      "minz": 0.02,
+      "colbleed": 0.2,
+      "aoratio": 3.0,
+      "hsp": true,
+      "fakebloom": false
+    }
+  },
+  "scripts": [],
+  "myavatar": {
+    "use": true,
+    "filter": {
+      "nsfw": false,
+      "polygon": 50000
+    },
+    "objects": [],
+    "motions": {
+      "Idle": {
+        "loop": true,
+        "actions": [],
+        "drawcircleshadow": true,
+        "collisiondetection": true,
+        "filename": "Motion/VketCloud_Idle.hem"
+      },
+      "Run": {
+        "loop": true,
+        "actions": [],
+        "drawcircleshadow": true,
+        "collisiondetection": true,
+        "filename": "Motion/VketCloud_Jogging.hem"
+      },
+      "JumpUp": {
+        "loop": true,
+        "actions": [],
+        "drawcircleshadow": true,
+        "collisiondetection": true,
+        "filename": "Motion/VketCloud_JumpUp.hem"
+      },
+      "JumpAir": {
+        "loop": true,
+        "actions": [],
+        "drawcircleshadow": true,
+        "collisiondetection": true,
+        "filename": "Motion/VketCloud_JumpAir.hem"
+      },
+      "JumpLand": {
+        "loop": true,
+        "actions": [],
+        "drawcircleshadow": true,
+        "collisiondetection": true,
+        "filename": "Motion/VketCloud_JumpLand.hem"
+      },
+      "TurnRight": {
+        "loop": false,
+        "actions": [],
+        "drawcircleshadow": true,
+        "collisiondetection": true,
+        "filename": "Motion/VketCloud_TurnRight.hem"
+      },
+      "TurnLeft": {
+        "loop": false,
+        "actions": [],
+        "drawcircleshadow": true,
+        "collisiondetection": true,
+        "filename": "Motion/VketCloud_TurnLeft.hem"
+      },
+      "TurnBack": {
+        "loop": false,
+        "actions": [],
+        "drawcircleshadow": true,
+        "collisiondetection": true,
+        "filename": "Motion/VketCloud_TurnBack.hem"
+      },
+      "Sit": {
+        "loop": true,
+        "actions": [],
+        "drawcircleshadow": true,
+        "collisiondetection": false,
+        "filename": "Motion/VketCloud_Sit.hem"
+      }
+    }
+  },
+  "avatariconshow": false,
+  "dummyavatars": [
+    {
+      "filename": "Field/dummy_human_02/dummy_human_02.heo"
+    }
+  ],
+  "avatars": [
+    {
+      "id": 0,
+      "avatartype": "common",
+      "objects": [],
+      "filename": "Avatar/Vketchan_MToon_blendshape.vrm",
+      "thumbnail_url": "gui/config/avatar/config_avatar_chara_vketchan1.png",
+      "en_thumbnail_url": "gui/config/avatar/config_avatar_chara_vketchan1_en.png",
+      "motions": {
+        "Idle": {
+          "loop": true,
+          "actions": [],
+          "drawcircleshadow": true,
+          "collisiondetection": true,
+          "filename": "Motion/Vketchan1_Idle.hem"
+        },
+        "Run": {
+          "loop": true,
+          "actions": [],
+          "drawcircleshadow": true,
+          "collisiondetection": true,
+          "filename": "Motion/VketCloud_Jogging.hem"
+        },
+        "JumpUp": {
+          "loop": true,
+          "actions": [],
+          "drawcircleshadow": true,
+          "collisiondetection": true,
+          "filename": "Motion/Vketchan1_JumpUp.hem"
+        },
+        "JumpAir": {
+          "loop": true,
+          "actions": [],
+          "drawcircleshadow": true,
+          "collisiondetection": true,
+          "filename": "Motion/Vketchan1_JumpAir.hem"
+        },
+        "JumpLand": {
+          "loop": true,
+          "actions": [],
+          "drawcircleshadow": true,
+          "collisiondetection": true,
+          "filename": "Motion/Vketchan1_JumpLand.hem"
+        },
+        "TurnRight": {
+          "loop": false,
+          "actions": [],
+          "drawcircleshadow": true,
+          "collisiondetection": true,
+          "filename": "Motion/VketCloud_TurnRight.hem"
+        },
+        "TurnLeft": {
+          "loop": false,
+          "actions": [],
+          "drawcircleshadow": true,
+          "collisiondetection": true,
+          "filename": "Motion/VketCloud_TurnLeft.hem"
+        },
+        "TurnBack": {
+          "loop": false,
+          "actions": [],
+          "drawcircleshadow": true,
+          "collisiondetection": true,
+          "filename": "Motion/VketCloud_TurnBack.hem"
+        },
+        "Sit": {
+          "loop": true,
+          "actions": [],
+          "drawcircleshadow": true,
+          "collisiondetection": false,
+          "filename": "Motion/VketCloud_Sit.hem"
+        }
+      }
+    },
+    {
+      "id": 1,
+      "avatartype": "common",
+      "objects": [],
+      "filename": "Avatar/Vketchan2_MToon_blendshape.vrm",
+      "thumbnail_url": "gui/config/avatar/config_avatar_chara_vketchan2.png",
+      "en_thumbnail_url": "gui/config/avatar/config_avatar_chara_vketchan2_en.png",
+      "motions": {
+        "Idle": {
+          "loop": true,
+          "actions": [],
+          "drawcircleshadow": true,
+          "collisiondetection": true,
+          "filename": "Motion/Vketchan2_Idle.hem"
+        },
+        "Run": {
+          "loop": true,
+          "actions": [],
+          "drawcircleshadow": true,
+          "collisiondetection": true,
+          "filename": "Motion/VketCloud_Jogging.hem"
+        },
+        "JumpUp": {
+          "loop": true,
+          "actions": [],
+          "drawcircleshadow": true,
+          "collisiondetection": true,
+          "filename": "Motion/VketCloud_JumpUp.hem"
+        },
+        "JumpAir": {
+          "loop": true,
+          "actions": [],
+          "drawcircleshadow": true,
+          "collisiondetection": true,
+          "filename": "Motion/VketCloud_JumpAir.hem"
+        },
+        "JumpLand": {
+          "loop": true,
+          "actions": [],
+          "drawcircleshadow": true,
+          "collisiondetection": true,
+          "filename": "Motion/VketCloud_JumpLand.hem"
+        },
+        "TurnRight": {
+          "loop": false,
+          "actions": [],
+          "drawcircleshadow": true,
+          "collisiondetection": true,
+          "filename": "Motion/VketCloud_TurnRight.hem"
+        },
+        "TurnLeft": {
+          "loop": false,
+          "actions": [],
+          "drawcircleshadow": true,
+          "collisiondetection": true,
+          "filename": "Motion/VketCloud_TurnLeft.hem"
+        },
+        "TurnBack": {
+          "loop": false,
+          "actions": [],
+          "drawcircleshadow": true,
+          "collisiondetection": true,
+          "filename": "Motion/VketCloud_TurnBack.hem"
+        },
+        "Sit": {
+          "loop": true,
+          "actions": [],
+          "drawcircleshadow": true,
+          "collisiondetection": false,
+          "filename": "Motion/VketCloud_Sit.hem"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "avatartype": "common",
+      "objects": [],
+      "filename": "Avatar/Vketnyan_MToon_blendshape.vrm",
+      "thumbnail_url": "gui/config/avatar/config_avatar_chara_vketnyan.png",
+      "en_thumbnail_url": "gui/config/avatar/config_avatar_chara_vketnyan_en.png",
+      "motions": {
+        "Idle": {
+          "loop": true,
+          "actions": [],
+          "drawcircleshadow": true,
+          "collisiondetection": true,
+          "filename": "Motion/VketCloud_Idle.hem"
+        },
+        "Run": {
+          "loop": true,
+          "actions": [],
+          "drawcircleshadow": true,
+          "collisiondetection": true,
+          "filename": "Motion/VketCloud_Jogging.hem"
+        },
+        "JumpUp": {
+          "loop": true,
+          "actions": [],
+          "drawcircleshadow": true,
+          "collisiondetection": true,
+          "filename": "Motion/VketCloud_JumpUp.hem"
+        },
+        "JumpAir": {
+          "loop": true,
+          "actions": [],
+          "drawcircleshadow": true,
+          "collisiondetection": true,
+          "filename": "Motion/VketCloud_JumpAir.hem"
+        },
+        "JumpLand": {
+          "loop": true,
+          "actions": [],
+          "drawcircleshadow": true,
+          "collisiondetection": true,
+          "filename": "Motion/VketCloud_JumpLand.hem"
+        },
+        "TurnRight": {
+          "loop": false,
+          "actions": [],
+          "drawcircleshadow": true,
+          "collisiondetection": true,
+          "filename": "Motion/VketCloud_TurnRight.hem"
+        },
+        "TurnLeft": {
+          "loop": false,
+          "actions": [],
+          "drawcircleshadow": true,
+          "collisiondetection": true,
+          "filename": "Motion/VketCloud_TurnLeft.hem"
+        },
+        "TurnBack": {
+          "loop": false,
+          "actions": [],
+          "drawcircleshadow": true,
+          "collisiondetection": true,
+          "filename": "Motion/VketCloud_TurnBack.hem"
+        },
+        "Sit": {
+          "loop": true,
+          "actions": [],
+          "drawcircleshadow": true,
+          "collisiondetection": false,
+          "filename": "Motion/VketCloud_Sit.hem"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "avatartype": "common",
+      "objects": [],
+      "filename": "Avatar/LesserMokuri_blendshape.vrm",
+      "thumbnail_url": "gui/config/avatar/config_avatar_chara_lessermokuri.png",
+      "en_thumbnail_url": "gui/config/avatar/config_avatar_chara_lessermokuri_en.png",
+      "motions": {
+        "Idle": {
+          "loop": true,
+          "actions": [],
+          "drawcircleshadow": true,
+          "collisiondetection": true,
+          "filename": "Motion/LesserMokuri_idle.hem"
+        },
+        "Run": {
+          "loop": true,
+          "actions": [],
+          "drawcircleshadow": true,
+          "collisiondetection": true,
+          "filename": "Motion/VketCloud_Jogging.hem"
+        },
+        "JumpUp": {
+          "loop": true,
+          "actions": [],
+          "drawcircleshadow": true,
+          "collisiondetection": true,
+          "filename": "Motion/VketCloud_JumpUp.hem"
+        },
+        "JumpAir": {
+          "loop": true,
+          "actions": [],
+          "drawcircleshadow": true,
+          "collisiondetection": true,
+          "filename": "Motion/VketCloud_JumpAir.hem"
+        },
+        "JumpLand": {
+          "loop": true,
+          "actions": [],
+          "drawcircleshadow": true,
+          "collisiondetection": true,
+          "filename": "Motion/VketCloud_JumpLand.hem"
+        },
+        "TurnRight": {
+          "loop": false,
+          "actions": [],
+          "drawcircleshadow": true,
+          "collisiondetection": true,
+          "filename": "Motion/VketCloud_TurnRight.hem"
+        },
+        "TurnLeft": {
+          "loop": false,
+          "actions": [],
+          "drawcircleshadow": true,
+          "collisiondetection": true,
+          "filename": "Motion/VketCloud_TurnLeft.hem"
+        },
+        "TurnBack": {
+          "loop": false,
+          "actions": [],
+          "drawcircleshadow": true,
+          "collisiondetection": true,
+          "filename": "Motion/VketCloud_TurnBack.hem"
+        },
+        "Sit": {
+          "loop": true,
+          "actions": [],
+          "drawcircleshadow": true,
+          "collisiondetection": false,
+          "filename": "Motion/VketCloud_Sit.hem"
+        }
+      }
+    }
+  ],
+  "player": {
+    "pos": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "rotate": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "tpsrotate": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "jump": true,
+    "jumpvelocity": 4.5,
+    "crpmode": false,
+    "movespeed": 7.0,
+    "movespeedupratio": 2.0
+  },
+  "camera": {
+    "tpsnearoffsety": 0.0,
+    "tpsfaroffsety": 0.0,
+    "smoothing": false,
+    "photoradius": 20.0,
+    "tpspitchmaxangle": 6.0,
+    "tpsmaxdistance": 10.0,
+    "tpsxrotateenable": true,
+    "defaulttpsadjusttype": "center"
+  },
+  "raycastmaxdistance": 50.0,
+  "spawns": [],
+  "items": [
+    {
+      "name": "World",
+      "filename": "Field/World/World.heo",
+      "clickablenodes": [],
+      "objects": [],
+      "components": [],
+      "overrides": [],
+      "properties": [],
+      "autoloading": true,
+      "lookatcamera": false,
+      "alphaanim": false,
+      "collisiondetection": true,
+      "showphotomode": true,
+      "clickable": false,
+      "show": true,
+      "clickableui": {
+        "images": [],
+        "clickableitems": []
+      },
+      "type": "field"
+    },
+    {
+      "name": "AreaColliderForDespawn",
+      "actions": [
+        {
+          "time": 0.2,
+          "type": "fadeout"
+        },
+        {
+          "type": "warp",
+          "pos": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotate": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "time": 0.2,
+          "type": "fadein"
+        }
+      ],
+      "leaveactions": [],
+      "components": [],
+      "properties": [],
+      "showphotomode": true,
+      "clickable": false,
+      "autoloading": true,
+      "show": true,
+      "type": "areacollider"
+    }
+  ]
+}
