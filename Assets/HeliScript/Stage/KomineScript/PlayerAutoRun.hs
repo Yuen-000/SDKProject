@@ -33,8 +33,11 @@ component PlayerAutoRun
     //レーンの間の距離　要調整
     const float laneDistance = 1.4f;
 
-    //連打エリアに突入するZ座標のリスト
-    list<float> hitBoxAreaList;
+    //連打エリアに突入するZ座標のリスト まだ使うか不明
+    //list<float> hitBoxAreaList;
+
+    //連打アクション中かどうかのフラグ
+    bool isAction;
 
     public PlayerAutoRun()
     {
@@ -60,6 +63,8 @@ component PlayerAutoRun
 
         movementFrame = 0;
         playerLane = 0;
+
+        isAction = false;
     }
 
     public void Update()
@@ -112,8 +117,8 @@ component PlayerAutoRun
         myPlayer.SetRotate(0.0f);
     }
 
-    public void hitBoxAreaCoordinate(float zCoor){
-        hitBoxAreaList.Add(zCoor);
-        hsSystemOutput(string(zCoor));
-    }
+    //public void hitBoxAreaCoordinate(float zCoor){
+    //    hitBoxAreaList.Add(zCoor);
+    //    hsSystemOutput(string(zCoor));
+    //}
 }
