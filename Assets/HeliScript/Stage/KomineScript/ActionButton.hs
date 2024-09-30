@@ -19,7 +19,7 @@ component ActionButton
     {
         hsSystemOutput("Script:ActionButton\n");
         hsSystemOutput("Date:20240930\n");
-        hsSystemOutput("Version:1.0.5\n");
+        hsSystemOutput("Version:1.0.8\n");
         hsSystemOutput("Update Content:Create\n");
 
         myActionButton = hsItemGet("ActionButtonPlane");
@@ -36,7 +36,6 @@ component ActionButton
         if(isActionTime){
             buttonPos = myPlayer.GetPos();
             buttonPos.y += 2.0f;
-            buttonPos.z -= 5.0f;
             myActionButton.SetPos(buttonPos);
         }
     }

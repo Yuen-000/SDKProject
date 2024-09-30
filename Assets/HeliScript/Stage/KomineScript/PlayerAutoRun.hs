@@ -39,87 +39,99 @@ component PlayerAutoRun
     //連打アクション中か
     bool isActionTime;
 
+    //デバッグモード
+    bool dAutoRun;
+
     public PlayerAutoRun()
     {
         hsSystemOutput("Script:PlayerAutoRun\n");
         hsSystemOutput("Date:20240930\n");
-        hsSystemOutput("Version:6.0.2\n");
-        hsSystemOutput("Update Content:Add elements for Action Time\n");
+        hsSystemOutput("Version:7.0.0\n");
+        hsSystemOutput("Update Content:Debug mode implemented\n");
         myPlayer = new Player();
         myPlayer = hsPlayerGet();
 
-        previousPlayerPos = new Vector3();
-        previousPlayerPos = myPlayer.GetPos();
+        dAutoRun = false;
 
-        currentPlayerPos = new Vector3();
-        currentPlayerPos = previousPlayerPos;
+        if(!dAutoRun){
+            previousPlayerPos = new Vector3();
+            previousPlayerPos = myPlayer.GetPos();
 
-        newPlayerPos = new Vector3();
-        newPlayerPos = previousPlayerPos;
+            currentPlayerPos = new Vector3();
+            currentPlayerPos = previousPlayerPos;
+
+            newPlayerPos = new Vector3();
+            newPlayerPos = previousPlayerPos;
+
+            direction = 0;
+
+            movementFrame = 0;
+            playerLane = 0;
+        }
+        else{
+            hsSystemOutput("Debug Mode : Autorun is now off\n");
+        }
+
+        isActionTime = false;
 
         hitBoxAreaList = new list<float>(1);
         hitBoxAreaList[0] = 30.0f;
-
-        direction = 0;
-
-        movementFrame = 0;
-        playerLane = 0;
-
-        isActionTime = false;
     }
 
     public void Update()
     {
-        //向きを前に
-        myPlayer.SetRotate(0.0f);
+        if(!dAutoRun){
+            //向きを前に
+            myPlayer.SetRotate(0.0f);
 
-        currentPlayerPos = myPlayer.GetPos();
-        newPlayerPos = currentPlayerPos;
+            currentPlayerPos = myPlayer.GetPos();
+            newPlayerPos = currentPlayerPos;
 
-        if(isActionTime){
-            //hsSystemOutput("True");
-        }
+            if(isActionTime){
+                //hsSystemOutput("True");
+            }
 
-        if(movementFrame == 0){ //レーン移動していないときの挙動
-            if((currentPlayerPos.x - previousPlayerPos.x) < -0.01 && playerLane > -laneNumMax){ //左
-                playerLane--;
-                direction = -1;
+            if(movementFrame == 0){ //レーン移動していないときの挙動
+                if((currentPlayerPos.x - previousPlayerPos.x) < -0.01 && playerLane > -laneNumMax){ //左
+                    playerLane--;
+                    direction = -1;
+                    movementFrame++;
+                }else if((currentPlayerPos.x - previousPlayerPos.x) > 0.01 && playerLane < laneNumMax){ //右
+                    playerLane++;
+                    direction = 1;
+                    movementFrame++;
+                }else{ //そのまま
+                    newPlayerPos.x = playerLane * laneDistance;
+                }
+            }else if(movementFrame > 0){    //移動クールタイム中の挙動
                 movementFrame++;
-            }else if((currentPlayerPos.x - previousPlayerPos.x) > 0.01 && playerLane < laneNumMax){ //右
-                playerLane++;
-                direction = 1;
-                movementFrame++;
-            }else{ //そのまま
-                newPlayerPos.x = playerLane * laneDistance;
+                if(movementFrame <= movementAnimeTime){ //レーン移動中
+                    newPlayerPos.x = previousPlayerPos.x + laneDistance / movementAnimeTime * direction;
+                }else{  //クールタイム中
+                    newPlayerPos.x = playerLane * laneDistance;
+                }
+                if(movementFrame >= movementCoolTime){  //クールタイム終了
+                    movementFrame = 0;
+                    direction = 0;
+                }
             }
-        }else if(movementFrame > 0){    //移動クールタイム中の挙動
-            movementFrame++;
-            if(movementFrame <= movementAnimeTime){ //レーン移動中
-                newPlayerPos.x = previousPlayerPos.x + laneDistance / movementAnimeTime * direction;
-            }else{  //クールタイム中
-                newPlayerPos.x = playerLane * laneDistance;
-            }
-            if(movementFrame >= movementCoolTime){  //クールタイム終了
-                movementFrame = 0;
-                direction = 0;
-            }
+
+            //カーソルでの移動を相殺
+            newPlayerPos.z = previousPlayerPos.z;
+
+            //前に進むベクトル
+            Vector3 autoRunDistance = makeVector3(0.0f,0.0f,0.1f);
+            newPlayerPos.Add(autoRunDistance);
+
+            //ここで位置をセット
+            myPlayer.SetPos(newPlayerPos);
+
+            //今の位置を次使う前の位置に
+            previousPlayerPos = newPlayerPos;
+
+            //念のためもう一度向きを前に（効果ないかも）
+            myPlayer.SetRotate(0.0f);
         }
-
-        //カーソルでの移動を相殺
-        newPlayerPos.z = previousPlayerPos.z;
-
-        //前に進むベクトル
-        Vector3 autoRunDistance = makeVector3(0.0f,0.0f,0.1f);
-        newPlayerPos.Add(autoRunDistance);
-
-        //ここで位置をセット
-        myPlayer.SetPos(newPlayerPos);
-
-        //今の位置を次使う前の位置に
-        previousPlayerPos = newPlayerPos;
-
-        //念のためもう一度向きを前に（効果ないかも）
-        myPlayer.SetRotate(0.0f);
     }
 
     public void startActionTime(){
