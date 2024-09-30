@@ -42,9 +42,9 @@ component PlayerAutoRun
     public PlayerAutoRun()
     {
         hsSystemOutput("Script:PlayerAutoRun\n");
-        hsSystemOutput("Date:20240914\n");
-        hsSystemOutput("Version:6.0.1\n");
-        hsSystemOutput("Update Content:Add elements for massing area\n");
+        hsSystemOutput("Date:20240930\n");
+        hsSystemOutput("Version:6.0.2\n");
+        hsSystemOutput("Update Content:Add elements for Action Time\n");
         myPlayer = new Player();
         myPlayer = hsPlayerGet();
 
@@ -124,6 +124,7 @@ component PlayerAutoRun
 
     public void startActionTime(){
         isActionTime = true;
+        hsSystemOutput("Player start Action Time!\n");
     }
 
     //public void hitBoxAreaCoordinate(float zCoor){

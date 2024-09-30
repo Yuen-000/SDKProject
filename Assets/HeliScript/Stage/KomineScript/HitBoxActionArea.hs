@@ -9,12 +9,12 @@ component HitBoxActionArea
     public HitBoxActionArea()
     {
         hsSystemOutput("Script:HitBoxActionArea\n");
-        hsSystemOutput("Date:20240928\n");
-        hsSystemOutput("Version:2.0.0\n");
-        hsSystemOutput("Update Content:Implement communication with other scripts\n");
+        hsSystemOutput("Date:20240930\n");
+        hsSystemOutput("Version:2.0.1\n");
+        hsSystemOutput("Update Content:Adjust instructions to buttons\n");
 
         myPlayer = hsItemGet("PlayerSettings");
-        myPlayer = hsItemGet("ActionButtonPlane");
+        myActionButton = hsItemGet("ActionButtonCore");
     }
 
     public void Update()
@@ -26,6 +26,6 @@ component HitBoxActionArea
     {
         hsSystemOutput("Passing area!\n");
         myPlayer.CallComponentMethod("PlayerAutoRun", "startActionTime", "");
-        myPlayer.CallComponentMethod("ActionButton", "startActionTime", "");
+        myActionButton.CallComponentMethod("ActionButton", "startActionTime", "");
     }
 }

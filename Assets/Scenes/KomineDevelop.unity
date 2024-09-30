@@ -162,8 +162,8 @@ GameObject:
   m_Component:
   - component: {fileID: 245986699}
   - component: {fileID: 245986698}
-  - component: {fileID: 245986700}
   - component: {fileID: 245986701}
+  - component: {fileID: 245986700}
   - component: {fileID: 245986697}
   m_Layer: 0
   m_Name: ActionButtonPlane
@@ -197,8 +197,8 @@ MonoBehaviour:
     00000000:
       type: {class: CallScript, ns: HIKKY.VketCloudSDK.Builder.Model, asm: HIKKY.VketCloudSDK.Builder.Components}
       data:
-        name: ActionButton
-        text: ActionButton,OnClick,0
+        name: ActionButtonCore
+        text: ActionButton,OnClickNode,
         category: scene
         categoryIndex: 0
         categoryOptions:
@@ -208,8 +208,8 @@ MonoBehaviour:
         - Scene
         - Canvas
         componentName: ActionButton
-        functionName: OnClick
-        stringArg: 0
+        functionName: OnClickNode
+        stringArg: 
 --- !u!114 &245986698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -249,7 +249,7 @@ MonoBehaviour:
     - PlayerAutoRun
     - ActionButton
     showphotomode: 1
-    clickable: 1
+    clickable: 0
     autoloading: 1
   textureInJP: {fileID: 2800000, guid: 063757b500a8e30488a7a718a39619f1, type: 3}
   textureInEN: {fileID: 0}
@@ -1297,7 +1297,7 @@ GameObject:
   - component: {fileID: 1325274624}
   - component: {fileID: 1325274623}
   m_Layer: 0
-  m_Name: ActionButton
+  m_Name: ActionButtonCore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1353,8 +1353,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _heliodorScripts: []
   _field:
-    name: ActionButton
-    filename: Field/ActionButton.heo
+    name: ActionButtonCore
+    filename: Field/ActionButtonCore/ActionButtonCore.heo
     components:
     - ActionButton
     overrides: []
@@ -1834,7 +1834,7 @@ MonoBehaviour:
   _heliodorScripts: []
   _field:
     name: HitBoxActionArea1
-    filename: Field/HitBoxActionArea1.heo
+    filename: Field/HitBoxActionArea1/HitBoxActionArea1.heo
     components:
     - HitBoxActionArea
     overrides: []

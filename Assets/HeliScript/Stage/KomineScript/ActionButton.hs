@@ -1,7 +1,7 @@
 component ActionButton
 {
     //ボタン
-    Item mButton;
+    Item myActionButton;
 
     //連打アクション中か
     bool isActionTime;
@@ -18,11 +18,11 @@ component ActionButton
     public ActionButton()
     {
         hsSystemOutput("Script:ActionButton\n");
-        hsSystemOutput("Date:20240928\n");
-        hsSystemOutput("Version:1.0.2\n");
+        hsSystemOutput("Date:20240930\n");
+        hsSystemOutput("Version:1.0.5\n");
         hsSystemOutput("Update Content:Create\n");
 
-        mButton = hsItemGetSelf();
+        myActionButton = hsItemGet("ActionButtonPlane");
 
         isActionTime = false;
         pressCount = 0;
@@ -37,15 +37,16 @@ component ActionButton
             buttonPos = myPlayer.GetPos();
             buttonPos.y += 2.0f;
             buttonPos.z -= 5.0f;
-            mButton.SetPos(buttonPos);
+            myActionButton.SetPos(buttonPos);
         }
     }
 
     public void startActionTime(){
         isActionTime = true;
+        hsSystemOutput("Button starts Action Time!\n");
     }
 
-    public void OnClick(){
+    public void OnClickNode(){
         pressCount++;
         hsSystemOutput("Click!");
     }
