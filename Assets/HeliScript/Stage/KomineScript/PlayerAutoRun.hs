@@ -42,6 +42,9 @@ component PlayerAutoRun
     //デバッグモード
     bool dAutoRun;
 
+    //ActionButton
+    Item myActionButton;
+
     public PlayerAutoRun()
     {
         hsSystemOutput("Script:PlayerAutoRun\n");
@@ -50,6 +53,8 @@ component PlayerAutoRun
         hsSystemOutput("Update Content:Debug mode implemented\n");
         myPlayer = new Player();
         myPlayer = hsPlayerGet();
+
+        myActionButton = hsItemGet("ActionButtonCore");
 
         dAutoRun = false;
 
@@ -134,9 +139,9 @@ component PlayerAutoRun
         }
     }
 
-    public void startActionTime(){
-        isActionTime = true;
-        hsSystemOutput("Player start Action Time!\n");
+    public void OnClickNode(){
+        hsSystemOutput("Player Click!\n");
+        myActionButton.CallComponentMethod("ActionButton", "playerClick", "");
     }
 
     //public void hitBoxAreaCoordinate(float zCoor){

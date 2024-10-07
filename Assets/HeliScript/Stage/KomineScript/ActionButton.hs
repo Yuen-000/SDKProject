@@ -36,6 +36,7 @@ component ActionButton
         if(isActionTime){
             buttonPos = myPlayer.GetPos();
             buttonPos.y += 2.0f;
+            buttonPos.z += -2.0f;
             myActionButton.SetPos(buttonPos);
         }
     }
@@ -45,8 +46,14 @@ component ActionButton
         hsSystemOutput("Button starts Action Time!\n");
     }
 
-    public void OnClickNode(){
-        pressCount++;
-        hsSystemOutput("Click!");
+    public void playerClick(){
+        if(isActionTime){
+            pressCount++;
+            hsSystemOutput("Count increased\n");
+        }
+        else
+        {
+            hsSystemOutput("Not yet activated\n");
+        }
     }
 }
