@@ -51,6 +51,9 @@ component GameOver
     {
         isGameOver = false;
 
+        //プレイヤー初期位置に戻す
+        hsPlayerGet().SetPos(hsItemGet("SpawnPoint").GetPos());
+
         //カメラをプレイヤーに戻す
         camera.ResetCamera(); 
     }
