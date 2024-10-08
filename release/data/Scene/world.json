@@ -1,89 +1,5 @@
 {
-  "version": 0,
-  "physics": {
-    "use": false
-  },
-  "voiceattenuation": {
-    "use": true,
-    "maxdistance": 10.0,
-    "mindistance": 5.0
-  },
-  "worldname": "world",
   "spatiumcode": "default",
-  "debugmode": true,
-  "useavatarclick": true,
-  "vrmdrop": false,
-  "occlusionculling": true,
-  "usegamepad": false,
-  "rendering": {
-    "pbr": true,
-    "lightdir": [
-      -1.0,
-      -2.0,
-      -1.0
-    ],
-    "lightcolor": [
-      1.0,
-      1.0,
-      1.0
-    ],
-    "bgcolor": [
-      0.0,
-      0.0,
-      0.0
-    ],
-    "lightintensity": 1.0,
-    "lightmapintensity": 1.0,
-    "fadeintime": 2.0,
-    "shadowtype": "round",
-    "shadowbias": 0.001,
-    "shadowareasize": 3.0,
-    "shadowfadesize": 1.0,
-    "projectionnear": 0.1,
-    "projectionfar": 500.0,
-    "projectiondeg": 70.0,
-    "bloom": {
-      "use": false,
-      "intensity": 0.0,
-      "threshold": 0.0
-    },
-    "lightscattering": {
-      "use": false,
-      "betar": 0.0,
-      "betam": 0.0,
-      "g": 0.0,
-      "distance": 0.0,
-      "lightcolor": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "suncolor": [
-        0.85,
-        0.85,
-        0.85
-      ]
-    },
-    "ibl": {
-      "use": false,
-      "ibldiffuse": "",
-      "iblspecular": "",
-      "ibldiffusesize": 0,
-      "iblspecularsize": 0,
-      "iblspecularmipmapcount": 0
-    },
-    "ssao": {
-      "use": false,
-      "radius": 0.7,
-      "selfshadowcounter": 0.2,
-      "attenuation": 3.0,
-      "minz": 0.02,
-      "colbleed": 0.2,
-      "aoratio": 3.0,
-      "hsp": true,
-      "fakebloom": false
-    }
-  },
   "scripts": [],
   "myavatar": {
     "use": true,
@@ -458,11 +374,91 @@
       }
     }
   ],
-  "player": {
-    "pos": [
+  "camera": {
+    "tpsnearoffsety": 0.0,
+    "tpsfaroffsety": 0.0,
+    "smoothing": false,
+    "photoradius": 20.0,
+    "tpspitchmaxangle": 6.0,
+    "tpsmaxdistance": 10.0,
+    "tpsxrotateenable": true,
+    "defaulttpsadjusttype": "center"
+  },
+  "raycastmaxdistance": 50.0,
+  "rendering": {
+    "pbr": true,
+    "lightdir": [
+      -1.0,
+      -2.0,
+      -1.0
+    ],
+    "lightcolor": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "bgcolor": [
       0.0,
       0.0,
       0.0
+    ],
+    "lightintensity": 1.0,
+    "lightmapintensity": 1.0,
+    "fadeintime": 2.0,
+    "shadowtype": "round",
+    "shadowbias": 0.001,
+    "shadowareasize": 3.0,
+    "shadowfadesize": 1.0,
+    "projectionnear": 0.1,
+    "projectionfar": 500.0,
+    "projectiondeg": 70.0,
+    "bloom": {
+      "use": false,
+      "intensity": 0.0,
+      "threshold": 0.0
+    },
+    "lightscattering": {
+      "use": false,
+      "betar": 0.0,
+      "betam": 0.0,
+      "g": 0.0,
+      "distance": 0.0,
+      "lightcolor": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "suncolor": [
+        0.85,
+        0.85,
+        0.85
+      ]
+    },
+    "ibl": {
+      "use": false,
+      "ibldiffuse": "",
+      "iblspecular": "",
+      "ibldiffusesize": 0,
+      "iblspecularsize": 0,
+      "iblspecularmipmapcount": 0
+    },
+    "ssao": {
+      "use": false,
+      "radius": 0.7,
+      "selfshadowcounter": 0.2,
+      "attenuation": 3.0,
+      "minz": 0.02,
+      "colbleed": 0.2,
+      "aoratio": 3.0,
+      "hsp": true,
+      "fakebloom": false
+    }
+  },
+  "player": {
+    "pos": [
+      -2.38,
+      0.0,
+      -5.44
     ],
     "rotate": [
       0.0,
@@ -480,17 +476,21 @@
     "movespeed": 7.0,
     "movespeedupratio": 2.0
   },
-  "camera": {
-    "tpsnearoffsety": 0.0,
-    "tpsfaroffsety": 0.0,
-    "smoothing": false,
-    "photoradius": 20.0,
-    "tpspitchmaxangle": 6.0,
-    "tpsmaxdistance": 10.0,
-    "tpsxrotateenable": true,
-    "defaulttpsadjusttype": "center"
+  "version": 0,
+  "physics": {
+    "use": false
   },
-  "raycastmaxdistance": 50.0,
+  "voiceattenuation": {
+    "use": true,
+    "maxdistance": 10.0,
+    "mindistance": 5.0
+  },
+  "worldname": "world",
+  "debugmode": false,
+  "useavatarclick": true,
+  "vrmdrop": false,
+  "occlusionculling": false,
+  "usegamepad": false,
   "spawns": [],
   "items": [
     {
@@ -524,9 +524,9 @@
         {
           "type": "warp",
           "pos": [
+            -2.38,
             0.0,
-            0.0,
-            0.0
+            -5.44
           ],
           "rotate": [
             0.0,
