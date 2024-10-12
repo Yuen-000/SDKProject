@@ -31,16 +31,19 @@ component PlayerAutoRun
     const int laneNumMax = 1;
 
     //レーンの間の距離　要調整
-    const float laneDistance = 1.5f;
+    const float laneDistance = 1.4f;
+
+    //連打エリアに突入するZ座標のリスト
+    list<float> hitBoxAreaList;
 
     public PlayerAutoRun()
     {
-        hsSystemOutput("Date:20240909\n");
-        hsSystemOutput("Version:5.1.2\n");
-        hsSystemOutput("Update Content:Writing comments\n");
+        hsSystemOutput("Script:PlayerAutoRun\n");
+        hsSystemOutput("Date:20240914\n");
+        hsSystemOutput("Version:6.0.1\n");
+        hsSystemOutput("Update Content:Add elements for massing area\n");
         myPlayer = new Player();
         myPlayer = hsPlayerGet();
-        myPlayer.SetMoveSpeed(0.0f);
 
         previousPlayerPos = new Vector3();
         previousPlayerPos = myPlayer.GetPos();
@@ -50,6 +53,8 @@ component PlayerAutoRun
 
         newPlayerPos = new Vector3();
         newPlayerPos = previousPlayerPos;
+
+        hitBoxAreaList = new list<float>(0);
 
         direction = 0;
 
@@ -65,7 +70,7 @@ component PlayerAutoRun
         currentPlayerPos = myPlayer.GetPos();
         newPlayerPos = currentPlayerPos;
 
-        if(movementFrame == 0){ //移動していないときの挙動
+        if(movementFrame == 0){ //レーン移動していないときの挙動
             if((currentPlayerPos.x - previousPlayerPos.x) < -0.01 && playerLane > -laneNumMax){ //左
                 playerLane--;
                 direction = -1;
@@ -96,14 +101,19 @@ component PlayerAutoRun
         //前に進むベクトル
         Vector3 autoRunDistance = makeVector3(0.0f,0.0f,0.1f);
         newPlayerPos.Add(autoRunDistance);
-        
+
         //ここで位置をセット
         myPlayer.SetPos(newPlayerPos);
-        
+
         //今の位置を次使う前の位置に
         previousPlayerPos = newPlayerPos;
-        
+
         //念のためもう一度向きを前に（効果ないかも）
         myPlayer.SetRotate(0.0f);
+    }
+
+    public void hitBoxAreaCoordinate(float zCoor){
+        hitBoxAreaList.Add(zCoor);
+        hsSystemOutput(string(zCoor));
     }
 }
