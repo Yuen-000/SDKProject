@@ -1,11 +1,16 @@
 component HitBoxActionArea
 {
+    //ActionButton
+    Item myActionButton;
+
     public HitBoxActionArea()
     {
         hsSystemOutput("Script:HitBoxActionArea\n");
-        hsSystemOutput("Date:20240914\n");
-        hsSystemOutput("Version:1.0.3\n");
-        hsSystemOutput("Update Content:Create\n");
+        hsSystemOutput("Date:20240930\n");
+        hsSystemOutput("Version:2.0.1\n");
+        hsSystemOutput("Update Content:Adjust instructions to buttons\n");
+
+        myActionButton = hsItemGet("ActionButtonCore");
     }
 
     public void Update()
@@ -16,5 +21,6 @@ component HitBoxActionArea
     public void passingArea()
     {
         hsSystemOutput("Passing area!\n");
+        myActionButton.CallComponentMethod("ActionButton", "startActionTime", "");
     }
 }
