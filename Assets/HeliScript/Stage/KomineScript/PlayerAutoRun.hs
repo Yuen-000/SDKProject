@@ -44,12 +44,6 @@ component PlayerAutoRun
 
     //ActionButton
     Item myActionButton;
-    
-    //GameoverScript
-    Item GameOver;
-
-    //GameClearScript
-    Item GameClear;
 
     //前のフレームにカメラが移動していたか
     bool previousMoveCamera;
@@ -93,10 +87,6 @@ component PlayerAutoRun
 
         hitBoxAreaList = new list<float>(1);
         hitBoxAreaList[0] = 30.0f;
-
-        GameOver = hsItemGet("GameoverScript");
-
-        GameClear = hsItemGet("GameClearScript");
 
         previousMoveCamera = false;
 
