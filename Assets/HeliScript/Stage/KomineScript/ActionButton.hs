@@ -22,7 +22,7 @@ component ActionButton
         hsSystemOutput("Version:1.0.8\n");
         hsSystemOutput("Update Content:Create\n");
 
-        myActionButton = hsItemGet("ActionButtonPlane");
+        myActionButton = hsItemGet("ActionButtonObject");
 
         isActionTime = false;
         pressCount = 0;
@@ -46,7 +46,7 @@ component ActionButton
         hsSystemOutput("Button starts Action Time!\n");
     }
 
-    public void playerClick(){
+    public void OnClickNode(){
         if(isActionTime){
             pressCount++;
             hsSystemOutput("Count increased\n");

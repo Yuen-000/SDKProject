@@ -62,7 +62,7 @@ component PlayerAutoRun
 
         myActionButton = hsItemGet("ActionButtonCore");
 
-        dAutoRun = false;
+        dAutoRun = true;
 
         if(!dAutoRun){
             previousPlayerPos = new Vector3();
