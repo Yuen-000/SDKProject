@@ -40,21 +40,21 @@ component GameOver
         camera.SetCamera();
     }
 
-    //ボックスのどこかをクリックしたらリトライを行うための関数
-    public void OnClickNode(int nodeIndex)
+    //ボックスをクリックしたらリトライ
+    public void OnClickNode()
     {
-       SetRetry();
-    } 
+        SetRetry();
+    }
 
     //リトライ処理
     void SetRetry()
     {
         isGameOver = false;
 
+        //プレイヤー初期位置に戻す
+        hsPlayerGet().SetPos(hsItemGet("SpawnPoint").GetPos());
+
         //カメラをプレイヤーに戻す
         camera.ResetCamera(); 
-
-        //プレイヤーを初期位置に戻す
-        hsPlayerGet().SetPos(hsItemGet("PlayerSettings").GetPos());
     }
 }
