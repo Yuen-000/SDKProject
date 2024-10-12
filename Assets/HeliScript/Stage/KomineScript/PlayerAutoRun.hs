@@ -44,13 +44,25 @@ component PlayerAutoRun
 
     //ActionButton
     Item myActionButton;
+    
+    //GameoverScript
+    Item GameOver;
+
+    //GameClearScript
+    Item GameClear;
+
+    //前のフレームにカメラが移動していたか
+    bool previousMoveCamera;
+
+    //今カメラが移動していたか
+    bool moveCamera;
 
     public PlayerAutoRun()
     {
         hsSystemOutput("Script:PlayerAutoRun\n");
-        hsSystemOutput("Date:20240930\n");
-        hsSystemOutput("Version:7.0.0\n");
-        hsSystemOutput("Update Content:Debug mode implemented\n");
+        hsSystemOutput("Date:20241012\n");
+        hsSystemOutput("Version:8.2.1\n");
+        hsSystemOutput("Update Content:Adjusted to not conflict with game clear/game over\n");
         myPlayer = new Player();
         myPlayer = hsPlayerGet();
 
@@ -81,16 +93,31 @@ component PlayerAutoRun
 
         hitBoxAreaList = new list<float>(1);
         hitBoxAreaList[0] = 30.0f;
+
+        GameOver = hsItemGet("GameoverScript");
+
+        GameClear = hsItemGet("GameClearScript");
+
+        previousMoveCamera = false;
+
+        moveCamera = false;
     }
 
     public void Update()
     {
-        if(!dAutoRun){
+        currentPlayerPos = myPlayer.GetPos();
+        newPlayerPos = currentPlayerPos;
+
+        if(!dAutoRun && !moveCamera){
+
+            if(previousMoveCamera){
+                previousPlayerPos = currentPlayerPos;
+                previousMoveCamera = false;
+                playerLane = 0;
+            }
+
             //向きを前に
             myPlayer.SetRotate(0.0f);
-
-            currentPlayerPos = myPlayer.GetPos();
-            newPlayerPos = currentPlayerPos;
 
             if(isActionTime){
                 //hsSystemOutput("True");
@@ -137,11 +164,22 @@ component PlayerAutoRun
             //念のためもう一度向きを前に（効果ないかも）
             myPlayer.SetRotate(0.0f);
         }
+        else if(!dAutoRun && moveCamera){
+            previousMoveCamera = true;
+        }
     }
 
     public void OnClickNode(){
         hsSystemOutput("Player Click!\n");
         myActionButton.CallComponentMethod("ActionButton", "playerClick", "");
+    }
+
+    public void setMoveCameraTrue(){
+        moveCamera = true;
+    }
+
+    public void setMoveCameraFalse(){
+        moveCamera = false;
     }
 
     //public void hitBoxAreaCoordinate(float zCoor){

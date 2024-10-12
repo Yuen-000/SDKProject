@@ -9,12 +9,18 @@ component GameClear
 
     bool isGameClear;
 
+    //小峯追加分、Playerクラス
+    Item  myPlayer;
+
     public GameClear()
     {
         selfItem = hsItemGetSelf();
         clearArea = hsItemGet("GameClearCollider");
         gameClearCream = hsItemGet("GameClearCamera");
         isGameClear = false;
+
+        //小峯追加分、Playerを入手
+        myPlayer = hsItemGet("PlayerSettings");
     }
 
     public void Update()
@@ -35,6 +41,9 @@ component GameClear
 
         //カメラをゲームクリア画面のカメラに移す
         gameClearCream.SetCamera();
+
+        //小峯追加分、カメラが動いているフラグをオン
+        myPlayer.CallComponentMethod("PlayerAutoRun", "setMoveCameraTrue", "");
     }
 
     //ボックスをクリックしたらリトライ
@@ -52,6 +61,9 @@ component GameClear
         hsPlayerGet().SetPos(hsItemGet("SpawnPoint").GetPos());
         
         //カメラをプレイヤーに戻す
-        gameClearCream.ResetCamera(); 
+        gameClearCream.ResetCamera();
+
+        //小峯追加分、カメラが動いているフラグをオフ
+        myPlayer.CallComponentMethod("PlayerAutoRun", "setMoveCameraFalse", "");
     }
 }
