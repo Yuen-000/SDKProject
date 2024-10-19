@@ -42,9 +42,6 @@ component PlayerAutoRun
     //デバッグモード
     bool dAutoRun;
 
-    //ActionButton
-    Item myActionButton;
-
     //前のフレームにカメラが移動していたか
     bool previousMoveCamera;
 
@@ -54,13 +51,11 @@ component PlayerAutoRun
     public PlayerAutoRun()
     {
         hsSystemOutput("Script:PlayerAutoRun\n");
-        hsSystemOutput("Date:20241012\n");
-        hsSystemOutput("Version:8.2.1\n");
-        hsSystemOutput("Update Content:Adjusted to not conflict with game clear/game over\n");
+        hsSystemOutput("Date:20241019\n");
+        hsSystemOutput("Version:9.0.3\n");
+        hsSystemOutput("Update Content:Remove button functions\n");
         myPlayer = new Player();
         myPlayer = hsPlayerGet();
-
-        myActionButton = hsItemGet("ActionButtonCore");
 
         dAutoRun = true;
 
@@ -159,11 +154,6 @@ component PlayerAutoRun
         }
     }
 
-    public void OnClickNode(){
-        hsSystemOutput("Player Click!\n");
-        myActionButton.CallComponentMethod("ActionButton", "playerClick", "");
-    }
-
     public void setMoveCameraTrue(){
         moveCamera = true;
     }
@@ -171,9 +161,4 @@ component PlayerAutoRun
     public void setMoveCameraFalse(){
         moveCamera = false;
     }
-
-    //public void hitBoxAreaCoordinate(float zCoor){
-    //    hitBoxAreaList.Add(zCoor);
-    //    hsSystemOutput(string(zCoor));
-    //}
 }

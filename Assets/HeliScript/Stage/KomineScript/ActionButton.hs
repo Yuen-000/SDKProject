@@ -1,59 +1,43 @@
 component ActionButton
 {
-    //ボタン
-    Item myActionButton;
-
     //連打アクション中か
     bool isActionTime;
 
     //連打アクション押した回数
     int pressCount;
 
-    //Playerクラス
-    Player  myPlayer;
-
-    //ボタンの位置
-    Vector3 buttonPos;
-
     public ActionButton()
     {
         hsSystemOutput("Script:ActionButton\n");
-        hsSystemOutput("Date:20240930\n");
-        hsSystemOutput("Version:1.0.8\n");
+        hsSystemOutput("Date:20241019\n");
+        hsSystemOutput("Version:1.0.0\n");
         hsSystemOutput("Update Content:Create\n");
-
-        myActionButton = hsItemGet("ActionButtonObject");
 
         isActionTime = false;
         pressCount = 0;
-
-        myPlayer = new Player();
-        myPlayer = hsPlayerGet();
     }
 
     public void Update()
     {
-        if(isActionTime){
-            buttonPos = myPlayer.GetPos();
-            buttonPos.y += 2.0f;
-            buttonPos.z += -2.0f;
-            myActionButton.SetPos(buttonPos);
-        }
+        
     }
 
-    public void startActionTime(){
-        isActionTime = true;
-        hsSystemOutput("Button starts Action Time!\n");
-    }
-
-    public void OnClickNode(){
+    public void OnClickNode()
+    {
         if(isActionTime){
             pressCount++;
-            hsSystemOutput("Count increased\n");
+            hsSystemOutput(string(pressCount) + "\n");
         }
-        else
-        {
-            hsSystemOutput("Not yet activated\n");
-        }
+    }
+
+    public void SetActionFlagTrue()
+    {
+        hsSystemOutput("Now you can press the button\n");
+        isActionTime = true;
+    }
+
+    public void SetActionFlagFalse()
+    {
+        isActionTime = false;
     }
 }
