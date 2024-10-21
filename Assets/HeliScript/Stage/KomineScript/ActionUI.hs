@@ -12,6 +12,9 @@ component ActionUI
     //UIÇÃà íu
     Vector3 UIPos;
 
+    //UIÇÃèâä˙à íu
+    Vector3 UIInitialPosition;
+
     public ActionUI()
     {
         hsSystemOutput("Script:ActionUI\n");
@@ -25,6 +28,8 @@ component ActionUI
 
         myPlayer = new Player();
         myPlayer = hsPlayerGet();
+
+        UIInitialPosition = myActionUI.GetPos();
     }
 
     public void Update()
@@ -41,6 +46,14 @@ component ActionUI
         if(!isActionTime){
             isActionTime = true;
             hsSystemOutput("Button starts Action Time!\n");
+        }
+    }
+
+    public void endActionTime(){
+        if(isActionTime){
+            isActionTime = false;
+            myActionUI.SetPos(UIInitialPosition);
+            hsSystemOutput("Button ends Action Time!\n");
         }
     }
 }
