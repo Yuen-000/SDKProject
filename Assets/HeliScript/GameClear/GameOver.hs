@@ -15,12 +15,16 @@ component GameOver
     //小峯追加分、Playerクラス
     Item  myPlayer;
 
+    //OneOutのゲームオーバー制御Nogameover(0)/(1)gameover
+    String oneOutGameOver;
+
     public GameOver()
     {
         selfItem = hsItemGetSelf();
         despawnHeightItem = hsItemGet("RespownZone");
         camera = hsItemGet("GameoverCamera");
         isGameOver = false;
+        oneOutGameOver = 0;
 
         //小峯追加分、Playerを入手
         myPlayer = hsItemGet("PlayerSettings");
@@ -30,11 +34,19 @@ component GameOver
     {
         if(!isGameOver)
         {
+            //落ちたらゲームオーバー
             if(despawnHeightItem.GetPos().y >= hsPlayerGet().GetPos().y)
             {
                 SetGameOver();
             }
         }
+    }
+
+    //外部からゲームオーバーを呼ぶ
+    public void GetGameOver()
+    {
+        SetOneOutGameOver();
+        SetGameOver();
     }
 
     //ゲームオーバー画面に遷移する関数
@@ -47,6 +59,16 @@ component GameOver
 
         //小峯追加分、カメラが動いているフラグをオン
         myPlayer.CallComponentMethod("PlayerAutoRun", "setMoveCameraTrue", "");
+    }
+
+    void SetOneOutGameOver()
+    {
+        oneOutGameOver = 1;
+    }
+
+    public void GetOneOutGameOver()
+    {
+        oneOutGameOver = 0;
     }
 
     //ボックスをクリックしたらリトライ
