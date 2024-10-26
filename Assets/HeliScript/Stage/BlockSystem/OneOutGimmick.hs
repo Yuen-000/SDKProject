@@ -1,42 +1,62 @@
 component OneOutGimmick
 {
+    Utility utility;
     Player playerItem;
     Item blockItem;
     Item gameOverItem;
 
     Vector3 playerPos;
-    Vector3 blockPos;
-    Vector3 blockXPos;
-    Vector3 blockYPos;
+
+    //左の方レーンから右のレーンへ
+    Vector3 blockLeftPos;
+    Vector3 blockMidPos;
+    Vector3 blockLeftUpPos;
+    Vector3 blockMidUpPos;
     
     int time;
     int coolTime;
+
+    int judgmentFrontDistance;
+    int judgmentTopDistance;
 
     bool isGameover;
     bool inView;
     
     public OneOutGimmick()
     {
+        //basic setting
+        utility = new Utility();
+
         //プレイヤー
         playerItem = new Player();
         playerItem = hsPlayerGet();
 
         //OneOutブロック
         blockItem = hsItemGetSelf();
+
+        //gameoverアイテム
         gameOverItem = hsItemGet("GameoverScript");
         
         
-        //ブロックポジション
-        blockPos = blockItem.GetPos();
-        blockXPos = makeVector3(blockPos.x + 1f, blockPos.y, blockPos.z);
-        blockYPos = makeVector3(blockPos.x, blockPos.y, blockPos.z);
+        //ぶつかるポジション
+        blockLeftPos = utility.StrToVector3(blockItem.GetProperty("LeftPosition"));
+        blockMidPos = utility.StrToVector3(blockItem.GetProperty("MidPosition"));
+        blockLeftUpPos = utility.StrToVector3(blockItem.GetProperty("LeftUpPosition"));
+        blockMidUpPos = utility.StrToVector3(blockItem.GetProperty("MidUpPosition"));
+
+        //距離の判定
+        judgmentFrontDistance = blockItem.GetProperty("FrontDistance").ToFloat();
+        judgmentTopDistance = blockItem.GetProperty("TopDistance").ToFloat();
+
+        //ゲームオーバー判断
         isGameover = false;
-        
-        inView = true;
+
+        //視界に入るの判断
+        inView = false;
 
         //debug用
         time = 0;
-        coolTime = 150;
+        coolTime = 100;
     }
 
     public void Update()
@@ -49,44 +69,55 @@ component OneOutGimmick
             if(inView)
             {
                 //ブロックとプレイヤーの距離を判定
-                if(playerPos.Distance(blockXPos) < 1 || playerPos.Distance(blockYPos) < 1)
-                {
+                if(playerPos.Distance(blockLeftPos) < judgmentFrontDistance || 
+                playerPos.Distance(blockMidPos) < judgmentFrontDistance || 
+                playerPos.Distance(blockLeftUpPos) < judgmentTopDistance || 
+                playerPos.Distance(blockMidUpPos) < judgmentTopDistance)
+                {             
                     PlayerGameOver();
-                    return;
                 }
+
             }
         }
-
-        //*debug用*判定のクールタイム
-        DebugCoolTime();
+        else
+        {
+            //ゲームオーバーのリセット
+            ResetCoolTime();
+        }
     }
 
     //ゲームオーバーを呼ぶ
     void PlayerGameOver()
     {
         isGameover = true;
-        gameOverItem.CallComponentMethod("GameOver", "GetGameOver", "");
-        isGameover = false;
-        return;
+        if(gameOverItem !== null)
+        {
+            gameOverItem.CallComponentMethod("GameOver", "GetGameOver", "");
+        }
     }
 
-    //*debug用*判定のクールタイム
-    void DebugCoolTime()
+    //リセットクールタイム
+    void ResetCoolTime()
     {
         if(time == coolTime)
         {
-            hsSystemOutput(playerPos.Distance(blockPos).ToString() + "/");
+            //isGameOverをリセット
+            isGameover = false;
+            hsSystemOutput("isGameover reset");
+
             time = 0;
         }
         else
         {
             time = time + 1;
         }
+
     }
 
     //視界に入ってるの判断
     public void OnEnterViewCollider()
     {
+        hsSystemOutput("見つけた");
         inView = true;
     }
     
