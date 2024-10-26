@@ -263,7 +263,7 @@ MonoBehaviour:
   - Key: FrontDistance
     Value: 0.7
   - Key: TopDistance
-    Value: 1
+    Value: 0.7
 --- !u!114 &120513006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -582,7 +582,7 @@ MonoBehaviour:
   - Key: FrontDistance
     Value: 0.7
   - Key: TopDistance
-    Value: 1
+    Value: 0.7
 --- !u!114 &203301010
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -994,7 +994,7 @@ MonoBehaviour:
   - Key: FrontDistance
     Value: 0.7
   - Key: TopDistance
-    Value: 1
+    Value: 0.7
 --- !u!114 &423719019
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1754,7 +1754,7 @@ MonoBehaviour:
   - Key: FrontDistance
     Value: 0.7
   - Key: TopDistance
-    Value: 1
+    Value: 0.7
 --- !u!1 &737163495
 GameObject:
   m_ObjectHideFlags: 0
@@ -1814,7 +1814,7 @@ MonoBehaviour:
   - Key: FrontDistance
     Value: 0.7
   - Key: TopDistance
-    Value: 1
+    Value: 0.7
 --- !u!114 &737163498
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2141,7 +2141,7 @@ MonoBehaviour:
   - Key: FrontDistance
     Value: 0.7
   - Key: TopDistance
-    Value: 1
+    Value: 0.7
 --- !u!114 &1033735844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2466,7 +2466,7 @@ MonoBehaviour:
   - Key: FrontDistance
     Value: 0.7
   - Key: TopDistance
-    Value: 1
+    Value: 0.7
 --- !u!114 &1078901684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3495,7 +3495,7 @@ MonoBehaviour:
   - Key: FrontDistance
     Value: 0.7
   - Key: TopDistance
-    Value: 1
+    Value: 0.7
 --- !u!114 &1523217493
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3889,7 +3889,7 @@ MonoBehaviour:
   - Key: FrontDistance
     Value: 0.7
   - Key: TopDistance
-    Value: 1
+    Value: 0.7
 --- !u!114 &1703199307
 MonoBehaviour:
   m_ObjectHideFlags: 0
