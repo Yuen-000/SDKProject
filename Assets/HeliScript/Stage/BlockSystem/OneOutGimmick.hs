@@ -1,6 +1,7 @@
 component OneOutGimmick
 {
     Utility utility;
+
     Player playerItem;
     Item blockItem;
     Item gameOverItem;
@@ -16,11 +17,10 @@ component OneOutGimmick
     int time;
     int coolTime;
 
-    int judgmentFrontDistance;
-    int judgmentTopDistance;
+    float judgmentFrontDistance;
+    float judgmentTopDistance;
 
     bool isGameover;
-    bool inView;
     
     public OneOutGimmick()
     {
@@ -37,7 +37,6 @@ component OneOutGimmick
         //gameoverアイテム
         gameOverItem = hsItemGet("GameoverScript");
         
-        
         //ぶつかるポジション
         blockLeftPos = utility.StrToVector3(blockItem.GetProperty("LeftPosition"));
         blockMidPos = utility.StrToVector3(blockItem.GetProperty("MidPosition"));
@@ -51,9 +50,6 @@ component OneOutGimmick
         //ゲームオーバー判断
         isGameover = false;
 
-        //視界に入るの判断
-        inView = false;
-
         //debug用
         time = 0;
         coolTime = 100;
@@ -66,17 +62,13 @@ component OneOutGimmick
 
         if(!isGameover)
         {
-            if(inView)
+            //ブロックとプレイヤーの距離を判定
+            if(playerPos.Distance(blockLeftPos) < judgmentFrontDistance || 
+            playerPos.Distance(blockMidPos) < judgmentFrontDistance || 
+            playerPos.Distance(blockLeftUpPos) < judgmentTopDistance || 
+            playerPos.Distance(blockMidUpPos) < judgmentTopDistance)
             {
-                //ブロックとプレイヤーの距離を判定
-                if(playerPos.Distance(blockLeftPos) < judgmentFrontDistance || 
-                playerPos.Distance(blockMidPos) < judgmentFrontDistance || 
-                playerPos.Distance(blockLeftUpPos) < judgmentTopDistance || 
-                playerPos.Distance(blockMidUpPos) < judgmentTopDistance)
-                {             
-                    PlayerGameOver();
-                }
-
+                PlayerGameOver();
             }
         }
         else
@@ -104,6 +96,7 @@ component OneOutGimmick
             //isGameOverをリセット
             isGameover = false;
             hsSystemOutput("isGameover reset");
+            gameOverItem.CallComponentMethod("GameOver", "SetPlayerRetry", "");
 
             time = 0;
         }
@@ -111,19 +104,10 @@ component OneOutGimmick
         {
             time = time + 1;
         }
-
     }
 
-    //視界に入ってるの判断
-    public void OnEnterViewCollider()
+    public void ResetGameOverTrigger()
     {
-        hsSystemOutput("見つけた");
-        inView = true;
-    }
-    
-    //視界に入っていないの判断
-    public void OnLeaveViewCollider()
-    {
-        inView = false;
+        isGameover = false;
     }
 }
