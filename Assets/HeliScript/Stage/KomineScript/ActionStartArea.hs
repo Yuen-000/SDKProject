@@ -33,15 +33,12 @@ component ActionStartArea
     //Player（関数呼び出し用）
     Item myPlayerComponent;
 
-    //クリアフラグ
-    //bool isCleared;
-
     public ActionStartArea()
     {
         hsSystemOutput("Script:HitBoxActionArea\n");
-        hsSystemOutput("Date:20241021\n");
-        hsSystemOutput("Version:3.3.0\n");
-        hsSystemOutput("Update Content:Changed the way area determination is taken\n");
+        hsSystemOutput("Date:20241028\n");
+        hsSystemOutput("Version:3.5.0\n");
+        hsSystemOutput("Update Content:Update Flag\n");
 
         myActionUI = hsItemGet("ActionUIScript");
         myActionButton = hsItemGet("ActionButtonScript");
@@ -59,8 +56,6 @@ component ActionStartArea
         isActionTime = false;
 
         myPlayerComponent = hsItemGet("PlayerSettings");
-
-        //isCleared = false;
     }
 
     public void Update()
@@ -68,21 +63,27 @@ component ActionStartArea
         playerCoordinate = myPlayer.GetPos();
         playerZCoor = playerCoordinate.z;
 
-        if(playerZCoor >= areaZCoor){
-            myPlayerComponent.CallComponentMethod("ActionTimeManagement", "compareDistance", string(areaZCoor));
+        if(playerZCoor - areaZCoor < 1.0f && playerZCoor - areaZCoor >= 0.0f && !isActionTime){
+            isActionTime = true;
+            hsSystemOutput("Action time for Z Coordinate " + string(areaZCoor) + " has begun!\n");
+
+            hsSystemOutput("Passing area!\n");
+            myPlayerComponent.CallComponentMethod("ActionTimeManagement", "recieveActionStart", areaName);
+            myActionUI.CallComponentMethod("ActionUI", "startActionTime", "");
+            myActionButton.CallComponentMethod("ActionButton", "SetActionFlagTrue", "");
+
+            if(areaName == "ActionArea1"){
+                Item gateL = hsItemGet("Gate1DoorLeft");
+                //Item gateR = hsItemGet("Gate1RightAxis");
+
+                gateL.CallComponentMethod("Gate1LeftAnimation", "setClose", "");
+                //gateR.CallComponentMethod("Gate1RightAnimation", "setClose", "");
+            }
+            else if(areaName == "hogehoge"){
+            }
+            else if(areaName == "fugafuga"){
+            }
         }
-    }
-
-    public void passingArea()
-    {
-        
-        isActionTime = true;
-        hsSystemOutput("Action time for Z Coordinate " + string(areaZCoor) + " has begun!\n");
-
-        hsSystemOutput("Passing area!\n");
-        myPlayerComponent.CallComponentMethod("ActionTimeManagement", "recieveActionStart", areaName);
-        myActionUI.CallComponentMethod("ActionUI", "startActionTime", "");
-        myActionButton.CallComponentMethod("ActionButton", "SetActionFlagTrue", "");
     }
 
     public void endActionTime()
@@ -91,12 +92,5 @@ component ActionStartArea
             isActionTime = false;
             hsSystemOutput("Action time for Z Coordinate " + string(areaZCoor) + " has ended!\n");
         }
-    }
-
-    public void recieveCleared()
-    {
-        //isCleared = true;
-
-        myPlayerComponent.CallComponentMethod("ActionTimeManagement", "setClearDistance", string(areaZCoor));
     }
 }

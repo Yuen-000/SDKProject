@@ -24,8 +24,8 @@ component ActionButton
     public ActionButton()
     {
         hsSystemOutput("Script:ActionButton\n");
-        hsSystemOutput("Date:20241021\n");
-        hsSystemOutput("Version:2.0.0\n");
+        hsSystemOutput("Date:20241028\n");
+        hsSystemOutput("Version:3.0.0\n");
         hsSystemOutput("Update Content:Create functions\n");
 
         isActionTime = false;
@@ -42,20 +42,35 @@ component ActionButton
         if(isActionTime){
             timer++;
 
-            if(timer >= TIME_LIMIT && pressCount < CLEAR_PRESS_COUNT){
-                actionFailed();
+            if(timer >= TIME_LIMIT){
+                if(pressCount < CLEAR_PRESS_COUNT){
+                    actionFailed();
+                }
+                else{
+                    actionClear();
+                }
             }
         }
     }
 
-    public void OnClickNode()
+    public void OnClickNode(string areaNumStr)
     {
         if(isActionTime){
             pressCount++;
             hsSystemOutput(string(pressCount) + "\n");
 
-            if(pressCount >= CLEAR_PRESS_COUNT){
-                actionClear();
+            int areaNum = areaNumStr.ToInt();
+
+            if(areaNum == 1){
+                Item gateL = hsItemGet("Gate1DoorLeft");
+                //Item gateR = hsItemGet("Gate1RightAxis");
+
+                gateL.CallComponentMethod("Gate1LeftAnimation", "setAction", "");
+                //gateR.CallComponentMethod("Gate1RightAnimation", "setAction", "");
+            }
+            else if(areaNum == 2){
+            }
+            else if(areaNum == 3){
             }
         }
     }
