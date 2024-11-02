@@ -73,11 +73,11 @@ component ActionStartArea
             myActionButton.CallComponentMethod("ActionButton", "SetActionFlagTrue", "");
 
             if(areaName == "ActionArea1"){
-                Item gateL = hsItemGet("Gate1DoorLeft");
-                //Item gateR = hsItemGet("Gate1RightAxis");
+                Item gateL = hsItemGet("Gate1LeftDoor");
+                Item gateR = hsItemGet("Gate1RightDoor");
 
                 gateL.CallComponentMethod("Gate1LeftAnimation", "setClose", "");
-                //gateR.CallComponentMethod("Gate1RightAnimation", "setClose", "");
+                gateR.CallComponentMethod("Gate1RightAnimation", "setClose", "");
             }
             else if(areaName == "hogehoge"){
             }

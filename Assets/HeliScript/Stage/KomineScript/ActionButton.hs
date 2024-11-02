@@ -10,10 +10,10 @@ component ActionButton
     int timer;
 
     //連打アクションクリアになる回数
-    const int CLEAR_PRESS_COUNT = 25;
+    const int CLEAR_PRESS_COUNT = 20;
 
     //連打アクション制限時間（フレーム単位）
-    const int TIME_LIMIT = 60 * 7;
+    const int TIME_LIMIT = 420;
 
     //リトライボタン用スクリプト
     Item retryItem;
@@ -24,9 +24,9 @@ component ActionButton
     public ActionButton()
     {
         hsSystemOutput("Script:ActionButton\n");
-        hsSystemOutput("Date:20241028\n");
-        hsSystemOutput("Version:3.0.0\n");
-        hsSystemOutput("Update Content:Create functions\n");
+        hsSystemOutput("Date:20241102\n");
+        hsSystemOutput("Version:3.0.1\n");
+        hsSystemOutput("Update Content:Change the number of times to be cleared\n");
 
         isActionTime = false;
         pressCount = 0;
@@ -62,11 +62,11 @@ component ActionButton
             int areaNum = areaNumStr.ToInt();
 
             if(areaNum == 1){
-                Item gateL = hsItemGet("Gate1DoorLeft");
-                //Item gateR = hsItemGet("Gate1RightAxis");
+                Item gateL = hsItemGet("Gate1LeftDoor");
+                Item gateR = hsItemGet("Gate1RightDoor");
 
                 gateL.CallComponentMethod("Gate1LeftAnimation", "setAction", "");
-                //gateR.CallComponentMethod("Gate1RightAnimation", "setAction", "");
+                gateR.CallComponentMethod("Gate1RightAnimation", "setAction", "");
             }
             else if(areaNum == 2){
             }
@@ -109,5 +109,7 @@ component ActionButton
     public void SetActionFlagFalse()
     {
         isActionTime = false;
+        pressCount = 0;
+        timer = 0;
     }
 }

@@ -47,6 +47,21 @@ component GameOver
 
         //小峯追加分、カメラが動いているフラグをオン
         myPlayer.CallComponentMethod("PlayerAutoRun", "setMoveCameraTrue", "");
+
+        //小峯追加分、諸々をリセット
+        Item gateL = hsItemGet("Gate1LeftDoor");
+        Item gateR = hsItemGet("Gate1RightDoor");
+
+        gateL.CallComponentMethod("Gate1LeftAnimation", "reset", "");
+        gateR.CallComponentMethod("Gate1RightAnimation", "reset", "");
+
+        Item button = hsItemGet("ActionButtonScript");
+
+        button.CallComponentMethod("ActionButton", "SetActionFlagFalse", "");
+
+        Item area1 = hsItemGet("ActionArea1");
+
+        area1.CallComponentMethod("ActionStartArea", "endActionTime", "");
     }
 
     //ボックスをクリックしたらリトライ
