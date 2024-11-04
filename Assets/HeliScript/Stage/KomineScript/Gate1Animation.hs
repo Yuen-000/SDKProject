@@ -47,8 +47,8 @@ component Gate1LeftAnimation
             }
 
             float doorX = 1.25 * hsMathCos(angle * 3.14159265358979 / 180);
-            float doorZ = 1.25 * hsMathSin(angle * 3.14159265358979 / 180);
-            Quaternion doorQuaternion = makeQuaternionYRotation(-angle * 3.14159265358979 / 180);
+            float doorZ = -1.25 * hsMathSin(angle * 3.14159265358979 / 180);
+            Quaternion doorQuaternion = makeQuaternionYRotation(angle * 3.14159265358979 / 180);
 
             myItem.SetPos(makeVector3(doorX - 2.50f,2.75f,doorZ + 50.00f));
             myItem.SetQuaternion(doorQuaternion);
@@ -83,8 +83,8 @@ component Gate1LeftAnimation
         angle = 90.0f;
 
         float doorX = 1.25 * hsMathCos(angle * 3.14159265358979 / 180);
-        float doorZ = 1.25 * hsMathSin(angle * 3.14159265358979 / 180);
-        Quaternion doorQuaternion = makeQuaternionYRotation(-angle * 3.14159265358979 / 180);
+        float doorZ = -1.25 * hsMathSin(angle * 3.14159265358979 / 180);
+        Quaternion doorQuaternion = makeQuaternionYRotation(angle * 3.14159265358979 / 180);
 
         myItem.SetPos(makeVector3(doorX - 2.50f,2.75f,doorZ + 50.00f));
         myItem.SetQuaternion(doorQuaternion);
@@ -140,8 +140,8 @@ component Gate1RightAnimation
             }
 
             float doorX = 1.25 * hsMathCos(angle * 3.14159265358979 / 180);
-            float doorZ = 1.25 * hsMathSin(angle * 3.14159265358979 / 180);
-            Quaternion doorQuaternion = makeQuaternionYRotation(angle * 3.14159265358979 / 180);
+            float doorZ = -1.25 * hsMathSin(angle * 3.14159265358979 / 180);
+            Quaternion doorQuaternion = makeQuaternionYRotation(-angle * 3.14159265358979 / 180);
 
             myItem.SetPos(makeVector3(-doorX + 2.50f,2.75f,doorZ + 50.00f));
             myItem.SetQuaternion(doorQuaternion);
@@ -176,8 +176,8 @@ component Gate1RightAnimation
         angle = 90.0f;
 
         float doorX = 1.25 * hsMathCos(angle * 3.14159265358979 / 180);
-        float doorZ = 1.25 * hsMathSin(angle * 3.14159265358979 / 180);
-        Quaternion doorQuaternion = makeQuaternionYRotation(angle * 3.14159265358979 / 180);
+        float doorZ = -1.25 * hsMathSin(angle * 3.14159265358979 / 180);
+        Quaternion doorQuaternion = makeQuaternionYRotation(-angle * 3.14159265358979 / 180);
 
         myItem.SetPos(makeVector3(-doorX + 2.50f,2.75f,doorZ + 50.00f));
         myItem.SetQuaternion(doorQuaternion);
