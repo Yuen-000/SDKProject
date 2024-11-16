@@ -45,6 +45,12 @@ component PlayerAutoRun
     //初期位置
     Vector3 initialPosition;
 
+    //デバッグアイテム
+    Item debug;
+
+    //デバッグアイテムの座標
+    Vector3 debugPos;
+
     public PlayerAutoRun()
     {
         hsSystemOutput("Script:PlayerAutoRun\n");
@@ -54,7 +60,13 @@ component PlayerAutoRun
         myPlayer = new Player();
         myPlayer = hsPlayerGet();
 
-        dAutoRun = true;
+        debug = hsItemGet("Debugger");
+        debugPos = debug.GetPos();
+        
+        if(debugPos.y > 0){
+            dAutoRun = true;
+        }
+        else dAutoRun = false;
 
         if(!dAutoRun){
             previousPlayerPos = new Vector3();

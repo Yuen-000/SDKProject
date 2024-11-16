@@ -34,10 +34,13 @@ component Gate1LeftAnimation
         timer = 0;
 
         angle = 90.0f;
+
+        calcPos();
     }
 
     public void Update()
     {
+
         if(isClosed){
             timer++;
             if(timer >= TIME_LIMIT) reset();
@@ -46,12 +49,7 @@ component Gate1LeftAnimation
                 angle -= 90.0f / TIME_LIMIT;
             }
 
-            float doorX = 1.25 * hsMathCos(angle * 3.14159265358979 / 180);
-            float doorZ = -1.25 * hsMathSin(angle * 3.14159265358979 / 180);
-            Quaternion doorQuaternion = makeQuaternionYRotation(angle * 3.14159265358979 / 180);
-
-            myItem.SetPos(makeVector3(doorX - 2.50f,2.75f,doorZ + 50.00f));
-            myItem.SetQuaternion(doorQuaternion);
+            calcPos();
         }
     }
 
@@ -82,12 +80,19 @@ component Gate1LeftAnimation
         timer = 0;
         angle = 90.0f;
 
-        float doorX = 1.25 * hsMathCos(angle * 3.14159265358979 / 180);
-        float doorZ = -1.25 * hsMathSin(angle * 3.14159265358979 / 180);
-        Quaternion doorQuaternion = makeQuaternionYRotation(angle * 3.14159265358979 / 180);
+        calcPos();
+    }
 
-        myItem.SetPos(makeVector3(doorX - 2.50f,2.75f,doorZ + 50.00f));
-        myItem.SetQuaternion(doorQuaternion);
+    public void calcPos()
+    {
+            angle = 0.0f;
+
+            float doorX = (-0.27f + 0.9f) * hsMathCos(angle * 3.14159265358979 / 180) - (0.0f) * hsMathSin(angle * 3.14159265358979 / 180) - 0.9f;
+            float doorZ = (0.27f + 0.9f) * hsMathSin(angle * 3.14159265358979 / 180) + (0.0f) * hsMathSin(angle * 3.14159265358979 / 180);
+            Quaternion doorQuaternion = makeQuaternionYRotation(angle * 3.14159265358979 / 180);
+
+            myItem.SetPos(makeVector3(doorX + 0.00f,-0.40f,doorZ + 270.95f));
+            myItem.SetQuaternion(doorQuaternion);
     }
 }
 
