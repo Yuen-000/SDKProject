@@ -1,11 +1,11 @@
-component OneOutGimmick
+component LossTimeGimmick
 {
     //プレイヤーアイテム
     Player playerItem;
 
     //アイテム
     Item blockItem;
-    Item gameOverItem;
+    Item lostTimeItem;
 
     //アイテムのVector3
     Vector3 blockItemPos;
@@ -30,16 +30,16 @@ component OneOutGimmick
     float blockRightXPoint;
 
     //ゲームオーバーの判定
-    bool isGameover;
-    
-    public OneOutGimmick()
+    bool isLostTime;
+
+    public LossTimeGimmick()
     {
         //プレイヤー
         playerItem = new Player();
         playerItem = hsPlayerGet();
 
-        //gameoverアイテム
-        gameOverItem = hsItemGet("GameoverScript");
+        //タイムアイテム
+        lostTimeItem = hsItemGet("TimeSystem");
 
         //ギミックブロック
         blockItem = hsItemGetSelf();
@@ -58,7 +58,7 @@ component OneOutGimmick
         judgmentFrontDistance = blockItem.GetProperty("FrontDistance").ToFloat();
 
         //ゲームオーバー判断
-        isGameover = false;
+        isLostTime = false;
 
         //リセットタイム
         time = 0;
@@ -66,6 +66,7 @@ component OneOutGimmick
 
         //ぶつかるポジション
         SettingPoint(linePoint);
+        
     }
 
     public void Update()
@@ -73,7 +74,7 @@ component OneOutGimmick
         //Playerポジションをゲット
         playerPos = playerItem.GetPos();
 
-        if(!isGameover)
+        if(!isLostTime)
         {
             SettingJudgment(linePoint);
         }
@@ -84,13 +85,14 @@ component OneOutGimmick
         }
     }
 
-    //ゲームオーバーを呼ぶ
-    void PlayerGameOver()
+    //ロストタイムを呼ぶ
+    void PlayerLostTime()
     {
-        isGameover = true;
-        if(gameOverItem !== null)
+        isLostTime = true;
+        hsSystemOutput("LostTime");
+        if(lostTimeItem !== null)
         {
-            gameOverItem.CallComponentMethod("GameOver", "GetGameOver", "");
+            hsSystemOutput("LostTime");
         }
     }
 
@@ -99,10 +101,8 @@ component OneOutGimmick
     {
         if(time == coolTime)
         {
-            //isGameOverをリセット
-            isGameover = false;
-            gameOverItem.CallComponentMethod("GameOver", "SetPlayerRetry", "");
-
+            //isLostTimeをリセット
+            isLostTime = false;
             time = 0;
         }
         else
@@ -173,33 +173,33 @@ component OneOutGimmick
             case "LeftPoint":
             if(playerPos.Distance(leftPointPos) < judgmentFrontDistance)
             {
-                PlayerGameOver();
+                PlayerLostTime();
             }
                 break;
             case "MidPoint":
             if(playerPos.Distance(midPointPos) < judgmentFrontDistance)
             {
-                PlayerGameOver();
+                PlayerLostTime();
             }
                 break;
             case "RightPoint":
             if(playerPos.Distance(rightPointPos) < judgmentFrontDistance)
             {
-                PlayerGameOver();
+                PlayerLostTime();
             }
                 break;
             case "LeftMidPoint":
             if(playerPos.Distance(leftPointPos) < judgmentFrontDistance || 
                 playerPos.Distance(midPointPos) < judgmentFrontDistance)
             {
-                PlayerGameOver();
+                PlayerLostTime();
             }
                 break;
             case "RightMidPoint":
             if(playerPos.Distance(rightPointPos) < judgmentFrontDistance || 
                 playerPos.Distance(midPointPos) < judgmentFrontDistance)
             {
-                PlayerGameOver();
+                PlayerLostTime();
             }
                 break;
             case "AllPoint":
@@ -207,7 +207,7 @@ component OneOutGimmick
                 playerPos.Distance(midPointPos) < judgmentFrontDistance || 
                 playerPos.Distance(rightPointPos) < judgmentFrontDistance)
             {
-                PlayerGameOver();
+                PlayerLostTime();
             }
                 break;
         }

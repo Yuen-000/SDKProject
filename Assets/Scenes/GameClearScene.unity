@@ -121,6 +121,37 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &84364104
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 84364105}
+  m_Layer: 0
+  m_Name: LeftPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &84364105
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 84364104}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 743494239}
+  m_Father: {fileID: 1449072947}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &110243615
 GameObject:
   m_ObjectHideFlags: 0
@@ -204,527 +235,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &120513003
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 120513004}
-  - component: {fileID: 120513009}
-  - component: {fileID: 120513008}
-  - component: {fileID: 120513007}
-  - component: {fileID: 120513006}
-  - component: {fileID: 120513005}
-  m_Layer: 0
-  m_Name: OneOut001 (5)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &120513004
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 120513003}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2, y: 0.3, z: 30}
-  m_LocalScale: {x: 1, y: 0.7, z: 0.7}
-  m_Children: []
-  m_Father: {fileID: 2041229369}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &120513005
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 120513003}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -917271763, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  properties:
-  - Key: LeftPosition
-    Value: -2,0.3,4.7
-  - Key: MidPosition
-    Value: -2,0.3,4.7
-  - Key: LeftUpPosition
-    Value: -2,0.6,30
-  - Key: MidUpPosition
-    Value: -2,0.6,30
-  - Key: FrontDistance
-    Value: 0.7
-  - Key: TopDistance
-    Value: 0.5
---- !u!114 &120513006
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 120513003}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  selectedIndex: 0
-  selectedIndexes: 00000000
-  ScriptName: 
-  _heliScript: {fileID: 0}
-  hsComponent: 
-  hsComponents:
-  - componentName: OneOutGimmick
-    selectedIndex: 4
---- !u!114 &120513007
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 120513003}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 2071383932, guid: 01118045ef3f34bb7a088301d2bac28f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  colliderType: 5
-  colliderTarget: -1
-  usePhysics: 0
-  Fixed: 0
-  EnableBody: 1
-  mass: 1
-  restitution: 1
-  AllowCrossOver: 0
-  CrossOverRate: 0.75
-  ExtrudeSpeed: 1
-  GroundingDetection: 0
---- !u!65 &120513008
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 120513003}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &120513009
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 120513003}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _object:
-    name: OneOut001 (5)
-    filename: Field/Cube/Cube.heo
-    filename_png: 
-    filename_astc: 
-    filename_etc2: 
-    pose: 
-    clickable: 0
-    enablebone: 0
-    show: 1
-    autoloading: 1
-    forceshadowcaster: 0
-    forceshadowreceiver: 0
-    foregroundrendering: 0
-    zwriteenable: 1
-    alphablendtoopaque: 0
-    unserializecircleshadow:
-      _use: 0
-      _filename: CircleShadow2/CircleShadow2.heo
-      _scale:
-      - 0.6
-      - 0.6
-      - 0.6
-      _zbias: -0.02
-      _adjustposdownward: 0
-    alphaanim: 0
-    motions: []
-    beginactions: []
-    endactions: []
-    pos:
-    - -2
-    - 0.3
-    - 30
-    rotate:
-    - -0
-    - 0
-    - 0
-    scale:
-    - 1
-    - 0.7
-    - 0.7
-    components:
-    - OneOutGimmick
-    lookatcamera: 0
-    collisiondetection: 1
-    uselightscattering: 1
-    showphotomode: 1
-  _autoShowHEO: 1
-  PreviewObjectRoot: {fileID: 0}
-  CurrentShowFile: {fileID: 8794674264650990340, guid: 52065bb878b45b441b49c65527c398fc,
-    type: 3}
-  TempAvatar: {fileID: 0}
-  fileMode: 0
-  fileModeTypeValue: 0
-  _Priority: 0
-  _buildingShow: 0
-  heoCircleShadow: {fileID: 0}
-  heoOrVrm: {fileID: 8794674264650990340, guid: 52065bb878b45b441b49c65527c398fc,
-    type: 3}
-  vrm: {fileID: 0}
-  glb: {fileID: 0}
-  hem: {fileID: 0}
-  hrmPng: {fileID: 0}
-  hrmAstc: {fileID: 0}
-  hrmEtc2: {fileID: 0}
-  hrmDxt: {fileID: 0}
-  _circleShadowScaleInEditor: {x: 0.6, y: 0.6, z: 0.6}
-  _isBeginactionsFoldout: 0
-  _isEndactionsFoldout: 0
-  _objectMode: 0
-  _isComponentsFoldout: 0
-  _isAdvancedFoldout: 0
-  references:
-    version: 1
---- !u!1 &131764726
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 131764727}
-  - component: {fileID: 131764730}
-  - component: {fileID: 131764729}
-  - component: {fileID: 131764728}
-  - component: {fileID: 131764731}
-  m_Layer: 0
-  m_Name: Sphere
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &131764727
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 131764726}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.973, y: 0.6, z: 3.73}
-  m_LocalScale: {x: 1, y: 0.7, z: 0.7}
-  m_Children: []
-  m_Father: {fileID: 493553307}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &131764728
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 131764726}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &131764729
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 131764726}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 3
-  m_RayTracingMode: 2
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &131764730
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 131764726}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &131764731
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 131764726}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 2071383932, guid: 01118045ef3f34bb7a088301d2bac28f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  colliderType: 1
-  colliderTarget: -1
-  usePhysics: 0
-  Fixed: 0
-  EnableBody: 1
-  mass: 1
-  restitution: 1
-  AllowCrossOver: 0
-  CrossOverRate: 0.75
-  ExtrudeSpeed: 1
-  GroundingDetection: 0
---- !u!1 &203301007
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 203301008}
-  - component: {fileID: 203301013}
-  - component: {fileID: 203301012}
-  - component: {fileID: 203301011}
-  - component: {fileID: 203301010}
-  - component: {fileID: 203301009}
-  m_Layer: 0
-  m_Name: OneOut001 (8)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &203301008
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 203301007}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2, y: 0.3, z: 45}
-  m_LocalScale: {x: 1, y: 0.7, z: 0.7}
-  m_Children: []
-  m_Father: {fileID: 2041229369}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &203301009
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 203301007}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -917271763, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  properties:
-  - Key: LeftPosition
-    Value: -2,0.3,4.7
-  - Key: MidPosition
-    Value: -2,0.3,4.7
-  - Key: LeftUpPosition
-    Value: -2,0.6,45
-  - Key: MidUpPosition
-    Value: -2,0.6,45
-  - Key: FrontDistance
-    Value: 0.7
-  - Key: TopDistance
-    Value: 0.5
---- !u!114 &203301010
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 203301007}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  selectedIndex: 0
-  selectedIndexes: 00000000
-  ScriptName: 
-  _heliScript: {fileID: 0}
-  hsComponent: 
-  hsComponents:
-  - componentName: OneOutGimmick
-    selectedIndex: 4
---- !u!114 &203301011
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 203301007}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 2071383932, guid: 01118045ef3f34bb7a088301d2bac28f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  colliderType: 5
-  colliderTarget: -1
-  usePhysics: 0
-  Fixed: 0
-  EnableBody: 1
-  mass: 1
-  restitution: 1
-  AllowCrossOver: 0
-  CrossOverRate: 0.75
-  ExtrudeSpeed: 1
-  GroundingDetection: 0
---- !u!65 &203301012
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 203301007}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &203301013
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 203301007}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _object:
-    name: OneOut001 (8)
-    filename: Field/Cube/Cube.heo
-    filename_png: 
-    filename_astc: 
-    filename_etc2: 
-    pose: 
-    clickable: 0
-    enablebone: 0
-    show: 1
-    autoloading: 1
-    forceshadowcaster: 0
-    forceshadowreceiver: 0
-    foregroundrendering: 0
-    zwriteenable: 1
-    alphablendtoopaque: 0
-    unserializecircleshadow:
-      _use: 0
-      _filename: CircleShadow2/CircleShadow2.heo
-      _scale:
-      - 0.6
-      - 0.6
-      - 0.6
-      _zbias: -0.02
-      _adjustposdownward: 0
-    alphaanim: 0
-    motions: []
-    beginactions: []
-    endactions: []
-    pos:
-    - -2
-    - 0.3
-    - 45
-    rotate:
-    - -0
-    - 0
-    - 0
-    scale:
-    - 1
-    - 0.7
-    - 0.7
-    components:
-    - OneOutGimmick
-    lookatcamera: 0
-    collisiondetection: 1
-    uselightscattering: 1
-    showphotomode: 1
-  _autoShowHEO: 1
-  PreviewObjectRoot: {fileID: 0}
-  CurrentShowFile: {fileID: 8794674264650990340, guid: 52065bb878b45b441b49c65527c398fc,
-    type: 3}
-  TempAvatar: {fileID: 0}
-  fileMode: 0
-  fileModeTypeValue: 0
-  _Priority: 0
-  _buildingShow: 0
-  heoCircleShadow: {fileID: 0}
-  heoOrVrm: {fileID: 8794674264650990340, guid: 52065bb878b45b441b49c65527c398fc,
-    type: 3}
-  vrm: {fileID: 0}
-  glb: {fileID: 0}
-  hem: {fileID: 0}
-  hrmPng: {fileID: 0}
-  hrmAstc: {fileID: 0}
-  hrmEtc2: {fileID: 0}
-  hrmDxt: {fileID: 0}
-  _circleShadowScaleInEditor: {x: 0.6, y: 0.6, z: 0.6}
-  _isBeginactionsFoldout: 0
-  _isEndactionsFoldout: 0
-  _objectMode: 0
-  _isComponentsFoldout: 0
-  _isAdvancedFoldout: 0
-  references:
-    version: 1
 --- !u!1 &232576989
 GameObject:
   m_ObjectHideFlags: 0
@@ -843,7 +353,7 @@ MonoBehaviour:
   JPLang: 1
   references:
     version: 1
---- !u!1 &370961047
+--- !u!1 &243344483
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -851,200 +361,29 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 370961048}
-  - component: {fileID: 370961053}
-  - component: {fileID: 370961052}
-  - component: {fileID: 370961051}
-  - component: {fileID: 370961050}
-  - component: {fileID: 370961049}
+  - component: {fileID: 243344484}
   m_Layer: 0
-  m_Name: OneOut001 (16)
+  m_Name: LeftMidPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &370961048
+  m_IsActive: 1
+--- !u!4 &243344484
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 370961047}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2, y: 0.3, z: 45}
-  m_LocalScale: {x: 1, y: 0.7, z: 0.7}
-  m_Children: []
+  m_GameObject: {fileID: 243344483}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1647470318}
   m_Father: {fileID: 2041229369}
-  m_RootOrder: 16
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &370961049
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 370961047}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -917271763, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  properties:
-  - Key: LeftPosition
-    Value: -2,0.3,4.7
-  - Key: MidPosition
-    Value: -2,0.3,4.7
-  - Key: LeftUpPosition
-    Value: -2,0.6,45
-  - Key: MidUpPosition
-    Value: -2,0.6,45
-  - Key: FrontDistance
-    Value: 0.7
-  - Key: TopDistance
-    Value: 0.5
---- !u!114 &370961050
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 370961047}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  selectedIndex: 0
-  selectedIndexes: 00000000
-  ScriptName: 
-  _heliScript: {fileID: 0}
-  hsComponent: 
-  hsComponents:
-  - componentName: OneOutGimmick
-    selectedIndex: 4
---- !u!114 &370961051
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 370961047}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 2071383932, guid: 01118045ef3f34bb7a088301d2bac28f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  colliderType: 5
-  colliderTarget: -1
-  usePhysics: 0
-  Fixed: 0
-  EnableBody: 1
-  mass: 1
-  restitution: 1
-  AllowCrossOver: 0
-  CrossOverRate: 0.75
-  ExtrudeSpeed: 1
-  GroundingDetection: 0
---- !u!65 &370961052
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 370961047}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &370961053
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 370961047}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _object:
-    name: OneOut001 (16)
-    filename: Field/Cube/Cube.heo
-    filename_png: 
-    filename_astc: 
-    filename_etc2: 
-    pose: 
-    clickable: 0
-    enablebone: 0
-    show: 1
-    autoloading: 1
-    forceshadowcaster: 0
-    forceshadowreceiver: 0
-    foregroundrendering: 0
-    zwriteenable: 1
-    alphablendtoopaque: 0
-    unserializecircleshadow:
-      _use: 0
-      _filename: CircleShadow2/CircleShadow2.heo
-      _scale:
-      - 0.6
-      - 0.6
-      - 0.6
-      _zbias: -0.02
-      _adjustposdownward: 0
-    alphaanim: 0
-    motions: []
-    beginactions: []
-    endactions: []
-    pos:
-    - -2
-    - 0.3
-    - 45
-    rotate:
-    - -0
-    - 0
-    - 0
-    scale:
-    - 1
-    - 0.7
-    - 0.7
-    components:
-    - OneOutGimmick
-    lookatcamera: 0
-    collisiondetection: 1
-    uselightscattering: 1
-    showphotomode: 1
-  _autoShowHEO: 1
-  PreviewObjectRoot: {fileID: 0}
-  CurrentShowFile: {fileID: 8794674264650990340, guid: 52065bb878b45b441b49c65527c398fc,
-    type: 3}
-  TempAvatar: {fileID: 0}
-  fileMode: 0
-  fileModeTypeValue: 0
-  _Priority: 0
-  _buildingShow: 0
-  heoCircleShadow: {fileID: 0}
-  heoOrVrm: {fileID: 8794674264650990340, guid: 52065bb878b45b441b49c65527c398fc,
-    type: 3}
-  vrm: {fileID: 0}
-  glb: {fileID: 0}
-  hem: {fileID: 0}
-  hrmPng: {fileID: 0}
-  hrmAstc: {fileID: 0}
-  hrmEtc2: {fileID: 0}
-  hrmDxt: {fileID: 0}
-  _circleShadowScaleInEditor: {x: 0.6, y: 0.6, z: 0.6}
-  _isBeginactionsFoldout: 0
-  _isEndactionsFoldout: 0
-  _objectMode: 0
-  _isComponentsFoldout: 0
-  _isAdvancedFoldout: 0
-  references:
-    version: 1
 --- !u!1 &386770139
 GameObject:
   m_ObjectHideFlags: 0
@@ -1137,410 +476,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1 &423719016
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 423719017}
-  - component: {fileID: 423719022}
-  - component: {fileID: 423719021}
-  - component: {fileID: 423719020}
-  - component: {fileID: 423719019}
-  - component: {fileID: 423719018}
-  m_Layer: 0
-  m_Name: OneOut001 (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &423719017
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 423719016}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2, y: 0.3, z: 15}
-  m_LocalScale: {x: 1, y: 0.7, z: 0.7}
-  m_Children: []
-  m_Father: {fileID: 2041229369}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &423719018
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 423719016}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -917271763, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  properties:
-  - Key: LeftPosition
-    Value: -2,0.3,4.7
-  - Key: MidPosition
-    Value: -2,0.3,4.7
-  - Key: LeftUpPosition
-    Value: -2,0.6,15
-  - Key: MidUpPosition
-    Value: -2,0.6,15
-  - Key: FrontDistance
-    Value: 0.7
-  - Key: TopDistance
-    Value: 0.5
---- !u!114 &423719019
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 423719016}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  selectedIndex: 0
-  selectedIndexes: 00000000
-  ScriptName: 
-  _heliScript: {fileID: 0}
-  hsComponent: 
-  hsComponents:
-  - componentName: OneOutGimmick
-    selectedIndex: 4
---- !u!114 &423719020
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 423719016}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 2071383932, guid: 01118045ef3f34bb7a088301d2bac28f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  colliderType: 5
-  colliderTarget: -1
-  usePhysics: 0
-  Fixed: 0
-  EnableBody: 1
-  mass: 1
-  restitution: 1
-  AllowCrossOver: 0
-  CrossOverRate: 0.75
-  ExtrudeSpeed: 1
-  GroundingDetection: 0
---- !u!65 &423719021
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 423719016}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &423719022
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 423719016}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _object:
-    name: OneOut001 (2)
-    filename: Field/Cube/Cube.heo
-    filename_png: 
-    filename_astc: 
-    filename_etc2: 
-    pose: 
-    clickable: 0
-    enablebone: 0
-    show: 1
-    autoloading: 1
-    forceshadowcaster: 0
-    forceshadowreceiver: 0
-    foregroundrendering: 0
-    zwriteenable: 1
-    alphablendtoopaque: 0
-    unserializecircleshadow:
-      _use: 0
-      _filename: CircleShadow2/CircleShadow2.heo
-      _scale:
-      - 0.6
-      - 0.6
-      - 0.6
-      _zbias: -0.02
-      _adjustposdownward: 0
-    alphaanim: 0
-    motions: []
-    beginactions: []
-    endactions: []
-    pos:
-    - -2
-    - 0.3
-    - 15
-    rotate:
-    - -0
-    - 0
-    - 0
-    scale:
-    - 1
-    - 0.7
-    - 0.7
-    components:
-    - OneOutGimmick
-    lookatcamera: 0
-    collisiondetection: 1
-    uselightscattering: 1
-    showphotomode: 1
-  _autoShowHEO: 1
-  PreviewObjectRoot: {fileID: 0}
-  CurrentShowFile: {fileID: 8794674264650990340, guid: 52065bb878b45b441b49c65527c398fc,
-    type: 3}
-  TempAvatar: {fileID: 0}
-  fileMode: 0
-  fileModeTypeValue: 0
-  _Priority: 0
-  _buildingShow: 0
-  heoCircleShadow: {fileID: 0}
-  heoOrVrm: {fileID: 8794674264650990340, guid: 52065bb878b45b441b49c65527c398fc,
-    type: 3}
-  vrm: {fileID: 0}
-  glb: {fileID: 0}
-  hem: {fileID: 0}
-  hrmPng: {fileID: 0}
-  hrmAstc: {fileID: 0}
-  hrmEtc2: {fileID: 0}
-  hrmDxt: {fileID: 0}
-  _circleShadowScaleInEditor: {x: 0.6, y: 0.6, z: 0.6}
-  _isBeginactionsFoldout: 0
-  _isEndactionsFoldout: 0
-  _objectMode: 0
-  _isComponentsFoldout: 0
-  _isAdvancedFoldout: 0
-  references:
-    version: 1
---- !u!1 &434868304
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 434868305}
-  - component: {fileID: 434868310}
-  - component: {fileID: 434868309}
-  - component: {fileID: 434868308}
-  - component: {fileID: 434868307}
-  - component: {fileID: 434868306}
-  m_Layer: 0
-  m_Name: OneOut001 (15)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &434868305
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 434868304}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2, y: 0.3, z: 45}
-  m_LocalScale: {x: 1, y: 0.7, z: 0.7}
-  m_Children: []
-  m_Father: {fileID: 2041229369}
-  m_RootOrder: 15
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &434868306
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 434868304}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -917271763, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  properties:
-  - Key: LeftPosition
-    Value: -2,0.3,4.7
-  - Key: MidPosition
-    Value: -2,0.3,4.7
-  - Key: LeftUpPosition
-    Value: -2,0.6,45
-  - Key: MidUpPosition
-    Value: -2,0.6,45
-  - Key: FrontDistance
-    Value: 0.7
-  - Key: TopDistance
-    Value: 0.5
---- !u!114 &434868307
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 434868304}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  selectedIndex: 0
-  selectedIndexes: 00000000
-  ScriptName: 
-  _heliScript: {fileID: 0}
-  hsComponent: 
-  hsComponents:
-  - componentName: OneOutGimmick
-    selectedIndex: 4
---- !u!114 &434868308
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 434868304}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 2071383932, guid: 01118045ef3f34bb7a088301d2bac28f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  colliderType: 5
-  colliderTarget: -1
-  usePhysics: 0
-  Fixed: 0
-  EnableBody: 1
-  mass: 1
-  restitution: 1
-  AllowCrossOver: 0
-  CrossOverRate: 0.75
-  ExtrudeSpeed: 1
-  GroundingDetection: 0
---- !u!65 &434868309
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 434868304}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &434868310
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 434868304}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _object:
-    name: OneOut001 (15)
-    filename: Field/Cube/Cube.heo
-    filename_png: 
-    filename_astc: 
-    filename_etc2: 
-    pose: 
-    clickable: 0
-    enablebone: 0
-    show: 1
-    autoloading: 1
-    forceshadowcaster: 0
-    forceshadowreceiver: 0
-    foregroundrendering: 0
-    zwriteenable: 1
-    alphablendtoopaque: 0
-    unserializecircleshadow:
-      _use: 0
-      _filename: CircleShadow2/CircleShadow2.heo
-      _scale:
-      - 0.6
-      - 0.6
-      - 0.6
-      _zbias: -0.02
-      _adjustposdownward: 0
-    alphaanim: 0
-    motions: []
-    beginactions: []
-    endactions: []
-    pos:
-    - -2
-    - 0.3
-    - 45
-    rotate:
-    - -0
-    - 0
-    - 0
-    scale:
-    - 1
-    - 0.7
-    - 0.7
-    components:
-    - OneOutGimmick
-    lookatcamera: 0
-    collisiondetection: 1
-    uselightscattering: 1
-    showphotomode: 1
-  _autoShowHEO: 1
-  PreviewObjectRoot: {fileID: 0}
-  CurrentShowFile: {fileID: 8794674264650990340, guid: 52065bb878b45b441b49c65527c398fc,
-    type: 3}
-  TempAvatar: {fileID: 0}
-  fileMode: 0
-  fileModeTypeValue: 0
-  _Priority: 0
-  _buildingShow: 0
-  heoCircleShadow: {fileID: 0}
-  heoOrVrm: {fileID: 8794674264650990340, guid: 52065bb878b45b441b49c65527c398fc,
-    type: 3}
-  vrm: {fileID: 0}
-  glb: {fileID: 0}
-  hem: {fileID: 0}
-  hrmPng: {fileID: 0}
-  hrmAstc: {fileID: 0}
-  hrmEtc2: {fileID: 0}
-  hrmDxt: {fileID: 0}
-  _circleShadowScaleInEditor: {x: 0.6, y: 0.6, z: 0.6}
-  _isBeginactionsFoldout: 0
-  _isEndactionsFoldout: 0
-  _objectMode: 0
-  _isComponentsFoldout: 0
-  _isAdvancedFoldout: 0
-  references:
-    version: 1
 --- !u!1 &460115205
 GameObject:
   m_ObjectHideFlags: 0
@@ -1566,7 +501,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 460115205}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.5, z: 30.37}
+  m_LocalPosition: {x: 0, y: 0.5, z: 45.47}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1539987274}
@@ -1616,7 +551,7 @@ MonoBehaviour:
     pos:
     - 0
     - 0.5
-    - 30.37
+    - 45.47
     rotate:
     - -0
     - 0
@@ -1657,6 +592,36 @@ MonoBehaviour:
   _isAdvancedFoldout: 0
   references:
     version: 1
+--- !u!1 &472447014
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 472447015}
+  m_Layer: 0
+  m_Name: AllPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &472447015
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472447014}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1449072947}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &493553305
 GameObject:
   m_ObjectHideFlags: 0
@@ -1723,7 +688,6 @@ Transform:
   - {fileID: 1041140473}
   - {fileID: 1539987274}
   - {fileID: 1458996742}
-  - {fileID: 131764727}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1840,6 +804,198 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1305802760}
   m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &615543260
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 615543261}
+  - component: {fileID: 615543264}
+  - component: {fileID: 615543263}
+  - component: {fileID: 615543262}
+  m_Layer: 0
+  m_Name: OneOut003
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &615543261
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 615543260}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2, y: 0.3, z: 11.48}
+  m_LocalScale: {x: 1, y: 0.7, z: 0.7}
+  m_Children: []
+  m_Father: {fileID: 1211007647}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &615543262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 615543260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -917271763, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  properties:
+  - Key: LinePoint
+    Value: RightPoint
+  - Key: LeftPoint
+    Value: -2
+  - Key: MidPoint
+    Value: 0
+  - Key: RightPoint
+    Value: 2
+  - Key: FrontDistance
+    Value: 1
+--- !u!114 &615543263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 615543260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: 
+  _heliScript: {fileID: 0}
+  hsComponent: 
+  hsComponents:
+  - componentName: OneOutGimmick
+    selectedIndex: 4
+--- !u!114 &615543264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 615543260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _object:
+    name: OneOut003
+    filename: Field/Cube/Cube.heo
+    filename_png: 
+    filename_astc: 
+    filename_etc2: 
+    pose: 
+    clickable: 0
+    enablebone: 0
+    show: 1
+    autoloading: 1
+    forceshadowcaster: 0
+    forceshadowreceiver: 0
+    foregroundrendering: 0
+    zwriteenable: 1
+    alphablendtoopaque: 0
+    unserializecircleshadow:
+      _use: 0
+      _filename: CircleShadow2/CircleShadow2.heo
+      _scale:
+      - 0.6
+      - 0.6
+      - 0.6
+      _zbias: -0.02
+      _adjustposdownward: 0
+    alphaanim: 0
+    motions: []
+    beginactions: []
+    endactions: []
+    pos:
+    - 2
+    - 0.3
+    - 11.48
+    rotate:
+    - -0
+    - 0
+    - 0
+    scale:
+    - 1
+    - 0.7
+    - 0.7
+    components:
+    - OneOutGimmick
+    lookatcamera: 0
+    collisiondetection: 1
+    uselightscattering: 1
+    showphotomode: 1
+  _autoShowHEO: 1
+  PreviewObjectRoot: {fileID: 0}
+  CurrentShowFile: {fileID: 8794674264650990340, guid: 52065bb878b45b441b49c65527c398fc,
+    type: 3}
+  TempAvatar: {fileID: 0}
+  fileMode: 0
+  fileModeTypeValue: 0
+  _Priority: 0
+  _buildingShow: 0
+  heoCircleShadow: {fileID: 0}
+  heoOrVrm: {fileID: 8794674264650990340, guid: 52065bb878b45b441b49c65527c398fc,
+    type: 3}
+  vrm: {fileID: 0}
+  glb: {fileID: 0}
+  hem: {fileID: 0}
+  hrmPng: {fileID: 0}
+  hrmAstc: {fileID: 0}
+  hrmEtc2: {fileID: 0}
+  hrmDxt: {fileID: 0}
+  _circleShadowScaleInEditor: {x: 0.6, y: 0.6, z: 0.6}
+  _isBeginactionsFoldout: 0
+  _isEndactionsFoldout: 0
+  _objectMode: 0
+  _isComponentsFoldout: 0
+  _isAdvancedFoldout: 0
+  references:
+    version: 1
+--- !u!1 &639252140
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 639252141}
+  m_Layer: 0
+  m_Name: MidPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &639252141
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 639252140}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1449072947}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &646283866
 GameObject:
@@ -1987,7 +1143,7 @@ Transform:
   m_LocalPosition: {x: -2, y: 0.3, z: 5}
   m_LocalScale: {x: 1, y: 0.7, z: 0.7}
   m_Children: []
-  m_Father: {fileID: 2041229369}
+  m_Father: {fileID: 1658396996}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &673103699
@@ -2109,19 +1265,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   properties:
-  - Key: LeftPosition
-    Value: -2,0.3,4.7
-  - Key: MidPosition
-    Value: -2,0.3,4.7
-  - Key: LeftUpPosition
-    Value: -2,0.6,5
-  - Key: MidUpPosition
-    Value: -2,0.6,5
+  - Key: LinePoint
+    Value: LeftPoint
+  - Key: LeftPoint
+    Value: -2
+  - Key: MidPoint
+    Value: 0
+  - Key: RightPoint
+    Value: 2
   - Key: FrontDistance
-    Value: 0.7
-  - Key: TopDistance
-    Value: 0.5
---- !u!1 &737163495
+    Value: 1
+--- !u!1 &743494238
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2129,65 +1283,62 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 737163496}
-  - component: {fileID: 737163501}
-  - component: {fileID: 737163500}
-  - component: {fileID: 737163499}
-  - component: {fileID: 737163498}
-  - component: {fileID: 737163497}
+  - component: {fileID: 743494239}
+  - component: {fileID: 743494242}
+  - component: {fileID: 743494241}
+  - component: {fileID: 743494240}
   m_Layer: 0
-  m_Name: OneOut001 (6)
+  m_Name: LostTime001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &737163496
+  m_IsActive: 1
+--- !u!4 &743494239
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 737163495}
+  m_GameObject: {fileID: 743494238}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2, y: 0.3, z: 35}
+  m_LocalPosition: {x: -2, y: 0.3, z: 9.16}
   m_LocalScale: {x: 1, y: 0.7, z: 0.7}
-  m_Children: []
-  m_Father: {fileID: 2041229369}
-  m_RootOrder: 6
+  m_Children:
+  - {fileID: 2028652171}
+  m_Father: {fileID: 84364105}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &737163497
+--- !u!114 &743494240
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 737163495}
+  m_GameObject: {fileID: 743494238}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -917271763, guid: aceab675429f9e946b912a758820ab12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   properties:
-  - Key: LeftPosition
-    Value: -2,0.3,4.7
-  - Key: MidPosition
-    Value: -2,0.3,4.7
-  - Key: LeftUpPosition
-    Value: -2,0.6,35
-  - Key: MidUpPosition
-    Value: -2,0.6,35
+  - Key: LinePoint
+    Value: LeftPoint
+  - Key: LeftPoint
+    Value: -2
+  - Key: MidPoint
+    Value: 0
+  - Key: RightPoint
+    Value: 2
   - Key: FrontDistance
-    Value: 0.7
-  - Key: TopDistance
-    Value: 0.5
---- !u!114 &737163498
+    Value: 1
+--- !u!114 &743494241
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 737163495}
+  m_GameObject: {fileID: 743494238}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
@@ -2195,131 +1346,72 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectedIndex: 0
   selectedIndexes: 00000000
-  ScriptName: 
-  _heliScript: {fileID: 0}
+  ScriptName: LossTimeGimmick
+  _heliScript: {fileID: 469074977633818552, guid: f06132115cb6d884d97e8cfae598a7b5,
+    type: 3}
   hsComponent: 
   hsComponents:
-  - componentName: OneOutGimmick
+  - componentName: LossTimeGimmick
     selectedIndex: 4
---- !u!114 &737163499
+--- !u!114 &743494242
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 737163495}
+  m_GameObject: {fileID: 743494238}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 2071383932, guid: 01118045ef3f34bb7a088301d2bac28f, type: 3}
+  m_Script: {fileID: 1570965333, guid: aceab675429f9e946b912a758820ab12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colliderType: 5
-  colliderTarget: -1
-  usePhysics: 0
-  Fixed: 0
-  EnableBody: 1
-  mass: 1
-  restitution: 1
-  AllowCrossOver: 0
-  CrossOverRate: 0.75
-  ExtrudeSpeed: 1
-  GroundingDetection: 0
---- !u!65 &737163500
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 737163495}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &737163501
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 737163495}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _object:
-    name: OneOut001 (6)
-    filename: Field/Cube/Cube.heo
-    filename_png: 
-    filename_astc: 
-    filename_etc2: 
-    pose: 
-    clickable: 0
-    enablebone: 0
-    show: 1
-    autoloading: 1
-    forceshadowcaster: 0
-    forceshadowreceiver: 0
-    foregroundrendering: 0
-    zwriteenable: 1
-    alphablendtoopaque: 0
-    unserializecircleshadow:
-      _use: 0
-      _filename: CircleShadow2/CircleShadow2.heo
-      _scale:
-      - 0.6
-      - 0.6
-      - 0.6
-      _zbias: -0.02
-      _adjustposdownward: 0
-    alphaanim: 0
-    motions: []
-    beginactions: []
-    endactions: []
-    pos:
+  _textPlane:
+    _name: LostTime001
+    _pos:
     - -2
     - 0.3
-    - 35
-    rotate:
+    - 9.16
+    _rotate:
     - -0
     - 0
     - 0
-    scale:
+    _scale:
     - 1
     - 0.7
     - 0.7
+    _color:
+    - 1
+    - 1
+    - 1
+    - 1
+    _fontsize: 128
+    _horizontalToolbar: 0
+    _verticalToolbar: 0
+    _alignment: 0
+    _charaspace: 0
+    _linespace: 1
+    _overflowwrap: 0
+    _texturesize:
+    - 512
+    - 512
+    _text: 
+    _alphablending: 0
+    _billboard: 0
+    _zbias: -0.05
+    _show: 1
+    _overrides: []
     components:
-    - OneOutGimmick
-    lookatcamera: 0
-    collisiondetection: 1
-    uselightscattering: 1
-    showphotomode: 1
-  _autoShowHEO: 1
-  PreviewObjectRoot: {fileID: 0}
-  CurrentShowFile: {fileID: 8794674264650990340, guid: 52065bb878b45b441b49c65527c398fc,
-    type: 3}
-  TempAvatar: {fileID: 0}
-  fileMode: 0
-  fileModeTypeValue: 0
+    - LossTimeGimmick
+    _lookatcamera: 0
+    _showphotomode: 1
+    _autoloading: 1
+    clickable: 0
+  _color: {r: 1, g: 1, b: 1, a: 1}
+  _texturesize: {x: 512, y: 512}
   _Priority: 0
-  _buildingShow: 0
-  heoCircleShadow: {fileID: 0}
-  heoOrVrm: {fileID: 8794674264650990340, guid: 52065bb878b45b441b49c65527c398fc,
-    type: 3}
-  vrm: {fileID: 0}
-  glb: {fileID: 0}
-  hem: {fileID: 0}
-  hrmPng: {fileID: 0}
-  hrmAstc: {fileID: 0}
-  hrmEtc2: {fileID: 0}
-  hrmDxt: {fileID: 0}
-  _circleShadowScaleInEditor: {x: 0.6, y: 0.6, z: 0.6}
-  _isBeginactionsFoldout: 0
-  _isEndactionsFoldout: 0
-  _objectMode: 0
-  _isComponentsFoldout: 0
+  PreviewState: 0
+  _subTextObject: {fileID: 0}
+  ReShow: 0
   _isAdvancedFoldout: 0
   references:
     version: 1
@@ -2448,410 +1540,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _areaSize: {x: 0, y: 0}
   tempAreaCollider: {fileID: 0}
---- !u!1 &1033735841
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1033735842}
-  - component: {fileID: 1033735847}
-  - component: {fileID: 1033735846}
-  - component: {fileID: 1033735845}
-  - component: {fileID: 1033735844}
-  - component: {fileID: 1033735843}
-  m_Layer: 0
-  m_Name: OneOut001 (7)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1033735842
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1033735841}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2, y: 0.3, z: 40}
-  m_LocalScale: {x: 1, y: 0.7, z: 0.7}
-  m_Children: []
-  m_Father: {fileID: 2041229369}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1033735843
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1033735841}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -917271763, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  properties:
-  - Key: LeftPosition
-    Value: -2,0.3,4.7
-  - Key: MidPosition
-    Value: -2,0.3,4.7
-  - Key: LeftUpPosition
-    Value: -2,0.6,40
-  - Key: MidUpPosition
-    Value: -2,0.6,40
-  - Key: FrontDistance
-    Value: 0.7
-  - Key: TopDistance
-    Value: 0.5
---- !u!114 &1033735844
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1033735841}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  selectedIndex: 0
-  selectedIndexes: 00000000
-  ScriptName: 
-  _heliScript: {fileID: 0}
-  hsComponent: 
-  hsComponents:
-  - componentName: OneOutGimmick
-    selectedIndex: 4
---- !u!114 &1033735845
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1033735841}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 2071383932, guid: 01118045ef3f34bb7a088301d2bac28f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  colliderType: 5
-  colliderTarget: -1
-  usePhysics: 0
-  Fixed: 0
-  EnableBody: 1
-  mass: 1
-  restitution: 1
-  AllowCrossOver: 0
-  CrossOverRate: 0.75
-  ExtrudeSpeed: 1
-  GroundingDetection: 0
---- !u!65 &1033735846
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1033735841}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1033735847
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1033735841}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _object:
-    name: OneOut001 (7)
-    filename: Field/Cube/Cube.heo
-    filename_png: 
-    filename_astc: 
-    filename_etc2: 
-    pose: 
-    clickable: 0
-    enablebone: 0
-    show: 1
-    autoloading: 1
-    forceshadowcaster: 0
-    forceshadowreceiver: 0
-    foregroundrendering: 0
-    zwriteenable: 1
-    alphablendtoopaque: 0
-    unserializecircleshadow:
-      _use: 0
-      _filename: CircleShadow2/CircleShadow2.heo
-      _scale:
-      - 0.6
-      - 0.6
-      - 0.6
-      _zbias: -0.02
-      _adjustposdownward: 0
-    alphaanim: 0
-    motions: []
-    beginactions: []
-    endactions: []
-    pos:
-    - -2
-    - 0.3
-    - 40
-    rotate:
-    - -0
-    - 0
-    - 0
-    scale:
-    - 1
-    - 0.7
-    - 0.7
-    components:
-    - OneOutGimmick
-    lookatcamera: 0
-    collisiondetection: 1
-    uselightscattering: 1
-    showphotomode: 1
-  _autoShowHEO: 1
-  PreviewObjectRoot: {fileID: 0}
-  CurrentShowFile: {fileID: 8794674264650990340, guid: 52065bb878b45b441b49c65527c398fc,
-    type: 3}
-  TempAvatar: {fileID: 0}
-  fileMode: 0
-  fileModeTypeValue: 0
-  _Priority: 0
-  _buildingShow: 0
-  heoCircleShadow: {fileID: 0}
-  heoOrVrm: {fileID: 8794674264650990340, guid: 52065bb878b45b441b49c65527c398fc,
-    type: 3}
-  vrm: {fileID: 0}
-  glb: {fileID: 0}
-  hem: {fileID: 0}
-  hrmPng: {fileID: 0}
-  hrmAstc: {fileID: 0}
-  hrmEtc2: {fileID: 0}
-  hrmDxt: {fileID: 0}
-  _circleShadowScaleInEditor: {x: 0.6, y: 0.6, z: 0.6}
-  _isBeginactionsFoldout: 0
-  _isEndactionsFoldout: 0
-  _objectMode: 0
-  _isComponentsFoldout: 0
-  _isAdvancedFoldout: 0
-  references:
-    version: 1
---- !u!1 &1035459794
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1035459795}
-  - component: {fileID: 1035459800}
-  - component: {fileID: 1035459799}
-  - component: {fileID: 1035459798}
-  - component: {fileID: 1035459797}
-  - component: {fileID: 1035459796}
-  m_Layer: 0
-  m_Name: OneOut001 (10)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1035459795
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1035459794}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2, y: 0.3, z: 45}
-  m_LocalScale: {x: 1, y: 0.7, z: 0.7}
-  m_Children: []
-  m_Father: {fileID: 2041229369}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1035459796
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1035459794}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -917271763, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  properties:
-  - Key: LeftPosition
-    Value: -2,0.3,4.7
-  - Key: MidPosition
-    Value: -2,0.3,4.7
-  - Key: LeftUpPosition
-    Value: -2,0.6,45
-  - Key: MidUpPosition
-    Value: -2,0.6,45
-  - Key: FrontDistance
-    Value: 0.7
-  - Key: TopDistance
-    Value: 0.5
---- !u!114 &1035459797
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1035459794}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  selectedIndex: 0
-  selectedIndexes: 00000000
-  ScriptName: 
-  _heliScript: {fileID: 0}
-  hsComponent: 
-  hsComponents:
-  - componentName: OneOutGimmick
-    selectedIndex: 4
---- !u!114 &1035459798
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1035459794}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 2071383932, guid: 01118045ef3f34bb7a088301d2bac28f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  colliderType: 5
-  colliderTarget: -1
-  usePhysics: 0
-  Fixed: 0
-  EnableBody: 1
-  mass: 1
-  restitution: 1
-  AllowCrossOver: 0
-  CrossOverRate: 0.75
-  ExtrudeSpeed: 1
-  GroundingDetection: 0
---- !u!65 &1035459799
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1035459794}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1035459800
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1035459794}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _object:
-    name: OneOut001 (10)
-    filename: Field/Cube/Cube.heo
-    filename_png: 
-    filename_astc: 
-    filename_etc2: 
-    pose: 
-    clickable: 0
-    enablebone: 0
-    show: 1
-    autoloading: 1
-    forceshadowcaster: 0
-    forceshadowreceiver: 0
-    foregroundrendering: 0
-    zwriteenable: 1
-    alphablendtoopaque: 0
-    unserializecircleshadow:
-      _use: 0
-      _filename: CircleShadow2/CircleShadow2.heo
-      _scale:
-      - 0.6
-      - 0.6
-      - 0.6
-      _zbias: -0.02
-      _adjustposdownward: 0
-    alphaanim: 0
-    motions: []
-    beginactions: []
-    endactions: []
-    pos:
-    - -2
-    - 0.3
-    - 45
-    rotate:
-    - -0
-    - 0
-    - 0
-    scale:
-    - 1
-    - 0.7
-    - 0.7
-    components:
-    - OneOutGimmick
-    lookatcamera: 0
-    collisiondetection: 1
-    uselightscattering: 1
-    showphotomode: 1
-  _autoShowHEO: 1
-  PreviewObjectRoot: {fileID: 0}
-  CurrentShowFile: {fileID: 8794674264650990340, guid: 52065bb878b45b441b49c65527c398fc,
-    type: 3}
-  TempAvatar: {fileID: 0}
-  fileMode: 0
-  fileModeTypeValue: 0
-  _Priority: 0
-  _buildingShow: 0
-  heoCircleShadow: {fileID: 0}
-  heoOrVrm: {fileID: 8794674264650990340, guid: 52065bb878b45b441b49c65527c398fc,
-    type: 3}
-  vrm: {fileID: 0}
-  glb: {fileID: 0}
-  hem: {fileID: 0}
-  hrmPng: {fileID: 0}
-  hrmAstc: {fileID: 0}
-  hrmEtc2: {fileID: 0}
-  hrmDxt: {fileID: 0}
-  _circleShadowScaleInEditor: {x: 0.6, y: 0.6, z: 0.6}
-  _isBeginactionsFoldout: 0
-  _isEndactionsFoldout: 0
-  _objectMode: 0
-  _isComponentsFoldout: 0
-  _isAdvancedFoldout: 0
-  references:
-    version: 1
 --- !u!1 &1041140472
 GameObject:
   m_ObjectHideFlags: 0
@@ -2975,7 +1663,7 @@ MonoBehaviour:
   _Priority: 0
   references:
     version: 1
---- !u!1 &1078901681
+--- !u!1 &1108920690
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2983,402 +1671,29 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1078901682}
-  - component: {fileID: 1078901687}
-  - component: {fileID: 1078901686}
-  - component: {fileID: 1078901685}
-  - component: {fileID: 1078901684}
-  - component: {fileID: 1078901683}
+  - component: {fileID: 1108920691}
   m_Layer: 0
-  m_Name: OneOut001 (4)
+  m_Name: AllPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1078901682
+  m_IsActive: 1
+--- !u!4 &1108920691
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1078901681}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2, y: 0.3, z: 25}
-  m_LocalScale: {x: 1, y: 0.7, z: 0.7}
-  m_Children: []
+  m_GameObject: {fileID: 1108920690}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1439567875}
   m_Father: {fileID: 2041229369}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1078901683
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1078901681}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -917271763, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  properties:
-  - Key: LeftPosition
-    Value: -2,0.3,4.7
-  - Key: MidPosition
-    Value: -2,0.3,4.7
-  - Key: LeftUpPosition
-    Value: -2,0.6,25
-  - Key: MidUpPosition
-    Value: -2,0.6,25
-  - Key: FrontDistance
-    Value: 0.7
-  - Key: TopDistance
-    Value: 0.5
---- !u!114 &1078901684
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1078901681}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  selectedIndex: 0
-  selectedIndexes: 00000000
-  ScriptName: 
-  _heliScript: {fileID: 0}
-  hsComponent: 
-  hsComponents:
-  - componentName: OneOutGimmick
-    selectedIndex: 4
---- !u!114 &1078901685
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1078901681}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 2071383932, guid: 01118045ef3f34bb7a088301d2bac28f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  colliderType: 5
-  colliderTarget: -1
-  usePhysics: 0
-  Fixed: 0
-  EnableBody: 1
-  mass: 1
-  restitution: 1
-  AllowCrossOver: 0
-  CrossOverRate: 0.75
-  ExtrudeSpeed: 1
-  GroundingDetection: 0
---- !u!65 &1078901686
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1078901681}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1078901687
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1078901681}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _object:
-    name: OneOut001 (4)
-    filename: Field/Cube/Cube.heo
-    filename_png: 
-    filename_astc: 
-    filename_etc2: 
-    pose: 
-    clickable: 0
-    enablebone: 0
-    show: 1
-    autoloading: 1
-    forceshadowcaster: 0
-    forceshadowreceiver: 0
-    foregroundrendering: 0
-    zwriteenable: 1
-    alphablendtoopaque: 0
-    unserializecircleshadow:
-      _use: 0
-      _filename: CircleShadow2/CircleShadow2.heo
-      _scale:
-      - 0.6
-      - 0.6
-      - 0.6
-      _zbias: -0.02
-      _adjustposdownward: 0
-    alphaanim: 0
-    motions: []
-    beginactions: []
-    endactions: []
-    pos:
-    - -2
-    - 0.3
-    - 25
-    rotate:
-    - -0
-    - 0
-    - 0
-    scale:
-    - 1
-    - 0.7
-    - 0.7
-    components:
-    - OneOutGimmick
-    lookatcamera: 0
-    collisiondetection: 1
-    uselightscattering: 1
-    showphotomode: 1
-  _autoShowHEO: 1
-  PreviewObjectRoot: {fileID: 0}
-  CurrentShowFile: {fileID: 8794674264650990340, guid: 52065bb878b45b441b49c65527c398fc,
-    type: 3}
-  TempAvatar: {fileID: 0}
-  fileMode: 0
-  fileModeTypeValue: 0
-  _Priority: 0
-  _buildingShow: 0
-  heoCircleShadow: {fileID: 0}
-  heoOrVrm: {fileID: 8794674264650990340, guid: 52065bb878b45b441b49c65527c398fc,
-    type: 3}
-  vrm: {fileID: 0}
-  glb: {fileID: 0}
-  hem: {fileID: 0}
-  hrmPng: {fileID: 0}
-  hrmAstc: {fileID: 0}
-  hrmEtc2: {fileID: 0}
-  hrmDxt: {fileID: 0}
-  _circleShadowScaleInEditor: {x: 0.6, y: 0.6, z: 0.6}
-  _isBeginactionsFoldout: 0
-  _isEndactionsFoldout: 0
-  _objectMode: 0
-  _isComponentsFoldout: 0
-  _isAdvancedFoldout: 0
-  references:
-    version: 1
---- !u!1 &1129314019
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1129314020}
-  - component: {fileID: 1129314025}
-  - component: {fileID: 1129314024}
-  - component: {fileID: 1129314023}
-  - component: {fileID: 1129314022}
-  - component: {fileID: 1129314021}
-  m_Layer: 0
-  m_Name: OneOut001 (17)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1129314020
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1129314019}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2, y: 0.3, z: 45}
-  m_LocalScale: {x: 1, y: 0.7, z: 0.7}
-  m_Children: []
-  m_Father: {fileID: 2041229369}
-  m_RootOrder: 17
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1129314021
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1129314019}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -917271763, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  properties:
-  - Key: LeftPosition
-    Value: -2,0.3,4.7
-  - Key: MidPosition
-    Value: -2,0.3,4.7
-  - Key: LeftUpPosition
-    Value: -2,0.6,45
-  - Key: MidUpPosition
-    Value: -2,0.6,45
-  - Key: FrontDistance
-    Value: 0.7
-  - Key: TopDistance
-    Value: 0.5
---- !u!114 &1129314022
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1129314019}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  selectedIndex: 0
-  selectedIndexes: 00000000
-  ScriptName: 
-  _heliScript: {fileID: 0}
-  hsComponent: 
-  hsComponents:
-  - componentName: OneOutGimmick
-    selectedIndex: 4
---- !u!114 &1129314023
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1129314019}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 2071383932, guid: 01118045ef3f34bb7a088301d2bac28f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  colliderType: 5
-  colliderTarget: -1
-  usePhysics: 0
-  Fixed: 0
-  EnableBody: 1
-  mass: 1
-  restitution: 1
-  AllowCrossOver: 0
-  CrossOverRate: 0.75
-  ExtrudeSpeed: 1
-  GroundingDetection: 0
---- !u!65 &1129314024
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1129314019}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1129314025
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1129314019}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _object:
-    name: OneOut001 (17)
-    filename: Field/Cube/Cube.heo
-    filename_png: 
-    filename_astc: 
-    filename_etc2: 
-    pose: 
-    clickable: 0
-    enablebone: 0
-    show: 1
-    autoloading: 1
-    forceshadowcaster: 0
-    forceshadowreceiver: 0
-    foregroundrendering: 0
-    zwriteenable: 1
-    alphablendtoopaque: 0
-    unserializecircleshadow:
-      _use: 0
-      _filename: CircleShadow2/CircleShadow2.heo
-      _scale:
-      - 0.6
-      - 0.6
-      - 0.6
-      _zbias: -0.02
-      _adjustposdownward: 0
-    alphaanim: 0
-    motions: []
-    beginactions: []
-    endactions: []
-    pos:
-    - -2
-    - 0.3
-    - 45
-    rotate:
-    - -0
-    - 0
-    - 0
-    scale:
-    - 1
-    - 0.7
-    - 0.7
-    components:
-    - OneOutGimmick
-    lookatcamera: 0
-    collisiondetection: 1
-    uselightscattering: 1
-    showphotomode: 1
-  _autoShowHEO: 1
-  PreviewObjectRoot: {fileID: 0}
-  CurrentShowFile: {fileID: 8794674264650990340, guid: 52065bb878b45b441b49c65527c398fc,
-    type: 3}
-  TempAvatar: {fileID: 0}
-  fileMode: 0
-  fileModeTypeValue: 0
-  _Priority: 0
-  _buildingShow: 0
-  heoCircleShadow: {fileID: 0}
-  heoOrVrm: {fileID: 8794674264650990340, guid: 52065bb878b45b441b49c65527c398fc,
-    type: 3}
-  vrm: {fileID: 0}
-  glb: {fileID: 0}
-  hem: {fileID: 0}
-  hrmPng: {fileID: 0}
-  hrmAstc: {fileID: 0}
-  hrmEtc2: {fileID: 0}
-  hrmDxt: {fileID: 0}
-  _circleShadowScaleInEditor: {x: 0.6, y: 0.6, z: 0.6}
-  _isBeginactionsFoldout: 0
-  _isEndactionsFoldout: 0
-  _objectMode: 0
-  _isComponentsFoldout: 0
-  _isAdvancedFoldout: 0
-  references:
-    version: 1
 --- !u!1 &1153612863
 GameObject:
   m_ObjectHideFlags: 0
@@ -3509,8 +1824,7 @@ MonoBehaviour:
   - {fileID: 469074977633818552, guid: a0f8eafcfe4ca56418c5a2533e6099e1, type: 3}
   - {fileID: 469074977633818552, guid: 3a0eab19d8834ac45b00c9d67cd31100, type: 3}
   - {fileID: 469074977633818552, guid: c3097d31f92cc824d9c840ce636ad5ae, type: 3}
-  - {fileID: 469074977633818552, guid: f8357ea52ac5ef04293fec4f817cebf6, type: 3}
-  - {fileID: 469074977633818552, guid: 32129e5dcbe217a4496f86d42faaa215, type: 3}
+  - {fileID: 469074977633818552, guid: f06132115cb6d884d97e8cfae598a7b5, type: 3}
   _fileDeploymentConfig: {fileID: 0}
   _deploymentMode: 0
 --- !u!4 &1165963708
@@ -3527,7 +1841,7 @@ Transform:
   m_Father: {fileID: 1305802760}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1195736709
+--- !u!1 &1211007646
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3535,402 +1849,29 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1195736710}
-  - component: {fileID: 1195736715}
-  - component: {fileID: 1195736714}
-  - component: {fileID: 1195736713}
-  - component: {fileID: 1195736712}
-  - component: {fileID: 1195736711}
+  - component: {fileID: 1211007647}
   m_Layer: 0
-  m_Name: OneOut001 (11)
+  m_Name: RightPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1195736710
+  m_IsActive: 1
+--- !u!4 &1211007647
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1195736709}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2, y: 0.3, z: 45}
-  m_LocalScale: {x: 1, y: 0.7, z: 0.7}
-  m_Children: []
+  m_GameObject: {fileID: 1211007646}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 615543261}
   m_Father: {fileID: 2041229369}
-  m_RootOrder: 11
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1195736711
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1195736709}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -917271763, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  properties:
-  - Key: LeftPosition
-    Value: -2,0.3,4.7
-  - Key: MidPosition
-    Value: -2,0.3,4.7
-  - Key: LeftUpPosition
-    Value: -2,0.6,45
-  - Key: MidUpPosition
-    Value: -2,0.6,45
-  - Key: FrontDistance
-    Value: 0.7
-  - Key: TopDistance
-    Value: 0.5
---- !u!114 &1195736712
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1195736709}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  selectedIndex: 0
-  selectedIndexes: 00000000
-  ScriptName: 
-  _heliScript: {fileID: 0}
-  hsComponent: 
-  hsComponents:
-  - componentName: OneOutGimmick
-    selectedIndex: 4
---- !u!114 &1195736713
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1195736709}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 2071383932, guid: 01118045ef3f34bb7a088301d2bac28f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  colliderType: 5
-  colliderTarget: -1
-  usePhysics: 0
-  Fixed: 0
-  EnableBody: 1
-  mass: 1
-  restitution: 1
-  AllowCrossOver: 0
-  CrossOverRate: 0.75
-  ExtrudeSpeed: 1
-  GroundingDetection: 0
---- !u!65 &1195736714
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1195736709}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1195736715
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1195736709}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _object:
-    name: OneOut001 (11)
-    filename: Field/Cube/Cube.heo
-    filename_png: 
-    filename_astc: 
-    filename_etc2: 
-    pose: 
-    clickable: 0
-    enablebone: 0
-    show: 1
-    autoloading: 1
-    forceshadowcaster: 0
-    forceshadowreceiver: 0
-    foregroundrendering: 0
-    zwriteenable: 1
-    alphablendtoopaque: 0
-    unserializecircleshadow:
-      _use: 0
-      _filename: CircleShadow2/CircleShadow2.heo
-      _scale:
-      - 0.6
-      - 0.6
-      - 0.6
-      _zbias: -0.02
-      _adjustposdownward: 0
-    alphaanim: 0
-    motions: []
-    beginactions: []
-    endactions: []
-    pos:
-    - -2
-    - 0.3
-    - 45
-    rotate:
-    - -0
-    - 0
-    - 0
-    scale:
-    - 1
-    - 0.7
-    - 0.7
-    components:
-    - OneOutGimmick
-    lookatcamera: 0
-    collisiondetection: 1
-    uselightscattering: 1
-    showphotomode: 1
-  _autoShowHEO: 1
-  PreviewObjectRoot: {fileID: 0}
-  CurrentShowFile: {fileID: 8794674264650990340, guid: 52065bb878b45b441b49c65527c398fc,
-    type: 3}
-  TempAvatar: {fileID: 0}
-  fileMode: 0
-  fileModeTypeValue: 0
-  _Priority: 0
-  _buildingShow: 0
-  heoCircleShadow: {fileID: 0}
-  heoOrVrm: {fileID: 8794674264650990340, guid: 52065bb878b45b441b49c65527c398fc,
-    type: 3}
-  vrm: {fileID: 0}
-  glb: {fileID: 0}
-  hem: {fileID: 0}
-  hrmPng: {fileID: 0}
-  hrmAstc: {fileID: 0}
-  hrmEtc2: {fileID: 0}
-  hrmDxt: {fileID: 0}
-  _circleShadowScaleInEditor: {x: 0.6, y: 0.6, z: 0.6}
-  _isBeginactionsFoldout: 0
-  _isEndactionsFoldout: 0
-  _objectMode: 0
-  _isComponentsFoldout: 0
-  _isAdvancedFoldout: 0
-  references:
-    version: 1
---- !u!1 &1212924446
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1212924447}
-  - component: {fileID: 1212924452}
-  - component: {fileID: 1212924451}
-  - component: {fileID: 1212924450}
-  - component: {fileID: 1212924449}
-  - component: {fileID: 1212924448}
-  m_Layer: 0
-  m_Name: OneOut001 (18)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1212924447
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1212924446}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2, y: 0.3, z: 45}
-  m_LocalScale: {x: 1, y: 0.7, z: 0.7}
-  m_Children: []
-  m_Father: {fileID: 2041229369}
-  m_RootOrder: 18
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1212924448
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1212924446}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -917271763, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  properties:
-  - Key: LeftPosition
-    Value: -2,0.3,4.7
-  - Key: MidPosition
-    Value: -2,0.3,4.7
-  - Key: LeftUpPosition
-    Value: -2,0.6,45
-  - Key: MidUpPosition
-    Value: -2,0.6,45
-  - Key: FrontDistance
-    Value: 0.7
-  - Key: TopDistance
-    Value: 0.5
---- !u!114 &1212924449
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1212924446}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  selectedIndex: 0
-  selectedIndexes: 00000000
-  ScriptName: 
-  _heliScript: {fileID: 0}
-  hsComponent: 
-  hsComponents:
-  - componentName: OneOutGimmick
-    selectedIndex: 4
---- !u!114 &1212924450
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1212924446}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 2071383932, guid: 01118045ef3f34bb7a088301d2bac28f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  colliderType: 5
-  colliderTarget: -1
-  usePhysics: 0
-  Fixed: 0
-  EnableBody: 1
-  mass: 1
-  restitution: 1
-  AllowCrossOver: 0
-  CrossOverRate: 0.75
-  ExtrudeSpeed: 1
-  GroundingDetection: 0
---- !u!65 &1212924451
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1212924446}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1212924452
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1212924446}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _object:
-    name: OneOut001 (18)
-    filename: Field/Cube/Cube.heo
-    filename_png: 
-    filename_astc: 
-    filename_etc2: 
-    pose: 
-    clickable: 0
-    enablebone: 0
-    show: 1
-    autoloading: 1
-    forceshadowcaster: 0
-    forceshadowreceiver: 0
-    foregroundrendering: 0
-    zwriteenable: 1
-    alphablendtoopaque: 0
-    unserializecircleshadow:
-      _use: 0
-      _filename: CircleShadow2/CircleShadow2.heo
-      _scale:
-      - 0.6
-      - 0.6
-      - 0.6
-      _zbias: -0.02
-      _adjustposdownward: 0
-    alphaanim: 0
-    motions: []
-    beginactions: []
-    endactions: []
-    pos:
-    - -2
-    - 0.3
-    - 45
-    rotate:
-    - -0
-    - 0
-    - 0
-    scale:
-    - 1
-    - 0.7
-    - 0.7
-    components:
-    - OneOutGimmick
-    lookatcamera: 0
-    collisiondetection: 1
-    uselightscattering: 1
-    showphotomode: 1
-  _autoShowHEO: 1
-  PreviewObjectRoot: {fileID: 0}
-  CurrentShowFile: {fileID: 8794674264650990340, guid: 52065bb878b45b441b49c65527c398fc,
-    type: 3}
-  TempAvatar: {fileID: 0}
-  fileMode: 0
-  fileModeTypeValue: 0
-  _Priority: 0
-  _buildingShow: 0
-  heoCircleShadow: {fileID: 0}
-  heoOrVrm: {fileID: 8794674264650990340, guid: 52065bb878b45b441b49c65527c398fc,
-    type: 3}
-  vrm: {fileID: 0}
-  glb: {fileID: 0}
-  hem: {fileID: 0}
-  hrmPng: {fileID: 0}
-  hrmAstc: {fileID: 0}
-  hrmEtc2: {fileID: 0}
-  hrmDxt: {fileID: 0}
-  _circleShadowScaleInEditor: {x: 0.6, y: 0.6, z: 0.6}
-  _isBeginactionsFoldout: 0
-  _isEndactionsFoldout: 0
-  _objectMode: 0
-  _isComponentsFoldout: 0
-  _isAdvancedFoldout: 0
-  references:
-    version: 1
 --- !u!1 &1222343396
 GameObject:
   m_ObjectHideFlags: 0
@@ -4086,8 +2027,7 @@ MonoBehaviour:
   - HeliScript/Utility.hs
   - HeliScript/GameOver.hs
   - HeliScript/GameClear.hs
-  - HeliScript/ResetGimmick.hs
-  - HeliScript/OneOutGimmick.hs
+  - HeliScript/LossTimeGimmick.hs
   spatiumCode: default
 --- !u!4 &1264864682
 Transform:
@@ -4186,8 +2126,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1314734108}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.58, z: 7.18}
-  m_LocalScale: {x: 5, y: 1, z: 50}
+  m_LocalPosition: {x: 0, y: -0.58, z: 13.34}
+  m_LocalScale: {x: 5, y: 1, z: 70}
   m_Children: []
   m_Father: {fileID: 493553307}
   m_RootOrder: 0
@@ -4236,7 +2176,7 @@ MonoBehaviour:
     pos:
     - 0
     - -0.58
-    - 7.18
+    - 13.34
     rotate:
     - -0
     - 0
@@ -4244,7 +2184,7 @@ MonoBehaviour:
     scale:
     - 5
     - 1
-    - 50
+    - 70
     components: []
     lookatcamera: 0
     collisiondetection: 1
@@ -4277,7 +2217,7 @@ MonoBehaviour:
   _isAdvancedFoldout: 0
   references:
     version: 1
---- !u!1 &1316620754
+--- !u!1 &1344569698
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4285,200 +2225,28 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1316620755}
-  - component: {fileID: 1316620760}
-  - component: {fileID: 1316620759}
-  - component: {fileID: 1316620758}
-  - component: {fileID: 1316620757}
-  - component: {fileID: 1316620756}
+  - component: {fileID: 1344569699}
   m_Layer: 0
-  m_Name: OneOut001 (9)
+  m_Name: RightPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1316620755
+  m_IsActive: 1
+--- !u!4 &1344569699
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1316620754}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2, y: 0.3, z: 45}
-  m_LocalScale: {x: 1, y: 0.7, z: 0.7}
+  m_GameObject: {fileID: 1344569698}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 2041229369}
-  m_RootOrder: 9
+  m_Father: {fileID: 1449072947}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1316620756
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1316620754}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -917271763, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  properties:
-  - Key: LeftPosition
-    Value: -2,0.3,4.7
-  - Key: MidPosition
-    Value: -2,0.3,4.7
-  - Key: LeftUpPosition
-    Value: -2,0.6,45
-  - Key: MidUpPosition
-    Value: -2,0.6,45
-  - Key: FrontDistance
-    Value: 0.7
-  - Key: TopDistance
-    Value: 0.5
---- !u!114 &1316620757
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1316620754}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  selectedIndex: 0
-  selectedIndexes: 00000000
-  ScriptName: 
-  _heliScript: {fileID: 0}
-  hsComponent: 
-  hsComponents:
-  - componentName: OneOutGimmick
-    selectedIndex: 4
---- !u!114 &1316620758
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1316620754}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 2071383932, guid: 01118045ef3f34bb7a088301d2bac28f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  colliderType: 5
-  colliderTarget: -1
-  usePhysics: 0
-  Fixed: 0
-  EnableBody: 1
-  mass: 1
-  restitution: 1
-  AllowCrossOver: 0
-  CrossOverRate: 0.75
-  ExtrudeSpeed: 1
-  GroundingDetection: 0
---- !u!65 &1316620759
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1316620754}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1316620760
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1316620754}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _object:
-    name: OneOut001 (9)
-    filename: Field/Cube/Cube.heo
-    filename_png: 
-    filename_astc: 
-    filename_etc2: 
-    pose: 
-    clickable: 0
-    enablebone: 0
-    show: 1
-    autoloading: 1
-    forceshadowcaster: 0
-    forceshadowreceiver: 0
-    foregroundrendering: 0
-    zwriteenable: 1
-    alphablendtoopaque: 0
-    unserializecircleshadow:
-      _use: 0
-      _filename: CircleShadow2/CircleShadow2.heo
-      _scale:
-      - 0.6
-      - 0.6
-      - 0.6
-      _zbias: -0.02
-      _adjustposdownward: 0
-    alphaanim: 0
-    motions: []
-    beginactions: []
-    endactions: []
-    pos:
-    - -2
-    - 0.3
-    - 45
-    rotate:
-    - -0
-    - 0
-    - 0
-    scale:
-    - 1
-    - 0.7
-    - 0.7
-    components:
-    - OneOutGimmick
-    lookatcamera: 0
-    collisiondetection: 1
-    uselightscattering: 1
-    showphotomode: 1
-  _autoShowHEO: 1
-  PreviewObjectRoot: {fileID: 0}
-  CurrentShowFile: {fileID: 8794674264650990340, guid: 52065bb878b45b441b49c65527c398fc,
-    type: 3}
-  TempAvatar: {fileID: 0}
-  fileMode: 0
-  fileModeTypeValue: 0
-  _Priority: 0
-  _buildingShow: 0
-  heoCircleShadow: {fileID: 0}
-  heoOrVrm: {fileID: 8794674264650990340, guid: 52065bb878b45b441b49c65527c398fc,
-    type: 3}
-  vrm: {fileID: 0}
-  glb: {fileID: 0}
-  hem: {fileID: 0}
-  hrmPng: {fileID: 0}
-  hrmAstc: {fileID: 0}
-  hrmEtc2: {fileID: 0}
-  hrmDxt: {fileID: 0}
-  _circleShadowScaleInEditor: {x: 0.6, y: 0.6, z: 0.6}
-  _isBeginactionsFoldout: 0
-  _isEndactionsFoldout: 0
-  _objectMode: 0
-  _isComponentsFoldout: 0
-  _isAdvancedFoldout: 0
-  references:
-    version: 1
 --- !u!1 &1416683647
 GameObject:
   m_ObjectHideFlags: 0
@@ -4694,6 +2462,239 @@ MonoBehaviour:
   guiSkin: {fileID: 0}
   _tpsRotateInEditor: {x: 0, y: 0, z: 0}
   _isAdvancedFoldout: 0
+--- !u!1 &1439567874
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1439567875}
+  - component: {fileID: 1439567878}
+  - component: {fileID: 1439567877}
+  - component: {fileID: 1439567876}
+  m_Layer: 0
+  m_Name: OneOut006
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1439567875
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1439567874}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.3, z: 26.89}
+  m_LocalScale: {x: 5, y: 0.7, z: 0.7}
+  m_Children: []
+  m_Father: {fileID: 1108920691}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1439567876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1439567874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -917271763, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  properties:
+  - Key: LinePoint
+    Value: AllPoint
+  - Key: LeftPoint
+    Value: -2
+  - Key: MidPoint
+    Value: 0
+  - Key: RightPoint
+    Value: 2
+  - Key: FrontDistance
+    Value: 1
+--- !u!114 &1439567877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1439567874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: 
+  _heliScript: {fileID: 0}
+  hsComponent: 
+  hsComponents:
+  - componentName: OneOutGimmick
+    selectedIndex: 4
+--- !u!114 &1439567878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1439567874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _object:
+    name: OneOut006
+    filename: Field/Cube/Cube.heo
+    filename_png: 
+    filename_astc: 
+    filename_etc2: 
+    pose: 
+    clickable: 0
+    enablebone: 0
+    show: 1
+    autoloading: 1
+    forceshadowcaster: 0
+    forceshadowreceiver: 0
+    foregroundrendering: 0
+    zwriteenable: 1
+    alphablendtoopaque: 0
+    unserializecircleshadow:
+      _use: 0
+      _filename: CircleShadow2/CircleShadow2.heo
+      _scale:
+      - 0.6
+      - 0.6
+      - 0.6
+      _zbias: -0.02
+      _adjustposdownward: 0
+    alphaanim: 0
+    motions: []
+    beginactions: []
+    endactions: []
+    pos:
+    - 0
+    - 0.3
+    - 26.89
+    rotate:
+    - -0
+    - 0
+    - 0
+    scale:
+    - 5
+    - 0.7
+    - 0.7
+    components:
+    - OneOutGimmick
+    lookatcamera: 0
+    collisiondetection: 1
+    uselightscattering: 1
+    showphotomode: 1
+  _autoShowHEO: 1
+  PreviewObjectRoot: {fileID: 0}
+  CurrentShowFile: {fileID: 8794674264650990340, guid: 52065bb878b45b441b49c65527c398fc,
+    type: 3}
+  TempAvatar: {fileID: 0}
+  fileMode: 0
+  fileModeTypeValue: 0
+  _Priority: 0
+  _buildingShow: 0
+  heoCircleShadow: {fileID: 0}
+  heoOrVrm: {fileID: 8794674264650990340, guid: 52065bb878b45b441b49c65527c398fc,
+    type: 3}
+  vrm: {fileID: 0}
+  glb: {fileID: 0}
+  hem: {fileID: 0}
+  hrmPng: {fileID: 0}
+  hrmAstc: {fileID: 0}
+  hrmEtc2: {fileID: 0}
+  hrmDxt: {fileID: 0}
+  _circleShadowScaleInEditor: {x: 0.6, y: 0.6, z: 0.6}
+  _isBeginactionsFoldout: 0
+  _isEndactionsFoldout: 0
+  _objectMode: 0
+  _isComponentsFoldout: 0
+  _isAdvancedFoldout: 0
+  references:
+    version: 1
+--- !u!1 &1449072946
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1449072947}
+  - component: {fileID: 1449072949}
+  m_Layer: 0
+  m_Name: LossTimeGimmick
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1449072947
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1449072946}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 84364105}
+  - {fileID: 639252141}
+  - {fileID: 1344569699}
+  - {fileID: 1582430505}
+  - {fileID: 1837922337}
+  - {fileID: 472447015}
+  m_Father: {fileID: 1458996742}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1449072949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1449072946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1147827095, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _heliodorScripts: []
+  _field:
+    name: LossTimeGimmick
+    filename: Field/LossTimeGimmick/LossTimeGimmick.heo
+    components: []
+    overrides: []
+    autoloading: 1
+    lookatcamera: 0
+    alphaanim: 0
+    collisiondetection: 1
+    showphotomode: 1
+    clickable: 0
+    show: 1
+    clickableui:
+      _images: []
+      _clickableItems: []
+  LoadCollider: []
+  UnLoadCollider: []
+  _isAdvancedFoldout: 0
+  _Priority: 0
+  references:
+    version: 1
 --- !u!1 &1449401295
 GameObject:
   m_ObjectHideFlags: 0
@@ -4811,10 +2812,11 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2041229369}
+  - {fileID: 1449072947}
   m_Father: {fileID: 493553307}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1523217490
+--- !u!1 &1528017649
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4822,65 +2824,61 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1523217491}
-  - component: {fileID: 1523217496}
-  - component: {fileID: 1523217495}
-  - component: {fileID: 1523217494}
-  - component: {fileID: 1523217493}
-  - component: {fileID: 1523217492}
+  - component: {fileID: 1528017650}
+  - component: {fileID: 1528017653}
+  - component: {fileID: 1528017652}
+  - component: {fileID: 1528017651}
   m_Layer: 0
-  m_Name: OneOut001 (3)
+  m_Name: OneOut002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1523217491
+  m_IsActive: 1
+--- !u!4 &1528017650
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1523217490}
+  m_GameObject: {fileID: 1528017649}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2, y: 0.3, z: 20}
+  m_LocalPosition: {x: 0, y: 0.3, z: 8.25}
   m_LocalScale: {x: 1, y: 0.7, z: 0.7}
   m_Children: []
-  m_Father: {fileID: 2041229369}
-  m_RootOrder: 3
+  m_Father: {fileID: 1948162591}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1523217492
+--- !u!114 &1528017651
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1523217490}
+  m_GameObject: {fileID: 1528017649}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -917271763, guid: aceab675429f9e946b912a758820ab12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   properties:
-  - Key: LeftPosition
-    Value: -2,0.3,4.7
-  - Key: MidPosition
-    Value: -2,0.3,4.7
-  - Key: LeftUpPosition
-    Value: -2,0.6,20
-  - Key: MidUpPosition
-    Value: -2,0.6,20
+  - Key: LinePoint
+    Value: MidPoint
+  - Key: LeftPoint
+    Value: -2
+  - Key: MidPoint
+    Value: 0
+  - Key: RightPoint
+    Value: 2
   - Key: FrontDistance
-    Value: 0.7
-  - Key: TopDistance
-    Value: 0.5
---- !u!114 &1523217493
+    Value: 1
+--- !u!114 &1528017652
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1523217490}
+  m_GameObject: {fileID: 1528017649}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
@@ -4894,56 +2892,20 @@ MonoBehaviour:
   hsComponents:
   - componentName: OneOutGimmick
     selectedIndex: 4
---- !u!114 &1523217494
+--- !u!114 &1528017653
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1523217490}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 2071383932, guid: 01118045ef3f34bb7a088301d2bac28f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  colliderType: 5
-  colliderTarget: -1
-  usePhysics: 0
-  Fixed: 0
-  EnableBody: 1
-  mass: 1
-  restitution: 1
-  AllowCrossOver: 0
-  CrossOverRate: 0.75
-  ExtrudeSpeed: 1
-  GroundingDetection: 0
---- !u!65 &1523217495
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1523217490}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1523217496
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1523217490}
+  m_GameObject: {fileID: 1528017649}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _object:
-    name: OneOut001 (3)
+    name: OneOut002
     filename: Field/Cube/Cube.heo
     filename_png: 
     filename_astc: 
@@ -4972,9 +2934,9 @@ MonoBehaviour:
     beginactions: []
     endactions: []
     pos:
-    - -2
+    - 0
     - 0.3
-    - 20
+    - 8.25
     rotate:
     - -0
     - 0
@@ -5050,6 +3012,36 @@ Transform:
   - {fileID: 646283867}
   m_Father: {fileID: 493553307}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1582430504
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1582430505}
+  m_Layer: 0
+  m_Name: LeftMidPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1582430505
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1582430504}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1449072947}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1613255145
 GameObject:
@@ -5225,7 +3217,7 @@ MonoBehaviour:
   JPLang: 1
   references:
     version: 1
---- !u!1 &1631076325
+--- !u!1 &1647470317
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5233,65 +3225,61 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1631076326}
-  - component: {fileID: 1631076331}
-  - component: {fileID: 1631076330}
-  - component: {fileID: 1631076329}
-  - component: {fileID: 1631076328}
-  - component: {fileID: 1631076327}
+  - component: {fileID: 1647470318}
+  - component: {fileID: 1647470321}
+  - component: {fileID: 1647470320}
+  - component: {fileID: 1647470319}
   m_Layer: 0
-  m_Name: OneOut001 (12)
+  m_Name: OneOut004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1631076326
+  m_IsActive: 1
+--- !u!4 &1647470318
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1631076325}
+  m_GameObject: {fileID: 1647470317}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2, y: 0.3, z: 45}
-  m_LocalScale: {x: 1, y: 0.7, z: 0.7}
+  m_LocalPosition: {x: -1, y: 0.3, z: 15.28}
+  m_LocalScale: {x: 3, y: 0.7, z: 0.7}
   m_Children: []
-  m_Father: {fileID: 2041229369}
-  m_RootOrder: 12
+  m_Father: {fileID: 243344484}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1631076327
+--- !u!114 &1647470319
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1631076325}
+  m_GameObject: {fileID: 1647470317}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -917271763, guid: aceab675429f9e946b912a758820ab12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   properties:
-  - Key: LeftPosition
-    Value: -2,0.3,4.7
-  - Key: MidPosition
-    Value: -2,0.3,4.7
-  - Key: LeftUpPosition
-    Value: -2,0.6,45
-  - Key: MidUpPosition
-    Value: -2,0.6,45
+  - Key: LinePoint
+    Value: LeftMidPoint
+  - Key: LeftPoint
+    Value: -2
+  - Key: MidPoint
+    Value: 0
+  - Key: RightPoint
+    Value: 2
   - Key: FrontDistance
-    Value: 0.7
-  - Key: TopDistance
-    Value: 0.5
---- !u!114 &1631076328
+    Value: 1
+--- !u!114 &1647470320
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1631076325}
+  m_GameObject: {fileID: 1647470317}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
@@ -5305,56 +3293,20 @@ MonoBehaviour:
   hsComponents:
   - componentName: OneOutGimmick
     selectedIndex: 4
---- !u!114 &1631076329
+--- !u!114 &1647470321
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1631076325}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 2071383932, guid: 01118045ef3f34bb7a088301d2bac28f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  colliderType: 5
-  colliderTarget: -1
-  usePhysics: 0
-  Fixed: 0
-  EnableBody: 1
-  mass: 1
-  restitution: 1
-  AllowCrossOver: 0
-  CrossOverRate: 0.75
-  ExtrudeSpeed: 1
-  GroundingDetection: 0
---- !u!65 &1631076330
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1631076325}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1631076331
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1631076325}
+  m_GameObject: {fileID: 1647470317}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _object:
-    name: OneOut001 (12)
+    name: OneOut004
     filename: Field/Cube/Cube.heo
     filename_png: 
     filename_astc: 
@@ -5383,15 +3335,15 @@ MonoBehaviour:
     beginactions: []
     endactions: []
     pos:
-    - -2
+    - -1
     - 0.3
-    - 45
+    - 15.28
     rotate:
     - -0
     - 0
     - 0
     scale:
-    - 1
+    - 3
     - 0.7
     - 0.7
     components:
@@ -5427,7 +3379,7 @@ MonoBehaviour:
   _isAdvancedFoldout: 0
   references:
     version: 1
---- !u!1 &1678924967
+--- !u!1 &1658396995
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5435,402 +3387,29 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1678924968}
-  - component: {fileID: 1678924973}
-  - component: {fileID: 1678924972}
-  - component: {fileID: 1678924971}
-  - component: {fileID: 1678924970}
-  - component: {fileID: 1678924969}
+  - component: {fileID: 1658396996}
   m_Layer: 0
-  m_Name: OneOut001 (14)
+  m_Name: LeftPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1678924968
+  m_IsActive: 1
+--- !u!4 &1658396996
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1678924967}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2, y: 0.3, z: 45}
-  m_LocalScale: {x: 1, y: 0.7, z: 0.7}
-  m_Children: []
+  m_GameObject: {fileID: 1658396995}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 673103698}
   m_Father: {fileID: 2041229369}
-  m_RootOrder: 14
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1678924969
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1678924967}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -917271763, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  properties:
-  - Key: LeftPosition
-    Value: -2,0.3,4.7
-  - Key: MidPosition
-    Value: -2,0.3,4.7
-  - Key: LeftUpPosition
-    Value: -2,0.6,45
-  - Key: MidUpPosition
-    Value: -2,0.6,45
-  - Key: FrontDistance
-    Value: 0.7
-  - Key: TopDistance
-    Value: 0.5
---- !u!114 &1678924970
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1678924967}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  selectedIndex: 0
-  selectedIndexes: 00000000
-  ScriptName: 
-  _heliScript: {fileID: 0}
-  hsComponent: 
-  hsComponents:
-  - componentName: OneOutGimmick
-    selectedIndex: 4
---- !u!114 &1678924971
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1678924967}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 2071383932, guid: 01118045ef3f34bb7a088301d2bac28f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  colliderType: 5
-  colliderTarget: -1
-  usePhysics: 0
-  Fixed: 0
-  EnableBody: 1
-  mass: 1
-  restitution: 1
-  AllowCrossOver: 0
-  CrossOverRate: 0.75
-  ExtrudeSpeed: 1
-  GroundingDetection: 0
---- !u!65 &1678924972
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1678924967}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1678924973
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1678924967}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _object:
-    name: OneOut001 (14)
-    filename: Field/Cube/Cube.heo
-    filename_png: 
-    filename_astc: 
-    filename_etc2: 
-    pose: 
-    clickable: 0
-    enablebone: 0
-    show: 1
-    autoloading: 1
-    forceshadowcaster: 0
-    forceshadowreceiver: 0
-    foregroundrendering: 0
-    zwriteenable: 1
-    alphablendtoopaque: 0
-    unserializecircleshadow:
-      _use: 0
-      _filename: CircleShadow2/CircleShadow2.heo
-      _scale:
-      - 0.6
-      - 0.6
-      - 0.6
-      _zbias: -0.02
-      _adjustposdownward: 0
-    alphaanim: 0
-    motions: []
-    beginactions: []
-    endactions: []
-    pos:
-    - -2
-    - 0.3
-    - 45
-    rotate:
-    - -0
-    - 0
-    - 0
-    scale:
-    - 1
-    - 0.7
-    - 0.7
-    components:
-    - OneOutGimmick
-    lookatcamera: 0
-    collisiondetection: 1
-    uselightscattering: 1
-    showphotomode: 1
-  _autoShowHEO: 1
-  PreviewObjectRoot: {fileID: 0}
-  CurrentShowFile: {fileID: 8794674264650990340, guid: 52065bb878b45b441b49c65527c398fc,
-    type: 3}
-  TempAvatar: {fileID: 0}
-  fileMode: 0
-  fileModeTypeValue: 0
-  _Priority: 0
-  _buildingShow: 0
-  heoCircleShadow: {fileID: 0}
-  heoOrVrm: {fileID: 8794674264650990340, guid: 52065bb878b45b441b49c65527c398fc,
-    type: 3}
-  vrm: {fileID: 0}
-  glb: {fileID: 0}
-  hem: {fileID: 0}
-  hrmPng: {fileID: 0}
-  hrmAstc: {fileID: 0}
-  hrmEtc2: {fileID: 0}
-  hrmDxt: {fileID: 0}
-  _circleShadowScaleInEditor: {x: 0.6, y: 0.6, z: 0.6}
-  _isBeginactionsFoldout: 0
-  _isEndactionsFoldout: 0
-  _objectMode: 0
-  _isComponentsFoldout: 0
-  _isAdvancedFoldout: 0
-  references:
-    version: 1
---- !u!1 &1703199304
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1703199305}
-  - component: {fileID: 1703199310}
-  - component: {fileID: 1703199309}
-  - component: {fileID: 1703199308}
-  - component: {fileID: 1703199307}
-  - component: {fileID: 1703199306}
-  m_Layer: 0
-  m_Name: OneOut001 (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1703199305
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1703199304}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2, y: 0.3, z: 10}
-  m_LocalScale: {x: 1, y: 0.7, z: 0.7}
-  m_Children: []
-  m_Father: {fileID: 2041229369}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1703199306
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1703199304}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -917271763, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  properties:
-  - Key: LeftPosition
-    Value: -2,0.3,9.7
-  - Key: MidPosition
-    Value: -2,0.3,9.7
-  - Key: LeftUpPosition
-    Value: -2,0.6,10
-  - Key: MidUpPosition
-    Value: -2,0.6,10
-  - Key: FrontDistance
-    Value: 0.7
-  - Key: TopDistance
-    Value: 0.5
---- !u!114 &1703199307
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1703199304}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  selectedIndex: 0
-  selectedIndexes: 00000000
-  ScriptName: 
-  _heliScript: {fileID: 0}
-  hsComponent: 
-  hsComponents:
-  - componentName: OneOutGimmick
-    selectedIndex: 4
---- !u!114 &1703199308
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1703199304}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 2071383932, guid: 01118045ef3f34bb7a088301d2bac28f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  colliderType: 5
-  colliderTarget: -1
-  usePhysics: 0
-  Fixed: 0
-  EnableBody: 1
-  mass: 1
-  restitution: 1
-  AllowCrossOver: 0
-  CrossOverRate: 0.75
-  ExtrudeSpeed: 1
-  GroundingDetection: 0
---- !u!65 &1703199309
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1703199304}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1703199310
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1703199304}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _object:
-    name: OneOut001 (1)
-    filename: Field/Cube/Cube.heo
-    filename_png: 
-    filename_astc: 
-    filename_etc2: 
-    pose: 
-    clickable: 0
-    enablebone: 0
-    show: 1
-    autoloading: 1
-    forceshadowcaster: 0
-    forceshadowreceiver: 0
-    foregroundrendering: 0
-    zwriteenable: 1
-    alphablendtoopaque: 0
-    unserializecircleshadow:
-      _use: 0
-      _filename: CircleShadow2/CircleShadow2.heo
-      _scale:
-      - 0.6
-      - 0.6
-      - 0.6
-      _zbias: -0.02
-      _adjustposdownward: 0
-    alphaanim: 0
-    motions: []
-    beginactions: []
-    endactions: []
-    pos:
-    - -2
-    - 0.3
-    - 10
-    rotate:
-    - -0
-    - 0
-    - 0
-    scale:
-    - 1
-    - 0.7
-    - 0.7
-    components:
-    - OneOutGimmick
-    lookatcamera: 0
-    collisiondetection: 1
-    uselightscattering: 1
-    showphotomode: 1
-  _autoShowHEO: 1
-  PreviewObjectRoot: {fileID: 0}
-  CurrentShowFile: {fileID: 8794674264650990340, guid: 52065bb878b45b441b49c65527c398fc,
-    type: 3}
-  TempAvatar: {fileID: 0}
-  fileMode: 0
-  fileModeTypeValue: 0
-  _Priority: 0
-  _buildingShow: 0
-  heoCircleShadow: {fileID: 0}
-  heoOrVrm: {fileID: 8794674264650990340, guid: 52065bb878b45b441b49c65527c398fc,
-    type: 3}
-  vrm: {fileID: 0}
-  glb: {fileID: 0}
-  hem: {fileID: 0}
-  hrmPng: {fileID: 0}
-  hrmAstc: {fileID: 0}
-  hrmEtc2: {fileID: 0}
-  hrmDxt: {fileID: 0}
-  _circleShadowScaleInEditor: {x: 0.6, y: 0.6, z: 0.6}
-  _isBeginactionsFoldout: 0
-  _isEndactionsFoldout: 0
-  _objectMode: 0
-  _isComponentsFoldout: 0
-  _isAdvancedFoldout: 0
-  references:
-    version: 1
 --- !u!1 &1731076519
 GameObject:
   m_ObjectHideFlags: 0
@@ -5988,208 +3567,6 @@ MonoBehaviour:
   JPLang: 1
   references:
     version: 1
---- !u!1 &1801560924
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1801560925}
-  - component: {fileID: 1801560930}
-  - component: {fileID: 1801560929}
-  - component: {fileID: 1801560928}
-  - component: {fileID: 1801560927}
-  - component: {fileID: 1801560926}
-  m_Layer: 0
-  m_Name: OneOut001 (19)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1801560925
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1801560924}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2, y: 0.3, z: 45}
-  m_LocalScale: {x: 1, y: 0.7, z: 0.7}
-  m_Children: []
-  m_Father: {fileID: 2041229369}
-  m_RootOrder: 19
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1801560926
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1801560924}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -917271763, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  properties:
-  - Key: LeftPosition
-    Value: -2,0.3,4.7
-  - Key: MidPosition
-    Value: -2,0.3,4.7
-  - Key: LeftUpPosition
-    Value: -2,0.6,45
-  - Key: MidUpPosition
-    Value: -2,0.6,45
-  - Key: FrontDistance
-    Value: 0.7
-  - Key: TopDistance
-    Value: 0.5
---- !u!114 &1801560927
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1801560924}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  selectedIndex: 0
-  selectedIndexes: 00000000
-  ScriptName: 
-  _heliScript: {fileID: 0}
-  hsComponent: 
-  hsComponents:
-  - componentName: OneOutGimmick
-    selectedIndex: 4
---- !u!114 &1801560928
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1801560924}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 2071383932, guid: 01118045ef3f34bb7a088301d2bac28f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  colliderType: 5
-  colliderTarget: -1
-  usePhysics: 0
-  Fixed: 0
-  EnableBody: 1
-  mass: 1
-  restitution: 1
-  AllowCrossOver: 0
-  CrossOverRate: 0.75
-  ExtrudeSpeed: 1
-  GroundingDetection: 0
---- !u!65 &1801560929
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1801560924}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1801560930
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1801560924}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _object:
-    name: OneOut001 (19)
-    filename: Field/Cube/Cube.heo
-    filename_png: 
-    filename_astc: 
-    filename_etc2: 
-    pose: 
-    clickable: 0
-    enablebone: 0
-    show: 1
-    autoloading: 1
-    forceshadowcaster: 0
-    forceshadowreceiver: 0
-    foregroundrendering: 0
-    zwriteenable: 1
-    alphablendtoopaque: 0
-    unserializecircleshadow:
-      _use: 0
-      _filename: CircleShadow2/CircleShadow2.heo
-      _scale:
-      - 0.6
-      - 0.6
-      - 0.6
-      _zbias: -0.02
-      _adjustposdownward: 0
-    alphaanim: 0
-    motions: []
-    beginactions: []
-    endactions: []
-    pos:
-    - -2
-    - 0.3
-    - 45
-    rotate:
-    - -0
-    - 0
-    - 0
-    scale:
-    - 1
-    - 0.7
-    - 0.7
-    components:
-    - OneOutGimmick
-    lookatcamera: 0
-    collisiondetection: 1
-    uselightscattering: 1
-    showphotomode: 1
-  _autoShowHEO: 1
-  PreviewObjectRoot: {fileID: 0}
-  CurrentShowFile: {fileID: 8794674264650990340, guid: 52065bb878b45b441b49c65527c398fc,
-    type: 3}
-  TempAvatar: {fileID: 0}
-  fileMode: 0
-  fileModeTypeValue: 0
-  _Priority: 0
-  _buildingShow: 0
-  heoCircleShadow: {fileID: 0}
-  heoOrVrm: {fileID: 8794674264650990340, guid: 52065bb878b45b441b49c65527c398fc,
-    type: 3}
-  vrm: {fileID: 0}
-  glb: {fileID: 0}
-  hem: {fileID: 0}
-  hrmPng: {fileID: 0}
-  hrmAstc: {fileID: 0}
-  hrmEtc2: {fileID: 0}
-  hrmDxt: {fileID: 0}
-  _circleShadowScaleInEditor: {x: 0.6, y: 0.6, z: 0.6}
-  _isBeginactionsFoldout: 0
-  _isEndactionsFoldout: 0
-  _objectMode: 0
-  _isComponentsFoldout: 0
-  _isAdvancedFoldout: 0
-  references:
-    version: 1
 --- !u!1 &1831223404
 GameObject:
   m_ObjectHideFlags: 0
@@ -6242,6 +3619,98 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1305802760}
   m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1837922336
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1837922337}
+  m_Layer: 0
+  m_Name: RightMidPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1837922337
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1837922336}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1449072947}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1922218873
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1922218874}
+  m_Layer: 0
+  m_Name: RightMidPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1922218874
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1922218873}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2011831798}
+  m_Father: {fileID: 2041229369}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1948162590
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1948162591}
+  m_Layer: 0
+  m_Name: MidPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1948162591
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1948162590}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1528017650}
+  m_Father: {fileID: 2041229369}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2003545577
 GameObject:
@@ -6303,7 +3772,7 @@ MonoBehaviour:
     show: 1
   _Priority: 0
   _isAdvancedFoldout: 1
---- !u!1 &2019513457
+--- !u!1 &2011831797
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6311,65 +3780,61 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2019513458}
-  - component: {fileID: 2019513463}
-  - component: {fileID: 2019513462}
-  - component: {fileID: 2019513461}
-  - component: {fileID: 2019513460}
-  - component: {fileID: 2019513459}
+  - component: {fileID: 2011831798}
+  - component: {fileID: 2011831801}
+  - component: {fileID: 2011831800}
+  - component: {fileID: 2011831799}
   m_Layer: 0
-  m_Name: OneOut001 (13)
+  m_Name: OneOut005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &2019513458
+  m_IsActive: 1
+--- !u!4 &2011831798
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2019513457}
+  m_GameObject: {fileID: 2011831797}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2, y: 0.3, z: 45}
-  m_LocalScale: {x: 1, y: 0.7, z: 0.7}
+  m_LocalPosition: {x: 1, y: 0.3, z: 20.74}
+  m_LocalScale: {x: 3, y: 0.7, z: 0.7}
   m_Children: []
-  m_Father: {fileID: 2041229369}
-  m_RootOrder: 13
+  m_Father: {fileID: 1922218874}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2019513459
+--- !u!114 &2011831799
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2019513457}
+  m_GameObject: {fileID: 2011831797}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -917271763, guid: aceab675429f9e946b912a758820ab12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   properties:
-  - Key: LeftPosition
-    Value: -2,0.3,4.7
-  - Key: MidPosition
-    Value: -2,0.3,4.7
-  - Key: LeftUpPosition
-    Value: -2,0.6,45
-  - Key: MidUpPosition
-    Value: -2,0.6,45
+  - Key: LinePoint
+    Value: RightMidPoint
+  - Key: LeftPoint
+    Value: -2
+  - Key: MidPoint
+    Value: 0
+  - Key: RightPoint
+    Value: 2
   - Key: FrontDistance
-    Value: 0.7
-  - Key: TopDistance
-    Value: 0.5
---- !u!114 &2019513460
+    Value: 1
+--- !u!114 &2011831800
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2019513457}
+  m_GameObject: {fileID: 2011831797}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
@@ -6383,56 +3848,20 @@ MonoBehaviour:
   hsComponents:
   - componentName: OneOutGimmick
     selectedIndex: 4
---- !u!114 &2019513461
+--- !u!114 &2011831801
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2019513457}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 2071383932, guid: 01118045ef3f34bb7a088301d2bac28f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  colliderType: 5
-  colliderTarget: -1
-  usePhysics: 0
-  Fixed: 0
-  EnableBody: 1
-  mass: 1
-  restitution: 1
-  AllowCrossOver: 0
-  CrossOverRate: 0.75
-  ExtrudeSpeed: 1
-  GroundingDetection: 0
---- !u!65 &2019513462
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2019513457}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2019513463
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2019513457}
+  m_GameObject: {fileID: 2011831797}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _object:
-    name: OneOut001 (13)
+    name: OneOut005
     filename: Field/Cube/Cube.heo
     filename_png: 
     filename_astc: 
@@ -6461,15 +3890,15 @@ MonoBehaviour:
     beginactions: []
     endactions: []
     pos:
-    - -2
+    - 1
     - 0.3
-    - 45
+    - 20.74
     rotate:
     - -0
     - 0
     - 0
     scale:
-    - 1
+    - 3
     - 0.7
     - 0.7
     components:
@@ -6505,6 +3934,85 @@ MonoBehaviour:
   _isAdvancedFoldout: 0
   references:
     version: 1
+--- !u!1 &2028652170
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2028652171}
+  - component: {fileID: 2028652173}
+  - component: {fileID: 2028652172}
+  m_Layer: 0
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2028652171
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2028652170}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 743494239}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &2028652172
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2028652170}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 3
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &2028652173
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2028652170}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &2041229368
 GameObject:
   m_ObjectHideFlags: 0
@@ -6515,14 +4023,13 @@ GameObject:
   m_Component:
   - component: {fileID: 2041229369}
   - component: {fileID: 2041229371}
-  - component: {fileID: 2041229370}
   m_Layer: 0
   m_Name: OneOutGimmick
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2041229369
 Transform:
   m_ObjectHideFlags: 0
@@ -6534,49 +4041,15 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 673103698}
-  - {fileID: 1703199305}
-  - {fileID: 423719017}
-  - {fileID: 1523217491}
-  - {fileID: 1078901682}
-  - {fileID: 120513004}
-  - {fileID: 737163496}
-  - {fileID: 1033735842}
-  - {fileID: 203301008}
-  - {fileID: 1316620755}
-  - {fileID: 1035459795}
-  - {fileID: 1195736710}
-  - {fileID: 1631076326}
-  - {fileID: 2019513458}
-  - {fileID: 1678924968}
-  - {fileID: 434868305}
-  - {fileID: 370961048}
-  - {fileID: 1129314020}
-  - {fileID: 1212924447}
-  - {fileID: 1801560925}
+  - {fileID: 1658396996}
+  - {fileID: 1948162591}
+  - {fileID: 1211007647}
+  - {fileID: 243344484}
+  - {fileID: 1922218874}
+  - {fileID: 1108920691}
   m_Father: {fileID: 1458996742}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2041229370
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2041229368}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  selectedIndex: 0
-  selectedIndexes: 00000000
-  ScriptName: 
-  _heliScript: {fileID: 0}
-  hsComponent: 
-  hsComponents:
-  - componentName: ResetGimmick
-    selectedIndex: 5
 --- !u!114 &2041229371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6592,9 +4065,8 @@ MonoBehaviour:
   _heliodorScripts: []
   _field:
     name: OneOutGimmick
-    filename: Field/OneOutGimmick/OneOutGimmick.heo
-    components:
-    - ResetGimmick
+    filename: Field/OneOutGimmick.heo
+    components: []
     overrides: []
     autoloading: 1
     lookatcamera: 0
