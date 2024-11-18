@@ -85,13 +85,12 @@ component Gate1LeftAnimation
 
     public void calcPos()
     {
-            angle = 0.0f;
 
-            float doorX = (-0.27f + 0.9f) * hsMathCos(angle * 3.14159265358979 / 180) - (0.0f) * hsMathSin(angle * 3.14159265358979 / 180) - 0.9f;
-            float doorZ = (0.27f + 0.9f) * hsMathSin(angle * 3.14159265358979 / 180) + (0.0f) * hsMathSin(angle * 3.14159265358979 / 180);
+            float doorX = ((0.45f) * hsMathCos(angle * 3.14159265358979 / 180) - (0.0f) * hsMathSin(angle * 3.14159265358979 / 180)) - 0.90f;
+            float doorZ = -((3.6f) * hsMathSin(angle * 3.14159265358979 / 180) + (0.0f) * hsMathCos(angle * 3.14159265358979 / 180));
             Quaternion doorQuaternion = makeQuaternionYRotation(angle * 3.14159265358979 / 180);
 
-            myItem.SetPos(makeVector3(doorX + 0.00f,-0.40f,doorZ + 270.95f));
+            myItem.SetPos(makeVector3(doorX + 0.00f,-0.50f,doorZ + 270.95f));
             myItem.SetQuaternion(doorQuaternion);
     }
 }
