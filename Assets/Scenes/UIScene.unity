@@ -309,7 +309,15 @@ MonoBehaviour:
       loop: 1
       actions: []
       isUseAction: 0
-    objects: []
+    objects:
+    - heoOrHep: {fileID: 8794674264650990340, guid: cf48956d7b36a3f409fd237832d24ee8,
+        type: 3}
+      audioClip: {fileID: 0}
+      posInEditor: {x: 0, y: 1, z: 0}
+      rotateInEditor: {x: 0, y: 0, z: 0}
+      name: coin
+      objecttype: 0
+      target: head
   references:
     version: 1
 --- !u!4 &617961848
@@ -326,6 +334,94 @@ Transform:
   m_Father: {fileID: 1394279536}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &661519386
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 661519387}
+  - component: {fileID: 661519389}
+  - component: {fileID: 661519388}
+  m_Layer: 0
+  m_Name: TimeSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &661519387
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 661519386}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1796860271}
+  m_Father: {fileID: 1390106368}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &661519388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 661519386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: 
+  _heliScript: {fileID: 0}
+  hsComponent: 
+  hsComponents:
+  - componentName: TimeSystem
+    selectedIndex: 0
+--- !u!114 &661519389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 661519386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1147827095, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _heliodorScripts: []
+  _field:
+    name: TimeSystem
+    filename: Field/TimeSystem/TimeSystem.heo
+    components:
+    - TimeSystem
+    overrides: []
+    autoloading: 1
+    lookatcamera: 0
+    alphaanim: 0
+    collisiondetection: 1
+    showphotomode: 1
+    clickable: 0
+    show: 1
+    clickableui:
+      _images: []
+      _clickableItems: []
+  LoadCollider: []
+  UnLoadCollider: []
+  _isAdvancedFoldout: 0
+  _Priority: 0
+  references:
+    version: 1
 --- !u!1 &869409277
 GameObject:
   m_ObjectHideFlags: 0
@@ -375,7 +471,7 @@ MonoBehaviour:
     filenameen: 
     pos:
     - 1
-    - 1.32
+    - 0
     - 0
     rotate:
     - -0
@@ -392,6 +488,10 @@ MonoBehaviour:
     overrides: []
     lookatcamera: 0
     doubleside: 0
+    components: []
+    showphotomode: 1
+    clickable: 0
+    autoloading: 1
   textureInJP: {fileID: 0}
   textureInEN: {fileID: 0}
   _isAdvancedFoldout: 0
@@ -567,7 +667,9 @@ MonoBehaviour:
   _useGamePad: 0
   _iconFieldPath: 
   _heoScripts:
-  - {fileID: 469074977633818552, guid: b1d21e9bd5900da47acd217ba16d6c76, type: 3}
+  - {fileID: 469074977633818552, guid: 59acfffaa48478a4cafb9be009064ca0, type: 3}
+  _fileDeploymentConfig: {fileID: 0}
+  _deploymentMode: 0
 --- !u!4 &900730818
 Transform:
   m_ObjectHideFlags: 0
@@ -629,7 +731,7 @@ MonoBehaviour:
     _name: coin_text
     _pos:
     - 0
-    - 1.32
+    - 0
     - 0
     _rotate:
     - -0
@@ -648,7 +750,6 @@ MonoBehaviour:
     _horizontalToolbar: 1
     _verticalToolbar: 1
     _alignment: 4
-    _textalignment: 
     _charaspace: 0
     _linespace: 1
     _overflowwrap: 0
@@ -661,7 +762,11 @@ MonoBehaviour:
     _zbias: -0.05
     _show: 1
     _overrides: []
+    components: []
     _lookatcamera: 0
+    _showphotomode: 1
+    _autoloading: 1
+    clickable: 0
   _color: {r: 1, g: 1, b: 1, a: 1}
   _texturesize: {x: 512, y: 512}
   _Priority: 0
@@ -708,6 +813,14 @@ MonoBehaviour:
     overrides: []
     autoloading: 1
     lookatcamera: 0
+    alphaanim: 0
+    collisiondetection: 1
+    showphotomode: 1
+    clickable: 0
+    show: 1
+    clickableui:
+      _images: []
+      _clickableItems: []
   LoadCollider: []
   UnLoadCollider: []
   _isAdvancedFoldout: 0
@@ -726,6 +839,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2025624647}
+  - {fileID: 1566114842}
+  - {fileID: 1390106368}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -821,6 +936,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &1390106367
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1390106368}
+  m_Layer: 0
+  m_Name: Time
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1390106368
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1390106367}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 661519387}
+  m_Father: {fileID: 991102434}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1394279534
 GameObject:
   m_ObjectHideFlags: 0
@@ -856,7 +1002,7 @@ MonoBehaviour:
   RenderingSetting: {fileID: 900311976}
   MyAvatarsSetting: {fileID: 617961847}
   BaseSetting: {fileID: 900730817}
-  VketCloudScriptSetting: {fileID: 1875556868}
+  ScriptManager: {fileID: 1875556868}
 --- !u!4 &1394279536
 Transform:
   m_ObjectHideFlags: 0
@@ -971,6 +1117,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1566114842}
+  - component: {fileID: 1566114844}
   - component: {fileID: 1566114843}
   m_Layer: 0
   m_Name: coin
@@ -978,7 +1125,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1566114842
 Transform:
   m_ObjectHideFlags: 0
@@ -987,13 +1134,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1566114841}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.32, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 869409278}
   - {fileID: 983212595}
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_Father: {fileID: 991102434}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1566114843
 MonoBehaviour:
@@ -1008,10 +1155,99 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectedIndex: 0
+  selectedIndexes: 00000000
   ScriptName: CoinUI
   _heliScript: {fileID: 469074977633818552, guid: b1d21e9bd5900da47acd217ba16d6c76,
     type: 3}
   hsComponent: CoinUI
+  hsComponents:
+  - componentName: CoinUI
+    selectedIndex: 0
+--- !u!114 &1566114844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1566114841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _object:
+    name: coin
+    filename: Field/Empty/Empty.heo
+    filename_png: 
+    filename_astc: 
+    filename_etc2: 
+    pose: 
+    clickable: 0
+    enablebone: 0
+    show: 1
+    autoloading: 1
+    forceshadowcaster: 0
+    forceshadowreceiver: 0
+    foregroundrendering: 0
+    zwriteenable: 1
+    alphablendtoopaque: 0
+    unserializecircleshadow:
+      _use: 0
+      _filename: CircleShadow2/CircleShadow2.heo
+      _scale:
+      - 0.6
+      - 0.6
+      - 0.6
+      _zbias: -0.02
+      _adjustposdownward: 0
+    alphaanim: 0
+    motions: []
+    beginactions: []
+    endactions: []
+    pos:
+    - 0
+    - 0
+    - 0
+    rotate:
+    - -0
+    - 0
+    - 0
+    scale:
+    - 1
+    - 1
+    - 1
+    components:
+    - CoinUI
+    lookatcamera: 0
+    collisiondetection: 1
+    uselightscattering: 1
+    showphotomode: 1
+  _autoShowHEO: 0
+  PreviewObjectRoot: {fileID: 0}
+  CurrentShowFile: {fileID: 0}
+  TempAvatar: {fileID: 0}
+  fileMode: 0
+  fileModeTypeValue: 0
+  _Priority: 0
+  _buildingShow: 0
+  heoCircleShadow: {fileID: 0}
+  heoOrVrm: {fileID: 8794674264650990340, guid: a2859199e1e161841b8929a73afb8040,
+    type: 3}
+  vrm: {fileID: 0}
+  glb: {fileID: 0}
+  hem: {fileID: 0}
+  hrmPng: {fileID: 0}
+  hrmAstc: {fileID: 0}
+  hrmEtc2: {fileID: 0}
+  hrmDxt: {fileID: 0}
+  _circleShadowScaleInEditor: {x: 0.6, y: 0.6, z: 0.6}
+  _isBeginactionsFoldout: 0
+  _isEndactionsFoldout: 0
+  _objectMode: 0
+  _isComponentsFoldout: 0
+  _isAdvancedFoldout: 0
+  references:
+    version: 1
 --- !u!1 &1634929647
 GameObject:
   m_ObjectHideFlags: 0
@@ -1049,6 +1285,7 @@ MonoBehaviour:
     photoradius: 20
     tpspitchmaxangle: 6
     tpsmaxdistance: 10
+    tpsxrotateenable: 1
   _raycastmaxdistance: 50
 --- !u!4 &1634929649
 Transform:
@@ -1109,6 +1346,114 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _areaSize: {x: 100, y: 100}
   tempAreaCollider: {fileID: 0}
+--- !u!1 &1796860270
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1796860271}
+  - component: {fileID: 1796860273}
+  - component: {fileID: 1796860272}
+  m_Layer: 0
+  m_Name: Timer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1796860271
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1796860270}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 661519387}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1796860272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1796860270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -917271763, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  properties:
+  - Key: Time(12345)
+    Value: 18000
+--- !u!114 &1796860273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1796860270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1570965333, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textPlane:
+    _name: Timer
+    _pos:
+    - 0
+    - 0
+    - 0
+    _rotate:
+    - -0
+    - 0
+    - 0
+    _scale:
+    - 1
+    - 1
+    - 1
+    _color:
+    - 1
+    - 1
+    - 1
+    - 1
+    _fontsize: 256
+    _horizontalToolbar: 0
+    _verticalToolbar: 0
+    _alignment: 0
+    _charaspace: 0
+    _linespace: 1
+    _overflowwrap: 0
+    _texturesize:
+    - 512
+    - 512
+    _text: 0:00
+    _alphablending: 1
+    _billboard: 0
+    _zbias: -0.05
+    _show: 1
+    _overrides: []
+    components: []
+    _lookatcamera: 0
+    _showphotomode: 1
+    _autoloading: 1
+    clickable: 0
+  _color: {r: 1, g: 1, b: 1, a: 1}
+  _texturesize: {x: 512, y: 512}
+  _Priority: 0
+  PreviewState: 1
+  _subTextObject: {fileID: 0}
+  ReShow: 0
+  _isAdvancedFoldout: 0
+  references:
+    version: 1
 --- !u!1 &1875556867
 GameObject:
   m_ObjectHideFlags: 1
@@ -1120,7 +1465,7 @@ GameObject:
   - component: {fileID: 1875556869}
   - component: {fileID: 1875556868}
   m_Layer: 0
-  m_Name: VketCloudScriptSettings
+  m_Name: ScriptManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1135,13 +1480,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1875556867}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -489526812, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Script: {fileID: -1918169039, guid: aceab675429f9e946b912a758820ab12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   HeliScript: {fileID: 0}
   Scripts:
-  - HeliScript/CoinUI.hs
-  SpatiumCode: default
+  - HeliScript/TimeSystem.hs
+  spatiumCode: default
 --- !u!4 &1875556869
 Transform:
   m_ObjectHideFlags: 1
@@ -1248,8 +1593,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2025624646}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 0.5, z: 5}
+  m_LocalPosition: {x: 0, y: 0, z: 6.81}
+  m_LocalScale: {x: 2, y: 0.5, z: 20}
   m_Children: []
   m_Father: {fileID: 991102434}
   m_RootOrder: 0
@@ -1280,7 +1625,7 @@ MeshRenderer:
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
+  m_ReflectionProbeUsage: 3
   m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
@@ -1333,3 +1678,7 @@ MonoBehaviour:
   EnableBody: 1
   mass: 1
   restitution: 1
+  AllowCrossOver: 0
+  CrossOverRate: 0.75
+  ExtrudeSpeed: 1
+  GroundingDetection: 0

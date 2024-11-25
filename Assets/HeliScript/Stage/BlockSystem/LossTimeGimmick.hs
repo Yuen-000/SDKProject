@@ -1,5 +1,8 @@
 component LossTimeGimmick
 {
+    //GameOverDecisionクラス
+    GameOverDecision gameOver;
+
     //プレイヤーアイテム
     Player playerItem;
 
@@ -34,6 +37,9 @@ component LossTimeGimmick
 
     public LossTimeGimmick()
     {
+        //GameOverDecisionのコンストラクタ
+        gameOver = new GameOverDecision();
+        
         //プレイヤー
         playerItem = new Player();
         playerItem = hsPlayerGet();
@@ -66,7 +72,6 @@ component LossTimeGimmick
 
         //ぶつかるポジション
         SettingPoint(linePoint);
-        
     }
 
     public void Update()
@@ -74,7 +79,7 @@ component LossTimeGimmick
         //Playerポジションをゲット
         playerPos = playerItem.GetPos();
 
-        if(!isLostTime)
+        if(!isLostTime && !gameOver.GetGameOver())
         {
             SettingJudgment(linePoint);
         }
@@ -89,7 +94,7 @@ component LossTimeGimmick
     void PlayerLostTime()
     {
         isLostTime = true;
-        hsSystemOutput("LostTime");
+
         if(lostTimeItem !== null)
         {
             hsSystemOutput("LostTime");

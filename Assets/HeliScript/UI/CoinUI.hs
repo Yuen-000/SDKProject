@@ -1,8 +1,11 @@
 component CoinUI
 {
     Item selfItem;
+
     Player player;
 
+    Vector3 playerPos;
+    
     public CoinUI()
     {
         selfItem = hsItemGetSelf();
@@ -11,13 +14,13 @@ component CoinUI
 
     public void Update()
     {
-        // Set the coin's position to match the player's position
-        Vector3 playerPos = player.GetPos();
-        hsItemSetPosition(selfItem, playerPos);
+        hsItemSetPosition(selfItem, player);
     }
 
-    void hsItemSetPosition(Item self, Vector3 position)
+    void hsItemSetPosition(Item self, Player playerItem)
     {
-        item.SetPos(position);
+        playerPos = playerItem.GetPos();
+        hsSystemOutput(playerPos);
+        self.SetPos(playerPos);
     }
 }
