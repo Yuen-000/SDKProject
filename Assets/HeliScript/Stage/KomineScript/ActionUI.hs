@@ -15,6 +15,15 @@ component ActionUI
     //UIの初期位置
     Vector3 UIInitialPosition;
 
+    //自身
+    Item myItemSelf;
+
+    //Y補正値
+    float POS_Y;
+
+    //Z補正値
+    float POS_Z;
+
     public ActionUI()
     {
         hsSystemOutput("Script:ActionUI\n");
@@ -30,14 +39,19 @@ component ActionUI
         myPlayer = hsPlayerGet();
 
         UIInitialPosition = myActionUI.GetPos();
+
+        myItemSelf = hsItemGetSelf();
+
+        POS_Y = myItemSelf.GetProperty("POS_Y").ToFloat();
+        POS_Z = myItemSelf.GetProperty("POS_Z").ToFloat();
     }
 
     public void Update()
     {
         if(isActionTime){
             UIPos = myPlayer.GetPos();
-            UIPos.y += 3.0f;
-            UIPos.z += -2.0f;
+            UIPos.y += POS_Y;
+            UIPos.z += POS_Z;
             myActionUI.SetPos(UIPos);
         }
     }

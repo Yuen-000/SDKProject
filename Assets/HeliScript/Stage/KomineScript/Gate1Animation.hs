@@ -13,13 +13,19 @@ component Gate1LeftAnimation
     int timer;
 
     //連打アクションクリアになる回数
-    const int CLEAR_PRESS_COUNT = 20;
+    int CLEAR_PRESS_COUNT;
 
     //連打アクション制限時間（フレーム単位）
-    const int TIME_LIMIT = 420;
+    int TIME_LIMIT;
+
+    //円周率
+    const float PI = 3.14159265358979;
 
     //角度
     float angle;
+
+    //ボタンアイテム（property取得用）
+    Item myButton;
 
     public Gate1LeftAnimation()
     {
@@ -27,6 +33,11 @@ component Gate1LeftAnimation
         hsSystemOutput("Date:20241123\n");
         hsSystemOutput("Version:2.0.0\n");
         hsSystemOutput("Update Content:Completed\n");
+
+        myButton = hsItemGet("ActionButtonScript");
+
+        CLEAR_PRESS_COUNT = (myButton.GetProperty("CLEAR_PRESS_COUNT")).ToInt();
+        TIME_LIMIT = int(myButton.GetProperty("TIME_LIMIT").ToFloat() * 60.0f);
 
         myItem = hsItemGetSelf;
         isClosed = false;
@@ -86,9 +97,9 @@ component Gate1LeftAnimation
     public void calcPos()
     {
 
-            float doorX = ((-1.8f) * hsMathSin((angle - 180) * 3.14159265358979 / 180)) + ((-1.8f) * hsMathSin((angle - 90) * 3.14159265358979 / 180)) - 1.8f - 0.27f;
-            float doorZ = ((-1.8f) * hsMathCos((angle - 180) * 3.14159265358979 / 180)) + ((-1.8f) * hsMathCos((angle - 90) * 3.14159265358979 / 180)) - 1.8f;
-            Quaternion doorQuaternion = makeQuaternionYRotation(angle * 3.14159265358979 / 180);
+            float doorX = ((-1.8f) * hsMathSin((angle - 180) * PI / 180)) + ((-1.8f) * hsMathSin((angle - 90) * PI / 180)) - 1.8f - 0.27f;
+            float doorZ = ((-1.8f) * hsMathCos((angle - 180) * PI / 180)) + ((-1.8f) * hsMathCos((angle - 90) * PI / 180)) - 1.8f;
+            Quaternion doorQuaternion = makeQuaternionYRotation(angle * PI / 180);
 
             myItem.SetPos(makeVector3(doorX + 0.00f,-0.50f,doorZ + 270.95f));
             myItem.SetQuaternion(doorQuaternion);
@@ -110,13 +121,19 @@ component Gate1RightAnimation
     int timer;
 
     //連打アクションクリアになる回数
-    const int CLEAR_PRESS_COUNT = 20;
+    int CLEAR_PRESS_COUNT;
 
     //連打アクション制限時間（フレーム単位）
-    const int TIME_LIMIT = 420;
+    int TIME_LIMIT;
+
+    //円周率
+    const float PI = PI;
 
     //角度
     float angle;
+
+    //ボタンアイテム（property取得用）
+    Item myButton;
 
     public Gate1RightAnimation()
     {
@@ -124,6 +141,11 @@ component Gate1RightAnimation
         hsSystemOutput("Date:20241123\n");
         hsSystemOutput("Version:2.0.0\n");
         hsSystemOutput("Update Content:Completed\n");
+
+        myButton = hsItemGet("ActionButtonScript");
+
+        CLEAR_PRESS_COUNT = (myButton.GetProperty("CLEAR_PRESS_COUNT")).ToInt();
+        TIME_LIMIT = int(myButton.GetProperty("TIME_LIMIT").ToFloat() * 60.0f);
 
         myItem = hsItemGetSelf;
         isClosed = false;
@@ -183,9 +205,9 @@ component Gate1RightAnimation
     public void calcPos()
     {
 
-            float doorX = ((-1.8f) * hsMathSin((angle - 180) * 3.14159265358979 / 180)) + ((1.8f) * hsMathSin((angle - 90) * 3.14159265358979 / 180)) + 1.8f - 0.27f;
-            float doorZ = ((-1.8f) * hsMathCos((angle - 180) * 3.14159265358979 / 180)) + ((1.8f) * hsMathCos((angle - 90) * 3.14159265358979 / 180)) - 1.8f;
-            Quaternion doorQuaternion = makeQuaternionYRotation(angle * 3.14159265358979 / 180);
+            float doorX = ((-1.8f) * hsMathSin((angle - 180) * PI / 180)) + ((1.8f) * hsMathSin((angle - 90) * PI / 180)) + 1.8f - 0.27f;
+            float doorZ = ((-1.8f) * hsMathCos((angle - 180) * PI / 180)) + ((1.8f) * hsMathCos((angle - 90) * PI / 180)) - 1.8f;
+            Quaternion doorQuaternion = makeQuaternionYRotation(angle * PI / 180);
 
             myItem.SetPos(makeVector3(doorX + 0.00f,-0.50f,doorZ + 270.95f));
             myItem.SetQuaternion(doorQuaternion);

@@ -10,16 +10,19 @@ component ActionButton
     int timer;
 
     //連打アクションクリアになる回数
-    const int CLEAR_PRESS_COUNT = 20;
+    int CLEAR_PRESS_COUNT;
 
     //連打アクション制限時間（フレーム単位）
-    const int TIME_LIMIT = 420;
+    int TIME_LIMIT;
 
     //リトライボタン用スクリプト
     Item retryItem;
 
     //プレイヤー（呼び出し用）
     Item myPlayerComponent;
+
+    //自身（property取得用）
+    Item myItemSelf;
 
     public ActionButton()
     {
@@ -31,6 +34,11 @@ component ActionButton
         isActionTime = false;
         pressCount = 0;
         timer = 0;
+
+        myItemSelf = hsItemGetSelf();
+
+        CLEAR_PRESS_COUNT = (myItemSelf.GetProperty("CLEAR_PRESS_COUNT")).ToInt();
+        TIME_LIMIT = int(myItemSelf.GetProperty("TIME_LIMIT").ToFloat() * 60.0f);
 
         retryItem = hsItemGet("GameoverScript");
 
