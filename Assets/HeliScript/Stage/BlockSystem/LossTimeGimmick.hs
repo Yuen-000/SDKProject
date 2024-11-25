@@ -97,7 +97,7 @@ component LossTimeGimmick
 
         if(lostTimeItem !== null)
         {
-            hsSystemOutput("LostTime");
+            lostTimeItem.CallComponentMethod("TimeSystem", "ReduceTime", "");
         }
     }
 

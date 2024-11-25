@@ -8,6 +8,7 @@ component TimeSystem
     //タイムの上限
     int limitTime;
     int countTime;
+    int decreaseTime;
 
     //カウントのトリガー
     bool isCount;
@@ -16,6 +17,8 @@ component TimeSystem
     {
         timer = hsItemGet("Timer");
         limitTime = timer.GetProperty("Time(12345)").ToInt();
+
+        decreaseTime = timer.GetProperty("ReduceTime(123)").ToInt();
 
         resultTimer = hsItemGet("ResultTimer");
 
@@ -75,6 +78,16 @@ component TimeSystem
     {
         gameOverItem.CallComponentMethod("GameOver", "GetGameOver", "");
     }
+
+    //時間をマイナスdecreaseTimeにする
+    public void ReduceTime()
+    {
+        countTime = countTime - decreaseTime;
+    }
+
+///////////////////////////////////////////////
+//タイムの表示関係
+//////////////////////////////////////////////
 
     //タイムのUI
     void TimeUI()

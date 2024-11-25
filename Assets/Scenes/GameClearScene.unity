@@ -329,8 +329,8 @@ MonoBehaviour:
     - 0
     scale:
     - 100
-    - 100
-    - 1
+    - 100.00003
+    - 1.0000002
     alphablending: 0
     billboard: 0
     zbias: 0
@@ -531,7 +531,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 460115205}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.5, z: 2.43}
+  m_LocalPosition: {x: 0, y: 0.5, z: 10.63}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1539987274}
@@ -581,7 +581,7 @@ MonoBehaviour:
     pos:
     - 0
     - 0.5
-    - 2.43
+    - 10.63
     rotate:
     - -0
     - 0
@@ -1673,6 +1673,7 @@ MonoBehaviour:
   - {fileID: 469074977633818552, guid: c3097d31f92cc824d9c840ce636ad5ae, type: 3}
   - {fileID: 469074977633818552, guid: 32129e5dcbe217a4496f86d42faaa215, type: 3}
   - {fileID: 469074977633818552, guid: f06132115cb6d884d97e8cfae598a7b5, type: 3}
+  - {fileID: 469074977633818552, guid: 93ff74963a405104899a2224a9ab3293, type: 3}
   _fileDeploymentConfig: {fileID: 0}
   _deploymentMode: 0
 --- !u!4 &1165963708
@@ -1877,6 +1878,7 @@ MonoBehaviour:
   - HeliScript/GameClear.hs
   - HeliScript/OneOutGimmick.hs
   - HeliScript/LossTimeGimmick.hs
+  - HeliScript/UIFollowPlayer.hs
   spatiumCode: default
 --- !u!4 &1264864682
 Transform:
@@ -2452,7 +2454,7 @@ MonoBehaviour:
   _heliodorScripts: []
   _field:
     name: GameoverScript
-    filename: Field/GameoverScript.heo
+    filename: Field/GameoverScript/GameoverScript.heo
     components:
     - GameOver
     overrides: []
@@ -2549,6 +2551,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1553690252}
   - component: {fileID: 1553690254}
+  - component: {fileID: 1553690255}
   - component: {fileID: 1553690253}
   m_Layer: 0
   m_Name: Timer
@@ -2557,8 +2560,8 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1553690252
-Transform:
+--- !u!224 &1553690252
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2571,6 +2574,11 @@ Transform:
   m_Father: {fileID: 377351090}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1553690253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2586,6 +2594,8 @@ MonoBehaviour:
   properties:
   - Key: Time(12345)
     Value: 18000
+  - Key: ReduceTime(123)
+    Value: 300
 --- !u!114 &1553690254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2633,7 +2643,8 @@ MonoBehaviour:
     _zbias: -0.05
     _show: 1
     _overrides: []
-    components: []
+    components:
+    - UIFollowPlayer
     _lookatcamera: 0
     _showphotomode: 1
     _autoloading: 1
@@ -2647,6 +2658,26 @@ MonoBehaviour:
   _isAdvancedFoldout: 0
   references:
     version: 1
+--- !u!114 &1553690255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1553690251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: 
+  _heliScript: {fileID: 0}
+  hsComponent: 
+  hsComponents:
+  - componentName: UIFollowPlayer
+    selectedIndex: 7
 --- !u!1 &1582430504
 GameObject:
   m_ObjectHideFlags: 0
@@ -3069,7 +3100,7 @@ MonoBehaviour:
     _name: ResultTimer
     _pos:
     - 12.764999
-    - -6.768
+    - -6.816
     - -0.1
     _rotate:
     - -0
@@ -3518,7 +3549,7 @@ MonoBehaviour:
   hsComponent: 
   hsComponents:
   - componentName: TimeSystem
-    selectedIndex: 4
+    selectedIndex: 2
 --- !u!114 &2117562833
 MonoBehaviour:
   m_ObjectHideFlags: 0
