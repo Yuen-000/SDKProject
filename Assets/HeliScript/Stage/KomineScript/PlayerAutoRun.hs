@@ -33,17 +33,8 @@ component PlayerAutoRun
     //レーンの間の距離　要調整
     const float laneDistance = 1.4f;
 
-    //連打エリアに突入するZ座標のリスト
-    list<float> hitBoxAreaList;
-
-    //連打アクション中か
-    bool isActionTime;
-
     //デバッグモード
     bool dAutoRun;
-
-    //ActionButton
-    Item myActionButton;
 
     //前のフレームにカメラが移動していたか
     bool previousMoveCamera;
@@ -51,18 +42,31 @@ component PlayerAutoRun
     //今カメラが移動していたか
     bool moveCamera;
 
+    //初期位置
+    Vector3 initialPosition;
+
+    //デバッグアイテム
+    Item debug;
+
+    //デバッグアイテムの座標
+    Vector3 debugPos;
+
     public PlayerAutoRun()
     {
         hsSystemOutput("Script:PlayerAutoRun\n");
-        hsSystemOutput("Date:20241012\n");
-        hsSystemOutput("Version:8.2.1\n");
-        hsSystemOutput("Update Content:Adjusted to not conflict with game clear/game over\n");
+        hsSystemOutput("Date:20241130\n");
+        hsSystemOutput("Version:10.0.0\n");
+        hsSystemOutput("Update Content:Supports Attribute Property\n");
         myPlayer = new Player();
         myPlayer = hsPlayerGet();
 
-        myActionButton = hsItemGet("ActionButtonCore");
-
-        dAutoRun = false;
+        debug = hsItemGet("Debugger");
+        debugPos = debug.GetPos();
+        
+        if(debugPos.y > 0){
+            dAutoRun = true;
+        }
+        else dAutoRun = false;
 
         if(!dAutoRun){
             previousPlayerPos = new Vector3();
@@ -78,19 +82,18 @@ component PlayerAutoRun
 
             movementFrame = 0;
             playerLane = 0;
+            myPlayer.SetProperty("playerLane", string(playerLane));
         }
         else{
             hsSystemOutput("Debug Mode : Autorun is now off\n");
         }
 
-        isActionTime = false;
-
-        hitBoxAreaList = new list<float>(1);
-        hitBoxAreaList[0] = 30.0f;
-
         previousMoveCamera = false;
 
         moveCamera = false;
+
+        initialPosition = new Vector3();
+        initialPosition = myPlayer.GetPos();
     }
 
     public void Update()
@@ -104,22 +107,21 @@ component PlayerAutoRun
                 previousPlayerPos = currentPlayerPos;
                 previousMoveCamera = false;
                 playerLane = 0;
+                myPlayer.SetProperty("playerLane", string(playerLane));
             }
 
             //向きを前に
             myPlayer.SetRotate(0.0f);
 
-            if(isActionTime){
-                //hsSystemOutput("True");
-            }
-
             if(movementFrame == 0){ //レーン移動していないときの挙動
                 if((currentPlayerPos.x - previousPlayerPos.x) < -0.01 && playerLane > -laneNumMax){ //左
                     playerLane--;
+                    myPlayer.SetProperty("playerLane", string(playerLane));
                     direction = -1;
                     movementFrame++;
                 }else if((currentPlayerPos.x - previousPlayerPos.x) > 0.01 && playerLane < laneNumMax){ //右
                     playerLane++;
+                    myPlayer.SetProperty("playerLane", string(playerLane));
                     direction = 1;
                     movementFrame++;
                 }else{ //そのまま
@@ -159,11 +161,6 @@ component PlayerAutoRun
         }
     }
 
-    public void OnClickNode(){
-        hsSystemOutput("Player Click!\n");
-        myActionButton.CallComponentMethod("ActionButton", "playerClick", "");
-    }
-
     public void setMoveCameraTrue(){
         moveCamera = true;
     }
@@ -172,8 +169,7 @@ component PlayerAutoRun
         moveCamera = false;
     }
 
-    //public void hitBoxAreaCoordinate(float zCoor){
-    //    hitBoxAreaList.Add(zCoor);
-    //    hsSystemOutput(string(zCoor));
-    //}
+    public void resetCoordinate(){
+        myPlayer.SetPos(initialPosition);
+    }
 }

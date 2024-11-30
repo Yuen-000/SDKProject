@@ -10,7 +10,10 @@ component GameClear
     bool isGameClear;
 
     //小峯追加分、Playerクラス
-    Item  myPlayer;
+    Item myPlayer;
+
+    //小峯追加分、コインアイテム
+    Item coin;
 
     public GameClear()
     {
@@ -21,6 +24,9 @@ component GameClear
 
         //小峯追加分、Playerを入手
         myPlayer = hsItemGet("PlayerSettings");
+
+        //小峯追加分、コインを入手
+        coin = hsItemGet("CoinScript");
     }
 
     public void Update()
@@ -65,5 +71,8 @@ component GameClear
 
         //小峯追加分、カメラが動いているフラグをオフ
         myPlayer.CallComponentMethod("PlayerAutoRun", "setMoveCameraFalse", "");
+
+        //小峯追加分、コインをリセット
+        coin.CallComponentMethod("CoinManagement", "reset", "");
     }
 }
