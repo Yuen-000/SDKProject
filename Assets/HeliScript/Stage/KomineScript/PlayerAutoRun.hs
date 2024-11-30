@@ -54,9 +54,9 @@ component PlayerAutoRun
     public PlayerAutoRun()
     {
         hsSystemOutput("Script:PlayerAutoRun\n");
-        hsSystemOutput("Date:20241021\n");
-        hsSystemOutput("Version:9.1.0\n");
-        hsSystemOutput("Update Content:Remove button functions\n");
+        hsSystemOutput("Date:20241130\n");
+        hsSystemOutput("Version:10.0.0\n");
+        hsSystemOutput("Update Content:Supports Attribute Property\n");
         myPlayer = new Player();
         myPlayer = hsPlayerGet();
 
@@ -82,6 +82,7 @@ component PlayerAutoRun
 
             movementFrame = 0;
             playerLane = 0;
+            myPlayer.SetProperty("playerLane", string(playerLane));
         }
         else{
             hsSystemOutput("Debug Mode : Autorun is now off\n");
@@ -106,6 +107,7 @@ component PlayerAutoRun
                 previousPlayerPos = currentPlayerPos;
                 previousMoveCamera = false;
                 playerLane = 0;
+                myPlayer.SetProperty("playerLane", string(playerLane));
             }
 
             //Œü‚«‚ğ‘O‚É
@@ -114,10 +116,12 @@ component PlayerAutoRun
             if(movementFrame == 0){ //ƒŒ[ƒ“ˆÚ“®‚µ‚Ä‚¢‚È‚¢‚Æ‚«‚Ì‹““®
                 if((currentPlayerPos.x - previousPlayerPos.x) < -0.01 && playerLane > -laneNumMax){ //¶
                     playerLane--;
+                    myPlayer.SetProperty("playerLane", string(playerLane));
                     direction = -1;
                     movementFrame++;
                 }else if((currentPlayerPos.x - previousPlayerPos.x) > 0.01 && playerLane < laneNumMax){ //‰E
                     playerLane++;
+                    myPlayer.SetProperty("playerLane", string(playerLane));
                     direction = 1;
                     movementFrame++;
                 }else{ //‚»‚Ì‚Ü‚Ü
