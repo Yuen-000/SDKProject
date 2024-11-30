@@ -68,7 +68,7 @@ component GameClear
         ResultTimeUI();
 
         //小峯追加分、カメラが動いているフラグをオン
-        //myPlayer.CallComponentMethod("PlayerAutoRun", "setMoveCameraTrue", "");
+        myPlayer.CallComponentMethod("PlayerAutoRun", "setMoveCameraTrue", "");
     }
 
     //ボックスをクリックしたらリトライ
