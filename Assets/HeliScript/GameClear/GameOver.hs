@@ -15,7 +15,10 @@ component GameOver
     Item timeSystem;
 
     //小峯追加分、Playerクラス
-    Item  myPlayer;
+    Item myPlayer;
+
+    //小峯追加分、コインアイテム
+    Item coin;
 
     public GameOver()
     {
@@ -29,6 +32,9 @@ component GameOver
 
         //小峯追加分、Playerを入手
         myPlayer = hsItemGet("PlayerSettings");
+        
+        //小峯追加分、コインを入手
+        coin = hsItemGet("CoinScript");
     }
 
     public void Update()
@@ -66,6 +72,21 @@ component GameOver
 
         //小峯追加分、カメラが動いているフラグをオン
         myPlayer.CallComponentMethod("PlayerAutoRun", "setMoveCameraTrue", "");
+
+        //小峯追加分、諸々をリセット
+        Item gateL = hsItemGet("Gate1LeftDoor");
+        Item gateR = hsItemGet("Gate1RightDoor");
+
+        gateL.CallComponentMethod("Gate1LeftAnimation", "reset", "");
+        gateR.CallComponentMethod("Gate1RightAnimation", "reset", "");
+
+        Item button = hsItemGet("ActionButtonScript");
+
+        button.CallComponentMethod("ActionButton", "SetActionFlagFalse", "");
+
+        Item area1 = hsItemGet("ActionArea1");
+
+        area1.CallComponentMethod("ActionStartArea", "endActionTime", "");
     }
 
     //ボックスをクリックしたらリトライ
@@ -93,6 +114,9 @@ component GameOver
 
         //小峯追加分、カメラが動いているフラグをオフ
         myPlayer.CallComponentMethod("PlayerAutoRun", "setMoveCameraFalse", "");
+        
+        //小峯追加分、コインをリセット
+        coin.CallComponentMethod("CoinManagement", "reset", "");
     }
 
     //タイマを止める
