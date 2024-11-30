@@ -3481,6 +3481,7 @@ MonoBehaviour:
   - HeliScript/ActionTimeManagement.hs
   - HeliScript/Gate1Animation.hs
   - HeliScript/CoinManagement.hs
+  - HeliScript/GameOverDecision.hs
   spatiumCode: default
 --- !u!4 &1690123602
 Transform:
@@ -4141,6 +4142,7 @@ MonoBehaviour:
   - {fileID: 469074977633818552, guid: 84b7e12ff6ffef844af92c0e3f73b568, type: 3}
   - {fileID: 469074977633818552, guid: edcb3683d7b1364478d5e8978c27baef, type: 3}
   - {fileID: 469074977633818552, guid: 8375c8ea2d27d6b42ac287953f0c4651, type: 3}
+  - {fileID: 469074977633818552, guid: d118e56bc09f7d7468965c3779b89e3b, type: 3}
   _fileDeploymentConfig: {fileID: 0}
   _deploymentMode: 0
 --- !u!4 &1957313049

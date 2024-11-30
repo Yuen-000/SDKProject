@@ -3,6 +3,9 @@ component PlayerAutoRun
     //Playerクラス
     Player  myPlayer;
 
+    //プレイヤー（呼び出し用）
+    Item myPlayerComponent;
+
     //1F前のプレイヤーの位置
     Vector3 previousPlayerPos;
 
@@ -60,6 +63,8 @@ component PlayerAutoRun
         myPlayer = new Player();
         myPlayer = hsPlayerGet();
 
+        myPlayerComponent = hsItemGet("PlayerSettings");
+
         debug = hsItemGet("Debugger");
         debugPos = debug.GetPos();
         
@@ -82,7 +87,7 @@ component PlayerAutoRun
 
             movementFrame = 0;
             playerLane = 0;
-            myPlayer.SetProperty("playerLane", string(playerLane));
+            myPlayerComponent.SetProperty("playerLane", string(playerLane));
         }
         else{
             hsSystemOutput("Debug Mode : Autorun is now off\n");
@@ -107,7 +112,7 @@ component PlayerAutoRun
                 previousPlayerPos = currentPlayerPos;
                 previousMoveCamera = false;
                 playerLane = 0;
-                myPlayer.SetProperty("playerLane", string(playerLane));
+                myPlayerComponent.SetProperty("playerLane", string(playerLane));
             }
 
             //向きを前に
@@ -116,12 +121,12 @@ component PlayerAutoRun
             if(movementFrame == 0){ //レーン移動していないときの挙動
                 if((currentPlayerPos.x - previousPlayerPos.x) < -0.01 && playerLane > -laneNumMax){ //左
                     playerLane--;
-                    myPlayer.SetProperty("playerLane", string(playerLane));
+                    myPlayerComponent.SetProperty("playerLane", string(playerLane));
                     direction = -1;
                     movementFrame++;
                 }else if((currentPlayerPos.x - previousPlayerPos.x) > 0.01 && playerLane < laneNumMax){ //右
                     playerLane++;
-                    myPlayer.SetProperty("playerLane", string(playerLane));
+                    myPlayerComponent.SetProperty("playerLane", string(playerLane));
                     direction = 1;
                     movementFrame++;
                 }else{ //そのまま
