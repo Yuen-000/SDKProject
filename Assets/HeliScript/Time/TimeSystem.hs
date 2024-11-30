@@ -68,7 +68,6 @@ component TimeSystem
     //タイマのリセット
     public void ResetTimmer()
     {
-        StopCountTimer();
         countTime = limitTime;
         StartCountTimer();
     }

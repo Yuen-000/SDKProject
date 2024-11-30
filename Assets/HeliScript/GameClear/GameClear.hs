@@ -16,7 +16,7 @@ component GameClear
     Item myPlayer;
 
     //小峯追加分、コインアイテム
-    Item coin;
+    //Item coin;
 
     public GameClear()
     {
@@ -38,7 +38,7 @@ component GameClear
         myPlayer = hsItemGet("PlayerSettings");
 
         //小峯追加分、コインを入手
-        coin = hsItemGet("CoinScript");
+        //coin = hsItemGet("CoinScript");
     }
 
     public void Update()
@@ -68,14 +68,14 @@ component GameClear
         ResultTimeUI();
 
         //小峯追加分、カメラが動いているフラグをオン
-        //myPlayer.CallComponentMethod("PlayerAutoRun", "setMoveCameraTrue", "");
+        myPlayer.CallComponentMethod("PlayerAutoRun", "setMoveCameraTrue", "");
     }
 
     //ボックスをクリックしたらリトライ
     public void OnClickNode()
     {
-        Retry();
         ResetTimer();
+        Retry();
     }
 
     //リトライ処理
@@ -94,7 +94,7 @@ component GameClear
         myPlayer.CallComponentMethod("PlayerAutoRun", "setMoveCameraFalse", "");
 
         //小峯追加分、コインをリセット
-        coin.CallComponentMethod("CoinManagement", "reset", "");
+        //coin.CallComponentMethod("CoinManagement", "reset", "");
     }
 
     //タイマを止める
