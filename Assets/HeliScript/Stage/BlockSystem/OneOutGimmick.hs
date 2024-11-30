@@ -1,5 +1,8 @@
 component OneOutGimmick
 {
+    //GameOverDecisionクラス
+    GameOverDecision gameOver;
+
     //プレイヤーアイテム
     Player playerItem;
 
@@ -15,10 +18,6 @@ component OneOutGimmick
     Vector3 midPointPos;
     Vector3 rightPointPos;
 
-    //タイム
-    int time;
-    int coolTime;
-
     //何レーンの判定
     string linePoint;
 
@@ -28,12 +27,12 @@ component OneOutGimmick
     float blockLeftXPoint;
     float blockMidXPoint;
     float blockRightXPoint;
-
-    //ゲームオーバーの判定
-    bool isGameover;
     
     public OneOutGimmick()
     {
+        //GameOverDecisionのコンストラクタ
+        gameOver = new GameOverDecision();
+
         //プレイヤー
         playerItem = new Player();
         playerItem = hsPlayerGet();
@@ -57,13 +56,6 @@ component OneOutGimmick
         //距離の判定
         judgmentFrontDistance = blockItem.GetProperty("FrontDistance").ToFloat();
 
-        //ゲームオーバー判断
-        isGameover = false;
-
-        //リセットタイム
-        time = 0;
-        coolTime = 100;
-
         //ぶつかるポジション
         SettingPoint(linePoint);
     }
@@ -73,41 +65,19 @@ component OneOutGimmick
         //Playerポジションをゲット
         playerPos = playerItem.GetPos();
 
-        if(!isGameover)
+        if(!gameOver.GetGameOver())
         {
             SettingJudgment(linePoint);
-        }
-        else
-        {
-            //ゲームオーバーのリセット
-            ResetCoolTime();
         }
     }
 
     //ゲームオーバーを呼ぶ
     void PlayerGameOver()
     {
-        isGameover = true;
         if(gameOverItem !== null)
         {
             gameOverItem.CallComponentMethod("GameOver", "GetGameOver", "");
-        }
-    }
-
-    //リセットクールタイム
-    void ResetCoolTime()
-    {
-        if(time == coolTime)
-        {
-            //isGameOverをリセット
-            isGameover = false;
             gameOverItem.CallComponentMethod("GameOver", "SetPlayerRetry", "");
-
-            time = 0;
-        }
-        else
-        {
-            time = time + 1;
         }
     }
 

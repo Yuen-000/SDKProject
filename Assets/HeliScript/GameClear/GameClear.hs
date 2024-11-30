@@ -1,5 +1,8 @@
 component GameClear
 {
+    //GameOverDecisionクラス
+    GameOverDecision gameOver;
+
     //自分GameoverScript
     Item selfItem;
 
@@ -7,7 +10,7 @@ component GameClear
 
     Item clearArea;
 
-    bool isGameClear;
+    Item timeSystem;
 
     //小峯追加分、Playerクラス
     Item myPlayer;
@@ -17,10 +20,19 @@ component GameClear
 
     public GameClear()
     {
+        //GameOverDecisionのコンストラクタ
+        gameOver = new GameOverDecision();
+
         selfItem = hsItemGetSelf();
         clearArea = hsItemGet("GameClearCollider");
         gameClearCream = hsItemGet("GameClearCamera");
-        isGameClear = false;
+
+        //ゲットできない
+        if(timeSystem === null)
+        {
+            timeSystem = hsItemGet("TimeSystem");
+            hsSystemOutput("time");
+        }
 
         //小峯追加分、Playerを入手
         myPlayer = hsItemGet("PlayerSettings");
@@ -31,7 +43,7 @@ component GameClear
 
     public void Update()
     {
-        if(!isGameClear)
+        if(!gameOver.GetGameOver())
         {
             if(clearArea.GetPos().z <= hsPlayerGet().GetPos().z)
             {
@@ -43,25 +55,34 @@ component GameClear
     //ゲームオーバー画面に遷移する関数
     void SetGameClear()
     {
-        isGameClear = true;
+        //ゲームオーバーをtrueに
+        gameOver.SetGameOver(true);
 
         //カメラをゲームクリア画面のカメラに移す
         gameClearCream.SetCamera();
 
+        //タイムストップ
+        StopTimer();
+
+        //リザルトに表示
+        ResultTimeUI();
+
         //小峯追加分、カメラが動いているフラグをオン
-        myPlayer.CallComponentMethod("PlayerAutoRun", "setMoveCameraTrue", "");
+        //myPlayer.CallComponentMethod("PlayerAutoRun", "setMoveCameraTrue", "");
     }
 
     //ボックスをクリックしたらリトライ
     public void OnClickNode()
     {
         Retry();
+        ResetTimer();
     }
 
     //リトライ処理
     void Retry()
     {
-        isGameClear = false;
+        //ゲームオーバーをfalseに
+        gameOver.SetGameOver(false);
 
         //プレイヤー初期位置に戻す
         hsPlayerGet().SetPos(hsItemGet("SpawnPoint").GetPos());
@@ -74,5 +95,23 @@ component GameClear
 
         //小峯追加分、コインをリセット
         coin.CallComponentMethod("CoinManagement", "reset", "");
+    }
+
+    //タイマを止める
+    void StopTimer()
+    {
+        timeSystem.CallComponentMethod("TimeSystem", "StopCountTimer", "");
+    }
+
+    //タイマをリスタート
+    void ResetTimer()
+    {
+        timeSystem.CallComponentMethod("TimeSystem", "ResetTimmer", "");
+    }
+
+    //タイムをリザルトに反映する
+    void ResultTimeUI()
+    {
+        timeSystem.CallComponentMethod("TimeSystem", "ResultTimeUI", "");        
     }
 }
