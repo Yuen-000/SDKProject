@@ -36,11 +36,18 @@ component GameOver
     {
         if(!isGameOver)
         {
+            //落ちたらゲームオーバー
             if(despawnHeightItem.GetPos().y >= hsPlayerGet().GetPos().y)
             {
                 SetGameOver();
             }
         }
+    }
+
+    //外部からゲームオーバーを呼ぶ
+    public void GetGameOver()
+    {
+        SetGameOver();
     }
 
     //ゲームオーバー画面に遷移する関数
@@ -73,6 +80,7 @@ component GameOver
     //ボックスをクリックしたらリトライ
     public void OnClickNode()
     {
+        SetPlayerRetry();
         SetRetry();
     }
 
@@ -80,9 +88,6 @@ component GameOver
     void SetRetry()
     {
         isGameOver = false;
-
-        //プレイヤー初期位置に戻す
-        hsPlayerGet().SetPos(hsItemGet("SpawnPoint").GetPos());
 
         //カメラをプレイヤーに戻す
         camera.ResetCamera(); 
@@ -92,5 +97,11 @@ component GameOver
         
         //小峯追加分、コインをリセット
         coin.CallComponentMethod("CoinManagement", "reset", "");
+    }
+
+    //プレイヤー初期位置に戻す
+    public void SetPlayerRetry()
+    {
+        hsPlayerGet().SetPos(hsItemGet("SpawnPoint").GetPos());
     }
 }
