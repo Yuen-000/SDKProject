@@ -74,8 +74,8 @@ component GameClear
     //ボックスをクリックしたらリトライ
     public void OnClickNode()
     {
-        Retry();
         ResetTimer();
+        Retry();
     }
 
     //リトライ処理
