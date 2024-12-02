@@ -25,16 +25,16 @@ component PlayerAutoRun
     int direction;
 
     //移動クールタイム
-    const int movementCoolTime = 30;
+    int MOVEMENTCOOLTIME;
 
     //レーン移動にかかるフレーム
-    const int movementAnimeTime = 10;
+    int MOVEMENTANIMETIME;
 
     //左右の広がり 3レーンなので1
     const int laneNumMax = 1;
 
     //レーンの間の距離　要調整
-    const float laneDistance = 1.4f;
+    float LANEDISTANCE;
 
     //デバッグモード
     bool dAutoRun;
@@ -57,13 +57,19 @@ component PlayerAutoRun
     public PlayerAutoRun()
     {
         hsSystemOutput("Script:PlayerAutoRun\n");
-        hsSystemOutput("Date:20241130\n");
-        hsSystemOutput("Version:10.0.0\n");
+        hsSystemOutput("Date:20241202\n");
+        hsSystemOutput("Version:10.1.0\n");
         hsSystemOutput("Update Content:Supports Attribute Property\n");
         myPlayer = new Player();
         myPlayer = hsPlayerGet();
 
         myPlayerComponent = hsItemGet("PlayerSettings");
+
+        LANEDISTANCE = (myPlayerComponent.GetProperty("LANEDISTANCE")).ToFloat();
+
+        MOVEMENTCOOLTIME = (myPlayerComponent.GetProperty("MOVEMENTCOOLTIME")).ToInt();
+
+        MOVEMENTANIMETIME = (myPlayerComponent.GetProperty("MOVEMENTANIMETIME")).ToInt();
 
         debug = hsItemGet("Debugger");
         debugPos = debug.GetPos();
@@ -130,16 +136,16 @@ component PlayerAutoRun
                     direction = 1;
                     movementFrame++;
                 }else{ //そのまま
-                    newPlayerPos.x = playerLane * laneDistance;
+                    newPlayerPos.x = playerLane * LANEDISTANCE;
                 }
             }else if(movementFrame > 0){    //移動クールタイム中の挙動
                 movementFrame++;
-                if(movementFrame <= movementAnimeTime){ //レーン移動中
-                    newPlayerPos.x = previousPlayerPos.x + laneDistance / movementAnimeTime * direction;
+                if(movementFrame <= MOVEMENTANIMETIME){ //レーン移動中
+                    newPlayerPos.x = previousPlayerPos.x + LANEDISTANCE / MOVEMENTANIMETIME * direction;
                 }else{  //クールタイム中
-                    newPlayerPos.x = playerLane * laneDistance;
+                    newPlayerPos.x = playerLane * LANEDISTANCE;
                 }
-                if(movementFrame >= movementCoolTime){  //クールタイム終了
+                if(movementFrame >= MOVEMENTCOOLTIME){  //クールタイム終了
                     movementFrame = 0;
                     direction = 0;
                 }

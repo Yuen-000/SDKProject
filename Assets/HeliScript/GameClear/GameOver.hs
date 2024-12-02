@@ -18,7 +18,7 @@ component GameOver
     Item myPlayer;
 
     //小峯追加分、コインアイテム
-    Item coin;
+    Item coinManagement;
 
     public GameOver()
     {
@@ -34,7 +34,7 @@ component GameOver
         myPlayer = hsItemGet("PlayerSettings");
         
         //小峯追加分、コインを入手
-        coin = hsItemGet("CoinScript");
+        coinManagement = hsItemGet("CoinManagement");
     }
 
     public void Update()
@@ -116,7 +116,7 @@ component GameOver
         myPlayer.CallComponentMethod("PlayerAutoRun", "setMoveCameraFalse", "");
         
         //小峯追加分、コインをリセット
-        coin.CallComponentMethod("CoinManagement", "reset", "");
+        coinManagement.CallComponentMethod("CoinManagement", "reset", "");
     }
 
     //タイマを止める

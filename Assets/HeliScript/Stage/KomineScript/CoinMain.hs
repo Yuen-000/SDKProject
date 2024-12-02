@@ -42,12 +42,18 @@ component CoinMain
     //アニメカウント
     int count;
 
+    //コイン管理スクリプト
+    Item coinManagement;
+
+    //レーンの距離
+    float LANEDISTANCE;
+
     public CoinMain()
     {
         hsSystemOutput("Script:CoinMain\n");
-        hsSystemOutput("Date:20241130\n");
-        hsSystemOutput("Version:1.0.0\n");
-        hsSystemOutput("Update Content:Create\n");
+        hsSystemOutput("Date:20241202\n");
+        hsSystemOutput("Version:1.2.0\n");
+        hsSystemOutput("Update Content:Update Magnet\n");
 
         hasCaught = false;
 
@@ -64,15 +70,21 @@ component CoinMain
 
         currentPos = originalPos;
 
-        myLane = originalPos.x / 1.4f;
-        hsSystemOutput(string(myLane) + "\n");
+        LANEDISTANCE = (myPlayerComponent.GetProperty("LANEDISTANCE")).ToFloat();
 
-        afterPos = originalPos;
-        afterPos.y -= 5.0f;
+        myLane = originalPos.x / LANEDISTANCE;
+
+        afterPos = new Vector3();
+
+        afterPos.x = originalPos.x;
+        afterPos.y = originalPos.y - 5.0f;
+        afterPos.z = originalPos.z;
 
         angle = originalPos.z / 5 * -10.0f;
 
         count = 0;
+
+        coinManagement = hsItemGet("CoinManagement");
     }
 
     public void Update()
@@ -86,6 +98,7 @@ component CoinMain
             if(measureDistance())
             {
                 hasCaught = true;
+                coinManagement.CallComponentMethod("CoinManagement", "addCount", "");
                 caughtAnimation();
             }
         }
@@ -93,16 +106,19 @@ component CoinMain
         {
             currentPos = myItemSelf.GetPos();
 
-            if(count <= 10)
+            if(count >= 10)
             {
                 count = 0;
+                isMagnet = false;
                 caughtAnimation();
             }
             else
             {
-                playerPos.x += (playerPos.x - currentPos.x) / 10;
-                playerPos.y += (playerPos.y - currentPos.y) / 10;
-                playerPos.z += (playerPos.z - currentPos.z) / 10;
+                count++;
+                currentPos.x += (playerPos.x - currentPos.x) / 10;
+                currentPos.y += (playerPos.y - (currentPos.y + 0.5)) / 10;
+                currentPos.z += (playerPos.z - currentPos.z) / 10;
+                myItemSelf.SetPos(currentPos);
             }
         }
     }
@@ -124,15 +140,16 @@ component CoinMain
             isMagnet = true;
         }
 
+        //デバッグ用
+        //isMagnet = true;
+
         if(isMagnet == false)
         {
             if(playerLane == myLane)
             {
                 distance = hsMathSqrt((playerPos.z - originalPos.z) * (playerPos.z - originalPos.z) + (playerPos.y - originalPos.y) * (playerPos.y - originalPos.y));
 
-                hsSystemOutput(string(distance) + "\n");
-
-                if(distance <= 0.25f)
+                if(distance <= 1.25f)
                 {
                     return true;
                 }
@@ -142,7 +159,7 @@ component CoinMain
         {
             distance = hsMathSqrt((playerPos.z - originalPos.z) * (playerPos.z - originalPos.z) + (playerPos.y - originalPos.y) * (playerPos.y - originalPos.y) + (playerPos.x - originalPos.x) * (playerPos.x - originalPos.x));
 
-            if(distance <= 3.0f)
+            if(distance <= 5.0f)
             {
                 return true;
             }
@@ -153,6 +170,7 @@ component CoinMain
 
     public void reset()
     {
+
         hasCaught = false;
         myItemSelf.SetPos(originalPos);
         isMagnet = false;

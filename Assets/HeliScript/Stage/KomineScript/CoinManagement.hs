@@ -1,41 +1,59 @@
 component CoinManagement
 {
+    //このアイテム
+    Item myItem;
+
+    //コインアイテム
     Item myCoin;
-    Vector3 coinPos;
+
+    //カウント
     int count;
-    const int COINMAX = 2;
+
+    //最大枚数
+    int COINMAX;
+
+    //リセットフラグ
+    bool resetFlag;
 
     public CoinManagement()
     {
+        hsSystemOutput("Script:CoinMagement\n");
+        hsSystemOutput("Date:20241202\n");
+        hsSystemOutput("Version:2.0.0\n");
+        hsSystemOutput("Update Content:Update System\n");
+
+        myItem = hsItemGetSelf;
+
         count = 0;
+
+        COINMAX = (myItem.GetProperty("COINMAX")).ToInt();
+
+        resetFlag = false;
     }
 
     public void Update()
     {
-        
+        if(resetFlag)
+        {
+            for(int i = 0; i < COINMAX; i++){
+                myCoin = hsItemGet("Coin" + string(i));
+                myCoin.CallComponentMethod("CoinMain", "reset", "");
+            }
+            resetFlag = false;
+        }
     }
 
-    public void addCount(string Num)
+    public void addCount()
     {
         count++;
-        hsSystemOutput("add\n");
-        myCoin = hsItemGet("CoinPlane" + Num);
-        hsSystemOutput(myCoin.GetName() +"\n");
-        coinPos = myCoin.GetPos();
-        coinPos.y = -5.0f;
-        myCoin.SetPos(coinPos);
+        myItem.SetProperty("Count", string(count));
     }
 
     public void reset()
     {
         count = 0;
+        myItem.SetProperty("Count", string(count));
 
-        for(int j = 0; j < COINMAX; j++){
-            myCoin = hsItemGet("CoinPlane" + j.ToString());
-            hsSystemOutput(myCoin.GetName() +"\n");
-            coinPos = myCoin.GetPos();
-            coinPos.y = 1.0f;
-            myCoin.SetPos(coinPos);
-        }
+        resetFlag = true;
     }
 }

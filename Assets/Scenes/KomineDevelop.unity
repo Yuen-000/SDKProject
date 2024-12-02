@@ -1045,7 +1045,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &274547905
 Transform:
   m_ObjectHideFlags: 0
@@ -1095,7 +1095,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1969708977}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &325496877
 MonoBehaviour:
@@ -1374,6 +1374,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   properties:
+  - Key: LANEDISTANCE
+    Value: 1.4
+  - Key: MOVEMENTCOOLTIME
+    Value: 30
+  - Key: MOVEMENTANIMETIME
+    Value: 10
   - Key: playerLane
     Value: 0
   - Key: isMagnet
@@ -1393,7 +1399,7 @@ MonoBehaviour:
   _heliodorScripts: []
   _field:
     name: PlayerSettings
-    filename: Field/PlayerSettings/PlayerSettings.heo
+    filename: Field/PlayerSettings.heo
     components:
     - PlayerAutoRun
     - ActionTimeManagement
@@ -1692,7 +1698,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1969708977}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &741280947
 MonoBehaviour:
@@ -1952,13 +1958,14 @@ GameObject:
   - component: {fileID: 847362052}
   - component: {fileID: 847362054}
   - component: {fileID: 847362053}
+  - component: {fileID: 847362055}
   m_Layer: 0
-  m_Name: CoinScript
+  m_Name: CoinManagement
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &847362052
 Transform:
   m_ObjectHideFlags: 0
@@ -1971,7 +1978,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1969708977}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &847362053
 MonoBehaviour:
@@ -1992,7 +1999,7 @@ MonoBehaviour:
   hsComponent: 
   hsComponents:
   - componentName: CoinManagement
-    selectedIndex: 8
+    selectedIndex: 10
 --- !u!114 &847362054
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2007,8 +2014,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _heliodorScripts: []
   _field:
-    name: CoinScript
-    filename: Field/CoinScript.heo
+    name: CoinManagement
+    filename: Field/CoinManagement/CoinManagement.heo
     components:
     - CoinManagement
     overrides: []
@@ -2028,6 +2035,23 @@ MonoBehaviour:
   _Priority: 0
   references:
     version: 1
+--- !u!114 &847362055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847362051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -917271763, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  properties:
+  - Key: COINMAX
+    Value: 5
+  - Key: Count
+    Value: 0
 --- !u!1 &927138118
 GameObject:
   m_ObjectHideFlags: 0
@@ -2141,7 +2165,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1969708977}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &950215397
 MonoBehaviour:
@@ -3159,7 +3183,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1969708977}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1402935501
 MonoBehaviour:
@@ -3617,7 +3641,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1969708977}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1463066417
 MonoBehaviour:
@@ -3819,109 +3843,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1 &1675255883
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1675255884}
-  - component: {fileID: 1675255885}
-  - component: {fileID: 1675255886}
-  m_Layer: 0
-  m_Name: CoinPlane0
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1675255884
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1675255883}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 20}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1969708977}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1675255885
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1675255883}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -894626317, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _plane:
-    name: CoinPlane0
-    filename: Image/money_dollar_coin2.png
-    filenameen: 
-    pos:
-    - 0
-    - 1
-    - 20
-    rotate:
-    - -0
-    - 0
-    - 0
-    scale:
-    - 1
-    - 1
-    - 1
-    alphablending: 1
-    billboard: 0
-    zbias: 0
-    show: 1
-    overrides: []
-    lookatcamera: 1
-    doubleside: 0
-    components:
-    - CoinManagement
-    showphotomode: 1
-    clickable: 0
-    autoloading: 1
-  textureInJP: {fileID: 2800000, guid: 68032931778d5b249b5687f35592e79b, type: 3}
-  textureInEN: {fileID: 0}
-  _isAdvancedFoldout: 0
-  _Priority: 0
-  PreviewFlag: 1
-  PreviewObject: {fileID: 0}
-  Reshow: 0
-  JPLang: 1
-  references:
-    version: 1
---- !u!114 &1675255886
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1675255883}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  selectedIndex: 0
-  selectedIndexes: 00000000
-  ScriptName: CoinManagement
-  _heliScript: {fileID: 469074977633818552, guid: 8375c8ea2d27d6b42ac287953f0c4651,
-    type: 3}
-  hsComponent: 
-  hsComponents:
-  - componentName: CoinManagement
-    selectedIndex: 8
 --- !u!1 &1690123600
 GameObject:
   m_ObjectHideFlags: 1
@@ -4322,7 +4243,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1858003066
 Transform:
   m_ObjectHideFlags: 0
@@ -4626,6 +4547,7 @@ MonoBehaviour:
   - {fileID: 469074977633818552, guid: 8375c8ea2d27d6b42ac287953f0c4651, type: 3}
   - {fileID: 469074977633818552, guid: d118e56bc09f7d7468965c3779b89e3b, type: 3}
   - {fileID: 469074977633818552, guid: 5f5c0d7e468cf6b48b42959b0d010bd8, type: 3}
+  - {fileID: 469074977633818552, guid: 84b7e12ff6ffef844af92c0e3f73b568, type: 3}
   _fileDeploymentConfig: {fileID: 0}
   _deploymentMode: 0
 --- !u!4 &1957313049
@@ -4669,7 +4591,6 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1675255884}
   - {fileID: 847362052}
   - {fileID: 325496876}
   - {fileID: 1463066416}

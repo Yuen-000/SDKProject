@@ -16,7 +16,7 @@ component GameClear
     Item myPlayer;
 
     //小峯追加分、コインアイテム
-    Item coin;
+    Item coinManagement;
 
     public GameClear()
     {
@@ -38,7 +38,7 @@ component GameClear
         myPlayer = hsItemGet("PlayerSettings");
 
         //小峯追加分、コインを入手
-        coin = hsItemGet("CoinScript");
+        coinManagement = hsItemGet("CoinManagement");
     }
 
     public void Update()
@@ -94,7 +94,7 @@ component GameClear
         myPlayer.CallComponentMethod("PlayerAutoRun", "setMoveCameraFalse", "");
 
         //小峯追加分、コインをリセット
-        coin.CallComponentMethod("CoinManagement", "reset", "");
+        coinManagement.CallComponentMethod("CoinManagement", "reset", "");
     }
 
     //タイマを止める
