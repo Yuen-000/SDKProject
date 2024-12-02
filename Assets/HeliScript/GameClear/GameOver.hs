@@ -17,7 +17,7 @@ component GameOver
     //小峯追加分、Playerクラス
     Item myPlayer;
 
-    //小峯追加分、コインアイテム
+    //小峯追加分、コイン管理アイテム
     Item coinManagement;
 
     public GameOver()
@@ -70,8 +70,8 @@ component GameOver
         //プレイヤーポジションを戻る
         SetPlayerRetry();
 
-        //小峯追加分、カメラが動いているフラグをオン
-        myPlayer.CallComponentMethod("PlayerAutoRun", "setMoveCameraTrue", "");
+        //小峯追加分、Autorunのカメラが動いているフラグをオン
+        SetAutorunCamera();
 
         //小峯追加分、諸々をリセット
         Item gateL = hsItemGet("Gate1LeftDoor");
@@ -112,11 +112,11 @@ component GameOver
         //カメラをプレイヤーに戻す
         camera.ResetCamera();
 
-        //小峯追加分、カメラが動いているフラグをオフ
-        myPlayer.CallComponentMethod("PlayerAutoRun", "setMoveCameraFalse", "");
-        
-        //小峯追加分、コインをリセット
-        coinManagement.CallComponentMethod("CoinManagement", "reset", "");
+        //小峯追加分、Autorunのカメラが動いているフラグをオフ
+        ResetAutorunCamera();
+
+        //小峯追加分、コインをリセットする
+        ResetCoin();
     }
 
     //タイマを止める
@@ -129,5 +129,23 @@ component GameOver
     void ResetTimer()
     {
         timeSystem.CallComponentMethod("TimeSystem", "ResetTimmer", "");
+    }
+
+    //小峯追加分、Autorunのカメラが動いているフラグをオン
+    void SetAutorunCamera()
+    {
+        myPlayer.CallComponentMethod("PlayerAutoRun", "setMoveCameraTrue", "");
+    }
+
+    //小峯追加分、Autorunのカメラが動いているフラグをオフ
+    void ResetAutorunCamera()
+    {
+        myPlayer.CallComponentMethod("PlayerAutoRun", "setMoveCameraFalse", "");
+    }
+
+    //小峯追加分、コインをリセットする
+    void ResetCoin()
+    {
+        coinManagement.CallComponentMethod("CoinManagement", "reset", "");      
     }
 }

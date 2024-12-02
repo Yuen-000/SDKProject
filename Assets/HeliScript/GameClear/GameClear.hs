@@ -15,7 +15,7 @@ component GameClear
     //小峯追加分、Playerクラス
     Item myPlayer;
 
-    //小峯追加分、コインアイテム
+    //小峯追加分、コイン管理アイテム
     Item coinManagement;
 
     public GameClear()
@@ -67,8 +67,8 @@ component GameClear
         //リザルトに表示
         ResultTimeUI();
 
-        //小峯追加分、カメラが動いているフラグをオン
-        myPlayer.CallComponentMethod("PlayerAutoRun", "setMoveCameraTrue", "");
+        //小峯追加分、Autorunのカメラが動いているフラグをオン
+        SetAutorunCamera();
     }
 
     //ボックスをクリックしたらリトライ
@@ -90,11 +90,11 @@ component GameClear
         //カメラをプレイヤーに戻す
         gameClearCream.ResetCamera();
 
-        //小峯追加分、カメラが動いているフラグをオフ
-        myPlayer.CallComponentMethod("PlayerAutoRun", "setMoveCameraFalse", "");
+        //小峯追加分、Autorunのカメラが動いているフラグをオフ
+        ResetAutorunCamera();
 
-        //小峯追加分、コインをリセット
-        coinManagement.CallComponentMethod("CoinManagement", "reset", "");
+        //小峯追加分、コインをリセットする
+        ResetCoin();
     }
 
     //タイマを止める
@@ -113,5 +113,23 @@ component GameClear
     void ResultTimeUI()
     {
         timeSystem.CallComponentMethod("TimeSystem", "ResultTimeUI", "");        
+    }
+
+    //小峯追加分、Autorunのカメラが動いているフラグをオン
+    void SetAutorunCamera()
+    {
+        myPlayer.CallComponentMethod("PlayerAutoRun", "setMoveCameraTrue", "");
+    }
+
+    //小峯追加分、Autorunのカメラが動いているフラグをオフ
+    void ResetAutorunCamera()
+    {
+        myPlayer.CallComponentMethod("PlayerAutoRun", "setMoveCameraFalse", "");
+    }
+
+    //小峯追加分、コインをリセットする
+    void ResetCoin()
+    {
+        coinManagement.CallComponentMethod("CoinManagement", "reset", "");      
     }
 }
