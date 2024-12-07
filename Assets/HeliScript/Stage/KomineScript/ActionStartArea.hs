@@ -24,7 +24,7 @@ component ActionStartArea
     //プレイヤーの座標（Vector3）
     Vector3 playerCoordinate;
 
-    //プレイヤーのZ座標
+    //プレイヤーのZ座標passing
     float playerZCoor;
 
     //連打アクション突入判定
@@ -67,7 +67,7 @@ component ActionStartArea
             isActionTime = true;
             hsSystemOutput("Action time for Z Coordinate " + string(areaZCoor) + " has begun!\n");
 
-            hsSystemOutput("Passing area!\n");
+            hsSystemOutput("Passing area! " + areaName + "\n");
             myPlayerComponent.CallComponentMethod("ActionTimeManagement", "recieveActionStart", areaName);
             myActionUI.CallComponentMethod("ActionUI", "startActionTime", "");
             myActionButton.CallComponentMethod("ActionButton", "SetActionFlagTrue", "");
@@ -81,7 +81,9 @@ component ActionStartArea
             }
             else if(areaName == "hogehoge"){
             }
-            else if(areaName == "fugafuga"){
+            else if(areaName == "ActionArea3"){
+                Item gateW = hsItemGet("Gate3Wood");
+                gateW.CallComponentMethod("Gate3Animation", "setClose", "");
             }
         }
     }

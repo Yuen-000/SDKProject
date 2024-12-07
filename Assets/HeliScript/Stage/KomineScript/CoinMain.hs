@@ -51,6 +51,9 @@ component CoinMain
     //Œø‰Ê‰¹
     Item coinSE;
 
+    //©•ª‚ÌƒRƒCƒ“”Ô†
+    int coinNum;
+
     public CoinMain()
     {
         hsSystemOutput("Script:CoinMain\n");
@@ -89,7 +92,11 @@ component CoinMain
 
         coinManagement = hsItemGet("CoinManagement");
 
-        coinSE = hsItemGet("CoinSE");
+        coinNum = ((myItemSelf.GetName()).SubString(4,1)).ToInt();
+
+        coinSE = hsItemGet("CoinSE" + string(coinNum % 10));
+
+        hsSystemOutput(coinSE.GetName() + "\n");
     }
 
     public void Update()
