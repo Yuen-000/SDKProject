@@ -4923,7 +4923,7 @@ MonoBehaviour:
   _heliodorScripts: []
   _field:
     name: World
-    filename: Field/World/World.heo
+    filename: Field/World.heo
     components: []
     overrides: []
     autoloading: 1

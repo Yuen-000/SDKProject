@@ -48,6 +48,9 @@ component CoinMain
     //ƒŒ[ƒ“‚Ì‹——£
     float LANEDISTANCE;
 
+    //Œø‰Ê‰¹
+    Item coinSE;
+
     public CoinMain()
     {
         hsSystemOutput("Script:CoinMain\n");
@@ -85,6 +88,8 @@ component CoinMain
         count = 0;
 
         coinManagement = hsItemGet("CoinManagement");
+
+        coinSE = hsItemGet("CoinSE");
     }
 
     public void Update()
@@ -111,6 +116,7 @@ component CoinMain
                 count = 0;
                 isMagnet = false;
                 caughtAnimation();
+                coinSE.Play();
             }
             else
             {
@@ -183,6 +189,7 @@ component CoinMain
         if(isMagnet == false)
         {
             myItemSelf.SetPos(afterPos);
+            coinSE.Play();
         }
         else
         {
