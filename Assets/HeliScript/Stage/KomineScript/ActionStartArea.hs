@@ -6,6 +6,9 @@ component ActionStartArea
     //ActionButton
     Item myActionButton;
 
+    //ActionParticle
+    Item myActionParticle;
+
     //‚±‚ÌƒAƒCƒeƒ€
     Item myArea;
 
@@ -36,12 +39,13 @@ component ActionStartArea
     public ActionStartArea()
     {
         hsSystemOutput("Script:HitBoxActionArea\n");
-        hsSystemOutput("Date:20241028\n");
-        hsSystemOutput("Version:3.5.0\n");
-        hsSystemOutput("Update Content:Update Flag\n");
+        hsSystemOutput("Date:20241209\n");
+        hsSystemOutput("Version:4.0.0\n");
+        hsSystemOutput("Update Content:Update Particle\n");
 
         myActionUI = hsItemGet("ActionUIScript");
         myActionButton = hsItemGet("ActionButtonScript");
+        myActionParticle = hsItemGet("particle_speedup");
 
         myArea = hsItemGetSelf();
 
@@ -70,6 +74,7 @@ component ActionStartArea
             hsSystemOutput("Passing area! " + areaName + "\n");
             myPlayerComponent.CallComponentMethod("ActionTimeManagement", "recieveActionStart", areaName);
             myActionUI.CallComponentMethod("ActionUI", "startActionTime", "");
+            myActionParticle.CallComponentMethod("ActionParticle", "setActionTrue", "");
             myActionButton.CallComponentMethod("ActionButton", "SetActionFlagTrue", "");
 
             if(areaName == "ActionArea1"){
