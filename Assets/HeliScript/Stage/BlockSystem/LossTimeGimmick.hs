@@ -7,8 +7,9 @@ component LossTimeGimmick
     Player playerItem;
 
     //アイテム
-    Item blockItem;
     Item lostTimeItem;
+    Item timerItem;
+    Item blockItem;
 
     //アイテムのVector3
     Vector3 blockItemPos;
@@ -46,6 +47,9 @@ component LossTimeGimmick
 
         //タイムアイテム
         lostTimeItem = hsItemGet("TimeSystem");
+        
+        //decreaseTimeのアイテム
+        timerItem = hsItemGet("Timer");
 
         //ギミックブロック
         blockItem = hsItemGetSelf();
@@ -98,6 +102,7 @@ component LossTimeGimmick
         if(lostTimeItem !== null)
         {
             lostTimeItem.CallComponentMethod("TimeSystem", "ReduceTime", "");
+            timerItem.CallComponentMethod("UIFollowPlayer", "ShowDecreaseTime", "");
         }
     }
 
