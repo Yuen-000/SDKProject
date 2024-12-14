@@ -12,19 +12,24 @@ component ActionTimeManagement
     //UIアイテム
     Item actionUI;
 
+    //パーティクルアイテム
+    Item actionParticle;
+
     //どこまでクリアしたか
     float clearDistance;
 
     public ActionTimeManagement()
     {
         hsSystemOutput("Script:ActionTimeManagement\n");
-        hsSystemOutput("Date:20241028\n");
-        hsSystemOutput("Version:1.1.0\n");
-        hsSystemOutput("Update Content:Create\n");
+        hsSystemOutput("Date:20241209\n");
+        hsSystemOutput("Version:2.0.0\n");
+        hsSystemOutput("Update Content:Update particle\n");
 
         isActionTime = false;
         areaName = "";
         actionUI = hsItemGet("ActionUIScript");
+
+        actionParticle = hsItemGet("particle_speedup");
 
         clearDistance = 0.0f;
     }
@@ -44,5 +49,6 @@ component ActionTimeManagement
     public void sendEndOfActionTime(){
         areaOfOrigin.CallComponentMethod("ActionStartArea", "endActionTime", "");
         actionUI.CallComponentMethod("ActionUI", "endActionTime", "");
+        actionParticle.CallComponentMethod("ActionParticle", "setActionFalse", "");
     }
 }

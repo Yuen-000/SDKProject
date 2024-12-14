@@ -24,6 +24,9 @@ component ActionButton
     //自身（property取得用）
     Item myItemSelf;
 
+    //効果音
+    Item actionSE;
+
     public ActionButton()
     {
         hsSystemOutput("Script:ActionButton\n");
@@ -67,6 +70,10 @@ component ActionButton
             pressCount++;
             hsSystemOutput(string(pressCount) + "\n");
 
+            actionSE = hsItemGet("ActionButtonSE" + string(pressCount % 10));
+
+            actionSE.Play();
+
             int areaNum = areaNumStr.ToInt();
 
             if(areaNum == 1){
@@ -79,6 +86,9 @@ component ActionButton
             else if(areaNum == 2){
             }
             else if(areaNum == 3){
+                Item gateW = hsItemGet("Gate3Wood");
+
+                gateW.CallComponentMethod("Gate3Animation", "setAction", "");
             }
         }
     }
