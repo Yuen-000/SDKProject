@@ -54,6 +54,12 @@ component CoinMain
     //自分のコイン番号
     int coinNum;
 
+    //コインを取得できる距離
+    float DISTANCE_NORMAL;
+
+    //コインを取得できる距離（磁石）
+    float DISTANCE_MAGNET;
+
     public CoinMain()
     {
         hsSystemOutput("Script:CoinMain\n");
@@ -97,6 +103,10 @@ component CoinMain
         coinSE = hsItemGet("CoinSE" + string(coinNum % 10));
 
         hsSystemOutput(coinSE.GetName() + "\n");
+
+        DISTANCE_NORMAL = (myPlayerComponent.GetProperty("DISTANCE_NORMAL")).ToFloat();
+
+        DISTANCE_MAGNET = (myPlayerComponent.GetProperty("LANEDISTANCE")).ToFloat();
     }
 
     public void Update()
@@ -162,7 +172,7 @@ component CoinMain
             {
                 distance = hsMathSqrt((playerPos.z - originalPos.z) * (playerPos.z - originalPos.z) + (playerPos.y - originalPos.y) * (playerPos.y - originalPos.y));
 
-                if(distance <= 1.25f)
+                if(distance <= DISTANCE_NORMAL)
                 {
                     return true;
                 }
@@ -172,7 +182,7 @@ component CoinMain
         {
             distance = hsMathSqrt((playerPos.z - originalPos.z) * (playerPos.z - originalPos.z) + (playerPos.y - originalPos.y) * (playerPos.y - originalPos.y) + (playerPos.x - originalPos.x) * (playerPos.x - originalPos.x));
 
-            if(distance <= 5.0f)
+            if(distance <= DISTANCE_MAGNET)
             {
                 return true;
             }
