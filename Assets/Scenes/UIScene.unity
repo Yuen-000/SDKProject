@@ -402,7 +402,7 @@ MonoBehaviour:
   _heliodorScripts: []
   _field:
     name: TimeSystem
-    filename: Field/TimeSystem/TimeSystem.heo
+    filename: Field/TimeSystem.heo
     components:
     - TimeSystem
     overrides: []
