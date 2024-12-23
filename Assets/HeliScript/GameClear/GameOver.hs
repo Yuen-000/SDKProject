@@ -20,6 +20,12 @@ component GameOver
     //小峯追加分、コイン管理アイテム
     Item coinManagement;
 
+    //小峯追加分、ゲームオーバーBGMアイテム
+    Item overBGM;
+
+    //小峯追加分、通常BGMアイテム
+    Item normalBGM;
+
     public GameOver()
     {
         //GameOverDecisionのコンストラクタ
@@ -35,6 +41,12 @@ component GameOver
         
         //小峯追加分、コインを入手
         coinManagement = hsItemGet("CoinManagement");
+
+        //小峯追加分、ゲームオーバーBGMを入手
+        overBGM = hsItemGet("BGM_GameOver");
+
+        //小峯追加分、通常BGMを入手
+        normalBGM = hsItemGet("BGM_Main");
     }
 
     public void Update()
@@ -87,6 +99,9 @@ component GameOver
         Item area1 = hsItemGet("ActionArea1");
 
         area1.CallComponentMethod("ActionStartArea", "endActionTime", "");
+
+        //小峯追加分、通常BGMの再生を止め、ゲームオーバーのBGMを流す
+        SetOverBGM();
     }
 
     //ボックスをクリックしたらリトライ
@@ -117,6 +132,9 @@ component GameOver
 
         //小峯追加分、コインをリセットする
         ResetCoin();
+
+        //小峯追加分、通常のBGMを流す
+        SetNormalBGM();
     }
 
     //タイマを止める
@@ -147,5 +165,18 @@ component GameOver
     void ResetCoin()
     {
         coinManagement.CallComponentMethod("CoinManagement", "reset", "");      
+    }
+
+    //小峯追加分、通常BGMの再生を止め、ゲームクリアのBGMを流す
+    void SetOverBGM()
+    {
+        normalBGM.Stop();
+        overBGM.Play();
+    }
+
+    //小峯追加分、通常のBGMを流す
+    void SetNormalBGM()
+    {
+        normalBGM.Play();
     }
 }
