@@ -18,6 +18,12 @@ component GameClear
     //小峯追加分、コイン管理アイテム
     Item coinManagement;
 
+    //小峯追加分、ゲームクリアBGMアイテム
+    Item clearBGM;
+
+    //小峯追加分、通常BGMアイテム
+    Item normalBGM;
+
     public GameClear()
     {
         //GameOverDecisionのコンストラクタ
@@ -39,6 +45,12 @@ component GameClear
 
         //小峯追加分、コインを入手
         coinManagement = hsItemGet("CoinManagement");
+
+        //小峯追加分、ゲームクリアBGMを入手
+        clearBGM = hsItemGet("BGM_GameClear");
+
+        //小峯追加分、通常BGMを入手
+        normalBGM = hsItemGet("BGM_Main");
     }
 
     public void Update()
@@ -69,6 +81,9 @@ component GameClear
 
         //小峯追加分、Autorunのカメラが動いているフラグをオン
         SetAutorunCamera();
+
+        //小峯追加分、通常BGMの再生を止め、ゲームクリアのBGMを流す
+        SetClearBGM();
     }
 
     //ボックスをクリックしたらリトライ
@@ -95,6 +110,9 @@ component GameClear
 
         //小峯追加分、コインをリセットする
         ResetCoin();
+
+        //小峯追加分、通常のBGMを流す
+        SetNormalBGM();
     }
 
     //タイマを止める
@@ -131,5 +149,18 @@ component GameClear
     void ResetCoin()
     {
         coinManagement.CallComponentMethod("CoinManagement", "reset", "");      
+    }
+
+    //小峯追加分、通常BGMの再生を止め、ゲームクリアのBGMを流す
+    void SetClearBGM()
+    {
+        normalBGM.Stop();
+        clearBGM.Play();
+    }
+
+    //小峯追加分、通常のBGMを流す
+    void SetNormalBGM()
+    {
+        normalBGM.Play();
     }
 }
