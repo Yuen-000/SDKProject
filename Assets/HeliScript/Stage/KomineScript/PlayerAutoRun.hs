@@ -54,12 +54,30 @@ component PlayerAutoRun
     //デバッグアイテムの座標
     Vector3 debugPos;
 
+    //スピードアップしているか
+    bool isSpeedUp;
+
+    //スピードアップ残り時間
+    int speedUpTime;
+
+    //スピードアップ上限
+    int SPEEDUP_TIMELIMIT;
+
+    //通常の移動速度
+    float SPEED_NORMAL;
+
+    //アイテム使用時の移動速度
+    float SPEED_ITEM;
+
+    //現在の移動速度
+    float speedCurrent;
+
     public PlayerAutoRun()
     {
         hsSystemOutput("Script:PlayerAutoRun\n");
-        hsSystemOutput("Date:20241202\n");
-        hsSystemOutput("Version:10.1.0\n");
-        hsSystemOutput("Update Content:Supports Attribute Property\n");
+        hsSystemOutput("Date:20241282\n");
+        hsSystemOutput("Version:11.0.0\n");
+        hsSystemOutput("Update Content:Support for speed up\n");
         myPlayer = new Player();
         myPlayer = hsPlayerGet();
 
@@ -105,6 +123,18 @@ component PlayerAutoRun
 
         initialPosition = new Vector3();
         initialPosition = myPlayer.GetPos();
+
+        isSpeedUp = false;
+
+        speedUpTime = 0;
+
+        SPEEDUP_TIMELIMIT = int((myPlayerComponent.GetProperty("SPEEDUPTIME")).ToFloat() * 60);
+
+        SPEED_NORMAL = (myPlayerComponent.GetProperty("SPEED_NORMAL")).ToFloat() / 60.0;
+
+        SPEED_ITEM = (myPlayerComponent.GetProperty("SPEED_ITEM")).ToFloat() / 60.0;
+
+        speedCurrent = SPEED_NORMAL;
     }
 
     public void Update()
@@ -120,6 +150,15 @@ component PlayerAutoRun
                 playerLane = 0;
                 myPlayerComponent.SetProperty("playerLane", string(playerLane));
             }
+
+            if(isSpeedUp){
+                speedCurrent = SPEED_ITEM;
+                speedUpTime--;
+                if(speedUpTime == 0){
+                    setSpeedUpEnd();
+                }
+            }
+            else speedCurrent = SPEED_NORMAL;
 
             //向きを前に
             myPlayer.SetRotate(0.0f);
@@ -155,7 +194,7 @@ component PlayerAutoRun
             newPlayerPos.z = previousPlayerPos.z;
 
             //前に進むベクトル
-            Vector3 autoRunDistance = makeVector3(0.0f,0.0f,0.1f);
+            Vector3 autoRunDistance = makeVector3(0.0f,0.0f,speedCurrent);
             newPlayerPos.Add(autoRunDistance);
 
             //ここで位置をセット
@@ -182,5 +221,17 @@ component PlayerAutoRun
 
     public void resetCoordinate(){
         myPlayer.SetPos(initialPosition);
+    }
+
+    public void setSpeedUpStart(){
+        isSpeedUp = true;
+        speedUpTime = SPEEDUP_TIMELIMIT;
+        myPlayerComponent.SetProperty("isSpeedUp","true");
+    }
+
+    public void setSpeedUpEnd(){
+        isSpeedUp = false;
+        speedUpTime = 0;
+        myPlayerComponent.SetProperty("isSpeedUp","false");
     }
 }

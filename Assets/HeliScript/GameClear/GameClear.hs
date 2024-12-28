@@ -24,6 +24,9 @@ component GameClear
     //小峯追加分、通常BGMアイテム
     Item normalBGM;
 
+    //小峯追加分、スピードアップ管理アイテム
+    Item speedUpManagement;
+
     public GameClear()
     {
         //GameOverDecisionのコンストラクタ
@@ -51,6 +54,9 @@ component GameClear
 
         //小峯追加分、通常BGMを入手
         normalBGM = hsItemGet("BGM_Main");
+
+        //小峯追加分、スピードアップを入手
+        speedUpManagement = hsItemGet("SpeedUpManagement");
     }
 
     public void Update()
@@ -113,6 +119,9 @@ component GameClear
 
         //小峯追加分、通常のBGMを流す
         SetNormalBGM();
+
+        //小峯追加分、スピードアップをリセットする
+        ResetSpeedUp();
     }
 
     //タイマを止める
@@ -162,5 +171,11 @@ component GameClear
     void SetNormalBGM()
     {
         normalBGM.Play();
+    }
+
+    //小峯追加分、スピードアップをリセットする
+    void ResetSpeedUp()
+    {
+        speedUpManagement.CallComponentMethod("SpeedUpManagement", "reset", "");      
     }
 }
