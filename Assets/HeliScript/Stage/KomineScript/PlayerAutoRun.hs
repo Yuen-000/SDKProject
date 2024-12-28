@@ -72,6 +72,12 @@ component PlayerAutoRun
     //現在の移動速度
     float speedCurrent;
 
+    //スピードアップエフェクト
+    Item speedUpParticle;
+
+    //スピードアップ効果音
+    Item speedUpSE;
+
     public PlayerAutoRun()
     {
         hsSystemOutput("Script:PlayerAutoRun\n");
@@ -135,6 +141,11 @@ component PlayerAutoRun
         SPEED_ITEM = (myPlayerComponent.GetProperty("SPEED_ITEM")).ToFloat() / 60.0;
 
         speedCurrent = SPEED_NORMAL;
+
+        speedUpParticle = hsItemGet("SpeedUpParticle");
+
+        speedUpSE = hsItemGet("SpeedUpSE");
+
     }
 
     public void Update()
@@ -156,6 +167,7 @@ component PlayerAutoRun
                 speedUpTime--;
                 if(speedUpTime == 0){
                     setSpeedUpEnd();
+                    speedUpParticle.CallComponentMethod("SpeedUpParticle","setActionFalse","");
                 }
             }
             else speedCurrent = SPEED_NORMAL;
@@ -233,5 +245,6 @@ component PlayerAutoRun
         isSpeedUp = false;
         speedUpTime = 0;
         myPlayerComponent.SetProperty("isSpeedUp","false");
+        speedUpSE.Stop();
     }
 }

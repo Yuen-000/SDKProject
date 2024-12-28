@@ -48,8 +48,11 @@ component SpeedUpMain
     //レーンの距離
     float LANEDISTANCE;
 
-    //効果音
-    //Item speedUpSE;
+    //アイテムゲット効果音
+    Item itemGetSE;
+
+    //スピードアップ効果音
+    Item speedUpSE;
 
     //自分のアイテム番号
     int speedUpNum;
@@ -59,6 +62,9 @@ component SpeedUpMain
 
     //取得できる距離（磁石）
     float DISTANCE_MAGNET;
+
+    //スピードアップエフェクト
+    Item speedUpParticle;
 
     public SpeedUpMain()
     {
@@ -100,11 +106,14 @@ component SpeedUpMain
 
         speedUpNum = ((myItemSelf.GetName()).SubString(7,1)).ToInt();
 
-        //coinSE = hsItemGet("CoinSE" + string(coinNum % 10));
+        itemGetSE = hsItemGet("ItemGetSE");
+        speedUpSE = hsItemGet("SpeedUpSE");
 
         DISTANCE_NORMAL = (myPlayerComponent.GetProperty("DISTANCE_NORMAL")).ToFloat();
 
         DISTANCE_MAGNET = (myPlayerComponent.GetProperty("LANEDISTANCE")).ToFloat();
+
+        speedUpParticle = hsItemGet("SpeedUpParticle");
     }
 
     public void Update()
@@ -118,6 +127,8 @@ component SpeedUpMain
                 //coinManagement.CallComponentMethod("CoinManagement", "addCount", "");
                 caughtAnimation();
                 myPlayerComponent.CallComponentMethod("PlayerAutoRun","setSpeedUpStart","");
+                speedUpParticle.CallComponentMethod("SpeedUpParticle","setActionTrue","");
+                speedUpSE.Play();
             }
         }
         else if(count > 0)
@@ -129,7 +140,7 @@ component SpeedUpMain
                 count = 0;
                 isMagnet = false;
                 caughtAnimation();
-                //coinSE.Play();
+                itemGetSE.Play();
             }
             else
             {
@@ -204,7 +215,7 @@ component SpeedUpMain
         if(isMagnet == false)
         {
             myItemSelf.SetPos(afterPos);
-            //coinSE.Play();
+            itemGetSE.Play();
         }
         else
         {
