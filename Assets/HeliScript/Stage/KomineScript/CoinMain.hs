@@ -106,7 +106,7 @@ component CoinMain
 
         DISTANCE_NORMAL = (myPlayerComponent.GetProperty("DISTANCE_NORMAL")).ToFloat();
 
-        DISTANCE_MAGNET = (myPlayerComponent.GetProperty("LANEDISTANCE")).ToFloat();
+        DISTANCE_MAGNET = (myPlayerComponent.GetProperty("DISTANCE_MAGNET")).ToFloat();
     }
 
     public void Update()
@@ -139,7 +139,7 @@ component CoinMain
             {
                 count++;
                 currentPos.x += (playerPos.x - currentPos.x) / 10;
-                currentPos.y += (playerPos.y - (currentPos.y + 0.5)) / 10;
+                currentPos.y += ((playerPos.y + 1.0) - currentPos.y) / 10;
                 currentPos.z += (playerPos.z - currentPos.z) / 10;
                 myItemSelf.SetPos(currentPos);
             }

@@ -29,7 +29,7 @@ component ActionTimeManagement
         areaName = "";
         actionUI = hsItemGet("ActionUIScript");
 
-        actionParticle = hsItemGet("particle_speedup");
+        actionParticle = hsItemGet("particle_action");
 
         clearDistance = 0.0f;
     }

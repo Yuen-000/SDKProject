@@ -69,7 +69,7 @@ component SpeedUpMain
     public SpeedUpMain()
     {
         hsSystemOutput("Script:SpeedUpMain\n");
-        hsSystemOutput("Date:2024128\n");
+        hsSystemOutput("Date:20241228\n");
         hsSystemOutput("Version:1.0.0\n");
         hsSystemOutput("Update Content:Create\n");
 
@@ -151,7 +151,7 @@ component SpeedUpMain
                 myItemSelf.SetPos(currentPos);
             }
         }
-          
+
     }
 
     public bool measureDistance()

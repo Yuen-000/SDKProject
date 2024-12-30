@@ -29,6 +29,9 @@ component GameOver
     //小峯追加分、スピードアップ管理アイテム
     Item speedUpManagement;
 
+    //小峯追加分、磁石管理アイテム
+    Item magnetManagement;
+
     public GameOver()
     {
         //GameOverDecisionのコンストラクタ
@@ -53,6 +56,9 @@ component GameOver
 
         //小峯追加分、スピードアップを入手
         speedUpManagement = hsItemGet("SpeedUpManagement");
+
+        //小峯追加分、磁石を入手
+        magnetManagement = hsItemGet("MagnetManagement");
     }
 
     public void Update()
@@ -144,6 +150,9 @@ component GameOver
 
         //小峯追加分、スピードアップをリセットする
         ResetSpeedUp();
+
+        //小峯追加分、磁石をリセットする
+        ResetMagnet();
     }
 
     //タイマを止める
@@ -193,5 +202,11 @@ component GameOver
     void ResetSpeedUp()
     {
         speedUpManagement.CallComponentMethod("SpeedUpManagement", "reset", "");      
+    }
+
+    //小峯追加分、磁石をリセットする
+    void ResetMagnet()
+    {
+        magnetManagement.CallComponentMethod("MagnetManagement", "reset", "");      
     }
 }

@@ -78,12 +78,21 @@ component PlayerAutoRun
     //スピードアップ効果音
     Item speedUpSE;
 
+    //磁石効果音
+    Item magnetSE;
+
+    //磁石残り時間
+    int magnetTime;
+
+    //磁石上限
+    int MAGNET_TIMELIMIT;
+
     public PlayerAutoRun()
     {
         hsSystemOutput("Script:PlayerAutoRun\n");
-        hsSystemOutput("Date:20241282\n");
-        hsSystemOutput("Version:11.0.0\n");
-        hsSystemOutput("Update Content:Support for speed up\n");
+        hsSystemOutput("Date:20241230\n");
+        hsSystemOutput("Version:12.0.0\n");
+        hsSystemOutput("Update Content:Support for magnet\n");
         myPlayer = new Player();
         myPlayer = hsPlayerGet();
 
@@ -146,6 +155,10 @@ component PlayerAutoRun
 
         speedUpSE = hsItemGet("SpeedUpSE");
 
+        magnetSE = hsItemGet("MagnetSE");
+
+        MAGNET_TIMELIMIT = int((myPlayerComponent.GetProperty("MAGNETTIME")).ToFloat() * 60);
+
     }
 
     public void Update()
@@ -171,6 +184,14 @@ component PlayerAutoRun
                 }
             }
             else speedCurrent = SPEED_NORMAL;
+
+            if(magnetTime > 0){
+                magnetTime--;
+
+                if(magnetTime<=0){
+                    setMagnetEnd();
+                }
+            }
 
             //向きを前に
             myPlayer.SetRotate(0.0f);
@@ -239,6 +260,7 @@ component PlayerAutoRun
         isSpeedUp = true;
         speedUpTime = SPEEDUP_TIMELIMIT;
         myPlayerComponent.SetProperty("isSpeedUp","true");
+        setMagnetEnd();
     }
 
     public void setSpeedUpEnd(){
@@ -247,4 +269,18 @@ component PlayerAutoRun
         myPlayerComponent.SetProperty("isSpeedUp","false");
         speedUpSE.Stop();
     }
+
+    public void setMagnetStart(){
+        magnetTime = MAGNET_TIMELIMIT;
+        myPlayerComponent.SetProperty("isMagnet","true");
+        setSpeedUpEnd();
+        speedUpParticle.CallComponentMethod("SpeedUpParticle","setActionFalse","");
+    }
+
+    public void setMagnetEnd(){
+        magnetTime = 0;
+        myPlayerComponent.SetProperty("isMagnet","false");
+        magnetSE.Stop();
+    }
+
 }
