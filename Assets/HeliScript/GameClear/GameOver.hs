@@ -114,6 +114,12 @@ component GameOver
 
         //小峯追加分、通常BGMの再生を止め、ゲームオーバーのBGMを流す
         SetOverBGM();
+
+        //小峯追加分、スピードアップをフラグオフする
+        FlagOffSpeedUp();
+
+        //小峯追加分、磁石をフラグオフする
+        FlagOffMagnet();
     }
 
     //ボックスをクリックしたらリトライ
@@ -208,5 +214,17 @@ component GameOver
     void ResetMagnet()
     {
         magnetManagement.CallComponentMethod("MagnetManagement", "reset", "");      
+    }
+
+    //小峯追加分、スピードをフラグオフする
+    void FlagOffSpeedUp()
+    {
+        myPlayer.CallComponentMethod("PlayerAutoRun", "setSpeedUpEnd", "");      
+    }
+
+    //小峯追加分、磁石をフラグオフする
+    void FlagOffMagnet()
+    {
+        myPlayer.CallComponentMethod("PlayerAutoRun", "setMagnetEnd", "");      
     }
 }
