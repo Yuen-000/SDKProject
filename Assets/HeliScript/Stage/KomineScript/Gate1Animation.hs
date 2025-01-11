@@ -27,6 +27,15 @@ component Gate1LeftAnimation
     //ボタンアイテム（property取得用）
     Item myButton;
 
+    //X座標
+    float POS_X;
+
+    //Y座標
+    float POS_Y;
+
+    //Z座標
+    float POS_Z;
+
     public Gate1LeftAnimation()
     {
         hsSystemOutput("Script:Gate1LeftAnimation\n");
@@ -40,6 +49,10 @@ component Gate1LeftAnimation
         TIME_LIMIT = int(myButton.GetProperty("TIME_LIMIT").ToFloat() * 60.0f);
 
         myItem = hsItemGetSelf;
+
+        POS_X = myItem.GetProperty("POS_X").ToFloat();
+        POS_Y = myItem.GetProperty("POS_Y").ToFloat();
+        POS_Z = myItem.GetProperty("POS_Z").ToFloat();
 
         reset();
     }
@@ -96,7 +109,7 @@ component Gate1LeftAnimation
             float doorZ = ((-1.8f) * hsMathCos((angle - 180) * PI / 180)) + ((-1.8f) * hsMathCos((angle - 90) * PI / 180)) - 1.8f;
             Quaternion doorQuaternion = makeQuaternionYRotation(angle * PI / 180);
 
-            myItem.SetPos(makeVector3(doorX + 0.00f,-0.50f,doorZ + 270.95f));
+            myItem.SetPos(makeVector3(doorX + POS_X, POS_Y,doorZ + POS_Z));
             myItem.SetQuaternion(doorQuaternion);
     }
 }
@@ -130,6 +143,15 @@ component Gate1RightAnimation
     //ボタンアイテム（property取得用）
     Item myButton;
 
+    //X座標
+    float POS_X;
+
+    //Y座標
+    float POS_Y;
+
+    //Z座標
+    float POS_Z;
+
     public Gate1RightAnimation()
     {
         hsSystemOutput("Script:Gate1RightAnimation\n");
@@ -143,6 +165,10 @@ component Gate1RightAnimation
         TIME_LIMIT = int(myButton.GetProperty("TIME_LIMIT").ToFloat() * 60.0f);
 
         myItem = hsItemGetSelf;
+
+        POS_X = myItem.GetProperty("POS_X").ToFloat();
+        POS_Y = myItem.GetProperty("POS_Y").ToFloat();
+        POS_Z = myItem.GetProperty("POS_Z").ToFloat();
         
         reset();
     }
@@ -199,7 +225,7 @@ component Gate1RightAnimation
             float doorZ = ((-1.8f) * hsMathCos((angle - 180) * PI / 180)) + ((1.8f) * hsMathCos((angle - 90) * PI / 180)) - 1.8f;
             Quaternion doorQuaternion = makeQuaternionYRotation(angle * PI / 180);
 
-            myItem.SetPos(makeVector3(doorX + 0.00f,-0.50f,doorZ + 270.95f));
+            myItem.SetPos(makeVector3(doorX + POS_X, POS_Y,doorZ + POS_Z));
             myItem.SetQuaternion(doorQuaternion);
     }
 }
