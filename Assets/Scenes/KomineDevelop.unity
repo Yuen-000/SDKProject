@@ -5313,8 +5313,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1775568678}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5, y: 3, z: 75}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -5, y: 3, z: 72.5}
+  m_LocalScale: {x: 5.5, y: 5.5, z: 1}
   m_Children: []
   m_Father: {fileID: 2080491510}
   m_RootOrder: 18
@@ -5328,82 +5328,45 @@ MonoBehaviour:
   m_GameObject: {fileID: 1775568678}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Script: {fileID: -894626317, guid: aceab675429f9e946b912a758820ab12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _object:
+  _plane:
     name: Gate3LeftWall
-    filename: Field/Gate3LeftWall/Gate3LeftWall.heo
-    filename_png: 
-    filename_astc: 
-    filename_etc2: 
-    pose: 
-    clickable: 0
-    enablebone: 0
-    show: 1
-    autoloading: 1
-    forceshadowcaster: 0
-    forceshadowreceiver: 0
-    foregroundrendering: 0
-    zwriteenable: 1
-    alphablendtoopaque: 0
-    unserializecircleshadow:
-      _use: 0
-      _filename: CircleShadow2/CircleShadow2.heo
-      _scale:
-      - 0.6
-      - 0.6
-      - 0.6
-      _zbias: -0.02
-      _adjustposdownward: 0
-    alphaanim: 0
-    motions: []
-    beginactions: []
-    endactions: []
+    filename: Image/wood02_transmission.png
+    filenameen: Image/wood02_transmission.png
     pos:
     - -5
     - 3
-    - 75
+    - 72.5
     rotate:
     - -0
     - 0
     - 0
     scale:
+    - 5.5
+    - 5.5
     - 1
-    - 1
-    - 1
-    components:
-    - Gate3Animation
-    - Gate3LeftAnimation
+    alphablending: 1
+    billboard: 0
+    zbias: 0
+    show: 1
+    overrides: []
     lookatcamera: 0
-    collisiondetection: 1
-    uselightscattering: 1
+    doubleside: 0
+    components:
+    - Gate3LeftAnimation
     showphotomode: 1
-  _autoShowHEO: 1
-  PreviewObjectRoot: {fileID: 0}
-  CurrentShowFile: {fileID: 8794674264650990340, guid: 0522aca720a1b3042af14751bf46f891,
-    type: 3}
-  TempAvatar: {fileID: 0}
-  fileMode: 0
-  fileModeTypeValue: 0
-  _Priority: 0
-  _buildingShow: 0
-  heoCircleShadow: {fileID: 0}
-  heoOrVrm: {fileID: 8794674264650990340, guid: 0522aca720a1b3042af14751bf46f891,
-    type: 3}
-  vrm: {fileID: 0}
-  glb: {fileID: 0}
-  hem: {fileID: 0}
-  hrmPng: {fileID: 0}
-  hrmAstc: {fileID: 0}
-  hrmEtc2: {fileID: 0}
-  hrmDxt: {fileID: 0}
-  _circleShadowScaleInEditor: {x: 0.6, y: 0.6, z: 0.6}
-  _isBeginactionsFoldout: 0
-  _isEndactionsFoldout: 0
-  _objectMode: 0
-  _isComponentsFoldout: 0
+    clickable: 0
+    autoloading: 1
+  textureInJP: {fileID: 2800000, guid: 686d30c5c2fd1c042ae98b13df66bedc, type: 3}
+  textureInEN: {fileID: 2800000, guid: 686d30c5c2fd1c042ae98b13df66bedc, type: 3}
   _isAdvancedFoldout: 0
+  _Priority: 0
+  PreviewFlag: 1
+  PreviewObject: {fileID: 0}
+  Reshow: 0
+  JPLang: 1
   references:
     version: 1
 --- !u!114 &1775568681
@@ -5441,15 +5404,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   properties:
   - Key: LENGTH
-    Value: 5
+    Value: 5.5
   - Key: WIDTH
-    Value: 0.5
+    Value: 5.5
   - Key: POS_X
     Value: -5
   - Key: POS_Y
     Value: 0.5
   - Key: POS_Z
-    Value: 75
+    Value: 72,5
 --- !u!1 &1814883649
 GameObject:
   m_ObjectHideFlags: 0
@@ -6723,8 +6686,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2114176012}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5, y: 3, z: 75}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 5, y: 3, z: 77.5}
+  m_LocalScale: {x: 5.5, y: 5.5, z: 1}
   m_Children: []
   m_Father: {fileID: 2080491510}
   m_RootOrder: 19
@@ -6743,9 +6706,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   properties:
   - Key: LENGTH
-    Value: 5
+    Value: 5.5
   - Key: WIDTH
-    Value: 0.5
+    Value: 5.5
   - Key: POS_X
     Value: 5
   - Key: POS_Y
@@ -6782,83 +6745,45 @@ MonoBehaviour:
   m_GameObject: {fileID: 2114176012}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Script: {fileID: -894626317, guid: aceab675429f9e946b912a758820ab12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _object:
+  _plane:
     name: Gate3RightWall
-    filename: Field/Gate3RightWall/Gate3RightWall.heo
-    filename_png: 
-    filename_astc: 
-    filename_etc2: 
-    pose: 
-    clickable: 0
-    enablebone: 0
-    show: 1
-    autoloading: 1
-    forceshadowcaster: 0
-    forceshadowreceiver: 0
-    foregroundrendering: 0
-    zwriteenable: 1
-    alphablendtoopaque: 0
-    unserializecircleshadow:
-      _use: 0
-      _filename: CircleShadow2/CircleShadow2.heo
-      _scale:
-      - 0.6
-      - 0.6
-      - 0.6
-      _zbias: -0.02
-      _adjustposdownward: 0
-    alphaanim: 0
-    motions: []
-    beginactions: []
-    endactions: []
+    filename: Image/wood02_transmission.png
+    filenameen: Image/wood02_transmission.png
     pos:
     - 5
     - 3
-    - 75
+    - 77.5
     rotate:
     - -0
     - 0
     - 0
     scale:
+    - 5.5
+    - 5.5
     - 1
-    - 1
-    - 1
-    components:
-    - Gate3Animation
-    - Gate3LeftAnimation
-    - Gate3RightAnimation
+    alphablending: 1
+    billboard: 0
+    zbias: 0
+    show: 1
+    overrides: []
     lookatcamera: 0
-    collisiondetection: 1
-    uselightscattering: 1
+    doubleside: 0
+    components:
+    - Gate3RightAnimation
     showphotomode: 1
-  _autoShowHEO: 1
-  PreviewObjectRoot: {fileID: 0}
-  CurrentShowFile: {fileID: 8794674264650990340, guid: 2d1152f85099b8a4a846f84a3ed6988a,
-    type: 3}
-  TempAvatar: {fileID: 0}
-  fileMode: 0
-  fileModeTypeValue: 0
-  _Priority: 0
-  _buildingShow: 0
-  heoCircleShadow: {fileID: 0}
-  heoOrVrm: {fileID: 8794674264650990340, guid: 2d1152f85099b8a4a846f84a3ed6988a,
-    type: 3}
-  vrm: {fileID: 0}
-  glb: {fileID: 0}
-  hem: {fileID: 0}
-  hrmPng: {fileID: 0}
-  hrmAstc: {fileID: 0}
-  hrmEtc2: {fileID: 0}
-  hrmDxt: {fileID: 0}
-  _circleShadowScaleInEditor: {x: 0.6, y: 0.6, z: 0.6}
-  _isBeginactionsFoldout: 0
-  _isEndactionsFoldout: 0
-  _objectMode: 0
-  _isComponentsFoldout: 0
+    clickable: 0
+    autoloading: 1
+  textureInJP: {fileID: 2800000, guid: 686d30c5c2fd1c042ae98b13df66bedc, type: 3}
+  textureInEN: {fileID: 2800000, guid: 686d30c5c2fd1c042ae98b13df66bedc, type: 3}
   _isAdvancedFoldout: 0
+  _Priority: 0
+  PreviewFlag: 1
+  PreviewObject: {fileID: 0}
+  Reshow: 0
+  JPLang: 1
   references:
     version: 1
 --- !u!1 &2126955454
