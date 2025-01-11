@@ -136,6 +136,8 @@ MonoBehaviour:
   properties:
   - Key: Time(12345)
     Value: 18000
+  - Key: DeltaTime
+    Value: 1.7
   - Key: ReduceTime(123)
     Value: 300
   - Key: YPos

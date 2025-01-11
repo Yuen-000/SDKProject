@@ -1,0 +1,267 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4719227806112188096
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4719227806112188099}
+  - component: {fileID: 4719227806112188101}
+  - component: {fileID: 4719227806112188098}
+  m_Layer: 0
+  m_Name: CoinUITitle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4719227806112188099
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4719227806112188096}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4719227806944468851}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4719227806112188101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4719227806112188096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -894626317, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _plane:
+    name: CoinUITitle
+    filename: Image/coin_X.png
+    filenameen: Image/coin_X.png
+    pos:
+    - -0.21062285
+    - 1.3676229
+    - 0.4813887
+    rotate:
+    - -0
+    - 0
+    - 0
+    scale:
+    - 0.4
+    - 0.4
+    - 1
+    alphablending: 1
+    billboard: 0
+    zbias: 0
+    show: 1
+    overrides: []
+    lookatcamera: 0
+    doubleside: 0
+    components: []
+    showphotomode: 1
+    clickable: 0
+    autoloading: 1
+  textureInJP: {fileID: 2800000, guid: 32e61f04580ebd343860951e54b6274f, type: 3}
+  textureInEN: {fileID: 2800000, guid: 32e61f04580ebd343860951e54b6274f, type: 3}
+  _isAdvancedFoldout: 0
+  _Priority: 0
+  PreviewFlag: 1
+  PreviewObject: {fileID: 0}
+  Reshow: 0
+  JPLang: 1
+  references:
+    version: 1
+--- !u!114 &4719227806112188098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4719227806112188096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -917271763, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  properties:
+  - Key: XPos
+    Value: -0.8
+  - Key: YPos
+    Value: 0.05
+--- !u!1 &4719227806488666110
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4719227806488666097}
+  - component: {fileID: 4719227806488666098}
+  - component: {fileID: 4719227806488666099}
+  - component: {fileID: 4719227806488666096}
+  m_Layer: 0
+  m_Name: CoinUI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4719227806488666097
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4719227806488666110}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4719227806944468851}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4719227806488666098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4719227806488666110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1570965333, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textPlane:
+    _name: CoinUI
+    _pos:
+    - -0.21062285
+    - 1.3676229
+    - 0.4813887
+    _rotate:
+    - -0
+    - 0
+    - 0
+    _scale:
+    - 1
+    - 1
+    - 1
+    _color:
+    - 1
+    - 1
+    - 1
+    - 1
+    _fontsize: 150
+    _horizontalToolbar: 1
+    _verticalToolbar: 1
+    _alignment: 4
+    _charaspace: 0
+    _linespace: 1
+    _overflowwrap: 0
+    _texturesize:
+    - 512
+    - 512
+    _text: 0/50
+    _alphablending: 1
+    _billboard: 0
+    _zbias: -0.05
+    _show: 1
+    _overrides: []
+    components:
+    - CoinUI
+    _lookatcamera: 0
+    _showphotomode: 1
+    _autoloading: 1
+    clickable: 0
+  _color: {r: 1, g: 1, b: 1, a: 1}
+  _texturesize: {x: 512, y: 512}
+  _Priority: 0
+  PreviewState: 1
+  _subTextObject: {fileID: 0}
+  ReShow: 0
+  _isAdvancedFoldout: 0
+  references:
+    version: 1
+--- !u!114 &4719227806488666099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4719227806488666110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: CoinUI
+  _heliScript: {fileID: 469074977633818552, guid: b1d21e9bd5900da47acd217ba16d6c76,
+    type: 3}
+  hsComponent: 
+  hsComponents:
+  - componentName: CoinUI
+    selectedIndex: 16
+--- !u!114 &4719227806488666096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4719227806488666110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -917271763, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  properties:
+  - Key: CoinManagementItemName
+    Value: CoinManagement
+  - Key: XPos
+    Value: 4.0
+  - Key: YPos
+    Value: 3.8
+--- !u!1 &4719227806944468848
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4719227806944468851}
+  m_Layer: 0
+  m_Name: Coin
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4719227806944468851
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4719227806944468848}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.21062285, y: 1.3676229, z: 0.4813887}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4719227806488666097}
+  - {fileID: 4719227806112188099}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

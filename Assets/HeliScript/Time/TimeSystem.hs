@@ -9,6 +9,7 @@ component TimeSystem
     int limitTime;
     int countTime;
     int decreaseTime;
+    float decreaseDeltaTime;
 
     //カウントのトリガー
     bool isCount;
@@ -26,6 +27,8 @@ component TimeSystem
 
         countTime = limitTime;
 
+        decreaseDeltaTime = timer.GetProperty("DeltaTime").ToFloat();
+
         StartCountTimer();
     }
 
@@ -42,7 +45,7 @@ component TimeSystem
     {
         if(countTime >= 0)
         {
-            countTime = countTime - 1 * hsSystemGetDeltaTime();
+            countTime = countTime - decreaseDeltaTime * hsSystemGetDeltaTime();
             TimeUI();
         }
         else if(countTime < 0)
