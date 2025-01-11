@@ -36,6 +36,9 @@ component ActionStartArea
     //Player（関数呼び出し用）
     Item myPlayerComponent;
 
+    //スピードアップエフェクト
+    Item speedUpParticle;
+
     public ActionStartArea()
     {
         hsSystemOutput("Script:HitBoxActionArea\n");
@@ -45,7 +48,7 @@ component ActionStartArea
 
         myActionUI = hsItemGet("ActionUIScript");
         myActionButton = hsItemGet("ActionButtonScript");
-        myActionParticle = hsItemGet("particle_speedup");
+        myActionParticle = hsItemGet("particle_action");
 
         myArea = hsItemGetSelf();
 
@@ -60,6 +63,8 @@ component ActionStartArea
         isActionTime = false;
 
         myPlayerComponent = hsItemGet("PlayerSettings");
+
+        speedUpParticle = hsItemGet("SpeedUpParticle");
     }
 
     public void Update()
@@ -76,6 +81,9 @@ component ActionStartArea
             myActionUI.CallComponentMethod("ActionUI", "startActionTime", "");
             myActionParticle.CallComponentMethod("ActionParticle", "setActionTrue", "");
             myActionButton.CallComponentMethod("ActionButton", "SetActionFlagTrue", "");
+
+            myPlayerComponent.CallComponentMethod("PlayerAutoRun", "setSpeedUpEnd", "");
+            speedUpParticle.CallComponentMethod("SpeedUpParticle","setActionFalse","");
 
             if(areaName == "ActionArea1"){
                 Item gateL = hsItemGet("Gate1LeftDoor");

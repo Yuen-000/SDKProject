@@ -27,6 +27,12 @@ component Gate3Animation
     //ボタンアイテム（property取得用）
     Item myButton;
 
+    //長さ
+    float LENGTH;
+
+    //幅
+    float WIDTH;
+
     public Gate3Animation()
     {
         hsSystemOutput("Script:Gate3Animation\n");
@@ -40,13 +46,11 @@ component Gate3Animation
         TIME_LIMIT = int(myButton.GetProperty("TIME_LIMIT").ToFloat() * 60.0f);
 
         myItem = hsItemGetSelf;
-        isClosed = false;
-        actionCount = 0;
-        timer = 0;
 
-        angle = 0.0f;
-
-        calcPos();
+        LENGTH = myItem.GetProperty("LENGTH").ToFloat();
+        WIDTH = myItem.GetProperty("WIDTH").ToFloat();
+        
+        reset();
     }
 
     public void Update()
@@ -76,10 +80,10 @@ component Gate3Animation
             actionCount++;
             angle += 90.0f / CLEAR_PRESS_COUNT;
 
-            if(angle >= 90.0f) angle = 90.0f;
+            if(angle >= 0.0f) angle = 0.0f;
 
             if(actionCount == CLEAR_PRESS_COUNT){
-                angle = 90.0f;
+                angle = 0.0f;
             }
         }
     }
@@ -96,14 +100,11 @@ component Gate3Animation
 
     public void calcPos()
     {
-            float length = 30.0f;
-            float width = 4.0f;
-
-            float woodX = ((-length / 2) * hsMathSin((angle) * PI / 180)) + ((-width / 2) * hsMathCos((angle) * PI / 180));
-            float woodY = ((length / 2) * hsMathCos((angle) * PI / 180)) + ((-width / 2) * hsMathSin((angle) * PI / 180));
+            float woodX = ((-LENGTH / 2) * hsMathSin((angle) * PI / 180)) + ((-WIDTH / 2) * hsMathCos((angle) * PI / 180));
+            float woodY = ((LENGTH / 2) * hsMathCos((angle) * PI / 180)) + ((-WIDTH / 2) * hsMathSin((angle) * PI / 180));
             Quaternion woodQuaternion = makeQuaternionZRotation(angle * PI / 180);
 
-            myItem.SetPos(makeVector3(woodX + -length / 2, woodY, 80.0f));
+            myItem.SetPos(makeVector3(woodX + -LENGTH / 2, woodY, 80.0f));
             myItem.SetQuaternion(woodQuaternion);
     }
 }

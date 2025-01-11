@@ -30,9 +30,9 @@ component Gate1LeftAnimation
     public Gate1LeftAnimation()
     {
         hsSystemOutput("Script:Gate1LeftAnimation\n");
-        hsSystemOutput("Date:20241123\n");
-        hsSystemOutput("Version:2.0.0\n");
-        hsSystemOutput("Update Content:Completed\n");
+        hsSystemOutput("Date:20241230\n");
+        hsSystemOutput("Version:2.1.0\n");
+        hsSystemOutput("Update Content:Rename\n");
 
         myButton = hsItemGet("ActionButtonScript");
 
@@ -40,13 +40,8 @@ component Gate1LeftAnimation
         TIME_LIMIT = int(myButton.GetProperty("TIME_LIMIT").ToFloat() * 60.0f);
 
         myItem = hsItemGetSelf;
-        isClosed = false;
-        actionCount = 0;
-        timer = 0;
 
-        angle = 90.0f;
-
-        calcPos();
+        reset();
     }
 
     public void Update()
@@ -148,13 +143,8 @@ component Gate1RightAnimation
         TIME_LIMIT = int(myButton.GetProperty("TIME_LIMIT").ToFloat() * 60.0f);
 
         myItem = hsItemGetSelf;
-        isClosed = false;
-        actionCount = 0;
-        timer = 0;
-
-        angle = -90.0f;
-
-        calcPos();
+        
+        reset();
     }
 
     public void Update()

@@ -121,6 +121,67 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &46581649
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 46581650}
+  - component: {fileID: 46581651}
+  m_Layer: 0
+  m_Name: ActionButtonSE3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &46581650
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 46581649}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1686339994}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &46581651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 46581649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -247161819, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audio:
+    name: ActionButtonSE3
+    type: se
+    filename: Sound/ClickAction_SE.mp3
+    loop: 0
+    autoplay: 0
+    overrides: []
+    components: []
+    showphotomode: 1
+    clickable: 0
+    autoloading: 1
+    show: 1
+  audioClip: {fileID: 8300000, guid: 28970248127154544a43241ba70ea915, type: 3}
+  _isAdvancedFoldout: 1
+  _Priority: 0
+  _audioType: 1
+  references:
+    version: 1
 --- !u!1 &55619483
 GameObject:
   m_ObjectHideFlags: 0
@@ -307,7 +368,7 @@ Transform:
   m_Children:
   - {fileID: 1325274622}
   m_Father: {fileID: 2080491510}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &94696540
 GameObject:
@@ -480,7 +541,7 @@ Transform:
   m_LocalScale: {x: 40, y: 1, z: 40}
   m_Children: []
   m_Father: {fileID: 2080491510}
-  m_RootOrder: 9
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &115659186
 MonoBehaviour:
@@ -597,7 +658,7 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 1}
   m_Children: []
   m_Father: {fileID: 2080491510}
-  m_RootOrder: 11
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &178676648
 BoxCollider:
@@ -762,6 +823,67 @@ MonoBehaviour:
   JPLang: 1
   references:
     version: 1
+--- !u!1 &217129523
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 217129524}
+  - component: {fileID: 217129525}
+  m_Layer: 0
+  m_Name: ActionButtonSE8
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &217129524
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 217129523}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1686339994}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &217129525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 217129523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -247161819, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audio:
+    name: ActionButtonSE8
+    type: se
+    filename: Sound/ClickAction_SE.mp3
+    loop: 0
+    autoplay: 0
+    overrides: []
+    components: []
+    showphotomode: 1
+    clickable: 0
+    autoloading: 1
+    show: 1
+  audioClip: {fileID: 8300000, guid: 28970248127154544a43241ba70ea915, type: 3}
+  _isAdvancedFoldout: 1
+  _Priority: 0
+  _audioType: 1
+  references:
+    version: 1
 --- !u!1 &250219098
 GameObject:
   m_ObjectHideFlags: 0
@@ -794,7 +916,7 @@ Transform:
   m_LocalScale: {x: 5, y: 1, z: 20}
   m_Children: []
   m_Father: {fileID: 2080491510}
-  m_RootOrder: 8
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &250219100
 MonoBehaviour:
@@ -1063,7 +1185,7 @@ Transform:
   - {fileID: 2040473611}
   - {fileID: 2099489721}
   m_Father: {fileID: 2080491510}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &325496875
 GameObject:
@@ -1384,6 +1506,20 @@ MonoBehaviour:
     Value: 0
   - Key: isMagnet
     Value: false
+  - Key: DISTANCE_NORMAL
+    Value: 1.25
+  - Key: DISTANCE_MAGNET
+    Value: 5.0
+  - Key: SPEED_NORMAL
+    Value: 6.0
+  - Key: SPEED_ITEM
+    Value: 12.0
+  - Key: SPEEDUPTIME
+    Value: 7.0
+  - Key: isSpeedUp
+    Value: false
+  - Key: MAGNETTIME
+    Value: 7.0
 --- !u!114 &357862345
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1443,6 +1579,128 @@ MonoBehaviour:
     selectedIndex: 0
   - componentName: ActionTimeManagement
     selectedIndex: 6
+--- !u!1 &421044846
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 421044847}
+  - component: {fileID: 421044848}
+  m_Layer: 0
+  m_Name: ActionButtonSE5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &421044847
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 421044846}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1686339994}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &421044848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 421044846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -247161819, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audio:
+    name: ActionButtonSE5
+    type: se
+    filename: Sound/ClickAction_SE.mp3
+    loop: 0
+    autoplay: 0
+    overrides: []
+    components: []
+    showphotomode: 1
+    clickable: 0
+    autoloading: 1
+    show: 1
+  audioClip: {fileID: 8300000, guid: 28970248127154544a43241ba70ea915, type: 3}
+  _isAdvancedFoldout: 1
+  _Priority: 0
+  _audioType: 1
+  references:
+    version: 1
+--- !u!1 &484491183
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 484491184}
+  - component: {fileID: 484491185}
+  m_Layer: 0
+  m_Name: ActionButtonSE1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &484491184
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 484491183}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1686339994}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &484491185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 484491183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -247161819, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audio:
+    name: ActionButtonSE1
+    type: se
+    filename: Sound/ClickAction_SE.mp3
+    loop: 0
+    autoplay: 0
+    overrides: []
+    components: []
+    showphotomode: 1
+    clickable: 0
+    autoloading: 1
+    show: 1
+  audioClip: {fileID: 8300000, guid: 28970248127154544a43241ba70ea915, type: 3}
+  _isAdvancedFoldout: 1
+  _Priority: 0
+  _audioType: 1
+  references:
+    version: 1
 --- !u!1 &503935993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1528,6 +1786,67 @@ Transform:
   m_Father: {fileID: 1101579960}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &629844523
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 629844524}
+  - component: {fileID: 629844525}
+  m_Layer: 0
+  m_Name: ActionButtonSE0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &629844524
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 629844523}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1686339994}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &629844525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 629844523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -247161819, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audio:
+    name: ActionButtonSE0
+    type: se
+    filename: Sound/ClickAction_SE.mp3
+    loop: 0
+    autoplay: 0
+    overrides: []
+    components: []
+    showphotomode: 1
+    clickable: 0
+    autoloading: 1
+    show: 1
+  audioClip: {fileID: 8300000, guid: 28970248127154544a43241ba70ea915, type: 3}
+  _isAdvancedFoldout: 1
+  _Priority: 0
+  _audioType: 1
+  references:
+    version: 1
 --- !u!1 &700217739
 GameObject:
   m_ObjectHideFlags: 0
@@ -1808,6 +2127,67 @@ MonoBehaviour:
   _isAdvancedFoldout: 0
   references:
     version: 1
+--- !u!1 &766886932
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 766886933}
+  - component: {fileID: 766886934}
+  m_Layer: 0
+  m_Name: ActionButtonSE7
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &766886933
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 766886932}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1686339994}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &766886934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 766886932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -247161819, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audio:
+    name: ActionButtonSE7
+    type: se
+    filename: Sound/ClickAction_SE.mp3
+    loop: 0
+    autoplay: 0
+    overrides: []
+    components: []
+    showphotomode: 1
+    clickable: 0
+    autoloading: 1
+    show: 1
+  audioClip: {fileID: 8300000, guid: 28970248127154544a43241ba70ea915, type: 3}
+  _isAdvancedFoldout: 1
+  _Priority: 0
+  _audioType: 1
+  references:
+    version: 1
 --- !u!1 &836182912
 GameObject:
   m_ObjectHideFlags: 0
@@ -2052,6 +2432,67 @@ MonoBehaviour:
     Value: 5
   - Key: Count
     Value: 0
+--- !u!1 &913651654
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 913651655}
+  - component: {fileID: 913651656}
+  m_Layer: 0
+  m_Name: ActionButtonSE4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &913651655
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 913651654}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1686339994}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &913651656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 913651654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -247161819, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audio:
+    name: ActionButtonSE4
+    type: se
+    filename: Sound/ClickAction_SE.mp3
+    loop: 0
+    autoplay: 0
+    overrides: []
+    components: []
+    showphotomode: 1
+    clickable: 0
+    autoloading: 1
+    show: 1
+  audioClip: {fileID: 8300000, guid: 28970248127154544a43241ba70ea915, type: 3}
+  _isAdvancedFoldout: 1
+  _Priority: 0
+  _audioType: 1
+  references:
+    version: 1
 --- !u!1 &927138118
 GameObject:
   m_ObjectHideFlags: 0
@@ -2338,7 +2779,7 @@ Transform:
   m_LocalScale: {x: 5, y: 1, z: 20}
   m_Children: []
   m_Father: {fileID: 2080491510}
-  m_RootOrder: 7
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &964845915
 MonoBehaviour:
@@ -2586,6 +3027,67 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _areaSize: {x: 0, y: 0}
   tempAreaCollider: {fileID: 0}
+--- !u!1 &1057124047
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1057124048}
+  - component: {fileID: 1057124049}
+  m_Layer: 0
+  m_Name: ActionButtonSE9
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1057124048
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1057124047}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1686339994}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1057124049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1057124047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -247161819, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audio:
+    name: ActionButtonSE9
+    type: se
+    filename: Sound/ClickAction_SE.mp3
+    loop: 0
+    autoplay: 0
+    overrides: []
+    components: []
+    showphotomode: 1
+    clickable: 0
+    autoloading: 1
+    show: 1
+  audioClip: {fileID: 8300000, guid: 28970248127154544a43241ba70ea915, type: 3}
+  _isAdvancedFoldout: 1
+  _Priority: 0
+  _audioType: 1
+  references:
+    version: 1
 --- !u!1 &1090374341
 GameObject:
   m_ObjectHideFlags: 0
@@ -2773,7 +3275,7 @@ Transform:
   - {fileID: 537495642}
   - {fileID: 951715757}
   m_Father: {fileID: 2080491510}
-  m_RootOrder: 14
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1143593716
 GameObject:
@@ -2947,6 +3449,112 @@ Transform:
   m_Father: {fileID: 1972182359}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1244735943
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1244735944}
+  - component: {fileID: 1244735947}
+  - component: {fileID: 1244735946}
+  - component: {fileID: 1244735945}
+  m_Layer: 0
+  m_Name: particle_action
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1244735944
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1244735943}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -100, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2080491510}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1244735945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1244735943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -917271763, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  properties:
+  - Key: POS_Y
+    Value: 0.0
+  - Key: POS_Z
+    Value: 0.0
+--- !u!114 &1244735946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1244735943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: ActionParticle
+  _heliScript: {fileID: 469074977633818552, guid: ef3d3855a77eac3478212d84a70bc1f6,
+    type: 3}
+  hsComponent: 
+  hsComponents:
+  - componentName: ActionParticle
+    selectedIndex: 17
+--- !u!114 &1244735947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1244735943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 2030893995, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _particle:
+    name: particle_action
+    filename: Particle/Effect_SpeedUp_09/Effect_SpeedUp_09.hep
+    pos:
+    - 0
+    - -100
+    - 0
+    rotate:
+    - -0
+    - 0
+    - 0
+    loop: 1
+    autoplay: 1
+    autoloading: 1
+    isAdvancedFoldout: 0
+    components:
+    - ActionParticle
+    showphotomode: 1
+    clickable: 0
+    show: 1
+  hep: {fileID: 8549007397814093194, guid: 65a830e070d27544e8cf8d62c5d7661c, type: 3}
+  _Priority: 0
+  _isAdvancedFoldout: 1
 --- !u!1 &1292771806
 GameObject:
   m_ObjectHideFlags: 0
@@ -3243,7 +3851,7 @@ Transform:
   m_LocalScale: {x: 5, y: 1, z: 20}
   m_Children: []
   m_Father: {fileID: 2080491510}
-  m_RootOrder: 6
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1368201768
 MonoBehaviour:
@@ -3581,7 +4189,7 @@ Transform:
   - {fileID: 1090374342}
   - {fileID: 1292771807}
   m_Father: {fileID: 1877946212}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1429948118
 MonoBehaviour:
@@ -3945,6 +4553,111 @@ MonoBehaviour:
   _isAdvancedFoldout: 0
   references:
     version: 1
+--- !u!1 &1474589781
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1474589782}
+  - component: {fileID: 1474589785}
+  - component: {fileID: 1474589784}
+  - component: {fileID: 1474589783}
+  m_Layer: 0
+  m_Name: SpeedUpParticle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1474589782
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1474589781}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -100}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2080491510}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1474589783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1474589781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -917271763, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  properties:
+  - Key: POS_Y
+    Value: 0.0
+  - Key: POS_Z
+    Value: 0.0
+--- !u!114 &1474589784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1474589781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: 
+  _heliScript: {fileID: 0}
+  hsComponent: 
+  hsComponents:
+  - componentName: SpeedUpParticle
+    selectedIndex: 20
+--- !u!114 &1474589785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1474589781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 2030893995, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _particle:
+    name: SpeedUpParticle
+    filename: Particle/Effect_SpeedUp_09/Effect_SpeedUp_09.hep
+    pos:
+    - 0
+    - 0
+    - -100
+    rotate:
+    - -0
+    - 0
+    - 0
+    loop: 1
+    autoplay: 1
+    autoloading: 1
+    isAdvancedFoldout: 0
+    components:
+    - SpeedUpParticle
+    showphotomode: 1
+    clickable: 0
+    show: 1
+  hep: {fileID: 8549007397814093194, guid: 65a830e070d27544e8cf8d62c5d7661c, type: 3}
+  _Priority: 0
+  _isAdvancedFoldout: 1
 --- !u!1 &1583182882
 GameObject:
   m_ObjectHideFlags: 0
@@ -4037,6 +4750,107 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &1650806140
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1650806141}
+  - component: {fileID: 1650806142}
+  m_Layer: 0
+  m_Name: SpeedUpSE
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1650806141
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650806140}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2080491510}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1650806142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650806140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -247161819, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audio:
+    name: SpeedUpSE
+    type: se
+    filename: Sound/SpeedUp_SE.mp3
+    loop: 0
+    autoplay: 0
+    overrides: []
+    components: []
+    showphotomode: 1
+    clickable: 0
+    autoloading: 1
+    show: 1
+  audioClip: {fileID: 8300000, guid: acd99b5fab79a11499a51ea6576f8ecd, type: 3}
+  _isAdvancedFoldout: 0
+  _Priority: 0
+  _audioType: 1
+  references:
+    version: 1
+--- !u!1 &1686339993
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1686339994}
+  m_Layer: 0
+  m_Name: SE
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1686339994
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1686339993}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 629844524}
+  - {fileID: 484491184}
+  - {fileID: 2126955455}
+  - {fileID: 46581650}
+  - {fileID: 913651655}
+  - {fileID: 421044847}
+  - {fileID: 1983390415}
+  - {fileID: 766886933}
+  - {fileID: 217129524}
+  - {fileID: 1057124048}
+  m_Father: {fileID: 1877946212}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1690123600
 GameObject:
   m_ObjectHideFlags: 1
@@ -4080,6 +4894,7 @@ MonoBehaviour:
   - HeliScript/GameOverDecision.hs
   - HeliScript/CoinMain.hs
   - HeliScript/Gate3Animation.hs
+  - HeliScript/ActionParticle.hs
   spatiumCode: default
 --- !u!4 &1690123602
 Transform:
@@ -4125,7 +4940,7 @@ Transform:
   - {fileID: 94696541}
   - {fileID: 1814883650}
   m_Father: {fileID: 2080491510}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1758160164
 GameObject:
@@ -4313,7 +5128,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2080491510}
-  m_RootOrder: 15
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1769029146
 MonoBehaviour:
@@ -4375,6 +5190,7 @@ GameObject:
   - component: {fileID: 1775568679}
   - component: {fileID: 1775568680}
   - component: {fileID: 1775568681}
+  - component: {fileID: 1775568682}
   m_Layer: 0
   m_Name: Gate3Wood
   m_TagString: Untagged
@@ -4394,7 +5210,7 @@ Transform:
   m_LocalScale: {x: 4, y: 30, z: 4}
   m_Children: []
   m_Father: {fileID: 2080491510}
-  m_RootOrder: 16
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1775568680
 MonoBehaviour:
@@ -4502,6 +5318,23 @@ MonoBehaviour:
   hsComponents:
   - componentName: Gate3Animation
     selectedIndex: 11
+--- !u!114 &1775568682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775568678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -917271763, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  properties:
+  - Key: LENGTH
+    Value: 30.0
+  - Key: WIDTH
+    Value: 4.0
 --- !u!1 &1814883649
 GameObject:
   m_ObjectHideFlags: 0
@@ -4733,7 +5566,7 @@ Transform:
   - {fileID: 1411849793}
   - {fileID: 989300287}
   m_Father: {fileID: 2080491510}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1873625248
 GameObject:
@@ -4767,7 +5600,7 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 1}
   m_Children: []
   m_Father: {fileID: 2080491510}
-  m_RootOrder: 12
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1873625250
 BoxCollider:
@@ -4879,9 +5712,10 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1686339994}
   - {fileID: 1429948117}
   m_Father: {fileID: 2080491510}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1885161601
 GameObject:
@@ -5021,6 +5855,7 @@ MonoBehaviour:
   - {fileID: 469074977633818552, guid: d118e56bc09f7d7468965c3779b89e3b, type: 3}
   - {fileID: 469074977633818552, guid: 5f5c0d7e468cf6b48b42959b0d010bd8, type: 3}
   - {fileID: 469074977633818552, guid: 1f58f47ef27e70b4f913718df7707ef3, type: 3}
+  - {fileID: 469074977633818552, guid: ef3d3855a77eac3478212d84a70bc1f6, type: 3}
   _fileDeploymentConfig: {fileID: 0}
   _deploymentMode: 0
 --- !u!4 &1957313049
@@ -5071,7 +5906,7 @@ Transform:
   - {fileID: 1402935500}
   - {fileID: 950215396}
   m_Father: {fileID: 2080491510}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1972182357
 GameObject:
@@ -5131,6 +5966,67 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1983390414
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1983390415}
+  - component: {fileID: 1983390416}
+  m_Layer: 0
+  m_Name: ActionButtonSE6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1983390415
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1983390414}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1686339994}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1983390416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1983390414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -247161819, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audio:
+    name: ActionButtonSE6
+    type: se
+    filename: Sound/ClickAction_SE.mp3
+    loop: 0
+    autoplay: 0
+    overrides: []
+    components: []
+    showphotomode: 1
+    clickable: 0
+    autoloading: 1
+    show: 1
+  audioClip: {fileID: 8300000, guid: 28970248127154544a43241ba70ea915, type: 3}
+  _isAdvancedFoldout: 1
+  _Priority: 0
+  _audioType: 1
+  references:
+    version: 1
 --- !u!1 &2008526716
 GameObject:
   m_ObjectHideFlags: 0
@@ -5163,7 +6059,7 @@ Transform:
   m_LocalScale: {x: 30, y: 10, z: 1}
   m_Children: []
   m_Father: {fileID: 2080491510}
-  m_RootOrder: 13
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &2008526718
 BoxCollider:
@@ -5426,6 +6322,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1474589782}
+  - {fileID: 1244735944}
   - {fileID: 1969708977}
   - {fileID: 274547905}
   - {fileID: 1858003066}
@@ -5443,6 +6341,7 @@ Transform:
   - {fileID: 1101579960}
   - {fileID: 1769029145}
   - {fileID: 1775568679}
+  - {fileID: 1650806141}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5478,7 +6377,7 @@ Transform:
   m_LocalScale: {x: 6, y: 6, z: 1}
   m_Children: []
   m_Father: {fileID: 2080491510}
-  m_RootOrder: 10
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &2093091904
 BoxCollider:
@@ -5677,5 +6576,66 @@ MonoBehaviour:
   _objectMode: 0
   _isComponentsFoldout: 0
   _isAdvancedFoldout: 0
+  references:
+    version: 1
+--- !u!1 &2126955454
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2126955455}
+  - component: {fileID: 2126955456}
+  m_Layer: 0
+  m_Name: ActionButtonSE2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2126955455
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2126955454}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1686339994}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2126955456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2126955454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -247161819, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audio:
+    name: ActionButtonSE2
+    type: se
+    filename: Sound/ClickAction_SE.mp3
+    loop: 0
+    autoplay: 0
+    overrides: []
+    components: []
+    showphotomode: 1
+    clickable: 0
+    autoloading: 1
+    show: 1
+  audioClip: {fileID: 8300000, guid: 28970248127154544a43241ba70ea915, type: 3}
+  _isAdvancedFoldout: 1
+  _Priority: 0
+  _audioType: 1
   references:
     version: 1
