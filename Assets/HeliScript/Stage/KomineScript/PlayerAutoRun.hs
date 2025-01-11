@@ -3,6 +3,9 @@ component PlayerAutoRun
     //Playerクラス
     Player  myPlayer;
 
+    //プレイヤー（呼び出し用）
+    Item myPlayerComponent;
+
     //1F前のプレイヤーの位置
     Vector3 previousPlayerPos;
 
@@ -22,28 +25,19 @@ component PlayerAutoRun
     int direction;
 
     //移動クールタイム
-    const int movementCoolTime = 30;
+    int MOVEMENTCOOLTIME;
 
     //レーン移動にかかるフレーム
-    const int movementAnimeTime = 10;
+    int MOVEMENTANIMETIME;
 
     //左右の広がり 3レーンなので1
     const int laneNumMax = 1;
 
     //レーンの間の距離　要調整
-    const float laneDistance = 1.4f;
-
-    //連打エリアに突入するZ座標のリスト
-    list<float> hitBoxAreaList;
-
-    //連打アクション中か
-    bool isActionTime;
+    float LANEDISTANCE;
 
     //デバッグモード
     bool dAutoRun;
-
-    //ActionButton
-    Item myActionButton;
 
     //前のフレームにカメラが移動していたか
     bool previousMoveCamera;
@@ -51,18 +45,75 @@ component PlayerAutoRun
     //今カメラが移動していたか
     bool moveCamera;
 
+    //初期位置
+    Vector3 initialPosition;
+
+    //デバッグアイテム
+    Item debug;
+
+    //デバッグアイテムの座標
+    Vector3 debugPos;
+
+    //スピードアップしているか
+    bool isSpeedUp;
+
+    //スピードアップ残り時間
+    int speedUpTime;
+
+    //スピードアップ上限
+    int SPEEDUP_TIMELIMIT;
+
+    //通常の移動速度
+    float SPEED_NORMAL;
+
+    //アイテム使用時の移動速度
+    float SPEED_ITEM;
+
+    //現在の移動速度
+    float speedCurrent;
+
+    //スピードアップエフェクト
+    Item speedUpParticle;
+
+    //スピードアップ効果音
+    Item speedUpSE;
+
+    //磁石効果音
+    Item magnetSE;
+
+    //磁石残り時間
+    int magnetTime;
+
+    //磁石上限
+    int MAGNET_TIMELIMIT;
+
+    //磁石エフェクト
+    Item magnetParticle;
+
     public PlayerAutoRun()
     {
         hsSystemOutput("Script:PlayerAutoRun\n");
-        hsSystemOutput("Date:20241012\n");
-        hsSystemOutput("Version:8.2.1\n");
-        hsSystemOutput("Update Content:Adjusted to not conflict with game clear/game over\n");
+        hsSystemOutput("Date:20241230\n");
+        hsSystemOutput("Version:12.0.0\n");
+        hsSystemOutput("Update Content:Support for magnet\n");
         myPlayer = new Player();
         myPlayer = hsPlayerGet();
 
-        myActionButton = hsItemGet("ActionButtonCore");
+        myPlayerComponent = hsItemGet("PlayerSettings");
 
-        dAutoRun = false;
+        LANEDISTANCE = (myPlayerComponent.GetProperty("LANEDISTANCE")).ToFloat();
+
+        MOVEMENTCOOLTIME = (myPlayerComponent.GetProperty("MOVEMENTCOOLTIME")).ToInt();
+
+        MOVEMENTANIMETIME = (myPlayerComponent.GetProperty("MOVEMENTANIMETIME")).ToInt();
+
+        debug = hsItemGet("Debugger");
+        debugPos = debug.GetPos();
+        
+        if(debugPos.y > 0){
+            dAutoRun = true;
+        }
+        else dAutoRun = false;
 
         if(!dAutoRun){
             previousPlayerPos = new Vector3();
@@ -78,19 +129,40 @@ component PlayerAutoRun
 
             movementFrame = 0;
             playerLane = 0;
+            myPlayerComponent.SetProperty("playerLane", string(playerLane));
         }
         else{
             hsSystemOutput("Debug Mode : Autorun is now off\n");
         }
 
-        isActionTime = false;
-
-        hitBoxAreaList = new list<float>(1);
-        hitBoxAreaList[0] = 30.0f;
-
         previousMoveCamera = false;
 
         moveCamera = false;
+
+        initialPosition = new Vector3();
+        initialPosition = myPlayer.GetPos();
+
+        isSpeedUp = false;
+
+        speedUpTime = 0;
+
+        SPEEDUP_TIMELIMIT = int((myPlayerComponent.GetProperty("SPEEDUPTIME")).ToFloat() * 60);
+
+        SPEED_NORMAL = (myPlayerComponent.GetProperty("SPEED_NORMAL")).ToFloat() / 60.0;
+
+        SPEED_ITEM = (myPlayerComponent.GetProperty("SPEED_ITEM")).ToFloat() / 60.0;
+
+        speedCurrent = SPEED_NORMAL;
+
+        speedUpParticle = hsItemGet("SpeedUpParticle");
+
+        speedUpSE = hsItemGet("SpeedUpSE");
+
+        magnetSE = hsItemGet("MagnetSE");
+
+        MAGNET_TIMELIMIT = int((myPlayerComponent.GetProperty("MAGNETTIME")).ToFloat() * 60);
+
+        magnetParticle = hsItemGet("MagnetParticle");
     }
 
     public void Update()
@@ -104,35 +176,53 @@ component PlayerAutoRun
                 previousPlayerPos = currentPlayerPos;
                 previousMoveCamera = false;
                 playerLane = 0;
+                myPlayerComponent.SetProperty("playerLane", string(playerLane));
+            }
+
+            if(isSpeedUp){
+                speedCurrent = SPEED_ITEM;
+                speedUpTime--;
+                if(speedUpTime == 0){
+                    setSpeedUpEnd();
+                    speedUpParticle.CallComponentMethod("SpeedUpParticle","setActionFalse","");
+                }
+            }
+            else speedCurrent = SPEED_NORMAL;
+
+            if(magnetTime > 0){
+                magnetTime--;
+
+                if(magnetTime<=0){
+                    setMagnetEnd();
+                    magnetParticle.CallComponentMethod("MagnetParticle","setActionFalse","");
+                }
             }
 
             //向きを前に
             myPlayer.SetRotate(0.0f);
 
-            if(isActionTime){
-                //hsSystemOutput("True");
-            }
-
             if(movementFrame == 0){ //レーン移動していないときの挙動
                 if((currentPlayerPos.x - previousPlayerPos.x) < -0.01 && playerLane > -laneNumMax){ //左
                     playerLane--;
+                    myPlayerComponent.SetProperty("playerLane", string(playerLane));
                     direction = -1;
                     movementFrame++;
                 }else if((currentPlayerPos.x - previousPlayerPos.x) > 0.01 && playerLane < laneNumMax){ //右
                     playerLane++;
+                    myPlayerComponent.SetProperty("playerLane", string(playerLane));
                     direction = 1;
                     movementFrame++;
                 }else{ //そのまま
-                    newPlayerPos.x = playerLane * laneDistance;
+                    newPlayerPos.x = playerLane * LANEDISTANCE;
                 }
             }else if(movementFrame > 0){    //移動クールタイム中の挙動
                 movementFrame++;
-                if(movementFrame <= movementAnimeTime){ //レーン移動中
-                    newPlayerPos.x = previousPlayerPos.x + laneDistance / movementAnimeTime * direction;
+                if(movementFrame <= MOVEMENTANIMETIME){ //レーン移動中
+                    newPlayerPos.x = previousPlayerPos.x + LANEDISTANCE / MOVEMENTANIMETIME * direction;
                 }else{  //クールタイム中
-                    newPlayerPos.x = playerLane * laneDistance;
+                    newPlayerPos.x = playerLane * LANEDISTANCE;
                 }
-                if(movementFrame >= movementCoolTime){  //クールタイム終了
+                if(movementFrame >= MOVEMENTCOOLTIME){  //クールタイム終了
                     movementFrame = 0;
                     direction = 0;
                 }
@@ -142,7 +232,7 @@ component PlayerAutoRun
             newPlayerPos.z = previousPlayerPos.z;
 
             //前に進むベクトル
-            Vector3 autoRunDistance = makeVector3(0.0f,0.0f,0.1f);
+            Vector3 autoRunDistance = makeVector3(0.0f,0.0f,speedCurrent);
             newPlayerPos.Add(autoRunDistance);
 
             //ここで位置をセット
@@ -159,11 +249,6 @@ component PlayerAutoRun
         }
     }
 
-    public void OnClickNode(){
-        hsSystemOutput("Player Click!\n");
-        myActionButton.CallComponentMethod("ActionButton", "playerClick", "");
-    }
-
     public void setMoveCameraTrue(){
         moveCamera = true;
     }
@@ -172,8 +257,36 @@ component PlayerAutoRun
         moveCamera = false;
     }
 
-    //public void hitBoxAreaCoordinate(float zCoor){
-    //    hitBoxAreaList.Add(zCoor);
-    //    hsSystemOutput(string(zCoor));
-    //}
+    public void resetCoordinate(){
+        myPlayer.SetPos(initialPosition);
+    }
+
+    public void setSpeedUpStart(){
+        isSpeedUp = true;
+        speedUpTime = SPEEDUP_TIMELIMIT;
+        myPlayerComponent.SetProperty("isSpeedUp","true");
+        setMagnetEnd();
+        magnetParticle.CallComponentMethod("MagnetParticle","setActionFalse","");
+    }
+
+    public void setSpeedUpEnd(){
+        isSpeedUp = false;
+        speedUpTime = 0;
+        myPlayerComponent.SetProperty("isSpeedUp","false");
+        speedUpSE.Stop();
+    }
+
+    public void setMagnetStart(){
+        magnetTime = MAGNET_TIMELIMIT;
+        myPlayerComponent.SetProperty("isMagnet","true");
+        setSpeedUpEnd();
+        speedUpParticle.CallComponentMethod("SpeedUpParticle","setActionFalse","");
+    }
+
+    public void setMagnetEnd(){
+        magnetTime = 0;
+        myPlayerComponent.SetProperty("isMagnet","false");
+        magnetSE.Stop();
+    }
+
 }

@@ -1,5 +1,8 @@
 component GameOver
 {
+    //GameOverDecisionクラス
+    GameOverDecision gameOver;
+
     //自分GameoverScript
     Item selfItem;
 
@@ -7,28 +10,60 @@ component GameOver
     Item despawnHeightItem;
 
     //カメラアイテム
-    Item camera; 
+    Item camera;
 
-    //ゲームオーバーかどうか
-    bool isGameOver; 
+    Item timeSystem;
 
     //小峯追加分、Playerクラス
-    Item  myPlayer;
+    Item myPlayer;
+
+    //小峯追加分、コイン管理アイテム
+    Item coinManagement;
+
+    //小峯追加分、ゲームオーバーBGMアイテム
+    Item overBGM;
+
+    //小峯追加分、通常BGMアイテム
+    Item normalBGM;
+
+    //小峯追加分、スピードアップ管理アイテム
+    Item speedUpManagement;
+
+    //小峯追加分、磁石管理アイテム
+    Item magnetManagement;
 
     public GameOver()
     {
+        //GameOverDecisionのコンストラクタ
+        gameOver = new GameOverDecision();
+
         selfItem = hsItemGetSelf();
         despawnHeightItem = hsItemGet("RespownZone");
         camera = hsItemGet("GameoverCamera");
-        isGameOver = false;
+        timeSystem = hsItemGet("TimeSystem");
 
         //小峯追加分、Playerを入手
         myPlayer = hsItemGet("PlayerSettings");
+        
+        //小峯追加分、コインを入手
+        coinManagement = hsItemGet("CoinManagement");
+
+        //小峯追加分、ゲームオーバーBGMを入手
+        overBGM = hsItemGet("BGM_GameOver");
+
+        //小峯追加分、通常BGMを入手
+        normalBGM = hsItemGet("BGM_Main");
+
+        //小峯追加分、スピードアップを入手
+        speedUpManagement = hsItemGet("SpeedUpManagement");
+
+        //小峯追加分、磁石を入手
+        magnetManagement = hsItemGet("MagnetManagement");
     }
 
     public void Update()
     {
-        if(!isGameOver)
+        if(!gameOver.GetGameOver())
         {
             //落ちたらゲームオーバー
             if(despawnHeightItem.GetPos().y >= hsPlayerGet().GetPos().y)
@@ -47,37 +82,131 @@ component GameOver
     //ゲームオーバー画面に遷移する関数
     void SetGameOver()
     {
-        isGameOver = true;
+        //ゲームオーバーをtrueに
+        gameOver.SetGameOver(true);
 
         //カメラをゲームオーバー画面のカメラに移す
         camera.SetCamera();
 
-        //小峯追加分、カメラが動いているフラグをオン
-        myPlayer.CallComponentMethod("PlayerAutoRun", "setMoveCameraTrue", "");
+        //タイマを止める
+        StopTimer();
+
+        //プレイヤーポジションを戻る
+        SetPlayerRetry();
+
+        //小峯追加分、Autorunのカメラが動いているフラグをオン
+        SetAutorunCamera();
+
+        //小峯追加分、諸々をリセット
+        Item gateL = hsItemGet("Gate1LeftDoor");
+        Item gateR = hsItemGet("Gate1RightDoor");
+
+        gateL.CallComponentMethod("Gate1LeftAnimation", "reset", "");
+        gateR.CallComponentMethod("Gate1RightAnimation", "reset", "");
+
+        Item button = hsItemGet("ActionButtonScript");
+
+        button.CallComponentMethod("ActionButton", "SetActionFlagFalse", "");
+
+        Item area1 = hsItemGet("ActionArea1");
+
+        area1.CallComponentMethod("ActionStartArea", "endActionTime", "");
+
+        //小峯追加分、通常BGMの再生を止め、ゲームオーバーのBGMを流す
+        SetOverBGM();
     }
 
     //ボックスをクリックしたらリトライ
     public void OnClickNode()
     {
         SetPlayerRetry();
+        ResetTimer();
         SetRetry();
-    }
-
-    //リトライ処理
-    void SetRetry()
-    {
-        isGameOver = false;
-
-        //カメラをプレイヤーに戻す
-        camera.ResetCamera(); 
-
-        //小峯追加分、カメラが動いているフラグをオフ
-        myPlayer.CallComponentMethod("PlayerAutoRun", "setMoveCameraFalse", "");
     }
 
     //プレイヤー初期位置に戻す
     public void SetPlayerRetry()
     {
         hsPlayerGet().SetPos(hsItemGet("SpawnPoint").GetPos());
+    }
+
+    //リトライ処理
+    void SetRetry()
+    {
+        //ゲームオーバーをfalseに
+        gameOver.SetGameOver(false);
+
+        //カメラをプレイヤーに戻す
+        camera.ResetCamera();
+
+        //小峯追加分、Autorunのカメラが動いているフラグをオフ
+        ResetAutorunCamera();
+
+        //小峯追加分、コインをリセットする
+        ResetCoin();
+
+        //小峯追加分、通常のBGMを流す
+        SetNormalBGM();
+
+        //小峯追加分、スピードアップをリセットする
+        ResetSpeedUp();
+
+        //小峯追加分、磁石をリセットする
+        ResetMagnet();
+    }
+
+    //タイマを止める
+    void StopTimer()
+    {
+        timeSystem.CallComponentMethod("TimeSystem", "StopCountTimer", "");
+    }
+
+    //タイマをリスタート
+    void ResetTimer()
+    {
+        timeSystem.CallComponentMethod("TimeSystem", "ResetTimmer", "");
+    }
+
+    //小峯追加分、Autorunのカメラが動いているフラグをオン
+    void SetAutorunCamera()
+    {
+        myPlayer.CallComponentMethod("PlayerAutoRun", "setMoveCameraTrue", "");
+    }
+
+    //小峯追加分、Autorunのカメラが動いているフラグをオフ
+    void ResetAutorunCamera()
+    {
+        myPlayer.CallComponentMethod("PlayerAutoRun", "setMoveCameraFalse", "");
+    }
+
+    //小峯追加分、コインをリセットする
+    void ResetCoin()
+    {
+        coinManagement.CallComponentMethod("CoinManagement", "reset", "");      
+    }
+
+    //小峯追加分、通常BGMの再生を止め、ゲームクリアのBGMを流す
+    void SetOverBGM()
+    {
+        normalBGM.Stop();
+        overBGM.Play();
+    }
+
+    //小峯追加分、通常のBGMを流す
+    void SetNormalBGM()
+    {
+        normalBGM.Play();
+    }
+
+    //小峯追加分、スピードアップをリセットする
+    void ResetSpeedUp()
+    {
+        speedUpManagement.CallComponentMethod("SpeedUpManagement", "reset", "");      
+    }
+
+    //小峯追加分、磁石をリセットする
+    void ResetMagnet()
+    {
+        magnetManagement.CallComponentMethod("MagnetManagement", "reset", "");      
     }
 }

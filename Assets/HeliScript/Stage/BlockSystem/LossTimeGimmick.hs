@@ -1,11 +1,15 @@
 component LossTimeGimmick
 {
+    //GameOverDecisionクラス
+    GameOverDecision gameOver;
+
     //プレイヤーアイテム
     Player playerItem;
 
     //アイテム
-    Item blockItem;
     Item lostTimeItem;
+    Item timerItem;
+    Item blockItem;
 
     //アイテムのVector3
     Vector3 blockItemPos;
@@ -34,12 +38,18 @@ component LossTimeGimmick
 
     public LossTimeGimmick()
     {
+        //GameOverDecisionのコンストラクタ
+        gameOver = new GameOverDecision();
+        
         //プレイヤー
         playerItem = new Player();
         playerItem = hsPlayerGet();
 
         //タイムアイテム
         lostTimeItem = hsItemGet("TimeSystem");
+        
+        //decreaseTimeのアイテム
+        timerItem = hsItemGet("Timer");
 
         //ギミックブロック
         blockItem = hsItemGetSelf();
@@ -66,7 +76,6 @@ component LossTimeGimmick
 
         //ぶつかるポジション
         SettingPoint(linePoint);
-        
     }
 
     public void Update()
@@ -74,7 +83,7 @@ component LossTimeGimmick
         //Playerポジションをゲット
         playerPos = playerItem.GetPos();
 
-        if(!isLostTime)
+        if(!isLostTime && !gameOver.GetGameOver())
         {
             SettingJudgment(linePoint);
         }
@@ -89,10 +98,11 @@ component LossTimeGimmick
     void PlayerLostTime()
     {
         isLostTime = true;
-        hsSystemOutput("LostTime");
+
         if(lostTimeItem !== null)
         {
-            hsSystemOutput("LostTime");
+            lostTimeItem.CallComponentMethod("TimeSystem", "ReduceTime", "");
+            timerItem.CallComponentMethod("UIFollowPlayer", "ShowDecreaseTime", "");
         }
     }
 
