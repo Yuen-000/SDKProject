@@ -94,7 +94,7 @@ MonoBehaviour:
     showphotomode: 1
   _autoShowHEO: 1
   PreviewObjectRoot: {fileID: 0}
-  CurrentShowFile: {fileID: 8794674264650990340, guid: 8e864fc4ce4fb6a4d80f2af3e0a8b028,
+  CurrentShowFile: {fileID: 8794674264650990340, guid: b09b758cb5365634991e9e162334d15e,
     type: 3}
   TempAvatar: {fileID: 0}
   fileMode: 0
@@ -102,7 +102,7 @@ MonoBehaviour:
   _Priority: 0
   _buildingShow: 0
   heoCircleShadow: {fileID: 0}
-  heoOrVrm: {fileID: 8794674264650990340, guid: 8e864fc4ce4fb6a4d80f2af3e0a8b028,
+  heoOrVrm: {fileID: 8794674264650990340, guid: b09b758cb5365634991e9e162334d15e,
     type: 3}
   vrm: {fileID: 0}
   glb: {fileID: 0}
