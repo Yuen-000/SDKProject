@@ -156,6 +156,6 @@ MonoBehaviour:
   - Key: POS_X
     Value: 0.27
   - Key: POS_Y
-    Value: -0.50
+    Value: 0
   - Key: POS_Z
     Value: 195.0
