@@ -215,7 +215,7 @@ component Gate3RightAnimation
             actionCount++;
             angle -= 90.0f / CLEAR_PRESS_COUNT;
 
-            if(angle >= 0.0f) angle = 0.0f;
+            if(angle <= 0.0f) angle = 0.0f;
 
             if(actionCount == CLEAR_PRESS_COUNT){
                 angle = 0.0f;
