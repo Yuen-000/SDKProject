@@ -87,6 +87,9 @@ component PlayerAutoRun
     //磁石上限
     int MAGNET_TIMELIMIT;
 
+    //磁石エフェクト
+    Item magnetParticle;
+
     public PlayerAutoRun()
     {
         hsSystemOutput("Script:PlayerAutoRun\n");
@@ -159,6 +162,7 @@ component PlayerAutoRun
 
         MAGNET_TIMELIMIT = int((myPlayerComponent.GetProperty("MAGNETTIME")).ToFloat() * 60);
 
+        magnetParticle = hsItemGet("MagnetParticle");
     }
 
     public void Update()
@@ -190,6 +194,7 @@ component PlayerAutoRun
 
                 if(magnetTime<=0){
                     setMagnetEnd();
+                    magnetParticle.CallComponentMethod("MagnetParticle","setActionFalse","");
                 }
             }
 
@@ -261,6 +266,7 @@ component PlayerAutoRun
         speedUpTime = SPEEDUP_TIMELIMIT;
         myPlayerComponent.SetProperty("isSpeedUp","true");
         setMagnetEnd();
+        magnetParticle.CallComponentMethod("MagnetParticle","setActionFalse","");
     }
 
     public void setSpeedUpEnd(){
