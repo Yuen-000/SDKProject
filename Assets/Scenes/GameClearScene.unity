@@ -131,8 +131,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5000747}
   - component: {fileID: 5000748}
+  - component: {fileID: 5000749}
   m_Layer: 0
-  m_Name: ShieldSystem
+  m_Name: ShieldItem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -148,9 +149,10 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 2009817029}
   m_Father: {fileID: 1599135574}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5000748
 MonoBehaviour:
@@ -173,6 +175,21 @@ MonoBehaviour:
   hsComponents:
   - componentName: ShieldSystem
     selectedIndex: 11
+--- !u!114 &5000749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5000746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -917271763, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  properties:
+  - Key: Distance
+    Value: 1
 --- !u!1 &90036149
 GameObject:
   m_ObjectHideFlags: 0
@@ -1595,7 +1612,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1599135574}
   m_Layer: 0
-  m_Name: ShieldItem
+  m_Name: Shield
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1612,7 +1629,6 @@ Transform:
   m_LocalPosition: {x: 0, y: 0.43, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 2009817029}
   - {fileID: 5000747}
   m_Father: {fileID: 493553307}
   m_RootOrder: 7
@@ -1966,7 +1982,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1599135574}
+  m_Father: {fileID: 5000747}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1744957589760099267
@@ -2140,6 +2156,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BlockSystem
+      objectReference: {fileID: 0}
+    - target: {fileID: 8360404811427126040, guid: 5982083da37f70b42a036c39b56d8a03,
+        type: 3}
+      propertyPath: _field.filename
+      value: Field/OneOutGimmick.heo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5982083da37f70b42a036c39b56d8a03, type: 3}
