@@ -1416,6 +1416,81 @@ MonoBehaviour:
   _Priority: 0
   references:
     version: 1
+--- !u!1001 &338073916
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 625181740}
+    m_Modifications:
+    - target: {fileID: 4024891067539167688, guid: 3c1c8fd478744124fa7027eb77bc195b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4024891067539167688, guid: 3c1c8fd478744124fa7027eb77bc195b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4024891067539167688, guid: 3c1c8fd478744124fa7027eb77bc195b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4024891067539167688, guid: 3c1c8fd478744124fa7027eb77bc195b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4024891067539167688, guid: 3c1c8fd478744124fa7027eb77bc195b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4024891067539167688, guid: 3c1c8fd478744124fa7027eb77bc195b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4024891067539167688, guid: 3c1c8fd478744124fa7027eb77bc195b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4024891067539167688, guid: 3c1c8fd478744124fa7027eb77bc195b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4024891067539167688, guid: 3c1c8fd478744124fa7027eb77bc195b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4024891067539167688, guid: 3c1c8fd478744124fa7027eb77bc195b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4024891067539167688, guid: 3c1c8fd478744124fa7027eb77bc195b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8501314992976316268, guid: 3c1c8fd478744124fa7027eb77bc195b,
+        type: 3}
+      propertyPath: m_Name
+      value: background_forest01
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3c1c8fd478744124fa7027eb77bc195b, type: 3}
+--- !u!4 &338073917 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4024891067539167688, guid: 3c1c8fd478744124fa7027eb77bc195b,
+    type: 3}
+  m_PrefabInstance: {fileID: 338073916}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &357862341
 GameObject:
   m_ObjectHideFlags: 0
@@ -1785,6 +1860,37 @@ Transform:
   - {fileID: 836182913}
   m_Father: {fileID: 1101579960}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &625181739
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 625181740}
+  m_Layer: 0
+  m_Name: Root
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &625181740
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 625181739}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 338073917}
+  m_Father: {fileID: 2080491510}
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &629844523
 GameObject:
@@ -3519,7 +3625,7 @@ MonoBehaviour:
   hsComponent: 
   hsComponents:
   - componentName: ActionParticle
-    selectedIndex: 17
+    selectedIndex: 12
 --- !u!114 &1244735947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3816,7 +3922,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   properties:
   - Key: POS_Y
-    Value: 3.0
+    Value: 10.0
   - Key: POS_Z
     Value: -2.0
 --- !u!1 &1368201766
@@ -4622,7 +4728,7 @@ MonoBehaviour:
   hsComponent: 
   hsComponents:
   - componentName: SpeedUpParticle
-    selectedIndex: 20
+    selectedIndex: 13
 --- !u!114 &1474589785
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4779,7 +4885,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2080491510}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1650806142
 MonoBehaviour:
@@ -4895,6 +5001,7 @@ MonoBehaviour:
   - HeliScript/CoinMain.hs
   - HeliScript/Gate3Animation.hs
   - HeliScript/ActionParticle.hs
+  - HeliScript/SpeedUpParticle.hs
   spatiumCode: default
 --- !u!4 &1690123602
 Transform:
@@ -5192,7 +5299,7 @@ GameObject:
   - component: {fileID: 1775568681}
   - component: {fileID: 1775568682}
   m_Layer: 0
-  m_Name: Gate3Wood
+  m_Name: Gate3LeftWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5205,9 +5312,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1775568678}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -15, y: 15, z: 80}
-  m_LocalScale: {x: 4, y: 30, z: 4}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5, y: 3, z: 75}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2080491510}
   m_RootOrder: 18
@@ -5225,8 +5332,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _object:
-    name: Gate3Wood
-    filename: Field/Cube/Cube.heo
+    name: Gate3LeftWall
+    filename: Field/Gate3LeftWall/Gate3LeftWall.heo
     filename_png: 
     filename_astc: 
     filename_etc2: 
@@ -5254,26 +5361,27 @@ MonoBehaviour:
     beginactions: []
     endactions: []
     pos:
-    - -15
-    - 15
-    - 80
+    - -5
+    - 3
+    - 75
     rotate:
     - -0
     - 0
     - 0
     scale:
-    - 4
-    - 30
-    - 4
+    - 1
+    - 1
+    - 1
     components:
     - Gate3Animation
+    - Gate3LeftAnimation
     lookatcamera: 0
     collisiondetection: 1
     uselightscattering: 1
     showphotomode: 1
   _autoShowHEO: 1
   PreviewObjectRoot: {fileID: 0}
-  CurrentShowFile: {fileID: 8794674264650990340, guid: 52065bb878b45b441b49c65527c398fc,
+  CurrentShowFile: {fileID: 8794674264650990340, guid: 0522aca720a1b3042af14751bf46f891,
     type: 3}
   TempAvatar: {fileID: 0}
   fileMode: 0
@@ -5281,7 +5389,7 @@ MonoBehaviour:
   _Priority: 0
   _buildingShow: 0
   heoCircleShadow: {fileID: 0}
-  heoOrVrm: {fileID: 8794674264650990340, guid: 52065bb878b45b441b49c65527c398fc,
+  heoOrVrm: {fileID: 8794674264650990340, guid: 0522aca720a1b3042af14751bf46f891,
     type: 3}
   vrm: {fileID: 0}
   glb: {fileID: 0}
@@ -5312,11 +5420,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectedIndex: 0
   selectedIndexes: 00000000
-  ScriptName: 
-  _heliScript: {fileID: 0}
+  ScriptName: Gate3Animation
+  _heliScript: {fileID: 469074977633818552, guid: 1f58f47ef27e70b4f913718df7707ef3,
+    type: 3}
   hsComponent: 
   hsComponents:
-  - componentName: Gate3Animation
+  - componentName: Gate3LeftAnimation
     selectedIndex: 11
 --- !u!114 &1775568682
 MonoBehaviour:
@@ -5332,9 +5441,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   properties:
   - Key: LENGTH
-    Value: 30.0
+    Value: 5
   - Key: WIDTH
-    Value: 4.0
+    Value: 0.5
+  - Key: POS_X
+    Value: -5
+  - Key: POS_Y
+    Value: 0.5
+  - Key: POS_Z
+    Value: 75
 --- !u!1 &1814883649
 GameObject:
   m_ObjectHideFlags: 0
@@ -5835,7 +5950,7 @@ MonoBehaviour:
     _maxDistance: 10
   _worldName: world
   _spatiumCode: default
-  _debugMode: 1
+  _debugMode: 0
   _useAvatarClick: 1
   _VRMDrop: 0
   _occlusionCulling: 0
@@ -5856,6 +5971,7 @@ MonoBehaviour:
   - {fileID: 469074977633818552, guid: 5f5c0d7e468cf6b48b42959b0d010bd8, type: 3}
   - {fileID: 469074977633818552, guid: 1f58f47ef27e70b4f913718df7707ef3, type: 3}
   - {fileID: 469074977633818552, guid: ef3d3855a77eac3478212d84a70bc1f6, type: 3}
+  - {fileID: 469074977633818552, guid: 7282feb34b449bd45933276b79ec59bf, type: 3}
   _fileDeploymentConfig: {fileID: 0}
   _deploymentMode: 0
 --- !u!4 &1957313049
@@ -6341,7 +6457,9 @@ Transform:
   - {fileID: 1101579960}
   - {fileID: 1769029145}
   - {fileID: 1775568679}
+  - {fileID: 2114176013}
   - {fileID: 1650806141}
+  - {fileID: 625181740}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6562,6 +6680,171 @@ MonoBehaviour:
   _buildingShow: 0
   heoCircleShadow: {fileID: 0}
   heoOrVrm: {fileID: 8794674264650990340, guid: a2859199e1e161841b8929a73afb8040,
+    type: 3}
+  vrm: {fileID: 0}
+  glb: {fileID: 0}
+  hem: {fileID: 0}
+  hrmPng: {fileID: 0}
+  hrmAstc: {fileID: 0}
+  hrmEtc2: {fileID: 0}
+  hrmDxt: {fileID: 0}
+  _circleShadowScaleInEditor: {x: 0.6, y: 0.6, z: 0.6}
+  _isBeginactionsFoldout: 0
+  _isEndactionsFoldout: 0
+  _objectMode: 0
+  _isComponentsFoldout: 0
+  _isAdvancedFoldout: 0
+  references:
+    version: 1
+--- !u!1 &2114176012
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2114176013}
+  - component: {fileID: 2114176016}
+  - component: {fileID: 2114176015}
+  - component: {fileID: 2114176014}
+  m_Layer: 0
+  m_Name: Gate3RightWall
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2114176013
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2114176012}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5, y: 3, z: 75}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2080491510}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2114176014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2114176012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -917271763, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  properties:
+  - Key: LENGTH
+    Value: 5
+  - Key: WIDTH
+    Value: 0.5
+  - Key: POS_X
+    Value: 5
+  - Key: POS_Y
+    Value: 0.5
+  - Key: POS_Z
+    Value: 75
+--- !u!114 &2114176015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2114176012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: Gate3Animation
+  _heliScript: {fileID: 469074977633818552, guid: 1f58f47ef27e70b4f913718df7707ef3,
+    type: 3}
+  hsComponent: 
+  hsComponents:
+  - componentName: Gate3RightAnimation
+    selectedIndex: 11
+--- !u!114 &2114176016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2114176012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _object:
+    name: Gate3RightWall
+    filename: Field/Gate3RightWall/Gate3RightWall.heo
+    filename_png: 
+    filename_astc: 
+    filename_etc2: 
+    pose: 
+    clickable: 0
+    enablebone: 0
+    show: 1
+    autoloading: 1
+    forceshadowcaster: 0
+    forceshadowreceiver: 0
+    foregroundrendering: 0
+    zwriteenable: 1
+    alphablendtoopaque: 0
+    unserializecircleshadow:
+      _use: 0
+      _filename: CircleShadow2/CircleShadow2.heo
+      _scale:
+      - 0.6
+      - 0.6
+      - 0.6
+      _zbias: -0.02
+      _adjustposdownward: 0
+    alphaanim: 0
+    motions: []
+    beginactions: []
+    endactions: []
+    pos:
+    - 5
+    - 3
+    - 75
+    rotate:
+    - -0
+    - 0
+    - 0
+    scale:
+    - 1
+    - 1
+    - 1
+    components:
+    - Gate3Animation
+    - Gate3LeftAnimation
+    - Gate3RightAnimation
+    lookatcamera: 0
+    collisiondetection: 1
+    uselightscattering: 1
+    showphotomode: 1
+  _autoShowHEO: 1
+  PreviewObjectRoot: {fileID: 0}
+  CurrentShowFile: {fileID: 8794674264650990340, guid: 2d1152f85099b8a4a846f84a3ed6988a,
+    type: 3}
+  TempAvatar: {fileID: 0}
+  fileMode: 0
+  fileModeTypeValue: 0
+  _Priority: 0
+  _buildingShow: 0
+  heoCircleShadow: {fileID: 0}
+  heoOrVrm: {fileID: 8794674264650990340, guid: 2d1152f85099b8a4a846f84a3ed6988a,
     type: 3}
   vrm: {fileID: 0}
   glb: {fileID: 0}

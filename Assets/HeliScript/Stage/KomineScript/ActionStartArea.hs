@@ -95,8 +95,11 @@ component ActionStartArea
             else if(areaName == "hogehoge"){
             }
             else if(areaName == "ActionArea3"){
-                Item gateW = hsItemGet("Gate3Wood");
-                gateW.CallComponentMethod("Gate3Animation", "setClose", "");
+                Item gateL = hsItemGet("Gate3LeftWall");
+                Item gateR = hsItemGet("Gate3RightWall");
+
+                gateL.CallComponentMethod("Gate3LeftAnimation", "setClose", "");
+                gateR.CallComponentMethod("Gate3RightAnimation", "setClose", "");
             }
         }
     }
