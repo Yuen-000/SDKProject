@@ -90,12 +90,18 @@ component PlayerAutoRun
     //磁石エフェクト
     Item magnetParticle;
 
+    //スピードアップエフェクトを消す
+    bool deleteSpeedUp;
+    
+    //磁石エフェクトを消す
+    bool deleteMagnet;
+
     public PlayerAutoRun()
     {
         hsSystemOutput("Script:PlayerAutoRun\n");
-        hsSystemOutput("Date:20241230\n");
-        hsSystemOutput("Version:12.0.0\n");
-        hsSystemOutput("Update Content:Support for magnet\n");
+        hsSystemOutput("Date:20250111\n");
+        hsSystemOutput("Version:13.0.0\n");
+        hsSystemOutput("Update Content:Fix Effect\n");
         myPlayer = new Player();
         myPlayer = hsPlayerGet();
 
@@ -163,10 +169,26 @@ component PlayerAutoRun
         MAGNET_TIMELIMIT = int((myPlayerComponent.GetProperty("MAGNETTIME")).ToFloat() * 60);
 
         magnetParticle = hsItemGet("MagnetParticle");
+
+        deleteSpeedUp = false;
+
+        deleteMagnet = false;
     }
 
     public void Update()
     {
+        if(deleteSpeedUp)
+        {
+            deleteSpeedUp = false;
+            speedUpParticle.CallComponentMethod("SpeedUpParticle","setActionFalse","");
+        }
+
+        if(deleteMagnet)
+        {
+            deleteMagnet = false;
+            magnetParticle.CallComponentMethod("MagnetParticle","setActionFalse","");
+        }
+
         currentPlayerPos = myPlayer.GetPos();
         newPlayerPos = currentPlayerPos;
 
@@ -274,6 +296,7 @@ component PlayerAutoRun
         speedUpTime = 0;
         myPlayerComponent.SetProperty("isSpeedUp","false");
         speedUpSE.Stop();
+        deleteSpeedUp = true;
     }
 
     public void setMagnetStart(){
@@ -287,6 +310,7 @@ component PlayerAutoRun
         magnetTime = 0;
         myPlayerComponent.SetProperty("isMagnet","false");
         magnetSE.Stop();
+        deleteMagnet = true;
     }
 
 }
