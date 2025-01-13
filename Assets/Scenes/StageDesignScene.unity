@@ -128,6 +128,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1481657465}
     m_Modifications:
+    - target: {fileID: 8748495808230150665, guid: 0c2ba4ccd1add654dbeb7e669e625628,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8748495808600432858, guid: 0c2ba4ccd1add654dbeb7e669e625628,
         type: 3}
       propertyPath: m_RootOrder
@@ -2007,6 +2012,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Wood02
+      objectReference: {fileID: 0}
+    - target: {fileID: 7279052898052215532, guid: 036be30a6a6b04643be2b8edfb99b7e2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7279052898052215533, guid: 036be30a6a6b04643be2b8edfb99b7e2,
         type: 3}
