@@ -42,6 +42,9 @@ component Gate3LeftAnimation
     //Z座標補正値
     float POS_Z;
 
+    //最終的な角度
+    float FINAL_ANGLE;
+
     public Gate3LeftAnimation()
     {
         hsSystemOutput("Script:Gate3LeftAnimation\n");
@@ -61,6 +64,7 @@ component Gate3LeftAnimation
         POS_X = myItem.GetProperty("POS_X").ToFloat();
         POS_Y = myItem.GetProperty("POS_Y").ToFloat();
         POS_Z = myItem.GetProperty("POS_Z").ToFloat();
+        FINAL_ANGLE = myItem.GetProperty("FINAL_ANGLE").ToFloat();
         
         reset();
     }
@@ -73,7 +77,7 @@ component Gate3LeftAnimation
             if(timer >= TIME_LIMIT) reset();
 
             if(actionCount < CLEAR_PRESS_COUNT){
-                angle -= 90.0f / TIME_LIMIT;
+                angle += FINAL_ANGLE / TIME_LIMIT;
             }
 
             calcPos();
@@ -90,7 +94,7 @@ component Gate3LeftAnimation
 
         if(actionCount <= CLEAR_PRESS_COUNT){
             actionCount++;
-            angle += 90.0f / CLEAR_PRESS_COUNT;
+            angle += -FINAL_ANGLE / CLEAR_PRESS_COUNT;
 
             if(angle >= 0.0f) angle = 0.0f;
 
@@ -165,6 +169,9 @@ component Gate3RightAnimation
     //Z座標補正値
     float POS_Z;
 
+    //最終的な角度
+    float FINAL_ANGLE;
+
     public Gate3RightAnimation()
     {
         hsSystemOutput("Script:Gate3RightAnimation\n");
@@ -184,6 +191,7 @@ component Gate3RightAnimation
         POS_X = myItem.GetProperty("POS_X").ToFloat();
         POS_Y = myItem.GetProperty("POS_Y").ToFloat();
         POS_Z = myItem.GetProperty("POS_Z").ToFloat();
+        FINAL_ANGLE = myItem.GetProperty("FINAL_ANGLE").ToFloat();
         
         reset();
     }
@@ -196,7 +204,7 @@ component Gate3RightAnimation
             if(timer >= TIME_LIMIT) reset();
 
             if(actionCount < CLEAR_PRESS_COUNT){
-                angle += 90.0f / TIME_LIMIT;
+                angle += FINAL_ANGLE / TIME_LIMIT;
             }
 
             calcPos();
@@ -213,7 +221,7 @@ component Gate3RightAnimation
 
         if(actionCount <= CLEAR_PRESS_COUNT){
             actionCount++;
-            angle -= 90.0f / CLEAR_PRESS_COUNT;
+            angle += -FINAL_ANGLE / CLEAR_PRESS_COUNT;
 
             if(angle <= 0.0f) angle = 0.0f;
 

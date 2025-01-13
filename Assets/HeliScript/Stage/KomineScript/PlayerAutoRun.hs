@@ -177,17 +177,6 @@ component PlayerAutoRun
 
     public void Update()
     {
-        if(deleteSpeedUp)
-        {
-            deleteSpeedUp = false;
-            speedUpParticle.CallComponentMethod("SpeedUpParticle","setActionFalse","");
-        }
-
-        if(deleteMagnet)
-        {
-            deleteMagnet = false;
-            magnetParticle.CallComponentMethod("MagnetParticle","setActionFalse","");
-        }
 
         currentPlayerPos = myPlayer.GetPos();
         newPlayerPos = currentPlayerPos;
@@ -201,17 +190,17 @@ component PlayerAutoRun
                 myPlayerComponent.SetProperty("playerLane", string(playerLane));
             }
 
-            if(isSpeedUp){
+            if(isSpeedUp || deleteSpeedUp){
                 speedCurrent = SPEED_ITEM;
                 speedUpTime--;
-                if(speedUpTime == 0){
+                if(speedUpTime <= 0){
                     setSpeedUpEnd();
                     speedUpParticle.CallComponentMethod("SpeedUpParticle","setActionFalse","");
                 }
             }
             else speedCurrent = SPEED_NORMAL;
 
-            if(magnetTime > 0){
+            if(magnetTime > 0 || deleteMagnet){
                 magnetTime--;
 
                 if(magnetTime<=0){
@@ -288,12 +277,13 @@ component PlayerAutoRun
         speedUpTime = SPEEDUP_TIMELIMIT;
         myPlayerComponent.SetProperty("isSpeedUp","true");
         setMagnetEnd();
-        magnetParticle.CallComponentMethod("MagnetParticle","setActionFalse","");
+        deleteMagnet = true;
     }
 
     public void setSpeedUpEnd(){
         isSpeedUp = false;
-        speedUpTime = 0;
+        speedUpTime = -999;
+        speedCurrent = SPEED_NORMAL;
         myPlayerComponent.SetProperty("isSpeedUp","false");
         speedUpSE.Stop();
         deleteSpeedUp = true;
@@ -303,11 +293,11 @@ component PlayerAutoRun
         magnetTime = MAGNET_TIMELIMIT;
         myPlayerComponent.SetProperty("isMagnet","true");
         setSpeedUpEnd();
-        speedUpParticle.CallComponentMethod("SpeedUpParticle","setActionFalse","");
+        deleteSpeedUp = true;
     }
 
     public void setMagnetEnd(){
-        magnetTime = 0;
+        magnetTime = -999;
         myPlayerComponent.SetProperty("isMagnet","false");
         magnetSE.Stop();
         deleteMagnet = true;
