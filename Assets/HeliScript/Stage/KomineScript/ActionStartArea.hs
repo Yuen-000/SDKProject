@@ -78,7 +78,7 @@ component ActionStartArea
 
             hsSystemOutput("Passing area! " + areaName + "\n");
             myPlayerComponent.CallComponentMethod("ActionTimeManagement", "recieveActionStart", areaName);
-            myActionUI.CallComponentMethod("ActionUI", "startActionTime", "");
+            myActionUI.CallComponentMethod("ActionUI", "startActionTime", string(areaZCoor));
             myActionParticle.CallComponentMethod("ActionParticle", "setActionTrue", "");
             myActionButton.CallComponentMethod("ActionButton", "SetActionFlagTrue", "");
 
