@@ -63,8 +63,11 @@ component MagnetMain
     //取得できる距離（磁石）
     float DISTANCE_MAGNET;
 
-    //磁石エフェクト
-    Item magnetParticle;
+    //磁石エフェクト0
+    Item magnetParticle0;
+
+    //磁石エフェクト1
+    Item magnetParticle1;
 
     public MagnetMain()
     {
@@ -113,7 +116,8 @@ component MagnetMain
 
         DISTANCE_MAGNET = (myPlayerComponent.GetProperty("LANEDISTANCE")).ToFloat();
 
-        magnetParticle = hsItemGet("MagnetParticle");
+        magnetParticle0 = hsItemGet("MagnetParticle0");
+        magnetParticle1 = hsItemGet("MagnetParticle1");
     }
 
     public void Update()
@@ -126,7 +130,8 @@ component MagnetMain
                 //coinManagement.CallComponentMethod("CoinManagement", "addCount", "");
                 caughtAnimation();
                 myPlayerComponent.CallComponentMethod("PlayerAutoRun","setMagnetStart","");
-                magnetParticle.CallComponentMethod("MagnetParticle","setActionTrue","");
+                magnetParticle0.CallComponentMethod("MagnetParticlePlanes","setActionTrue","");
+                magnetParticle1.CallComponentMethod("MagnetParticlePlanes","setActionTrue","");
                 magnetSE.Play();
             }
         }
