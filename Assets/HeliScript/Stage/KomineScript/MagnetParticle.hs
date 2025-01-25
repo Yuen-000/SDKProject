@@ -1,5 +1,6 @@
 component MagnetParticle
-{    //このアイテム
+{
+    //このアイテム
     Item myItem;
 
     //元の座標
