@@ -84,6 +84,11 @@ component ActionButton
                 gateR.CallComponentMethod("Gate1RightAnimation", "setAction", "");
             }
             else if(areaNum == 2){
+                Item gateL = hsItemGet("Gate2LeftDoor");
+                Item gateR = hsItemGet("Gate2RightDoor");
+
+                gateL.CallComponentMethod("Gate2LeftAnimation", "setAction", "");
+                gateR.CallComponentMethod("Gate2RightAnimation", "setAction", "");
             }
             else if(areaNum == 3){
                 Item gateL = hsItemGet("Gate3LeftWall");
