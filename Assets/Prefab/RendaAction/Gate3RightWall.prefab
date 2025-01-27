@@ -52,7 +52,7 @@ MonoBehaviour:
     pos:
     - 7
     - 4.5
-    - 1007.6
+    - 390
     rotate:
     - -0
     - 0
@@ -102,8 +102,8 @@ MonoBehaviour:
     type: 3}
   hsComponent: 
   hsComponents:
-  - componentName: Gate3RightAnimation
-    selectedIndex: 11
+  - componentName: Gate3LeftAnimation
+    selectedIndex: 28
 --- !u!114 &3637029178158697980
 MonoBehaviour:
   m_ObjectHideFlags: 0
