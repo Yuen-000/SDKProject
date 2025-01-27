@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6381365911529634023
+--- !u!1 &1660729582135391082
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,31 +8,130 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6381365911529634020}
+  - component: {fileID: 1660729582135391081}
+  - component: {fileID: 1660729582135391080}
+  - component: {fileID: 1660729582135391086}
+  - component: {fileID: 1660729582135391087}
   m_Layer: 0
-  m_Name: ItemParent
+  m_Name: MagnetParticle0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6381365911529634020
+--- !u!4 &1660729582135391081
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6381365911529634023}
+  m_GameObject: {fileID: 1660729582135391082}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 6381365913181624927}
-  - {fileID: 6381365912448137658}
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_LocalPosition: {x: 0, y: -1, z: 0}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
+  m_Children: []
+  m_Father: {fileID: 1660729583768418347}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &6381365912162701805
+--- !u!114 &1660729582135391080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660729582135391082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -894626317, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _plane:
+    name: MagnetParticle0
+    filename: Image/zisyaku_EF_1_v2.png
+    filenameen: Image/zisyaku_EF_1_v2.png
+    pos:
+    - 0
+    - -1
+    - 0
+    rotate:
+    - -0
+    - 0
+    - 0
+    scale:
+    - 2.5
+    - 2.5
+    - 2.5
+    alphablending: 1
+    billboard: 0
+    zbias: 0
+    show: 1
+    overrides: []
+    lookatcamera: 0
+    doubleside: 1
+    components:
+    - MagnetParticlPlanes
+    - MagnetParticldPlanes
+    - MagnetParticlePlanes
+    showphotomode: 1
+    clickable: 0
+    autoloading: 1
+  textureInJP: {fileID: 2800000, guid: 8bec2f23158bf3a4f95144177dfa0697, type: 3}
+  textureInEN: {fileID: 2800000, guid: 8bec2f23158bf3a4f95144177dfa0697, type: 3}
+  _isAdvancedFoldout: 1
+  _Priority: 0
+  PreviewFlag: 1
+  PreviewObject: {fileID: 0}
+  Reshow: 0
+  JPLang: 1
+  references:
+    version: 1
+--- !u!114 &1660729582135391086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660729582135391082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: MagnetParticlePlanes
+  _heliScript: {fileID: 469074977633818552, guid: 0c06d80ce07e43d4fb92494f1e430efd,
+    type: 3}
+  hsComponent: 
+  hsComponents:
+  - componentName: MagnetParticlePlanes
+    selectedIndex: 26
+--- !u!114 &1660729582135391087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660729582135391082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -917271763, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  properties:
+  - Key: POS_Y
+    Value: 1.0
+  - Key: POS_Z
+    Value: 0
+  - Key: ROTATE_SPEED
+    Value: 5.0
+  - Key: ROTATE_DIRECTION
+    Value: -1.0
+  - Key: INITIAL_ANGLE
+    Value: 0.0
+  - Key: X_INICLINATION
+    Value: 90.0
+--- !u!1 &1660729582371400934
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -40,9 +139,218 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6381365912162701714}
-  - component: {fileID: 6381365912162701712}
-  - component: {fileID: 6381365912162701715}
+  - component: {fileID: 1660729582371400933}
+  - component: {fileID: 1660729582371400938}
+  - component: {fileID: 1660729582371400939}
+  - component: {fileID: 1660729582371400932}
+  m_Layer: 0
+  m_Name: SpeedUpParticle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1660729582371400933
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660729582371400934}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -100}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1660729583319931854}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1660729582371400938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660729582371400934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 2030893995, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _particle:
+    name: SpeedUpParticle
+    filename: Particle/Effect_SpeedUp_09/Effect_SpeedUp_09.hep
+    pos:
+    - 0
+    - 0
+    - -100
+    rotate:
+    - -0
+    - 0
+    - 0
+    loop: 1
+    autoplay: 1
+    autoloading: 1
+    isAdvancedFoldout: 0
+    components:
+    - SpeedUpParticle
+    showphotomode: 1
+    clickable: 0
+    show: 1
+  hep: {fileID: 8549007397814093194, guid: 65a830e070d27544e8cf8d62c5d7661c, type: 3}
+  _Priority: 0
+  _isAdvancedFoldout: 1
+--- !u!114 &1660729582371400939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660729582371400934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: SpeedUpParticle
+  _heliScript: {fileID: 469074977633818552, guid: 7282feb34b449bd45933276b79ec59bf,
+    type: 3}
+  hsComponent: 
+  hsComponents:
+  - componentName: SpeedUpParticle
+    selectedIndex: 20
+--- !u!114 &1660729582371400932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660729582371400934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -917271763, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  properties:
+  - Key: POS_Y
+    Value: 0.0
+  - Key: POS_Z
+    Value: 0.0
+--- !u!1 &1660729582432981073
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1660729582432981072}
+  - component: {fileID: 1660729582432981077}
+  - component: {fileID: 1660729582432981078}
+  - component: {fileID: 1660729582432981079}
+  m_Layer: 0
+  m_Name: SpeedUpManagement
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1660729582432981072
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660729582432981073}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1660729583319931854}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1660729582432981077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660729582432981073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1147827095, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _heliodorScripts: []
+  _field:
+    name: SpeedUpManagement
+    filename: Field/SpeedUpManagement/SpeedUpManagement.heo
+    components:
+    - SpeedUpManagement
+    overrides: []
+    autoloading: 1
+    lookatcamera: 0
+    alphaanim: 0
+    collisiondetection: 1
+    showphotomode: 1
+    clickable: 0
+    show: 1
+    clickableui:
+      _images: []
+      _clickableItems: []
+  LoadCollider: []
+  UnLoadCollider: []
+  _isAdvancedFoldout: 0
+  _Priority: 0
+  references:
+    version: 1
+--- !u!114 &1660729582432981078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660729582432981073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: 
+  _heliScript: {fileID: 0}
+  hsComponent: 
+  hsComponents:
+  - componentName: SpeedUpManagement
+    selectedIndex: 19
+--- !u!114 &1660729582432981079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660729582432981073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -917271763, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  properties:
+  - Key: SPEEDUPMAX
+    Value: 1
+--- !u!1 &1660729582434701436
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1660729582434701315}
+  - component: {fileID: 1660729582434701313}
+  - component: {fileID: 1660729582434701314}
   m_Layer: 0
   m_Name: Magnet0
   m_TagString: Untagged
@@ -50,27 +358,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6381365912162701714
+--- !u!4 &1660729582434701315
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6381365912162701805}
+  m_GameObject: {fileID: 1660729582434701436}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: 30}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
-  m_Father: {fileID: 6381365912448137658}
-  m_RootOrder: 2
+  m_Father: {fileID: 1660729583768418347}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6381365912162701712
+--- !u!114 &1660729582434701313
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6381365912162701805}
+  m_GameObject: {fileID: 1660729582434701436}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -894626317, guid: aceab675429f9e946b912a758820ab12, type: 3}
@@ -115,13 +423,13 @@ MonoBehaviour:
   JPLang: 1
   references:
     version: 1
---- !u!114 &6381365912162701715
+--- !u!114 &1660729582434701314
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6381365912162701805}
+  m_GameObject: {fileID: 1660729582434701436}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
@@ -135,7 +443,7 @@ MonoBehaviour:
   hsComponents:
   - componentName: MagnetMain
     selectedIndex: 21
---- !u!1 &6381365912189587904
+--- !u!1 &1660729582724227354
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -143,38 +451,201 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6381365912189587905}
-  - component: {fileID: 6381365912189587908}
-  - component: {fileID: 6381365912189587911}
-  - component: {fileID: 6381365912189587910}
+  - component: {fileID: 1660729582724227353}
+  - component: {fileID: 1660729582724227352}
+  - component: {fileID: 1660729582724227358}
+  - component: {fileID: 1660729582724227359}
   m_Layer: 0
-  m_Name: SpeedUpManagement
+  m_Name: MagnetParticle1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6381365912189587905
+--- !u!4 &1660729582724227353
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6381365912189587904}
+  m_GameObject: {fileID: 1660729582724227354}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: -1, z: 0}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_Children: []
-  m_Father: {fileID: 6381365913181624927}
-  m_RootOrder: 1
+  m_Father: {fileID: 1660729583768418347}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6381365912189587908
+--- !u!114 &1660729582724227352
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6381365912189587904}
+  m_GameObject: {fileID: 1660729582724227354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -894626317, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _plane:
+    name: MagnetParticle1
+    filename: Image/zisyaku_EF_2_v2.png
+    filenameen: Image/zisyaku_EF_2_v2.png
+    pos:
+    - 0
+    - -1
+    - 0
+    rotate:
+    - -0
+    - 0
+    - 0
+    scale:
+    - 2.5
+    - 2.5
+    - 2.5
+    alphablending: 1
+    billboard: 0
+    zbias: 0
+    show: 1
+    overrides: []
+    lookatcamera: 0
+    doubleside: 1
+    components:
+    - MagnetParticlPlanes
+    - MagnetParticldPlanes
+    - MagnetParticlePlanes
+    showphotomode: 1
+    clickable: 0
+    autoloading: 1
+  textureInJP: {fileID: 2800000, guid: 941b229a4eccdf84ba72bebfbf079776, type: 3}
+  textureInEN: {fileID: 2800000, guid: 941b229a4eccdf84ba72bebfbf079776, type: 3}
+  _isAdvancedFoldout: 1
+  _Priority: 0
+  PreviewFlag: 1
+  PreviewObject: {fileID: 0}
+  Reshow: 0
+  JPLang: 1
+  references:
+    version: 1
+--- !u!114 &1660729582724227358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660729582724227354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: MagnetParticlePlanes
+  _heliScript: {fileID: 469074977633818552, guid: 0c06d80ce07e43d4fb92494f1e430efd,
+    type: 3}
+  hsComponent: 
+  hsComponents:
+  - componentName: MagnetParticlePlanes
+    selectedIndex: 26
+--- !u!114 &1660729582724227359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660729582724227354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -917271763, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  properties:
+  - Key: POS_Y
+    Value: 0.9
+  - Key: POS_Z
+    Value: 0
+  - Key: ROTATE_SPEED
+    Value: 5.0
+  - Key: ROTATE_DIRECTION
+    Value: 1.0
+  - Key: INITIAL_ANGLE
+    Value: 0.0
+  - Key: X_INICLINATION
+    Value: 90.0
+--- !u!1 &1660729582883240310
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1660729582883240309}
+  m_Layer: 0
+  m_Name: ItemParent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1660729582883240309
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660729582883240310}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1660729583319931854}
+  - {fileID: 1660729583768418347}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1660729583289779691
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1660729583289779690}
+  - component: {fileID: 1660729583289779695}
+  - component: {fileID: 1660729583289779688}
+  - component: {fileID: 1660729583289779689}
+  m_Layer: 0
+  m_Name: MagnetManagement
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1660729583289779690
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660729583289779691}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1660729583768418347}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1660729583289779695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660729583289779691}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1147827095, guid: aceab675429f9e946b912a758820ab12, type: 3}
@@ -182,10 +653,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _heliodorScripts: []
   _field:
-    name: SpeedUpManagement
-    filename: Field/SpeedUpManagement/SpeedUpManagement.heo
+    name: MagnetManagement
+    filename: Field/MagnetManagement/MagnetManagement.heo
     components:
-    - SpeedUpManagement
+    - MagnetManagement
     overrides: []
     autoloading: 1
     lookatcamera: 0
@@ -203,13 +674,13 @@ MonoBehaviour:
   _Priority: 0
   references:
     version: 1
---- !u!114 &6381365912189587911
+--- !u!114 &1660729583289779688
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6381365912189587904}
+  m_GameObject: {fileID: 1660729583289779691}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
@@ -221,24 +692,24 @@ MonoBehaviour:
   _heliScript: {fileID: 0}
   hsComponent: 
   hsComponents:
-  - componentName: SpeedUpManagement
-    selectedIndex: 19
---- !u!114 &6381365912189587910
+  - componentName: MagnetManagement
+    selectedIndex: 22
+--- !u!114 &1660729583289779689
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6381365912189587904}
+  m_GameObject: {fileID: 1660729583289779691}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -917271763, guid: aceab675429f9e946b912a758820ab12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   properties:
-  - Key: SPEEDUPMAX
+  - Key: MAGNETMAX
     Value: 1
---- !u!1 &6381365912226016631
+--- !u!1 &1660729583319931855
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -246,138 +717,32 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6381365912226016628}
-  - component: {fileID: 6381365912226016635}
-  - component: {fileID: 6381365912226016634}
-  - component: {fileID: 6381365912226016629}
+  - component: {fileID: 1660729583319931854}
   m_Layer: 0
-  m_Name: SpeedUpParticle
+  m_Name: SpeedUpParent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6381365912226016628
+--- !u!4 &1660729583319931854
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6381365912226016631}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -100}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 6381365913181624927}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6381365912226016635
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6381365912226016631}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 2030893995, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _particle:
-    name: SpeedUpParticle
-    filename: Particle/Effect_SpeedUp_09/Effect_SpeedUp_09.hep
-    pos:
-    - 0
-    - 0
-    - -100
-    rotate:
-    - -0
-    - 0
-    - 0
-    loop: 1
-    autoplay: 1
-    autoloading: 1
-    isAdvancedFoldout: 0
-    components:
-    - SpeedUpParticle
-    showphotomode: 1
-    clickable: 0
-    show: 0
-  hep: {fileID: 8549007397814093194, guid: 65a830e070d27544e8cf8d62c5d7661c, type: 3}
-  _Priority: 0
-  _isAdvancedFoldout: 1
---- !u!114 &6381365912226016634
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6381365912226016631}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  selectedIndex: 0
-  selectedIndexes: 00000000
-  ScriptName: SpeedUpParticle
-  _heliScript: {fileID: 469074977633818552, guid: 7282feb34b449bd45933276b79ec59bf,
-    type: 3}
-  hsComponent: 
-  hsComponents:
-  - componentName: SpeedUpParticle
-    selectedIndex: 20
---- !u!114 &6381365912226016629
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6381365912226016631}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -917271763, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  properties:
-  - Key: POS_Y
-    Value: 0.0
-  - Key: POS_Z
-    Value: 0.0
---- !u!1 &6381365912448137653
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6381365912448137658}
-  m_Layer: 0
-  m_Name: MagnetParent
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6381365912448137658
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6381365912448137653}
+  m_GameObject: {fileID: 1660729583319931855}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 6381365912789284487}
-  - {fileID: 6381365913010439291}
-  - {fileID: 6381365912162701714}
-  m_Father: {fileID: 6381365911529634020}
-  m_RootOrder: 1
+  - {fileID: 1660729582371400933}
+  - {fileID: 1660729582432981072}
+  - {fileID: 1660729583728587232}
+  m_Father: {fileID: 1660729582883240309}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &6381365912546685040
+--- !u!1 &1660729583728587233
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -385,9 +750,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6381365912546685041}
-  - component: {fileID: 6381365912546685047}
-  - component: {fileID: 6381365912546685046}
+  - component: {fileID: 1660729583728587232}
+  - component: {fileID: 1660729583728587238}
+  - component: {fileID: 1660729583728587239}
   m_Layer: 0
   m_Name: SpeedUp0
   m_TagString: Untagged
@@ -395,27 +760,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6381365912546685041
+--- !u!4 &1660729583728587232
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6381365912546685040}
+  m_GameObject: {fileID: 1660729583728587233}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: 20}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
-  m_Father: {fileID: 6381365913181624927}
+  m_Father: {fileID: 1660729583319931854}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6381365912546685047
+--- !u!114 &1660729583728587238
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6381365912546685040}
+  m_GameObject: {fileID: 1660729583728587233}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -894626317, guid: aceab675429f9e946b912a758820ab12, type: 3}
@@ -459,13 +824,13 @@ MonoBehaviour:
   JPLang: 1
   references:
     version: 1
---- !u!114 &6381365912546685046
+--- !u!114 &1660729583728587239
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6381365912546685040}
+  m_GameObject: {fileID: 1660729583728587233}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
@@ -479,7 +844,7 @@ MonoBehaviour:
   hsComponents:
   - componentName: SpeedUpMain
     selectedIndex: 18
---- !u!1 &6381365912789284486
+--- !u!1 &1660729583768418340
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -487,38 +852,73 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6381365912789284487}
-  - component: {fileID: 6381365912789284490}
-  - component: {fileID: 6381365912789284485}
-  - component: {fileID: 6381365912789284484}
+  - component: {fileID: 1660729583768418347}
+  m_Layer: 0
+  m_Name: MagnetParent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1660729583768418347
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660729583768418340}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1660729583972464406}
+  - {fileID: 1660729582135391081}
+  - {fileID: 1660729582724227353}
+  - {fileID: 1660729583289779690}
+  - {fileID: 1660729582434701315}
+  m_Father: {fileID: 1660729582883240309}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1660729583972464407
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1660729583972464406}
+  - component: {fileID: 1660729583972464411}
+  - component: {fileID: 1660729583972464404}
+  - component: {fileID: 1660729583972464405}
   m_Layer: 0
   m_Name: MagnetParticle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6381365912789284487
+  m_IsActive: 0
+--- !u!4 &1660729583972464406
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6381365912789284486}
+  m_GameObject: {fileID: 1660729583972464407}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -100}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 6381365912448137658}
+  m_Father: {fileID: 1660729583768418347}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6381365912789284490
+--- !u!114 &1660729583972464411
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6381365912789284486}
+  m_GameObject: {fileID: 1660729583972464407}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 2030893995, guid: aceab675429f9e946b912a758820ab12, type: 3}
@@ -543,17 +943,17 @@ MonoBehaviour:
     - MagnetParticle
     showphotomode: 1
     clickable: 0
-    show: 0
+    show: 1
   hep: {fileID: 8549007397814093194, guid: 5cc417ec290f542498db171998adf872, type: 3}
   _Priority: 0
   _isAdvancedFoldout: 1
---- !u!114 &6381365912789284485
+--- !u!114 &1660729583972464404
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6381365912789284486}
+  m_GameObject: {fileID: 1660729583972464407}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
@@ -568,13 +968,13 @@ MonoBehaviour:
   hsComponents:
   - componentName: MagnetParticle
     selectedIndex: 23
---- !u!114 &6381365912789284484
+--- !u!114 &1660729583972464405
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6381365912789284486}
+  m_GameObject: {fileID: 1660729583972464407}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -917271763, guid: aceab675429f9e946b912a758820ab12, type: 3}
@@ -584,140 +984,4 @@ MonoBehaviour:
   - Key: POS_Y
     Value: 1.5
   - Key: POS_Z
-    Value: 0.0
---- !u!1 &6381365913010439290
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6381365913010439291}
-  - component: {fileID: 6381365913010439294}
-  - component: {fileID: 6381365913010439289}
-  - component: {fileID: 6381365913010439288}
-  m_Layer: 0
-  m_Name: MagnetManagement
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6381365913010439291
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6381365913010439290}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 6381365912448137658}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6381365913010439294
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6381365913010439290}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1147827095, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _heliodorScripts: []
-  _field:
-    name: MagnetManagement
-    filename: Field/MagnetManagement/MagnetManagement.heo
-    components:
-    - MagnetManagement
-    overrides: []
-    autoloading: 1
-    lookatcamera: 0
-    alphaanim: 0
-    collisiondetection: 1
-    showphotomode: 1
-    clickable: 0
-    show: 1
-    clickableui:
-      _images: []
-      _clickableItems: []
-  LoadCollider: []
-  UnLoadCollider: []
-  _isAdvancedFoldout: 0
-  _Priority: 0
-  references:
-    version: 1
---- !u!114 &6381365913010439289
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6381365913010439290}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  selectedIndex: 0
-  selectedIndexes: 00000000
-  ScriptName: 
-  _heliScript: {fileID: 0}
-  hsComponent: 
-  hsComponents:
-  - componentName: MagnetManagement
-    selectedIndex: 22
---- !u!114 &6381365913010439288
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6381365913010439290}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -917271763, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  properties:
-  - Key: MAGNETMAX
-    Value: 1
---- !u!1 &6381365913181624926
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6381365913181624927}
-  m_Layer: 0
-  m_Name: SpeedUpParent
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6381365913181624927
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6381365913181624926}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 6381365912226016628}
-  - {fileID: 6381365912189587905}
-  - {fileID: 6381365912546685041}
-  m_Father: {fileID: 6381365911529634020}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+    Value: 0

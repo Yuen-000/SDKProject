@@ -78,7 +78,7 @@ component ActionStartArea
 
             hsSystemOutput("Passing area! " + areaName + "\n");
             myPlayerComponent.CallComponentMethod("ActionTimeManagement", "recieveActionStart", areaName);
-            myActionUI.CallComponentMethod("ActionUI", "startActionTime", "");
+            myActionUI.CallComponentMethod("ActionUI", "startActionTime", string(areaZCoor));
             myActionParticle.CallComponentMethod("ActionParticle", "setActionTrue", "");
             myActionButton.CallComponentMethod("ActionButton", "SetActionFlagTrue", "");
 
@@ -92,7 +92,12 @@ component ActionStartArea
                 gateL.CallComponentMethod("Gate1LeftAnimation", "setClose", "");
                 gateR.CallComponentMethod("Gate1RightAnimation", "setClose", "");
             }
-            else if(areaName == "hogehoge"){
+            else if(areaName == "ActionArea2"){
+                Item gateL = hsItemGet("Gate2LeftDoor");
+                Item gateR = hsItemGet("Gate2RightDoor");
+
+                gateL.CallComponentMethod("Gate2LeftAnimation", "setClose", "");
+                gateR.CallComponentMethod("Gate2RightAnimation", "setClose", "");
             }
             else if(areaName == "ActionArea3"){
                 Item gateL = hsItemGet("Gate3LeftWall");
