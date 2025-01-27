@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3793550558567915143
+--- !u!1 &1199043654849480037
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,9 +8,181 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 898593355687529864}
-  - component: {fileID: 5292458671766889472}
-  - component: {fileID: 8471341223784402130}
+  - component: {fileID: 6385005124288502643}
+  m_Layer: 0
+  m_Name: ActionStartArea
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6385005124288502643
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199043654849480037}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 3699424410747786116}
+  - {fileID: 7462561104490512691}
+  - {fileID: 542483269707838135}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4322838235266062453
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 542483269707838135}
+  - component: {fileID: 1070917391769393455}
+  - component: {fileID: 2108826507084600605}
+  m_Layer: 0
+  m_Name: ActionArea3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &542483269707838135
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4322838235266062453}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 950}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6385005124288502643}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1070917391769393455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4322838235266062453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _object:
+    name: ActionArea3
+    filename: Field/Empty/Empty.heo
+    filename_png: 
+    filename_astc: 
+    filename_etc2: 
+    pose: 
+    clickable: 0
+    enablebone: 0
+    show: 1
+    autoloading: 1
+    forceshadowcaster: 0
+    forceshadowreceiver: 0
+    foregroundrendering: 0
+    zwriteenable: 1
+    alphablendtoopaque: 0
+    unserializecircleshadow:
+      _use: 0
+      _filename: CircleShadow2/CircleShadow2.heo
+      _scale:
+      - 0.6
+      - 0.6
+      - 0.6
+      _zbias: -0.02
+      _adjustposdownward: 0
+    alphaanim: 0
+    motions: []
+    beginactions: []
+    endactions: []
+    pos:
+    - 0
+    - 0
+    - 950
+    rotate:
+    - -0
+    - 0
+    - 0
+    scale:
+    - 1
+    - 1
+    - 1
+    components:
+    - ActionStartArea
+    lookatcamera: 0
+    collisiondetection: 1
+    uselightscattering: 1
+    showphotomode: 1
+  _autoShowHEO: 1
+  PreviewObjectRoot: {fileID: 0}
+  CurrentShowFile: {fileID: 8794674264650990340, guid: a2859199e1e161841b8929a73afb8040,
+    type: 3}
+  TempAvatar: {fileID: 0}
+  fileMode: 0
+  fileModeTypeValue: 0
+  _Priority: 0
+  _buildingShow: 0
+  heoCircleShadow: {fileID: 0}
+  heoOrVrm: {fileID: 8794674264650990340, guid: a2859199e1e161841b8929a73afb8040,
+    type: 3}
+  vrm: {fileID: 0}
+  glb: {fileID: 0}
+  hem: {fileID: 0}
+  hrmPng: {fileID: 0}
+  hrmAstc: {fileID: 0}
+  hrmEtc2: {fileID: 0}
+  hrmDxt: {fileID: 0}
+  _circleShadowScaleInEditor: {x: 0.6, y: 0.6, z: 0.6}
+  _isBeginactionsFoldout: 0
+  _isEndactionsFoldout: 0
+  _objectMode: 0
+  _isComponentsFoldout: 0
+  _isAdvancedFoldout: 1
+  references:
+    version: 1
+--- !u!114 &2108826507084600605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4322838235266062453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: ActionStartArea
+  _heliScript: {fileID: 469074977633818552, guid: 5f839c3d2bb5bd84799f32ca20624ac6,
+    type: 3}
+  hsComponent: 
+  hsComponents:
+  - componentName: ActionStartArea
+    selectedIndex: 9
+--- !u!1 &5219189459645732760
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3699424410747786116}
+  - component: {fileID: 1016374446712339488}
+  - component: {fileID: 1997277071313124331}
   m_Layer: 0
   m_Name: ActionArea1
   m_TagString: Untagged
@@ -18,27 +190,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &898593355687529864
+--- !u!4 &3699424410747786116
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3793550558567915143}
+  m_GameObject: {fileID: 5219189459645732760}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 140}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 5548473017058277245}
+  m_Father: {fileID: 6385005124288502643}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5292458671766889472
+--- !u!114 &1016374446712339488
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3793550558567915143}
+  m_GameObject: {fileID: 5219189459645732760}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
@@ -118,13 +290,13 @@ MonoBehaviour:
   _isAdvancedFoldout: 1
   references:
     version: 1
---- !u!114 &8471341223784402130
+--- !u!114 &1997277071313124331
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3793550558567915143}
+  m_GameObject: {fileID: 5219189459645732760}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
@@ -139,7 +311,7 @@ MonoBehaviour:
   hsComponents:
   - componentName: ActionStartArea
     selectedIndex: 9
---- !u!1 &5548473016725595566
+--- !u!1 &5259141619168673779
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -147,148 +319,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5548473016725595567}
-  - component: {fileID: 5548473016725595565}
-  - component: {fileID: 5548473016725595564}
-  m_Layer: 0
-  m_Name: ActionArea3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5548473016725595567
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5548473016725595566}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 957}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 5548473017058277245}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5548473016725595565
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5548473016725595566}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _object:
-    name: ActionArea3
-    filename: Field/Empty/Empty.heo
-    filename_png: 
-    filename_astc: 
-    filename_etc2: 
-    pose: 
-    clickable: 0
-    enablebone: 0
-    show: 1
-    autoloading: 1
-    forceshadowcaster: 0
-    forceshadowreceiver: 0
-    foregroundrendering: 0
-    zwriteenable: 1
-    alphablendtoopaque: 0
-    unserializecircleshadow:
-      _use: 0
-      _filename: CircleShadow2/CircleShadow2.heo
-      _scale:
-      - 0.6
-      - 0.6
-      - 0.6
-      _zbias: -0.02
-      _adjustposdownward: 0
-    alphaanim: 0
-    motions: []
-    beginactions: []
-    endactions: []
-    pos:
-    - 0
-    - 0
-    - 760
-    rotate:
-    - -0
-    - 0
-    - 0
-    scale:
-    - 1
-    - 1
-    - 1
-    components:
-    - ActionStartArea
-    lookatcamera: 0
-    collisiondetection: 1
-    uselightscattering: 1
-    showphotomode: 1
-  _autoShowHEO: 1
-  PreviewObjectRoot: {fileID: 0}
-  CurrentShowFile: {fileID: 8794674264650990340, guid: a2859199e1e161841b8929a73afb8040,
-    type: 3}
-  TempAvatar: {fileID: 0}
-  fileMode: 0
-  fileModeTypeValue: 0
-  _Priority: 0
-  _buildingShow: 0
-  heoCircleShadow: {fileID: 0}
-  heoOrVrm: {fileID: 8794674264650990340, guid: a2859199e1e161841b8929a73afb8040,
-    type: 3}
-  vrm: {fileID: 0}
-  glb: {fileID: 0}
-  hem: {fileID: 0}
-  hrmPng: {fileID: 0}
-  hrmAstc: {fileID: 0}
-  hrmEtc2: {fileID: 0}
-  hrmDxt: {fileID: 0}
-  _circleShadowScaleInEditor: {x: 0.6, y: 0.6, z: 0.6}
-  _isBeginactionsFoldout: 0
-  _isEndactionsFoldout: 0
-  _objectMode: 0
-  _isComponentsFoldout: 0
-  _isAdvancedFoldout: 1
-  references:
-    version: 1
---- !u!114 &5548473016725595564
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5548473016725595566}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  selectedIndex: 0
-  selectedIndexes: 00000000
-  ScriptName: ActionStartArea
-  _heliScript: {fileID: 469074977633818552, guid: 5f839c3d2bb5bd84799f32ca20624ac6,
-    type: 3}
-  hsComponent: 
-  hsComponents:
-  - componentName: ActionStartArea
-    selectedIndex: 9
---- !u!1 &5548473017540789591
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5548473017540789588}
-  - component: {fileID: 5548473017540789594}
-  - component: {fileID: 5548473017540789589}
+  - component: {fileID: 7462561104490512691}
+  - component: {fileID: 7661546021264050141}
+  - component: {fileID: 7353083461992904664}
   m_Layer: 0
   m_Name: ActionArea2
   m_TagString: Untagged
@@ -296,27 +329,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5548473017540789588
+--- !u!4 &7462561104490512691
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5548473017540789591}
+  m_GameObject: {fileID: 5259141619168673779}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 553}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 5548473017058277245}
+  m_Father: {fileID: 6385005124288502643}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5548473017540789594
+--- !u!114 &7661546021264050141
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5548473017540789591}
+  m_GameObject: {fileID: 5259141619168673779}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
@@ -396,13 +429,13 @@ MonoBehaviour:
   _isAdvancedFoldout: 1
   references:
     version: 1
---- !u!114 &5548473017540789589
+--- !u!114 &7353083461992904664
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5548473017540789591}
+  m_GameObject: {fileID: 5259141619168673779}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
@@ -417,36 +450,3 @@ MonoBehaviour:
   hsComponents:
   - componentName: ActionStartArea
     selectedIndex: 9
---- !u!1 &7287561777116056497
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5548473017058277245}
-  m_Layer: 0
-  m_Name: ActionStartArea
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5548473017058277245
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7287561777116056497}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 898593355687529864}
-  - {fileID: 5548473017540789588}
-  - {fileID: 5548473016725595567}
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
