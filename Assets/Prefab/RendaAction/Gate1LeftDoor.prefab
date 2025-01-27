@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8440801868494307646
+--- !u!1 &2766860334134502712
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,10 +8,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8440801868494307645}
-  - component: {fileID: 8440801868494307644}
-  - component: {fileID: 8440801868494307642}
-  - component: {fileID: 8440801868494307643}
+  - component: {fileID: 3426816096941509524}
+  - component: {fileID: 4981160264583970671}
+  - component: {fileID: 277729601367427519}
+  - component: {fileID: 1831757855863179349}
   m_Layer: 0
   m_Name: Gate1LeftDoor
   m_TagString: Untagged
@@ -19,13 +19,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8440801868494307645
+--- !u!4 &3426816096941509524
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8440801868494307646}
+  m_GameObject: {fileID: 2766860334134502712}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -33,21 +33,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8440801868494307644
+--- !u!114 &4981160264583970671
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8440801868494307646}
+  m_GameObject: {fileID: 2766860334134502712}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _object:
-    name: 
-    filename: 
+    name: Gate1LeftDoor
+    filename: Field/Gate1LeftDoor/Gate1LeftDoor.heo
     filename_png: 
     filename_astc: 
     filename_etc2: 
@@ -77,16 +77,17 @@ MonoBehaviour:
     pos:
     - 0
     - 0
-    - 0
+    - 195
     rotate:
-    - 0
+    - -0
     - 0
     - 0
     scale:
     - 1
     - 1
     - 1
-    components: []
+    components:
+    - Gate1LeftAnimation
     lookatcamera: 0
     collisiondetection: 1
     uselightscattering: 1
@@ -118,13 +119,13 @@ MonoBehaviour:
   _isAdvancedFoldout: 0
   references:
     version: 1
---- !u!114 &8440801868494307642
+--- !u!114 &277729601367427519
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8440801868494307646}
+  m_GameObject: {fileID: 2766860334134502712}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
@@ -139,13 +140,13 @@ MonoBehaviour:
   hsComponents:
   - componentName: Gate1LeftAnimation
     selectedIndex: 12
---- !u!114 &8440801868494307643
+--- !u!114 &1831757855863179349
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8440801868494307646}
+  m_GameObject: {fileID: 2766860334134502712}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -917271763, guid: aceab675429f9e946b912a758820ab12, type: 3}

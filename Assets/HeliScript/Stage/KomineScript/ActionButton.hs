@@ -66,6 +66,7 @@ component ActionButton
 
     public void OnClickNode(string areaNumStr)
     {
+
         if(isActionTime){
             pressCount++;
             hsSystemOutput(string(pressCount) + "\n");
