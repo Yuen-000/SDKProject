@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &491562848235607966
+--- !u!1 &265028085308262628
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,470 +8,11 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1611076415787434237}
-  - component: {fileID: 6008225193555105150}
-  m_Layer: 0
-  m_Name: ActionButtonSE9
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1611076415787434237
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 491562848235607966}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 7746271179987303231}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6008225193555105150
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 491562848235607966}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -247161819, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _audio:
-    name: ActionButtonSE9
-    type: se
-    filename: Sound/ClickAction_SE.mp3
-    loop: 0
-    autoplay: 0
-    overrides: []
-    components: []
-    showphotomode: 1
-    clickable: 0
-    autoloading: 1
-    show: 1
-  audioClip: {fileID: 8300000, guid: 28970248127154544a43241ba70ea915, type: 3}
-  _isAdvancedFoldout: 1
-  _Priority: 0
-  _audioType: 1
-  references:
-    version: 1
---- !u!1 &801784667672297909
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8064278470902029449}
-  - component: {fileID: 8027561487176951620}
-  m_Layer: 0
-  m_Name: ActionButtonSE7
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8064278470902029449
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 801784667672297909}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 7746271179987303231}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8027561487176951620
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 801784667672297909}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -247161819, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _audio:
-    name: ActionButtonSE7
-    type: se
-    filename: Sound/ClickAction_SE.mp3
-    loop: 0
-    autoplay: 0
-    overrides: []
-    components: []
-    showphotomode: 1
-    clickable: 0
-    autoloading: 1
-    show: 1
-  audioClip: {fileID: 8300000, guid: 28970248127154544a43241ba70ea915, type: 3}
-  _isAdvancedFoldout: 1
-  _Priority: 0
-  _audioType: 1
-  references:
-    version: 1
---- !u!1 &1052870094843888194
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3444483588145936839}
-  - component: {fileID: 1377207150315374008}
-  m_Layer: 0
-  m_Name: ActionButtonSE0
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3444483588145936839
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1052870094843888194}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 7746271179987303231}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1377207150315374008
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1052870094843888194}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -247161819, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _audio:
-    name: ActionButtonSE0
-    type: se
-    filename: Sound/ClickAction_SE.mp3
-    loop: 0
-    autoplay: 0
-    overrides: []
-    components: []
-    showphotomode: 1
-    clickable: 0
-    autoloading: 1
-    show: 1
-  audioClip: {fileID: 8300000, guid: 28970248127154544a43241ba70ea915, type: 3}
-  _isAdvancedFoldout: 1
-  _Priority: 0
-  _audioType: 1
-  references:
-    version: 1
---- !u!1 &1363700619059498458
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4273499196924639241}
-  m_Layer: 0
-  m_Name: ActionButton
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4273499196924639241
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1363700619059498458}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 7746271179987303231}
-  - {fileID: 1003119397005048624}
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1584044404782479005
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3097559961129116565}
-  - component: {fileID: 5959166620562722610}
-  m_Layer: 0
-  m_Name: ActionButtonSE3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3097559961129116565
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1584044404782479005}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 7746271179987303231}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5959166620562722610
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1584044404782479005}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -247161819, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _audio:
-    name: ActionButtonSE3
-    type: se
-    filename: Sound/ClickAction_SE.mp3
-    loop: 0
-    autoplay: 0
-    overrides: []
-    components: []
-    showphotomode: 1
-    clickable: 0
-    autoloading: 1
-    show: 1
-  audioClip: {fileID: 8300000, guid: 28970248127154544a43241ba70ea915, type: 3}
-  _isAdvancedFoldout: 1
-  _Priority: 0
-  _audioType: 1
-  references:
-    version: 1
---- !u!1 &2167455820767761409
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4136514544834363406}
-  - component: {fileID: 5935640619127830711}
-  m_Layer: 0
-  m_Name: ActionButtonSE1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4136514544834363406
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2167455820767761409}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 7746271179987303231}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5935640619127830711
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2167455820767761409}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -247161819, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _audio:
-    name: ActionButtonSE1
-    type: se
-    filename: Sound/ClickAction_SE.mp3
-    loop: 0
-    autoplay: 0
-    overrides: []
-    components: []
-    showphotomode: 1
-    clickable: 0
-    autoloading: 1
-    show: 1
-  audioClip: {fileID: 8300000, guid: 28970248127154544a43241ba70ea915, type: 3}
-  _isAdvancedFoldout: 1
-  _Priority: 0
-  _audioType: 1
-  references:
-    version: 1
---- !u!1 &2568614248049644533
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7285753445791711832}
-  - component: {fileID: 6742238214284037059}
-  m_Layer: 0
-  m_Name: ActionButtonSE8
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7285753445791711832
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2568614248049644533}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 7746271179987303231}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6742238214284037059
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2568614248049644533}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -247161819, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _audio:
-    name: ActionButtonSE8
-    type: se
-    filename: Sound/ClickAction_SE.mp3
-    loop: 0
-    autoplay: 0
-    overrides: []
-    components: []
-    showphotomode: 1
-    clickable: 0
-    autoloading: 1
-    show: 1
-  audioClip: {fileID: 8300000, guid: 28970248127154544a43241ba70ea915, type: 3}
-  _isAdvancedFoldout: 1
-  _Priority: 0
-  _audioType: 1
-  references:
-    version: 1
---- !u!1 &3641461706367013784
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4361827543817075901}
-  - component: {fileID: 7634852481341835844}
-  m_Layer: 0
-  m_Name: ActionButtonSE6
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4361827543817075901
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3641461706367013784}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 7746271179987303231}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7634852481341835844
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3641461706367013784}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -247161819, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _audio:
-    name: ActionButtonSE6
-    type: se
-    filename: Sound/ClickAction_SE.mp3
-    loop: 0
-    autoplay: 0
-    overrides: []
-    components: []
-    showphotomode: 1
-    clickable: 0
-    autoloading: 1
-    show: 1
-  audioClip: {fileID: 8300000, guid: 28970248127154544a43241ba70ea915, type: 3}
-  _isAdvancedFoldout: 1
-  _Priority: 0
-  _audioType: 1
-  references:
-    version: 1
---- !u!1 &4273499196731427490
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4273499196731427489}
-  - component: {fileID: 4273499196731427493}
-  - component: {fileID: 4273499196731427494}
-  - component: {fileID: 4273499196731427495}
-  - component: {fileID: 4273499196731427488}
+  - component: {fileID: 265028085308262631}
+  - component: {fileID: 265028085308262627}
+  - component: {fileID: 265028085308262624}
+  - component: {fileID: 265028085308262625}
+  - component: {fileID: 265028085308262630}
   m_Layer: 0
   m_Name: ActionButton3
   m_TagString: Untagged
@@ -479,27 +20,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4273499196731427489
+--- !u!4 &265028085308262631
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4273499196731427490}
+  m_GameObject: {fileID: 265028085308262628}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 1004}
   m_LocalScale: {x: 100, y: 100, z: 1}
   m_Children: []
-  m_Father: {fileID: 1003119397005048624}
+  m_Father: {fileID: 3821548950068869494}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4273499196731427493
+--- !u!114 &265028085308262627
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4273499196731427490}
+  m_GameObject: {fileID: 265028085308262628}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -894626317, guid: aceab675429f9e946b912a758820ab12, type: 3}
@@ -542,26 +83,26 @@ MonoBehaviour:
   JPLang: 1
   references:
     version: 1
---- !u!65 &4273499196731427494
+--- !u!65 &265028085308262624
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4273499196731427490}
+  m_GameObject: {fileID: 265028085308262628}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &4273499196731427495
+--- !u!114 &265028085308262625
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4273499196731427490}
+  m_GameObject: {fileID: 265028085308262628}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 2071383932, guid: 01118045ef3f34bb7a088301d2bac28f, type: 3}
@@ -578,13 +119,13 @@ MonoBehaviour:
   CrossOverRate: 0.75
   ExtrudeSpeed: 1
   GroundingDetection: 0
---- !u!114 &4273499196731427488
+--- !u!114 &265028085308262630
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4273499196731427490}
+  m_GameObject: {fileID: 265028085308262628}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -769205669, guid: aceab675429f9e946b912a758820ab12, type: 3}
@@ -616,7 +157,7 @@ MonoBehaviour:
         componentName: ActionButton
         functionName: OnClickNode
         stringArg: 3
---- !u!1 &4273499197969820105
+--- !u!1 &265028086573919119
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -624,11 +165,11 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4273499197969820104}
-  - component: {fileID: 4273499197969820108}
-  - component: {fileID: 4273499197969820109}
-  - component: {fileID: 4273499197969820110}
-  - component: {fileID: 4273499197969820111}
+  - component: {fileID: 265028086573919118}
+  - component: {fileID: 265028086573919114}
+  - component: {fileID: 265028086573919115}
+  - component: {fileID: 265028086573919112}
+  - component: {fileID: 265028086573919113}
   m_Layer: 0
   m_Name: ActionButton2
   m_TagString: Untagged
@@ -636,27 +177,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4273499197969820104
+--- !u!4 &265028086573919118
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4273499197969820105}
+  m_GameObject: {fileID: 265028086573919119}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 603}
   m_LocalScale: {x: 100, y: 100, z: 1}
   m_Children: []
-  m_Father: {fileID: 1003119397005048624}
+  m_Father: {fileID: 3821548950068869494}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4273499197969820108
+--- !u!114 &265028086573919114
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4273499197969820105}
+  m_GameObject: {fileID: 265028086573919119}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -894626317, guid: aceab675429f9e946b912a758820ab12, type: 3}
@@ -699,26 +240,26 @@ MonoBehaviour:
   JPLang: 1
   references:
     version: 1
---- !u!65 &4273499197969820109
+--- !u!65 &265028086573919115
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4273499197969820105}
+  m_GameObject: {fileID: 265028086573919119}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &4273499197969820110
+--- !u!114 &265028086573919112
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4273499197969820105}
+  m_GameObject: {fileID: 265028086573919119}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 2071383932, guid: 01118045ef3f34bb7a088301d2bac28f, type: 3}
@@ -735,13 +276,13 @@ MonoBehaviour:
   CrossOverRate: 0.75
   ExtrudeSpeed: 1
   GroundingDetection: 0
---- !u!114 &4273499197969820111
+--- !u!114 &265028086573919113
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4273499197969820105}
+  m_GameObject: {fileID: 265028086573919119}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -769205669, guid: aceab675429f9e946b912a758820ab12, type: 3}
@@ -773,7 +314,7 @@ MonoBehaviour:
         componentName: ActionButton
         functionName: OnClickNode
         stringArg: 2
---- !u!1 &4354290699863852625
+--- !u!1 &328368122739885079
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -781,8 +322,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2218822249992944560}
-  - component: {fileID: 6160270452868804470}
+  - component: {fileID: 2749942728817834486}
+  - component: {fileID: 7898953199183293744}
   m_Layer: 0
   m_Name: ActionButtonSE4
   m_TagString: Untagged
@@ -790,27 +331,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2218822249992944560
+--- !u!4 &2749942728817834486
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4354290699863852625}
+  m_GameObject: {fileID: 328368122739885079}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 7746271179987303231}
+  m_Father: {fileID: 6008749526539057529}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6160270452868804470
+--- !u!114 &7898953199183293744
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4354290699863852625}
+  m_GameObject: {fileID: 328368122739885079}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -247161819, guid: aceab675429f9e946b912a758820ab12, type: 3}
@@ -834,7 +375,7 @@ MonoBehaviour:
   _audioType: 1
   references:
     version: 1
---- !u!1 &5035904320771442206
+--- !u!1 &750420413961769438
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -842,43 +383,43 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6250969559922630210}
-  - component: {fileID: 6910538509467844781}
+  - component: {fileID: 318425480588836603}
+  - component: {fileID: 5843249690626672642}
   m_Layer: 0
-  m_Name: ActionButtonSE2
+  m_Name: ActionButtonSE6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6250969559922630210
+--- !u!4 &318425480588836603
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5035904320771442206}
+  m_GameObject: {fileID: 750420413961769438}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 7746271179987303231}
-  m_RootOrder: 2
+  m_Father: {fileID: 6008749526539057529}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6910538509467844781
+--- !u!114 &5843249690626672642
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5035904320771442206}
+  m_GameObject: {fileID: 750420413961769438}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -247161819, guid: aceab675429f9e946b912a758820ab12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _audio:
-    name: ActionButtonSE2
+    name: ActionButtonSE6
     type: se
     filename: Sound/ClickAction_SE.mp3
     loop: 0
@@ -895,7 +436,7 @@ MonoBehaviour:
   _audioType: 1
   references:
     version: 1
---- !u!1 &5477273928695633797
+--- !u!1 &1965425755640074675
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -903,43 +444,43 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7704254448849221438}
-  - component: {fileID: 9000029728579091052}
+  - component: {fileID: 6773175706582728734}
+  - component: {fileID: 7309949864511785349}
   m_Layer: 0
-  m_Name: ActionButtonSE5
+  m_Name: ActionButtonSE8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7704254448849221438
+--- !u!4 &6773175706582728734
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5477273928695633797}
+  m_GameObject: {fileID: 1965425755640074675}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 7746271179987303231}
-  m_RootOrder: 5
+  m_Father: {fileID: 6008749526539057529}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &9000029728579091052
+--- !u!114 &7309949864511785349
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5477273928695633797}
+  m_GameObject: {fileID: 1965425755640074675}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -247161819, guid: aceab675429f9e946b912a758820ab12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _audio:
-    name: ActionButtonSE5
+    name: ActionButtonSE8
     type: se
     filename: Sound/ClickAction_SE.mp3
     loop: 0
@@ -956,7 +497,7 @@ MonoBehaviour:
   _audioType: 1
   references:
     version: 1
---- !u!1 &6399917970008549923
+--- !u!1 &2807797378023822919
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -964,108 +505,60 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1003119397005048624}
-  - component: {fileID: 1620679586477934961}
-  - component: {fileID: 1041908086462441719}
-  - component: {fileID: 423341667056009116}
+  - component: {fileID: 109440220117844552}
+  - component: {fileID: 7691221218475342577}
   m_Layer: 0
-  m_Name: ActionButtonScript
+  m_Name: ActionButtonSE1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1003119397005048624
+--- !u!4 &109440220117844552
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6399917970008549923}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_GameObject: {fileID: 2807797378023822919}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 7875549753280695036}
-  - {fileID: 4273499197969820104}
-  - {fileID: 4273499196731427489}
-  m_Father: {fileID: 4273499196924639241}
+  m_Children: []
+  m_Father: {fileID: 6008749526539057529}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1620679586477934961
+--- !u!114 &7691221218475342577
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6399917970008549923}
+  m_GameObject: {fileID: 2807797378023822919}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1147827095, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Script: {fileID: -247161819, guid: aceab675429f9e946b912a758820ab12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _heliodorScripts: []
-  _field:
-    name: ActionButtonScript
-    filename: Field/ActionButtonScript/ActionButtonScript.heo
-    components:
-    - ActionButton
+  _audio:
+    name: ActionButtonSE1
+    type: se
+    filename: Sound/ClickAction_SE.mp3
+    loop: 0
+    autoplay: 0
     overrides: []
-    autoloading: 1
-    lookatcamera: 0
-    alphaanim: 0
-    collisiondetection: 1
+    components: []
     showphotomode: 1
     clickable: 0
+    autoloading: 1
     show: 1
-    clickableui:
-      _images: []
-      _clickableItems: []
-  LoadCollider: []
-  UnLoadCollider: []
-  _isAdvancedFoldout: 0
+  audioClip: {fileID: 8300000, guid: 28970248127154544a43241ba70ea915, type: 3}
+  _isAdvancedFoldout: 1
   _Priority: 0
+  _audioType: 1
   references:
     version: 1
---- !u!114 &1041908086462441719
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6399917970008549923}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  selectedIndex: 0
-  selectedIndexes: 00000000
-  ScriptName: ActionButton
-  _heliScript: {fileID: 469074977633818552, guid: 01e0251f8e7a9dc43875212039c82893,
-    type: 3}
-  hsComponent: 
-  hsComponents:
-  - componentName: ActionButton
-    selectedIndex: 11
---- !u!114 &423341667056009116
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6399917970008549923}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -917271763, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  properties:
-  - Key: CLEAR_PRESS_COUNT
-    Value: 25
-  - Key: TIME_LIMIT
-    Value: 7.0
---- !u!1 &6946450560090797867
+--- !u!1 &3030855753659355036
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1073,39 +566,31 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7746271179987303231}
+  - component: {fileID: 265028085534505551}
   m_Layer: 0
-  m_Name: SE
+  m_Name: ActionButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7746271179987303231
+--- !u!4 &265028085534505551
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6946450560090797867}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_GameObject: {fileID: 3030855753659355036}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 3444483588145936839}
-  - {fileID: 4136514544834363406}
-  - {fileID: 6250969559922630210}
-  - {fileID: 3097559961129116565}
-  - {fileID: 2218822249992944560}
-  - {fileID: 7704254448849221438}
-  - {fileID: 4361827543817075901}
-  - {fileID: 8064278470902029449}
-  - {fileID: 7285753445791711832}
-  - {fileID: 1611076415787434237}
-  m_Father: {fileID: 4273499196924639241}
+  - {fileID: 6008749526539057529}
+  - {fileID: 3821548950068869494}
+  m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &7659427665804997087
+--- !u!1 &3249543657154688219
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1113,11 +598,255 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7875549753280695036}
-  - component: {fileID: 28109333909068032}
-  - component: {fileID: 7261203160774161939}
-  - component: {fileID: 1898679908204128403}
-  - component: {fileID: 5064691834098670407}
+  - component: {fileID: 1305950556137185747}
+  - component: {fileID: 7660661676585553268}
+  m_Layer: 0
+  m_Name: ActionButtonSE3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1305950556137185747
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3249543657154688219}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6008749526539057529}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7660661676585553268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3249543657154688219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -247161819, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audio:
+    name: ActionButtonSE3
+    type: se
+    filename: Sound/ClickAction_SE.mp3
+    loop: 0
+    autoplay: 0
+    overrides: []
+    components: []
+    showphotomode: 1
+    clickable: 0
+    autoloading: 1
+    show: 1
+  audioClip: {fileID: 8300000, guid: 28970248127154544a43241ba70ea915, type: 3}
+  _isAdvancedFoldout: 1
+  _Priority: 0
+  _audioType: 1
+  references:
+    version: 1
+--- !u!1 &3729991677887333363
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6271552519896768207}
+  - component: {fileID: 6306365382346990850}
+  m_Layer: 0
+  m_Name: ActionButtonSE7
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6271552519896768207
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3729991677887333363}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6008749526539057529}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6306365382346990850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3729991677887333363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -247161819, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audio:
+    name: ActionButtonSE7
+    type: se
+    filename: Sound/ClickAction_SE.mp3
+    loop: 0
+    autoplay: 0
+    overrides: []
+    components: []
+    showphotomode: 1
+    clickable: 0
+    autoloading: 1
+    show: 1
+  audioClip: {fileID: 8300000, guid: 28970248127154544a43241ba70ea915, type: 3}
+  _isAdvancedFoldout: 1
+  _Priority: 0
+  _audioType: 1
+  references:
+    version: 1
+--- !u!1 &3927031701885698052
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1670367971531094913}
+  - component: {fileID: 3170472394594191358}
+  m_Layer: 0
+  m_Name: ActionButtonSE0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1670367971531094913
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3927031701885698052}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6008749526539057529}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3170472394594191358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3927031701885698052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -247161819, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audio:
+    name: ActionButtonSE0
+    type: se
+    filename: Sound/ClickAction_SE.mp3
+    loop: 0
+    autoplay: 0
+    overrides: []
+    components: []
+    showphotomode: 1
+    clickable: 0
+    autoloading: 1
+    show: 1
+  audioClip: {fileID: 8300000, guid: 28970248127154544a43241ba70ea915, type: 3}
+  _isAdvancedFoldout: 1
+  _Priority: 0
+  _audioType: 1
+  references:
+    version: 1
+--- !u!1 &4481491254366557656
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3366621272427463355}
+  - component: {fileID: 7746918926959941432}
+  m_Layer: 0
+  m_Name: ActionButtonSE9
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3366621272427463355
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4481491254366557656}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6008749526539057529}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7746918926959941432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4481491254366557656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -247161819, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audio:
+    name: ActionButtonSE9
+    type: se
+    filename: Sound/ClickAction_SE.mp3
+    loop: 0
+    autoplay: 0
+    overrides: []
+    components: []
+    showphotomode: 1
+    clickable: 0
+    autoloading: 1
+    show: 1
+  audioClip: {fileID: 8300000, guid: 28970248127154544a43241ba70ea915, type: 3}
+  _isAdvancedFoldout: 1
+  _Priority: 0
+  _audioType: 1
+  references:
+    version: 1
+--- !u!1 &5956245400608191385
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6172332295658342586}
+  - component: {fileID: 4071474005730712390}
+  - component: {fileID: 6640536272604902485}
+  - component: {fileID: 2502420372674620117}
+  - component: {fileID: 9127234179133659393}
   m_Layer: 0
   m_Name: ActionButton1
   m_TagString: Untagged
@@ -1125,27 +854,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7875549753280695036
+--- !u!4 &6172332295658342586
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7659427665804997087}
+  m_GameObject: {fileID: 5956245400608191385}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 190}
   m_LocalScale: {x: 100, y: 100, z: 1}
   m_Children: []
-  m_Father: {fileID: 1003119397005048624}
+  m_Father: {fileID: 3821548950068869494}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &28109333909068032
+--- !u!114 &4071474005730712390
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7659427665804997087}
+  m_GameObject: {fileID: 5956245400608191385}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -894626317, guid: aceab675429f9e946b912a758820ab12, type: 3}
@@ -1188,26 +917,26 @@ MonoBehaviour:
   JPLang: 1
   references:
     version: 1
---- !u!65 &7261203160774161939
+--- !u!65 &6640536272604902485
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7659427665804997087}
+  m_GameObject: {fileID: 5956245400608191385}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1898679908204128403
+--- !u!114 &2502420372674620117
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7659427665804997087}
+  m_GameObject: {fileID: 5956245400608191385}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 2071383932, guid: 01118045ef3f34bb7a088301d2bac28f, type: 3}
@@ -1224,13 +953,13 @@ MonoBehaviour:
   CrossOverRate: 0.75
   ExtrudeSpeed: 1
   GroundingDetection: 0
---- !u!114 &5064691834098670407
+--- !u!114 &9127234179133659393
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7659427665804997087}
+  m_GameObject: {fileID: 5956245400608191385}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -769205669, guid: aceab675429f9e946b912a758820ab12, type: 3}
@@ -1262,3 +991,274 @@ MonoBehaviour:
         componentName: ActionButton
         functionName: OnClickNode
         stringArg: 1
+--- !u!1 &6378692154848671085
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6008749526539057529}
+  m_Layer: 0
+  m_Name: SE
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6008749526539057529
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6378692154848671085}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1670367971531094913}
+  - {fileID: 109440220117844552}
+  - {fileID: 7952498159092161540}
+  - {fileID: 1305950556137185747}
+  - {fileID: 2749942728817834486}
+  - {fileID: 5911000732298147192}
+  - {fileID: 318425480588836603}
+  - {fileID: 6271552519896768207}
+  - {fileID: 6773175706582728734}
+  - {fileID: 3366621272427463355}
+  m_Father: {fileID: 265028085534505551}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6931609645616900197
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3821548950068869494}
+  - component: {fileID: 3359362324772916023}
+  - component: {fileID: 3933485949675530929}
+  - component: {fileID: 4396382141520002522}
+  m_Layer: 0
+  m_Name: ActionButtonScript
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3821548950068869494
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6931609645616900197}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 6172332295658342586}
+  - {fileID: 265028086573919118}
+  - {fileID: 265028085308262631}
+  m_Father: {fileID: 265028085534505551}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3359362324772916023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6931609645616900197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1147827095, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _heliodorScripts: []
+  _field:
+    name: ActionButtonScript
+    filename: Field/ActionButtonScript/ActionButtonScript.heo
+    components:
+    - ActionButton
+    overrides: []
+    autoloading: 1
+    lookatcamera: 0
+    alphaanim: 0
+    collisiondetection: 1
+    showphotomode: 1
+    clickable: 0
+    show: 1
+    clickableui:
+      _images: []
+      _clickableItems: []
+  LoadCollider: []
+  UnLoadCollider: []
+  _isAdvancedFoldout: 0
+  _Priority: 0
+  references:
+    version: 1
+--- !u!114 &3933485949675530929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6931609645616900197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: ActionButton
+  _heliScript: {fileID: 469074977633818552, guid: 01e0251f8e7a9dc43875212039c82893,
+    type: 3}
+  hsComponent: 
+  hsComponents:
+  - componentName: ActionButton
+    selectedIndex: 11
+--- !u!114 &4396382141520002522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6931609645616900197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -917271763, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  properties:
+  - Key: CLEAR_PRESS_COUNT
+    Value: 25
+  - Key: TIME_LIMIT
+    Value: 7.0
+--- !u!1 &8421796025525360067
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5911000732298147192}
+  - component: {fileID: 4901484407862097962}
+  m_Layer: 0
+  m_Name: ActionButtonSE5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5911000732298147192
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8421796025525360067}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6008749526539057529}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4901484407862097962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8421796025525360067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -247161819, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audio:
+    name: ActionButtonSE5
+    type: se
+    filename: Sound/ClickAction_SE.mp3
+    loop: 0
+    autoplay: 0
+    overrides: []
+    components: []
+    showphotomode: 1
+    clickable: 0
+    autoloading: 1
+    show: 1
+  audioClip: {fileID: 8300000, guid: 28970248127154544a43241ba70ea915, type: 3}
+  _isAdvancedFoldout: 1
+  _Priority: 0
+  _audioType: 1
+  references:
+    version: 1
+--- !u!1 &9007257595215004760
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7952498159092161540}
+  - component: {fileID: 7423127811221095147}
+  m_Layer: 0
+  m_Name: ActionButtonSE2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7952498159092161540
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9007257595215004760}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6008749526539057529}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7423127811221095147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9007257595215004760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -247161819, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audio:
+    name: ActionButtonSE2
+    type: se
+    filename: Sound/ClickAction_SE.mp3
+    loop: 0
+    autoplay: 0
+    overrides: []
+    components: []
+    showphotomode: 1
+    clickable: 0
+    autoloading: 1
+    show: 1
+  audioClip: {fileID: 8300000, guid: 28970248127154544a43241ba70ea915, type: 3}
+  _isAdvancedFoldout: 1
+  _Priority: 0
+  _audioType: 1
+  references:
+    version: 1
