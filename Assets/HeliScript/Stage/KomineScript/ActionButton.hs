@@ -66,7 +66,6 @@ component ActionButton
 
     public void OnClickNode(string areaNumStr)
     {
-
         if(isActionTime){
             pressCount++;
             hsSystemOutput(string(pressCount) + "\n");
@@ -99,6 +98,7 @@ component ActionButton
                 gateR.CallComponentMethod("Gate3RightAnimation", "setAction", "");
             }
         }
+        else hsSystemOutput("Not yet\n");
     }
 
     public void actionClear()
