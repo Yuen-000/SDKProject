@@ -1,0 +1,6571 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &182814344589385532
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 182814344589385533}
+  - component: {fileID: 182814344589385530}
+  m_Layer: 0
+  m_Name: CoinSE1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &182814344589385533
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814344589385532}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 182814345367485561}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &182814344589385530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814344589385532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -247161819, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audio:
+    name: CoinSE1
+    type: se
+    filename: Sound/Coin_SE.mp3
+    loop: 0
+    autoplay: 0
+    overrides: []
+    components: []
+    showphotomode: 1
+    clickable: 0
+    autoloading: 1
+    show: 1
+  audioClip: {fileID: 8300000, guid: 30336212b2092e64c8637043e146de78, type: 3}
+  _isAdvancedFoldout: 0
+  _Priority: 0
+  _audioType: 1
+  references:
+    version: 1
+--- !u!1 &182814344616372506
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 182814344616372507}
+  - component: {fileID: 182814344616372505}
+  - component: {fileID: 182814344616372504}
+  m_Layer: 0
+  m_Name: Coin3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &182814344616372507
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814344616372506}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.4, y: 1, z: 131}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 182814345179617191}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &182814344616372505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814344616372506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _object:
+    name: Coin3
+    filename: Field/Coin/Coin.heo
+    filename_png: 
+    filename_astc: 
+    filename_etc2: 
+    pose: 
+    clickable: 0
+    enablebone: 0
+    show: 1
+    autoloading: 1
+    forceshadowcaster: 0
+    forceshadowreceiver: 0
+    foregroundrendering: 0
+    zwriteenable: 1
+    alphablendtoopaque: 0
+    unserializecircleshadow:
+      _use: 0
+      _filename: CircleShadow2/CircleShadow2.heo
+      _scale:
+      - 0.6
+      - 0.6
+      - 0.6
+      _zbias: -0.02
+      _adjustposdownward: 0
+    alphaanim: 0
+    motions: []
+    beginactions: []
+    endactions: []
+    pos:
+    - -1.4
+    - 1
+    - 248.08
+    rotate:
+    - -0
+    - 0
+    - 0
+    scale:
+    - 1
+    - 1
+    - 1
+    components:
+    - CoinManagement
+    - CoinMain
+    lookatcamera: 0
+    collisiondetection: 1
+    uselightscattering: 1
+    showphotomode: 1
+  _autoShowHEO: 1
+  PreviewObjectRoot: {fileID: 0}
+  CurrentShowFile: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  TempAvatar: {fileID: 0}
+  fileMode: 0
+  fileModeTypeValue: 0
+  _Priority: 0
+  _buildingShow: 0
+  heoCircleShadow: {fileID: 0}
+  heoOrVrm: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  vrm: {fileID: 0}
+  glb: {fileID: 0}
+  hem: {fileID: 0}
+  hrmPng: {fileID: 0}
+  hrmAstc: {fileID: 0}
+  hrmEtc2: {fileID: 0}
+  hrmDxt: {fileID: 0}
+  _circleShadowScaleInEditor: {x: 0.6, y: 0.6, z: 0.6}
+  _isBeginactionsFoldout: 0
+  _isEndactionsFoldout: 0
+  _objectMode: 0
+  _isComponentsFoldout: 0
+  _isAdvancedFoldout: 1
+  references:
+    version: 1
+--- !u!114 &182814344616372504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814344616372506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: CoinMain
+  _heliScript: {fileID: 469074977633818552, guid: 5f5c0d7e468cf6b48b42959b0d010bd8,
+    type: 3}
+  hsComponent: 
+  hsComponents:
+  - componentName: CoinMain
+    selectedIndex: 15
+--- !u!1 &182814344648731954
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 182814344648731955}
+  - component: {fileID: 182814344648731952}
+  m_Layer: 0
+  m_Name: CoinSE9
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &182814344648731955
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814344648731954}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 182814345367485561}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &182814344648731952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814344648731954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -247161819, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audio:
+    name: CoinSE9
+    type: se
+    filename: Sound/Coin_SE.mp3
+    loop: 0
+    autoplay: 0
+    overrides: []
+    components: []
+    showphotomode: 1
+    clickable: 0
+    autoloading: 1
+    show: 1
+  audioClip: {fileID: 8300000, guid: 30336212b2092e64c8637043e146de78, type: 3}
+  _isAdvancedFoldout: 0
+  _Priority: 0
+  _audioType: 1
+  references:
+    version: 1
+--- !u!1 &182814344669073027
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 182814344669073024}
+  - component: {fileID: 182814344669073038}
+  - component: {fileID: 182814344669073025}
+  m_Layer: 0
+  m_Name: Coin34
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &182814344669073024
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814344669073027}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.4, y: 1, z: 369}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 182814345179617191}
+  m_RootOrder: 35
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &182814344669073038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814344669073027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _object:
+    name: Coin34
+    filename: Field/Coin/Coin.heo
+    filename_png: 
+    filename_astc: 
+    filename_etc2: 
+    pose: 
+    clickable: 0
+    enablebone: 0
+    show: 1
+    autoloading: 1
+    forceshadowcaster: 0
+    forceshadowreceiver: 0
+    foregroundrendering: 0
+    zwriteenable: 1
+    alphablendtoopaque: 0
+    unserializecircleshadow:
+      _use: 0
+      _filename: CircleShadow2/CircleShadow2.heo
+      _scale:
+      - 0.6
+      - 0.6
+      - 0.6
+      _zbias: -0.02
+      _adjustposdownward: 0
+    alphaanim: 0
+    motions: []
+    beginactions: []
+    endactions: []
+    pos:
+    - 1.4
+    - 1
+    - 486.08002
+    rotate:
+    - -0
+    - 0
+    - 0
+    scale:
+    - 1
+    - 1
+    - 1
+    components:
+    - CoinManagement
+    - CoinMain
+    lookatcamera: 0
+    collisiondetection: 1
+    uselightscattering: 1
+    showphotomode: 1
+  _autoShowHEO: 1
+  PreviewObjectRoot: {fileID: 0}
+  CurrentShowFile: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  TempAvatar: {fileID: 0}
+  fileMode: 0
+  fileModeTypeValue: 0
+  _Priority: 0
+  _buildingShow: 0
+  heoCircleShadow: {fileID: 0}
+  heoOrVrm: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  vrm: {fileID: 0}
+  glb: {fileID: 0}
+  hem: {fileID: 0}
+  hrmPng: {fileID: 0}
+  hrmAstc: {fileID: 0}
+  hrmEtc2: {fileID: 0}
+  hrmDxt: {fileID: 0}
+  _circleShadowScaleInEditor: {x: 0.6, y: 0.6, z: 0.6}
+  _isBeginactionsFoldout: 1
+  _isEndactionsFoldout: 1
+  _objectMode: 0
+  _isComponentsFoldout: 0
+  _isAdvancedFoldout: 1
+  references:
+    version: 1
+--- !u!114 &182814344669073025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814344669073027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: CoinMain
+  _heliScript: {fileID: 469074977633818552, guid: 5f5c0d7e468cf6b48b42959b0d010bd8,
+    type: 3}
+  hsComponent: 
+  hsComponents:
+  - componentName: CoinMain
+    selectedIndex: 15
+--- !u!1 &182814344759478998
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 182814344759478999}
+  - component: {fileID: 182814344759478997}
+  - component: {fileID: 182814344759478996}
+  m_Layer: 0
+  m_Name: Coin14
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &182814344759478999
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814344759478998}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.4, y: 1, z: 186}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 182814345179617191}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &182814344759478997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814344759478998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _object:
+    name: Coin14
+    filename: Field/Coin/Coin.heo
+    filename_png: 
+    filename_astc: 
+    filename_etc2: 
+    pose: 
+    clickable: 0
+    enablebone: 0
+    show: 1
+    autoloading: 1
+    forceshadowcaster: 0
+    forceshadowreceiver: 0
+    foregroundrendering: 0
+    zwriteenable: 1
+    alphablendtoopaque: 0
+    unserializecircleshadow:
+      _use: 0
+      _filename: CircleShadow2/CircleShadow2.heo
+      _scale:
+      - 0.6
+      - 0.6
+      - 0.6
+      _zbias: -0.02
+      _adjustposdownward: 0
+    alphaanim: 0
+    motions: []
+    beginactions: []
+    endactions: []
+    pos:
+    - -1.4
+    - 1
+    - 303.08002
+    rotate:
+    - -0
+    - 0
+    - 0
+    scale:
+    - 1
+    - 1
+    - 1
+    components:
+    - CoinManagement
+    - CoinMain
+    lookatcamera: 0
+    collisiondetection: 1
+    uselightscattering: 1
+    showphotomode: 1
+  _autoShowHEO: 1
+  PreviewObjectRoot: {fileID: 0}
+  CurrentShowFile: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  TempAvatar: {fileID: 0}
+  fileMode: 0
+  fileModeTypeValue: 0
+  _Priority: 0
+  _buildingShow: 0
+  heoCircleShadow: {fileID: 0}
+  heoOrVrm: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  vrm: {fileID: 0}
+  glb: {fileID: 0}
+  hem: {fileID: 0}
+  hrmPng: {fileID: 0}
+  hrmAstc: {fileID: 0}
+  hrmEtc2: {fileID: 0}
+  hrmDxt: {fileID: 0}
+  _circleShadowScaleInEditor: {x: 0.6, y: 0.6, z: 0.6}
+  _isBeginactionsFoldout: 1
+  _isEndactionsFoldout: 1
+  _objectMode: 0
+  _isComponentsFoldout: 0
+  _isAdvancedFoldout: 1
+  references:
+    version: 1
+--- !u!114 &182814344759478996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814344759478998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: CoinMain
+  _heliScript: {fileID: 469074977633818552, guid: 5f5c0d7e468cf6b48b42959b0d010bd8,
+    type: 3}
+  hsComponent: 
+  hsComponents:
+  - componentName: CoinMain
+    selectedIndex: 15
+--- !u!1 &182814344776178370
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 182814344776178371}
+  - component: {fileID: 182814344776178369}
+  - component: {fileID: 182814344776178368}
+  m_Layer: 0
+  m_Name: Coin20
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &182814344776178371
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814344776178370}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.4, y: 1, z: 198}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 182814345179617191}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &182814344776178369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814344776178370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _object:
+    name: Coin20
+    filename: Field/Coin/Coin.heo
+    filename_png: 
+    filename_astc: 
+    filename_etc2: 
+    pose: 
+    clickable: 0
+    enablebone: 0
+    show: 1
+    autoloading: 1
+    forceshadowcaster: 0
+    forceshadowreceiver: 0
+    foregroundrendering: 0
+    zwriteenable: 1
+    alphablendtoopaque: 0
+    unserializecircleshadow:
+      _use: 0
+      _filename: CircleShadow2/CircleShadow2.heo
+      _scale:
+      - 0.6
+      - 0.6
+      - 0.6
+      _zbias: -0.02
+      _adjustposdownward: 0
+    alphaanim: 0
+    motions: []
+    beginactions: []
+    endactions: []
+    pos:
+    - 1.4
+    - 1
+    - 315.08002
+    rotate:
+    - -0
+    - 0
+    - 0
+    scale:
+    - 1
+    - 1
+    - 1
+    components:
+    - CoinManagement
+    - CoinMain
+    lookatcamera: 0
+    collisiondetection: 1
+    uselightscattering: 1
+    showphotomode: 1
+  _autoShowHEO: 1
+  PreviewObjectRoot: {fileID: 0}
+  CurrentShowFile: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  TempAvatar: {fileID: 0}
+  fileMode: 0
+  fileModeTypeValue: 0
+  _Priority: 0
+  _buildingShow: 0
+  heoCircleShadow: {fileID: 0}
+  heoOrVrm: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  vrm: {fileID: 0}
+  glb: {fileID: 0}
+  hem: {fileID: 0}
+  hrmPng: {fileID: 0}
+  hrmAstc: {fileID: 0}
+  hrmEtc2: {fileID: 0}
+  hrmDxt: {fileID: 0}
+  _circleShadowScaleInEditor: {x: 0.6, y: 0.6, z: 0.6}
+  _isBeginactionsFoldout: 1
+  _isEndactionsFoldout: 1
+  _objectMode: 0
+  _isComponentsFoldout: 0
+  _isAdvancedFoldout: 1
+  references:
+    version: 1
+--- !u!114 &182814344776178368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814344776178370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: CoinMain
+  _heliScript: {fileID: 469074977633818552, guid: 5f5c0d7e468cf6b48b42959b0d010bd8,
+    type: 3}
+  hsComponent: 
+  hsComponents:
+  - componentName: CoinMain
+    selectedIndex: 15
+--- !u!1 &182814344804283411
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 182814344804283408}
+  - component: {fileID: 182814344804283422}
+  - component: {fileID: 182814344804283409}
+  m_Layer: 0
+  m_Name: Coin36
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &182814344804283408
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814344804283411}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.4, y: 1, z: 373}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 182814345179617191}
+  m_RootOrder: 37
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &182814344804283422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814344804283411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _object:
+    name: Coin36
+    filename: Field/Coin/Coin.heo
+    filename_png: 
+    filename_astc: 
+    filename_etc2: 
+    pose: 
+    clickable: 0
+    enablebone: 0
+    show: 1
+    autoloading: 1
+    forceshadowcaster: 0
+    forceshadowreceiver: 0
+    foregroundrendering: 0
+    zwriteenable: 1
+    alphablendtoopaque: 0
+    unserializecircleshadow:
+      _use: 0
+      _filename: CircleShadow2/CircleShadow2.heo
+      _scale:
+      - 0.6
+      - 0.6
+      - 0.6
+      _zbias: -0.02
+      _adjustposdownward: 0
+    alphaanim: 0
+    motions: []
+    beginactions: []
+    endactions: []
+    pos:
+    - 1.4
+    - 1
+    - 490.08002
+    rotate:
+    - -0
+    - 0
+    - 0
+    scale:
+    - 1
+    - 1
+    - 1
+    components:
+    - CoinManagement
+    - CoinMain
+    lookatcamera: 0
+    collisiondetection: 1
+    uselightscattering: 1
+    showphotomode: 1
+  _autoShowHEO: 1
+  PreviewObjectRoot: {fileID: 0}
+  CurrentShowFile: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  TempAvatar: {fileID: 0}
+  fileMode: 0
+  fileModeTypeValue: 0
+  _Priority: 0
+  _buildingShow: 0
+  heoCircleShadow: {fileID: 0}
+  heoOrVrm: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  vrm: {fileID: 0}
+  glb: {fileID: 0}
+  hem: {fileID: 0}
+  hrmPng: {fileID: 0}
+  hrmAstc: {fileID: 0}
+  hrmEtc2: {fileID: 0}
+  hrmDxt: {fileID: 0}
+  _circleShadowScaleInEditor: {x: 0.6, y: 0.6, z: 0.6}
+  _isBeginactionsFoldout: 1
+  _isEndactionsFoldout: 1
+  _objectMode: 0
+  _isComponentsFoldout: 0
+  _isAdvancedFoldout: 1
+  references:
+    version: 1
+--- !u!114 &182814344804283409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814344804283411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: CoinMain
+  _heliScript: {fileID: 469074977633818552, guid: 5f5c0d7e468cf6b48b42959b0d010bd8,
+    type: 3}
+  hsComponent: 
+  hsComponents:
+  - componentName: CoinMain
+    selectedIndex: 15
+--- !u!1 &182814344836851993
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 182814344836851942}
+  - component: {fileID: 182814344836851940}
+  - component: {fileID: 182814344836851943}
+  m_Layer: 0
+  m_Name: Coin38
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &182814344836851942
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814344836851993}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.4, y: 1, z: 377}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 182814345179617191}
+  m_RootOrder: 39
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &182814344836851940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814344836851993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _object:
+    name: Coin38
+    filename: Field/Coin/Coin.heo
+    filename_png: 
+    filename_astc: 
+    filename_etc2: 
+    pose: 
+    clickable: 0
+    enablebone: 0
+    show: 1
+    autoloading: 1
+    forceshadowcaster: 0
+    forceshadowreceiver: 0
+    foregroundrendering: 0
+    zwriteenable: 1
+    alphablendtoopaque: 0
+    unserializecircleshadow:
+      _use: 0
+      _filename: CircleShadow2/CircleShadow2.heo
+      _scale:
+      - 0.6
+      - 0.6
+      - 0.6
+      _zbias: -0.02
+      _adjustposdownward: 0
+    alphaanim: 0
+    motions: []
+    beginactions: []
+    endactions: []
+    pos:
+    - 1.4
+    - 1
+    - 494.08002
+    rotate:
+    - -0
+    - 0
+    - 0
+    scale:
+    - 1
+    - 1
+    - 1
+    components:
+    - CoinManagement
+    - CoinMain
+    lookatcamera: 0
+    collisiondetection: 1
+    uselightscattering: 1
+    showphotomode: 1
+  _autoShowHEO: 1
+  PreviewObjectRoot: {fileID: 0}
+  CurrentShowFile: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  TempAvatar: {fileID: 0}
+  fileMode: 0
+  fileModeTypeValue: 0
+  _Priority: 0
+  _buildingShow: 0
+  heoCircleShadow: {fileID: 0}
+  heoOrVrm: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  vrm: {fileID: 0}
+  glb: {fileID: 0}
+  hem: {fileID: 0}
+  hrmPng: {fileID: 0}
+  hrmAstc: {fileID: 0}
+  hrmEtc2: {fileID: 0}
+  hrmDxt: {fileID: 0}
+  _circleShadowScaleInEditor: {x: 0.6, y: 0.6, z: 0.6}
+  _isBeginactionsFoldout: 1
+  _isEndactionsFoldout: 1
+  _objectMode: 0
+  _isComponentsFoldout: 0
+  _isAdvancedFoldout: 1
+  references:
+    version: 1
+--- !u!114 &182814344836851943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814344836851993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: CoinMain
+  _heliScript: {fileID: 469074977633818552, guid: 5f5c0d7e468cf6b48b42959b0d010bd8,
+    type: 3}
+  hsComponent: 
+  hsComponents:
+  - componentName: CoinMain
+    selectedIndex: 15
+--- !u!1 &182814344836979112
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 182814344836979113}
+  - component: {fileID: 182814344836979127}
+  - component: {fileID: 182814344836979126}
+  m_Layer: 0
+  m_Name: Coin24
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &182814344836979113
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814344836979112}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: 281}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 182814345179617191}
+  m_RootOrder: 25
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &182814344836979127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814344836979112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _object:
+    name: Coin24
+    filename: Field/Coin/Coin.heo
+    filename_png: 
+    filename_astc: 
+    filename_etc2: 
+    pose: 
+    clickable: 0
+    enablebone: 0
+    show: 1
+    autoloading: 1
+    forceshadowcaster: 0
+    forceshadowreceiver: 0
+    foregroundrendering: 0
+    zwriteenable: 1
+    alphablendtoopaque: 0
+    unserializecircleshadow:
+      _use: 0
+      _filename: CircleShadow2/CircleShadow2.heo
+      _scale:
+      - 0.6
+      - 0.6
+      - 0.6
+      _zbias: -0.02
+      _adjustposdownward: 0
+    alphaanim: 0
+    motions: []
+    beginactions: []
+    endactions: []
+    pos:
+    - 0
+    - 1
+    - 398.08002
+    rotate:
+    - -0
+    - 0
+    - 0
+    scale:
+    - 1
+    - 1
+    - 1
+    components:
+    - CoinManagement
+    - CoinMain
+    lookatcamera: 0
+    collisiondetection: 1
+    uselightscattering: 1
+    showphotomode: 1
+  _autoShowHEO: 1
+  PreviewObjectRoot: {fileID: 0}
+  CurrentShowFile: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  TempAvatar: {fileID: 0}
+  fileMode: 0
+  fileModeTypeValue: 0
+  _Priority: 0
+  _buildingShow: 0
+  heoCircleShadow: {fileID: 0}
+  heoOrVrm: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  vrm: {fileID: 0}
+  glb: {fileID: 0}
+  hem: {fileID: 0}
+  hrmPng: {fileID: 0}
+  hrmAstc: {fileID: 0}
+  hrmEtc2: {fileID: 0}
+  hrmDxt: {fileID: 0}
+  _circleShadowScaleInEditor: {x: 0.6, y: 0.6, z: 0.6}
+  _isBeginactionsFoldout: 1
+  _isEndactionsFoldout: 1
+  _objectMode: 0
+  _isComponentsFoldout: 0
+  _isAdvancedFoldout: 1
+  references:
+    version: 1
+--- !u!114 &182814344836979126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814344836979112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: CoinMain
+  _heliScript: {fileID: 469074977633818552, guid: 5f5c0d7e468cf6b48b42959b0d010bd8,
+    type: 3}
+  hsComponent: 
+  hsComponents:
+  - componentName: CoinMain
+    selectedIndex: 15
+--- !u!1 &182814344982925607
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 182814344982925604}
+  - component: {fileID: 182814344982925602}
+  - component: {fileID: 182814344982925605}
+  m_Layer: 0
+  m_Name: Coin33
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &182814344982925604
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814344982925607}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.4, y: 1, z: 367}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 182814345179617191}
+  m_RootOrder: 34
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &182814344982925602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814344982925607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _object:
+    name: Coin33
+    filename: Field/Coin/Coin.heo
+    filename_png: 
+    filename_astc: 
+    filename_etc2: 
+    pose: 
+    clickable: 0
+    enablebone: 0
+    show: 1
+    autoloading: 1
+    forceshadowcaster: 0
+    forceshadowreceiver: 0
+    foregroundrendering: 0
+    zwriteenable: 1
+    alphablendtoopaque: 0
+    unserializecircleshadow:
+      _use: 0
+      _filename: CircleShadow2/CircleShadow2.heo
+      _scale:
+      - 0.6
+      - 0.6
+      - 0.6
+      _zbias: -0.02
+      _adjustposdownward: 0
+    alphaanim: 0
+    motions: []
+    beginactions: []
+    endactions: []
+    pos:
+    - 1.4
+    - 1
+    - 484.08002
+    rotate:
+    - -0
+    - 0
+    - 0
+    scale:
+    - 1
+    - 1
+    - 1
+    components:
+    - CoinManagement
+    - CoinMain
+    lookatcamera: 0
+    collisiondetection: 1
+    uselightscattering: 1
+    showphotomode: 1
+  _autoShowHEO: 1
+  PreviewObjectRoot: {fileID: 0}
+  CurrentShowFile: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  TempAvatar: {fileID: 0}
+  fileMode: 0
+  fileModeTypeValue: 0
+  _Priority: 0
+  _buildingShow: 0
+  heoCircleShadow: {fileID: 0}
+  heoOrVrm: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  vrm: {fileID: 0}
+  glb: {fileID: 0}
+  hem: {fileID: 0}
+  hrmPng: {fileID: 0}
+  hrmAstc: {fileID: 0}
+  hrmEtc2: {fileID: 0}
+  hrmDxt: {fileID: 0}
+  _circleShadowScaleInEditor: {x: 0.6, y: 0.6, z: 0.6}
+  _isBeginactionsFoldout: 1
+  _isEndactionsFoldout: 1
+  _objectMode: 0
+  _isComponentsFoldout: 0
+  _isAdvancedFoldout: 1
+  references:
+    version: 1
+--- !u!114 &182814344982925605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814344982925607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: CoinMain
+  _heliScript: {fileID: 469074977633818552, guid: 5f5c0d7e468cf6b48b42959b0d010bd8,
+    type: 3}
+  hsComponent: 
+  hsComponents:
+  - componentName: CoinMain
+    selectedIndex: 15
+--- !u!1 &182814345058658603
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 182814345058658600}
+  - component: {fileID: 182814345058658614}
+  - component: {fileID: 182814345058658601}
+  m_Layer: 0
+  m_Name: Coin18
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &182814345058658600
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345058658603}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: 194}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 182814345179617191}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &182814345058658614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345058658603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _object:
+    name: Coin18
+    filename: Field/Coin/Coin.heo
+    filename_png: 
+    filename_astc: 
+    filename_etc2: 
+    pose: 
+    clickable: 0
+    enablebone: 0
+    show: 1
+    autoloading: 1
+    forceshadowcaster: 0
+    forceshadowreceiver: 0
+    foregroundrendering: 0
+    zwriteenable: 1
+    alphablendtoopaque: 0
+    unserializecircleshadow:
+      _use: 0
+      _filename: CircleShadow2/CircleShadow2.heo
+      _scale:
+      - 0.6
+      - 0.6
+      - 0.6
+      _zbias: -0.02
+      _adjustposdownward: 0
+    alphaanim: 0
+    motions: []
+    beginactions: []
+    endactions: []
+    pos:
+    - 0
+    - 1
+    - 311.08002
+    rotate:
+    - -0
+    - 0
+    - 0
+    scale:
+    - 1
+    - 1
+    - 1
+    components:
+    - CoinManagement
+    - CoinMain
+    lookatcamera: 0
+    collisiondetection: 1
+    uselightscattering: 1
+    showphotomode: 1
+  _autoShowHEO: 1
+  PreviewObjectRoot: {fileID: 0}
+  CurrentShowFile: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  TempAvatar: {fileID: 0}
+  fileMode: 0
+  fileModeTypeValue: 0
+  _Priority: 0
+  _buildingShow: 0
+  heoCircleShadow: {fileID: 0}
+  heoOrVrm: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  vrm: {fileID: 0}
+  glb: {fileID: 0}
+  hem: {fileID: 0}
+  hrmPng: {fileID: 0}
+  hrmAstc: {fileID: 0}
+  hrmEtc2: {fileID: 0}
+  hrmDxt: {fileID: 0}
+  _circleShadowScaleInEditor: {x: 0.6, y: 0.6, z: 0.6}
+  _isBeginactionsFoldout: 1
+  _isEndactionsFoldout: 1
+  _objectMode: 0
+  _isComponentsFoldout: 0
+  _isAdvancedFoldout: 1
+  references:
+    version: 1
+--- !u!114 &182814345058658601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345058658603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: CoinMain
+  _heliScript: {fileID: 469074977633818552, guid: 5f5c0d7e468cf6b48b42959b0d010bd8,
+    type: 3}
+  hsComponent: 
+  hsComponents:
+  - componentName: CoinMain
+    selectedIndex: 15
+--- !u!1 &182814345087964162
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 182814345087964163}
+  - component: {fileID: 182814345087964161}
+  - component: {fileID: 182814345087964160}
+  m_Layer: 0
+  m_Name: Coin11
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &182814345087964163
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345087964162}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.4, y: 1, z: 180}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 182814345179617191}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &182814345087964161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345087964162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _object:
+    name: Coin11
+    filename: Field/Coin/Coin.heo
+    filename_png: 
+    filename_astc: 
+    filename_etc2: 
+    pose: 
+    clickable: 0
+    enablebone: 0
+    show: 1
+    autoloading: 1
+    forceshadowcaster: 0
+    forceshadowreceiver: 0
+    foregroundrendering: 0
+    zwriteenable: 1
+    alphablendtoopaque: 0
+    unserializecircleshadow:
+      _use: 0
+      _filename: CircleShadow2/CircleShadow2.heo
+      _scale:
+      - 0.6
+      - 0.6
+      - 0.6
+      _zbias: -0.02
+      _adjustposdownward: 0
+    alphaanim: 0
+    motions: []
+    beginactions: []
+    endactions: []
+    pos:
+    - -1.4
+    - 1
+    - 297.08002
+    rotate:
+    - -0
+    - 0
+    - 0
+    scale:
+    - 1
+    - 1
+    - 1
+    components:
+    - CoinManagement
+    - CoinMain
+    lookatcamera: 0
+    collisiondetection: 1
+    uselightscattering: 1
+    showphotomode: 1
+  _autoShowHEO: 1
+  PreviewObjectRoot: {fileID: 0}
+  CurrentShowFile: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  TempAvatar: {fileID: 0}
+  fileMode: 0
+  fileModeTypeValue: 0
+  _Priority: 0
+  _buildingShow: 0
+  heoCircleShadow: {fileID: 0}
+  heoOrVrm: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  vrm: {fileID: 0}
+  glb: {fileID: 0}
+  hem: {fileID: 0}
+  hrmPng: {fileID: 0}
+  hrmAstc: {fileID: 0}
+  hrmEtc2: {fileID: 0}
+  hrmDxt: {fileID: 0}
+  _circleShadowScaleInEditor: {x: 0.6, y: 0.6, z: 0.6}
+  _isBeginactionsFoldout: 1
+  _isEndactionsFoldout: 1
+  _objectMode: 0
+  _isComponentsFoldout: 0
+  _isAdvancedFoldout: 1
+  references:
+    version: 1
+--- !u!114 &182814345087964160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345087964162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: CoinMain
+  _heliScript: {fileID: 469074977633818552, guid: 5f5c0d7e468cf6b48b42959b0d010bd8,
+    type: 3}
+  hsComponent: 
+  hsComponents:
+  - componentName: CoinMain
+    selectedIndex: 15
+--- !u!1 &182814345100331307
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 182814345100331304}
+  - component: {fileID: 182814345100331318}
+  - component: {fileID: 182814345100331305}
+  m_Layer: 0
+  m_Name: Coin31
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &182814345100331304
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345100331307}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.4, y: 1, z: 363}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 182814345179617191}
+  m_RootOrder: 32
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &182814345100331318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345100331307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _object:
+    name: Coin31
+    filename: Field/Coin/Coin.heo
+    filename_png: 
+    filename_astc: 
+    filename_etc2: 
+    pose: 
+    clickable: 0
+    enablebone: 0
+    show: 1
+    autoloading: 1
+    forceshadowcaster: 0
+    forceshadowreceiver: 0
+    foregroundrendering: 0
+    zwriteenable: 1
+    alphablendtoopaque: 0
+    unserializecircleshadow:
+      _use: 0
+      _filename: CircleShadow2/CircleShadow2.heo
+      _scale:
+      - 0.6
+      - 0.6
+      - 0.6
+      _zbias: -0.02
+      _adjustposdownward: 0
+    alphaanim: 0
+    motions: []
+    beginactions: []
+    endactions: []
+    pos:
+    - 1.4
+    - 1
+    - 480.08002
+    rotate:
+    - -0
+    - 0
+    - 0
+    scale:
+    - 1
+    - 1
+    - 1
+    components:
+    - CoinManagement
+    - CoinMain
+    lookatcamera: 0
+    collisiondetection: 1
+    uselightscattering: 1
+    showphotomode: 1
+  _autoShowHEO: 1
+  PreviewObjectRoot: {fileID: 0}
+  CurrentShowFile: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  TempAvatar: {fileID: 0}
+  fileMode: 0
+  fileModeTypeValue: 0
+  _Priority: 0
+  _buildingShow: 0
+  heoCircleShadow: {fileID: 0}
+  heoOrVrm: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  vrm: {fileID: 0}
+  glb: {fileID: 0}
+  hem: {fileID: 0}
+  hrmPng: {fileID: 0}
+  hrmAstc: {fileID: 0}
+  hrmEtc2: {fileID: 0}
+  hrmDxt: {fileID: 0}
+  _circleShadowScaleInEditor: {x: 0.6, y: 0.6, z: 0.6}
+  _isBeginactionsFoldout: 1
+  _isEndactionsFoldout: 1
+  _objectMode: 0
+  _isComponentsFoldout: 0
+  _isAdvancedFoldout: 1
+  references:
+    version: 1
+--- !u!114 &182814345100331305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345100331307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: CoinMain
+  _heliScript: {fileID: 469074977633818552, guid: 5f5c0d7e468cf6b48b42959b0d010bd8,
+    type: 3}
+  hsComponent: 
+  hsComponents:
+  - componentName: CoinMain
+    selectedIndex: 15
+--- !u!1 &182814345143038080
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 182814345143038081}
+  - component: {fileID: 182814345143038095}
+  - component: {fileID: 182814345143038094}
+  m_Layer: 0
+  m_Name: Coin13
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &182814345143038081
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345143038080}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.4, y: 1, z: 184}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 182814345179617191}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &182814345143038095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345143038080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _object:
+    name: Coin13
+    filename: Field/Coin/Coin.heo
+    filename_png: 
+    filename_astc: 
+    filename_etc2: 
+    pose: 
+    clickable: 0
+    enablebone: 0
+    show: 1
+    autoloading: 1
+    forceshadowcaster: 0
+    forceshadowreceiver: 0
+    foregroundrendering: 0
+    zwriteenable: 1
+    alphablendtoopaque: 0
+    unserializecircleshadow:
+      _use: 0
+      _filename: CircleShadow2/CircleShadow2.heo
+      _scale:
+      - 0.6
+      - 0.6
+      - 0.6
+      _zbias: -0.02
+      _adjustposdownward: 0
+    alphaanim: 0
+    motions: []
+    beginactions: []
+    endactions: []
+    pos:
+    - -1.4
+    - 1
+    - 301.08002
+    rotate:
+    - -0
+    - 0
+    - 0
+    scale:
+    - 1
+    - 1
+    - 1
+    components:
+    - CoinManagement
+    - CoinMain
+    lookatcamera: 0
+    collisiondetection: 1
+    uselightscattering: 1
+    showphotomode: 1
+  _autoShowHEO: 1
+  PreviewObjectRoot: {fileID: 0}
+  CurrentShowFile: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  TempAvatar: {fileID: 0}
+  fileMode: 0
+  fileModeTypeValue: 0
+  _Priority: 0
+  _buildingShow: 0
+  heoCircleShadow: {fileID: 0}
+  heoOrVrm: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  vrm: {fileID: 0}
+  glb: {fileID: 0}
+  hem: {fileID: 0}
+  hrmPng: {fileID: 0}
+  hrmAstc: {fileID: 0}
+  hrmEtc2: {fileID: 0}
+  hrmDxt: {fileID: 0}
+  _circleShadowScaleInEditor: {x: 0.6, y: 0.6, z: 0.6}
+  _isBeginactionsFoldout: 1
+  _isEndactionsFoldout: 1
+  _objectMode: 0
+  _isComponentsFoldout: 0
+  _isAdvancedFoldout: 1
+  references:
+    version: 1
+--- !u!114 &182814345143038094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345143038080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: CoinMain
+  _heliScript: {fileID: 469074977633818552, guid: 5f5c0d7e468cf6b48b42959b0d010bd8,
+    type: 3}
+  hsComponent: 
+  hsComponents:
+  - componentName: CoinMain
+    selectedIndex: 15
+--- !u!1 &182814345152281212
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 182814345152281213}
+  - component: {fileID: 182814345152281211}
+  - component: {fileID: 182814345152281210}
+  m_Layer: 0
+  m_Name: Coin6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &182814345152281213
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345152281212}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.4, y: 1, z: 137}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 182814345179617191}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &182814345152281211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345152281212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _object:
+    name: Coin6
+    filename: Field/Coin/Coin.heo
+    filename_png: 
+    filename_astc: 
+    filename_etc2: 
+    pose: 
+    clickable: 0
+    enablebone: 0
+    show: 1
+    autoloading: 1
+    forceshadowcaster: 0
+    forceshadowreceiver: 0
+    foregroundrendering: 0
+    zwriteenable: 1
+    alphablendtoopaque: 0
+    unserializecircleshadow:
+      _use: 0
+      _filename: CircleShadow2/CircleShadow2.heo
+      _scale:
+      - 0.6
+      - 0.6
+      - 0.6
+      _zbias: -0.02
+      _adjustposdownward: 0
+    alphaanim: 0
+    motions: []
+    beginactions: []
+    endactions: []
+    pos:
+    - 1.4
+    - 1
+    - 254.08
+    rotate:
+    - -0
+    - 0
+    - 0
+    scale:
+    - 1
+    - 1
+    - 1
+    components:
+    - CoinManagement
+    - CoinMain
+    lookatcamera: 0
+    collisiondetection: 1
+    uselightscattering: 1
+    showphotomode: 1
+  _autoShowHEO: 1
+  PreviewObjectRoot: {fileID: 0}
+  CurrentShowFile: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  TempAvatar: {fileID: 0}
+  fileMode: 0
+  fileModeTypeValue: 0
+  _Priority: 0
+  _buildingShow: 0
+  heoCircleShadow: {fileID: 0}
+  heoOrVrm: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  vrm: {fileID: 0}
+  glb: {fileID: 0}
+  hem: {fileID: 0}
+  hrmPng: {fileID: 0}
+  hrmAstc: {fileID: 0}
+  hrmEtc2: {fileID: 0}
+  hrmDxt: {fileID: 0}
+  _circleShadowScaleInEditor: {x: 0.6, y: 0.6, z: 0.6}
+  _isBeginactionsFoldout: 1
+  _isEndactionsFoldout: 1
+  _objectMode: 0
+  _isComponentsFoldout: 0
+  _isAdvancedFoldout: 1
+  references:
+    version: 1
+--- !u!114 &182814345152281210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345152281212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: CoinMain
+  _heliScript: {fileID: 469074977633818552, guid: 5f5c0d7e468cf6b48b42959b0d010bd8,
+    type: 3}
+  hsComponent: 
+  hsComponents:
+  - componentName: CoinMain
+    selectedIndex: 15
+--- !u!1 &182814345179617190
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 182814345179617191}
+  m_Layer: 0
+  m_Name: CastleCityCoinParent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &182814345179617191
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345179617190}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 117.08}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 182814345999381904}
+  - {fileID: 182814345264842960}
+  - {fileID: 182814345530659517}
+  - {fileID: 182814345830028833}
+  - {fileID: 182814344616372507}
+  - {fileID: 182814345983090859}
+  - {fileID: 182814345923598735}
+  - {fileID: 182814345152281213}
+  - {fileID: 182814346427805515}
+  - {fileID: 182814345726339159}
+  - {fileID: 182814346534907786}
+  - {fileID: 182814346520352015}
+  - {fileID: 182814345087964163}
+  - {fileID: 182814345368487635}
+  - {fileID: 182814345143038081}
+  - {fileID: 182814344759478999}
+  - {fileID: 182814345536536467}
+  - {fileID: 182814346390310214}
+  - {fileID: 182814346590641132}
+  - {fileID: 182814345058658600}
+  - {fileID: 182814346324055281}
+  - {fileID: 182814344776178371}
+  - {fileID: 182814345746490320}
+  - {fileID: 182814346458527597}
+  - {fileID: 182814345684256086}
+  - {fileID: 182814344836979113}
+  - {fileID: 182814345811576281}
+  - {fileID: 182814346576894369}
+  - {fileID: 182814346245532471}
+  - {fileID: 182814345768360201}
+  - {fileID: 182814345348712243}
+  - {fileID: 182814346588364535}
+  - {fileID: 182814345100331304}
+  - {fileID: 182814346384398366}
+  - {fileID: 182814344982925604}
+  - {fileID: 182814344669073024}
+  - {fileID: 182814346438015743}
+  - {fileID: 182814344804283408}
+  - {fileID: 182814346187525999}
+  - {fileID: 182814344836851942}
+  - {fileID: 182814345618300928}
+  - {fileID: 182814346149740979}
+  - {fileID: 182814345367485561}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &182814345233561968
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 182814345233561969}
+  - component: {fileID: 182814345233561982}
+  m_Layer: 0
+  m_Name: CoinSE0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &182814345233561969
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345233561968}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 182814345367485561}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &182814345233561982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345233561968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -247161819, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audio:
+    name: CoinSE0
+    type: se
+    filename: Sound/Coin_SE.mp3
+    loop: 0
+    autoplay: 0
+    overrides: []
+    components: []
+    showphotomode: 1
+    clickable: 0
+    autoloading: 1
+    show: 1
+  audioClip: {fileID: 8300000, guid: 30336212b2092e64c8637043e146de78, type: 3}
+  _isAdvancedFoldout: 0
+  _Priority: 0
+  _audioType: 1
+  references:
+    version: 1
+--- !u!1 &182814345264842963
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 182814345264842960}
+  - component: {fileID: 182814345264842974}
+  - component: {fileID: 182814345264842961}
+  m_Layer: 0
+  m_Name: Coin0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &182814345264842960
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345264842963}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.4, y: 1, z: 125}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 182814345179617191}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &182814345264842974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345264842963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _object:
+    name: Coin0
+    filename: Field/Coin/Coin.heo
+    filename_png: 
+    filename_astc: 
+    filename_etc2: 
+    pose: 
+    clickable: 0
+    enablebone: 0
+    show: 1
+    autoloading: 1
+    forceshadowcaster: 0
+    forceshadowreceiver: 0
+    foregroundrendering: 0
+    zwriteenable: 1
+    alphablendtoopaque: 0
+    unserializecircleshadow:
+      _use: 0
+      _filename: CircleShadow2/CircleShadow2.heo
+      _scale:
+      - 0.6
+      - 0.6
+      - 0.6
+      _zbias: -0.02
+      _adjustposdownward: 0
+    alphaanim: 0
+    motions: []
+    beginactions: []
+    endactions: []
+    pos:
+    - -1.4
+    - 1
+    - 242.08
+    rotate:
+    - -0
+    - 0
+    - 0
+    scale:
+    - 1
+    - 1
+    - 1
+    components:
+    - CoinManagement
+    - CoinMain
+    lookatcamera: 0
+    collisiondetection: 1
+    uselightscattering: 1
+    showphotomode: 1
+  _autoShowHEO: 1
+  PreviewObjectRoot: {fileID: 0}
+  CurrentShowFile: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  TempAvatar: {fileID: 0}
+  fileMode: 0
+  fileModeTypeValue: 0
+  _Priority: 0
+  _buildingShow: 0
+  heoCircleShadow: {fileID: 0}
+  heoOrVrm: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  vrm: {fileID: 0}
+  glb: {fileID: 0}
+  hem: {fileID: 0}
+  hrmPng: {fileID: 0}
+  hrmAstc: {fileID: 0}
+  hrmEtc2: {fileID: 0}
+  hrmDxt: {fileID: 0}
+  _circleShadowScaleInEditor: {x: 0.6, y: 0.6, z: 0.6}
+  _isBeginactionsFoldout: 0
+  _isEndactionsFoldout: 0
+  _objectMode: 0
+  _isComponentsFoldout: 0
+  _isAdvancedFoldout: 1
+  references:
+    version: 1
+--- !u!114 &182814345264842961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345264842963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: CoinManagement
+  _heliScript: {fileID: 469074977633818552, guid: 8375c8ea2d27d6b42ac287953f0c4651,
+    type: 3}
+  hsComponent: 
+  hsComponents:
+  - componentName: CoinMain
+    selectedIndex: 15
+--- !u!1 &182814345348712242
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 182814345348712243}
+  - component: {fileID: 182814345348712241}
+  - component: {fileID: 182814345348712240}
+  m_Layer: 0
+  m_Name: Coin29
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &182814345348712243
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345348712242}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: 291}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 182814345179617191}
+  m_RootOrder: 30
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &182814345348712241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345348712242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _object:
+    name: Coin29
+    filename: Field/Coin/Coin.heo
+    filename_png: 
+    filename_astc: 
+    filename_etc2: 
+    pose: 
+    clickable: 0
+    enablebone: 0
+    show: 1
+    autoloading: 1
+    forceshadowcaster: 0
+    forceshadowreceiver: 0
+    foregroundrendering: 0
+    zwriteenable: 1
+    alphablendtoopaque: 0
+    unserializecircleshadow:
+      _use: 0
+      _filename: CircleShadow2/CircleShadow2.heo
+      _scale:
+      - 0.6
+      - 0.6
+      - 0.6
+      _zbias: -0.02
+      _adjustposdownward: 0
+    alphaanim: 0
+    motions: []
+    beginactions: []
+    endactions: []
+    pos:
+    - 0
+    - 1
+    - 408.08002
+    rotate:
+    - -0
+    - 0
+    - 0
+    scale:
+    - 1
+    - 1
+    - 1
+    components:
+    - CoinManagement
+    - CoinMain
+    lookatcamera: 0
+    collisiondetection: 1
+    uselightscattering: 1
+    showphotomode: 1
+  _autoShowHEO: 1
+  PreviewObjectRoot: {fileID: 0}
+  CurrentShowFile: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  TempAvatar: {fileID: 0}
+  fileMode: 0
+  fileModeTypeValue: 0
+  _Priority: 0
+  _buildingShow: 0
+  heoCircleShadow: {fileID: 0}
+  heoOrVrm: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  vrm: {fileID: 0}
+  glb: {fileID: 0}
+  hem: {fileID: 0}
+  hrmPng: {fileID: 0}
+  hrmAstc: {fileID: 0}
+  hrmEtc2: {fileID: 0}
+  hrmDxt: {fileID: 0}
+  _circleShadowScaleInEditor: {x: 0.6, y: 0.6, z: 0.6}
+  _isBeginactionsFoldout: 1
+  _isEndactionsFoldout: 1
+  _objectMode: 0
+  _isComponentsFoldout: 0
+  _isAdvancedFoldout: 1
+  references:
+    version: 1
+--- !u!114 &182814345348712240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345348712242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: CoinMain
+  _heliScript: {fileID: 469074977633818552, guid: 5f5c0d7e468cf6b48b42959b0d010bd8,
+    type: 3}
+  hsComponent: 
+  hsComponents:
+  - componentName: CoinMain
+    selectedIndex: 15
+--- !u!1 &182814345367485560
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 182814345367485561}
+  m_Layer: 0
+  m_Name: SE
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &182814345367485561
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345367485560}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 182814345233561969}
+  - {fileID: 182814344589385533}
+  - {fileID: 182814345794306349}
+  - {fileID: 182814345582402015}
+  - {fileID: 182814345753145987}
+  - {fileID: 182814345994435788}
+  - {fileID: 182814345731363213}
+  - {fileID: 182814346391368482}
+  - {fileID: 182814346618363456}
+  - {fileID: 182814344648731955}
+  m_Father: {fileID: 182814345179617191}
+  m_RootOrder: 42
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &182814345368487634
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 182814345368487635}
+  - component: {fileID: 182814345368487633}
+  - component: {fileID: 182814345368487632}
+  m_Layer: 0
+  m_Name: Coin12
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &182814345368487635
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345368487634}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.4, y: 1, z: 182}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 182814345179617191}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &182814345368487633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345368487634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _object:
+    name: Coin12
+    filename: Field/Coin/Coin.heo
+    filename_png: 
+    filename_astc: 
+    filename_etc2: 
+    pose: 
+    clickable: 0
+    enablebone: 0
+    show: 1
+    autoloading: 1
+    forceshadowcaster: 0
+    forceshadowreceiver: 0
+    foregroundrendering: 0
+    zwriteenable: 1
+    alphablendtoopaque: 0
+    unserializecircleshadow:
+      _use: 0
+      _filename: CircleShadow2/CircleShadow2.heo
+      _scale:
+      - 0.6
+      - 0.6
+      - 0.6
+      _zbias: -0.02
+      _adjustposdownward: 0
+    alphaanim: 0
+    motions: []
+    beginactions: []
+    endactions: []
+    pos:
+    - -1.4
+    - 1
+    - 299.08002
+    rotate:
+    - -0
+    - 0
+    - 0
+    scale:
+    - 1
+    - 1
+    - 1
+    components:
+    - CoinManagement
+    - CoinMain
+    lookatcamera: 0
+    collisiondetection: 1
+    uselightscattering: 1
+    showphotomode: 1
+  _autoShowHEO: 1
+  PreviewObjectRoot: {fileID: 0}
+  CurrentShowFile: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  TempAvatar: {fileID: 0}
+  fileMode: 0
+  fileModeTypeValue: 0
+  _Priority: 0
+  _buildingShow: 0
+  heoCircleShadow: {fileID: 0}
+  heoOrVrm: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  vrm: {fileID: 0}
+  glb: {fileID: 0}
+  hem: {fileID: 0}
+  hrmPng: {fileID: 0}
+  hrmAstc: {fileID: 0}
+  hrmEtc2: {fileID: 0}
+  hrmDxt: {fileID: 0}
+  _circleShadowScaleInEditor: {x: 0.6, y: 0.6, z: 0.6}
+  _isBeginactionsFoldout: 1
+  _isEndactionsFoldout: 1
+  _objectMode: 0
+  _isComponentsFoldout: 0
+  _isAdvancedFoldout: 1
+  references:
+    version: 1
+--- !u!114 &182814345368487632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345368487634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: CoinMain
+  _heliScript: {fileID: 469074977633818552, guid: 5f5c0d7e468cf6b48b42959b0d010bd8,
+    type: 3}
+  hsComponent: 
+  hsComponents:
+  - componentName: CoinMain
+    selectedIndex: 15
+--- !u!1 &182814345530659516
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 182814345530659517}
+  - component: {fileID: 182814345530659515}
+  - component: {fileID: 182814345530659514}
+  m_Layer: 0
+  m_Name: Coin1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &182814345530659517
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345530659516}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.4, y: 1, z: 127}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 182814345179617191}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &182814345530659515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345530659516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _object:
+    name: Coin1
+    filename: Field/Coin/Coin.heo
+    filename_png: 
+    filename_astc: 
+    filename_etc2: 
+    pose: 
+    clickable: 0
+    enablebone: 0
+    show: 1
+    autoloading: 1
+    forceshadowcaster: 0
+    forceshadowreceiver: 0
+    foregroundrendering: 0
+    zwriteenable: 1
+    alphablendtoopaque: 0
+    unserializecircleshadow:
+      _use: 0
+      _filename: CircleShadow2/CircleShadow2.heo
+      _scale:
+      - 0.6
+      - 0.6
+      - 0.6
+      _zbias: -0.02
+      _adjustposdownward: 0
+    alphaanim: 0
+    motions: []
+    beginactions: []
+    endactions: []
+    pos:
+    - -1.4
+    - 1
+    - 244.08
+    rotate:
+    - -0
+    - 0
+    - 0
+    scale:
+    - 1
+    - 1
+    - 1
+    components:
+    - CoinManagement
+    - CoinMain
+    lookatcamera: 0
+    collisiondetection: 1
+    uselightscattering: 1
+    showphotomode: 1
+  _autoShowHEO: 1
+  PreviewObjectRoot: {fileID: 0}
+  CurrentShowFile: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  TempAvatar: {fileID: 0}
+  fileMode: 0
+  fileModeTypeValue: 0
+  _Priority: 0
+  _buildingShow: 0
+  heoCircleShadow: {fileID: 0}
+  heoOrVrm: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  vrm: {fileID: 0}
+  glb: {fileID: 0}
+  hem: {fileID: 0}
+  hrmPng: {fileID: 0}
+  hrmAstc: {fileID: 0}
+  hrmEtc2: {fileID: 0}
+  hrmDxt: {fileID: 0}
+  _circleShadowScaleInEditor: {x: 0.6, y: 0.6, z: 0.6}
+  _isBeginactionsFoldout: 0
+  _isEndactionsFoldout: 0
+  _objectMode: 0
+  _isComponentsFoldout: 0
+  _isAdvancedFoldout: 1
+  references:
+    version: 1
+--- !u!114 &182814345530659514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345530659516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: CoinMain
+  _heliScript: {fileID: 469074977633818552, guid: 5f5c0d7e468cf6b48b42959b0d010bd8,
+    type: 3}
+  hsComponent: 
+  hsComponents:
+  - componentName: CoinMain
+    selectedIndex: 15
+--- !u!1 &182814345536536466
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 182814345536536467}
+  - component: {fileID: 182814345536536465}
+  - component: {fileID: 182814345536536464}
+  m_Layer: 0
+  m_Name: Coin15
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &182814345536536467
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345536536466}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.4, y: 1, z: 188}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 182814345179617191}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &182814345536536465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345536536466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _object:
+    name: Coin15
+    filename: Field/Coin/Coin.heo
+    filename_png: 
+    filename_astc: 
+    filename_etc2: 
+    pose: 
+    clickable: 0
+    enablebone: 0
+    show: 1
+    autoloading: 1
+    forceshadowcaster: 0
+    forceshadowreceiver: 0
+    foregroundrendering: 0
+    zwriteenable: 1
+    alphablendtoopaque: 0
+    unserializecircleshadow:
+      _use: 0
+      _filename: CircleShadow2/CircleShadow2.heo
+      _scale:
+      - 0.6
+      - 0.6
+      - 0.6
+      _zbias: -0.02
+      _adjustposdownward: 0
+    alphaanim: 0
+    motions: []
+    beginactions: []
+    endactions: []
+    pos:
+    - -1.4
+    - 1
+    - 305.08002
+    rotate:
+    - -0
+    - 0
+    - 0
+    scale:
+    - 1
+    - 1
+    - 1
+    components:
+    - CoinManagement
+    - CoinMain
+    lookatcamera: 0
+    collisiondetection: 1
+    uselightscattering: 1
+    showphotomode: 1
+  _autoShowHEO: 1
+  PreviewObjectRoot: {fileID: 0}
+  CurrentShowFile: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  TempAvatar: {fileID: 0}
+  fileMode: 0
+  fileModeTypeValue: 0
+  _Priority: 0
+  _buildingShow: 0
+  heoCircleShadow: {fileID: 0}
+  heoOrVrm: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  vrm: {fileID: 0}
+  glb: {fileID: 0}
+  hem: {fileID: 0}
+  hrmPng: {fileID: 0}
+  hrmAstc: {fileID: 0}
+  hrmEtc2: {fileID: 0}
+  hrmDxt: {fileID: 0}
+  _circleShadowScaleInEditor: {x: 0.6, y: 0.6, z: 0.6}
+  _isBeginactionsFoldout: 1
+  _isEndactionsFoldout: 1
+  _objectMode: 0
+  _isComponentsFoldout: 0
+  _isAdvancedFoldout: 1
+  references:
+    version: 1
+--- !u!114 &182814345536536464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345536536466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: CoinMain
+  _heliScript: {fileID: 469074977633818552, guid: 5f5c0d7e468cf6b48b42959b0d010bd8,
+    type: 3}
+  hsComponent: 
+  hsComponents:
+  - componentName: CoinMain
+    selectedIndex: 15
+--- !u!1 &182814345582402014
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 182814345582402015}
+  - component: {fileID: 182814345582402012}
+  m_Layer: 0
+  m_Name: CoinSE3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &182814345582402015
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345582402014}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 182814345367485561}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &182814345582402012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345582402014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -247161819, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audio:
+    name: CoinSE3
+    type: se
+    filename: Sound/Coin_SE.mp3
+    loop: 0
+    autoplay: 0
+    overrides: []
+    components: []
+    showphotomode: 1
+    clickable: 0
+    autoloading: 1
+    show: 1
+  audioClip: {fileID: 8300000, guid: 30336212b2092e64c8637043e146de78, type: 3}
+  _isAdvancedFoldout: 0
+  _Priority: 0
+  _audioType: 1
+  references:
+    version: 1
+--- !u!1 &182814345618300931
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 182814345618300928}
+  - component: {fileID: 182814345618300942}
+  - component: {fileID: 182814345618300929}
+  m_Layer: 0
+  m_Name: Coin39
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &182814345618300928
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345618300931}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.4, y: 1, z: 379}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 182814345179617191}
+  m_RootOrder: 40
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &182814345618300942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345618300931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _object:
+    name: Coin39
+    filename: Field/Coin/Coin.heo
+    filename_png: 
+    filename_astc: 
+    filename_etc2: 
+    pose: 
+    clickable: 0
+    enablebone: 0
+    show: 1
+    autoloading: 1
+    forceshadowcaster: 0
+    forceshadowreceiver: 0
+    foregroundrendering: 0
+    zwriteenable: 1
+    alphablendtoopaque: 0
+    unserializecircleshadow:
+      _use: 0
+      _filename: CircleShadow2/CircleShadow2.heo
+      _scale:
+      - 0.6
+      - 0.6
+      - 0.6
+      _zbias: -0.02
+      _adjustposdownward: 0
+    alphaanim: 0
+    motions: []
+    beginactions: []
+    endactions: []
+    pos:
+    - 1.4
+    - 1
+    - 496.08002
+    rotate:
+    - -0
+    - 0
+    - 0
+    scale:
+    - 1
+    - 1
+    - 1
+    components:
+    - CoinManagement
+    - CoinMain
+    lookatcamera: 0
+    collisiondetection: 1
+    uselightscattering: 1
+    showphotomode: 1
+  _autoShowHEO: 1
+  PreviewObjectRoot: {fileID: 0}
+  CurrentShowFile: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  TempAvatar: {fileID: 0}
+  fileMode: 0
+  fileModeTypeValue: 0
+  _Priority: 0
+  _buildingShow: 0
+  heoCircleShadow: {fileID: 0}
+  heoOrVrm: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  vrm: {fileID: 0}
+  glb: {fileID: 0}
+  hem: {fileID: 0}
+  hrmPng: {fileID: 0}
+  hrmAstc: {fileID: 0}
+  hrmEtc2: {fileID: 0}
+  hrmDxt: {fileID: 0}
+  _circleShadowScaleInEditor: {x: 0.6, y: 0.6, z: 0.6}
+  _isBeginactionsFoldout: 1
+  _isEndactionsFoldout: 1
+  _objectMode: 0
+  _isComponentsFoldout: 0
+  _isAdvancedFoldout: 1
+  references:
+    version: 1
+--- !u!114 &182814345618300929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345618300931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: CoinMain
+  _heliScript: {fileID: 469074977633818552, guid: 5f5c0d7e468cf6b48b42959b0d010bd8,
+    type: 3}
+  hsComponent: 
+  hsComponents:
+  - componentName: CoinMain
+    selectedIndex: 15
+--- !u!1 &182814345684256073
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 182814345684256086}
+  - component: {fileID: 182814345684256084}
+  - component: {fileID: 182814345684256087}
+  m_Layer: 0
+  m_Name: Coin23
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &182814345684256086
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345684256073}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: 279}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 182814345179617191}
+  m_RootOrder: 24
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &182814345684256084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345684256073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _object:
+    name: Coin23
+    filename: Field/Coin/Coin.heo
+    filename_png: 
+    filename_astc: 
+    filename_etc2: 
+    pose: 
+    clickable: 0
+    enablebone: 0
+    show: 1
+    autoloading: 1
+    forceshadowcaster: 0
+    forceshadowreceiver: 0
+    foregroundrendering: 0
+    zwriteenable: 1
+    alphablendtoopaque: 0
+    unserializecircleshadow:
+      _use: 0
+      _filename: CircleShadow2/CircleShadow2.heo
+      _scale:
+      - 0.6
+      - 0.6
+      - 0.6
+      _zbias: -0.02
+      _adjustposdownward: 0
+    alphaanim: 0
+    motions: []
+    beginactions: []
+    endactions: []
+    pos:
+    - 0
+    - 1
+    - 396.08002
+    rotate:
+    - -0
+    - 0
+    - 0
+    scale:
+    - 1
+    - 1
+    - 1
+    components:
+    - CoinManagement
+    - CoinMain
+    lookatcamera: 0
+    collisiondetection: 1
+    uselightscattering: 1
+    showphotomode: 1
+  _autoShowHEO: 1
+  PreviewObjectRoot: {fileID: 0}
+  CurrentShowFile: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  TempAvatar: {fileID: 0}
+  fileMode: 0
+  fileModeTypeValue: 0
+  _Priority: 0
+  _buildingShow: 0
+  heoCircleShadow: {fileID: 0}
+  heoOrVrm: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  vrm: {fileID: 0}
+  glb: {fileID: 0}
+  hem: {fileID: 0}
+  hrmPng: {fileID: 0}
+  hrmAstc: {fileID: 0}
+  hrmEtc2: {fileID: 0}
+  hrmDxt: {fileID: 0}
+  _circleShadowScaleInEditor: {x: 0.6, y: 0.6, z: 0.6}
+  _isBeginactionsFoldout: 1
+  _isEndactionsFoldout: 1
+  _objectMode: 0
+  _isComponentsFoldout: 0
+  _isAdvancedFoldout: 1
+  references:
+    version: 1
+--- !u!114 &182814345684256087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345684256073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: CoinMain
+  _heliScript: {fileID: 469074977633818552, guid: 5f5c0d7e468cf6b48b42959b0d010bd8,
+    type: 3}
+  hsComponent: 
+  hsComponents:
+  - componentName: CoinMain
+    selectedIndex: 15
+--- !u!1 &182814345726339158
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 182814345726339159}
+  - component: {fileID: 182814345726339157}
+  - component: {fileID: 182814345726339156}
+  m_Layer: 0
+  m_Name: Coin8
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &182814345726339159
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345726339158}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.4, y: 1, z: 141}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 182814345179617191}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &182814345726339157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345726339158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _object:
+    name: Coin8
+    filename: Field/Coin/Coin.heo
+    filename_png: 
+    filename_astc: 
+    filename_etc2: 
+    pose: 
+    clickable: 0
+    enablebone: 0
+    show: 1
+    autoloading: 1
+    forceshadowcaster: 0
+    forceshadowreceiver: 0
+    foregroundrendering: 0
+    zwriteenable: 1
+    alphablendtoopaque: 0
+    unserializecircleshadow:
+      _use: 0
+      _filename: CircleShadow2/CircleShadow2.heo
+      _scale:
+      - 0.6
+      - 0.6
+      - 0.6
+      _zbias: -0.02
+      _adjustposdownward: 0
+    alphaanim: 0
+    motions: []
+    beginactions: []
+    endactions: []
+    pos:
+    - 1.4
+    - 1
+    - 258.08002
+    rotate:
+    - -0
+    - 0
+    - 0
+    scale:
+    - 1
+    - 1
+    - 1
+    components:
+    - CoinManagement
+    - CoinMain
+    lookatcamera: 0
+    collisiondetection: 1
+    uselightscattering: 1
+    showphotomode: 1
+  _autoShowHEO: 1
+  PreviewObjectRoot: {fileID: 0}
+  CurrentShowFile: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  TempAvatar: {fileID: 0}
+  fileMode: 0
+  fileModeTypeValue: 0
+  _Priority: 0
+  _buildingShow: 0
+  heoCircleShadow: {fileID: 0}
+  heoOrVrm: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  vrm: {fileID: 0}
+  glb: {fileID: 0}
+  hem: {fileID: 0}
+  hrmPng: {fileID: 0}
+  hrmAstc: {fileID: 0}
+  hrmEtc2: {fileID: 0}
+  hrmDxt: {fileID: 0}
+  _circleShadowScaleInEditor: {x: 0.6, y: 0.6, z: 0.6}
+  _isBeginactionsFoldout: 1
+  _isEndactionsFoldout: 1
+  _objectMode: 0
+  _isComponentsFoldout: 0
+  _isAdvancedFoldout: 1
+  references:
+    version: 1
+--- !u!114 &182814345726339156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345726339158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: CoinMain
+  _heliScript: {fileID: 469074977633818552, guid: 5f5c0d7e468cf6b48b42959b0d010bd8,
+    type: 3}
+  hsComponent: 
+  hsComponents:
+  - componentName: CoinMain
+    selectedIndex: 15
+--- !u!1 &182814345731363212
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 182814345731363213}
+  - component: {fileID: 182814345731363210}
+  m_Layer: 0
+  m_Name: CoinSE6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &182814345731363213
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345731363212}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 182814345367485561}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &182814345731363210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345731363212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -247161819, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audio:
+    name: CoinSE6
+    type: se
+    filename: Sound/Coin_SE.mp3
+    loop: 0
+    autoplay: 0
+    overrides: []
+    components: []
+    showphotomode: 1
+    clickable: 0
+    autoloading: 1
+    show: 1
+  audioClip: {fileID: 8300000, guid: 30336212b2092e64c8637043e146de78, type: 3}
+  _isAdvancedFoldout: 0
+  _Priority: 0
+  _audioType: 1
+  references:
+    version: 1
+--- !u!1 &182814345746490323
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 182814345746490320}
+  - component: {fileID: 182814345746490334}
+  - component: {fileID: 182814345746490321}
+  m_Layer: 0
+  m_Name: Coin21
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &182814345746490320
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345746490323}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: 275}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 182814345179617191}
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &182814345746490334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345746490323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _object:
+    name: Coin21
+    filename: Field/Coin/Coin.heo
+    filename_png: 
+    filename_astc: 
+    filename_etc2: 
+    pose: 
+    clickable: 0
+    enablebone: 0
+    show: 1
+    autoloading: 1
+    forceshadowcaster: 0
+    forceshadowreceiver: 0
+    foregroundrendering: 0
+    zwriteenable: 1
+    alphablendtoopaque: 0
+    unserializecircleshadow:
+      _use: 0
+      _filename: CircleShadow2/CircleShadow2.heo
+      _scale:
+      - 0.6
+      - 0.6
+      - 0.6
+      _zbias: -0.02
+      _adjustposdownward: 0
+    alphaanim: 0
+    motions: []
+    beginactions: []
+    endactions: []
+    pos:
+    - 0
+    - 1
+    - 392.08002
+    rotate:
+    - -0
+    - 0
+    - 0
+    scale:
+    - 1
+    - 1
+    - 1
+    components:
+    - CoinManagement
+    - CoinMain
+    lookatcamera: 0
+    collisiondetection: 1
+    uselightscattering: 1
+    showphotomode: 1
+  _autoShowHEO: 1
+  PreviewObjectRoot: {fileID: 0}
+  CurrentShowFile: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  TempAvatar: {fileID: 0}
+  fileMode: 0
+  fileModeTypeValue: 0
+  _Priority: 0
+  _buildingShow: 0
+  heoCircleShadow: {fileID: 0}
+  heoOrVrm: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  vrm: {fileID: 0}
+  glb: {fileID: 0}
+  hem: {fileID: 0}
+  hrmPng: {fileID: 0}
+  hrmAstc: {fileID: 0}
+  hrmEtc2: {fileID: 0}
+  hrmDxt: {fileID: 0}
+  _circleShadowScaleInEditor: {x: 0.6, y: 0.6, z: 0.6}
+  _isBeginactionsFoldout: 1
+  _isEndactionsFoldout: 1
+  _objectMode: 0
+  _isComponentsFoldout: 0
+  _isAdvancedFoldout: 1
+  references:
+    version: 1
+--- !u!114 &182814345746490321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345746490323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: CoinMain
+  _heliScript: {fileID: 469074977633818552, guid: 5f5c0d7e468cf6b48b42959b0d010bd8,
+    type: 3}
+  hsComponent: 
+  hsComponents:
+  - componentName: CoinMain
+    selectedIndex: 15
+--- !u!1 &182814345753145986
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 182814345753145987}
+  - component: {fileID: 182814345753145984}
+  m_Layer: 0
+  m_Name: CoinSE4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &182814345753145987
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345753145986}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 182814345367485561}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &182814345753145984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345753145986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -247161819, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audio:
+    name: CoinSE4
+    type: se
+    filename: Sound/Coin_SE.mp3
+    loop: 0
+    autoplay: 0
+    overrides: []
+    components: []
+    showphotomode: 1
+    clickable: 0
+    autoloading: 1
+    show: 1
+  audioClip: {fileID: 8300000, guid: 30336212b2092e64c8637043e146de78, type: 3}
+  _isAdvancedFoldout: 0
+  _Priority: 0
+  _audioType: 1
+  references:
+    version: 1
+--- !u!1 &182814345768360200
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 182814345768360201}
+  - component: {fileID: 182814345768360215}
+  - component: {fileID: 182814345768360214}
+  m_Layer: 0
+  m_Name: Coin28
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &182814345768360201
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345768360200}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: 289}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 182814345179617191}
+  m_RootOrder: 29
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &182814345768360215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345768360200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _object:
+    name: Coin28
+    filename: Field/Coin/Coin.heo
+    filename_png: 
+    filename_astc: 
+    filename_etc2: 
+    pose: 
+    clickable: 0
+    enablebone: 0
+    show: 1
+    autoloading: 1
+    forceshadowcaster: 0
+    forceshadowreceiver: 0
+    foregroundrendering: 0
+    zwriteenable: 1
+    alphablendtoopaque: 0
+    unserializecircleshadow:
+      _use: 0
+      _filename: CircleShadow2/CircleShadow2.heo
+      _scale:
+      - 0.6
+      - 0.6
+      - 0.6
+      _zbias: -0.02
+      _adjustposdownward: 0
+    alphaanim: 0
+    motions: []
+    beginactions: []
+    endactions: []
+    pos:
+    - 0
+    - 1
+    - 406.08002
+    rotate:
+    - -0
+    - 0
+    - 0
+    scale:
+    - 1
+    - 1
+    - 1
+    components:
+    - CoinManagement
+    - CoinMain
+    lookatcamera: 0
+    collisiondetection: 1
+    uselightscattering: 1
+    showphotomode: 1
+  _autoShowHEO: 1
+  PreviewObjectRoot: {fileID: 0}
+  CurrentShowFile: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  TempAvatar: {fileID: 0}
+  fileMode: 0
+  fileModeTypeValue: 0
+  _Priority: 0
+  _buildingShow: 0
+  heoCircleShadow: {fileID: 0}
+  heoOrVrm: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  vrm: {fileID: 0}
+  glb: {fileID: 0}
+  hem: {fileID: 0}
+  hrmPng: {fileID: 0}
+  hrmAstc: {fileID: 0}
+  hrmEtc2: {fileID: 0}
+  hrmDxt: {fileID: 0}
+  _circleShadowScaleInEditor: {x: 0.6, y: 0.6, z: 0.6}
+  _isBeginactionsFoldout: 1
+  _isEndactionsFoldout: 1
+  _objectMode: 0
+  _isComponentsFoldout: 0
+  _isAdvancedFoldout: 1
+  references:
+    version: 1
+--- !u!114 &182814345768360214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345768360200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: CoinMain
+  _heliScript: {fileID: 469074977633818552, guid: 5f5c0d7e468cf6b48b42959b0d010bd8,
+    type: 3}
+  hsComponent: 
+  hsComponents:
+  - componentName: CoinMain
+    selectedIndex: 15
+--- !u!1 &182814345794306348
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 182814345794306349}
+  - component: {fileID: 182814345794306346}
+  m_Layer: 0
+  m_Name: CoinSE2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &182814345794306349
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345794306348}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 182814345367485561}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &182814345794306346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345794306348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -247161819, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audio:
+    name: CoinSE2
+    type: se
+    filename: Sound/Coin_SE.mp3
+    loop: 0
+    autoplay: 0
+    overrides: []
+    components: []
+    showphotomode: 1
+    clickable: 0
+    autoloading: 1
+    show: 1
+  audioClip: {fileID: 8300000, guid: 30336212b2092e64c8637043e146de78, type: 3}
+  _isAdvancedFoldout: 0
+  _Priority: 0
+  _audioType: 1
+  references:
+    version: 1
+--- !u!1 &182814345811576280
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 182814345811576281}
+  - component: {fileID: 182814345811576231}
+  - component: {fileID: 182814345811576230}
+  m_Layer: 0
+  m_Name: Coin25
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &182814345811576281
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345811576280}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.4, y: 1, z: 283}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 182814345179617191}
+  m_RootOrder: 26
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &182814345811576231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345811576280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _object:
+    name: Coin25
+    filename: Field/Coin/Coin.heo
+    filename_png: 
+    filename_astc: 
+    filename_etc2: 
+    pose: 
+    clickable: 0
+    enablebone: 0
+    show: 1
+    autoloading: 1
+    forceshadowcaster: 0
+    forceshadowreceiver: 0
+    foregroundrendering: 0
+    zwriteenable: 1
+    alphablendtoopaque: 0
+    unserializecircleshadow:
+      _use: 0
+      _filename: CircleShadow2/CircleShadow2.heo
+      _scale:
+      - 0.6
+      - 0.6
+      - 0.6
+      _zbias: -0.02
+      _adjustposdownward: 0
+    alphaanim: 0
+    motions: []
+    beginactions: []
+    endactions: []
+    pos:
+    - -1.4
+    - 1
+    - 400.08002
+    rotate:
+    - -0
+    - 0
+    - 0
+    scale:
+    - 1
+    - 1
+    - 1
+    components:
+    - CoinManagement
+    - CoinMain
+    lookatcamera: 0
+    collisiondetection: 1
+    uselightscattering: 1
+    showphotomode: 1
+  _autoShowHEO: 1
+  PreviewObjectRoot: {fileID: 0}
+  CurrentShowFile: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  TempAvatar: {fileID: 0}
+  fileMode: 0
+  fileModeTypeValue: 0
+  _Priority: 0
+  _buildingShow: 0
+  heoCircleShadow: {fileID: 0}
+  heoOrVrm: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  vrm: {fileID: 0}
+  glb: {fileID: 0}
+  hem: {fileID: 0}
+  hrmPng: {fileID: 0}
+  hrmAstc: {fileID: 0}
+  hrmEtc2: {fileID: 0}
+  hrmDxt: {fileID: 0}
+  _circleShadowScaleInEditor: {x: 0.6, y: 0.6, z: 0.6}
+  _isBeginactionsFoldout: 1
+  _isEndactionsFoldout: 1
+  _objectMode: 0
+  _isComponentsFoldout: 0
+  _isAdvancedFoldout: 1
+  references:
+    version: 1
+--- !u!114 &182814345811576230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345811576280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: CoinMain
+  _heliScript: {fileID: 469074977633818552, guid: 5f5c0d7e468cf6b48b42959b0d010bd8,
+    type: 3}
+  hsComponent: 
+  hsComponents:
+  - componentName: CoinMain
+    selectedIndex: 15
+--- !u!1 &182814345830028832
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 182814345830028833}
+  - component: {fileID: 182814345830028847}
+  - component: {fileID: 182814345830028846}
+  m_Layer: 0
+  m_Name: Coin2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &182814345830028833
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345830028832}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.4, y: 1, z: 129}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 182814345179617191}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &182814345830028847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345830028832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _object:
+    name: Coin2
+    filename: Field/Coin/Coin.heo
+    filename_png: 
+    filename_astc: 
+    filename_etc2: 
+    pose: 
+    clickable: 0
+    enablebone: 0
+    show: 1
+    autoloading: 1
+    forceshadowcaster: 0
+    forceshadowreceiver: 0
+    foregroundrendering: 0
+    zwriteenable: 1
+    alphablendtoopaque: 0
+    unserializecircleshadow:
+      _use: 0
+      _filename: CircleShadow2/CircleShadow2.heo
+      _scale:
+      - 0.6
+      - 0.6
+      - 0.6
+      _zbias: -0.02
+      _adjustposdownward: 0
+    alphaanim: 0
+    motions: []
+    beginactions: []
+    endactions: []
+    pos:
+    - -1.4
+    - 1
+    - 246.08
+    rotate:
+    - -0
+    - 0
+    - 0
+    scale:
+    - 1
+    - 1
+    - 1
+    components:
+    - CoinManagement
+    - CoinMain
+    lookatcamera: 0
+    collisiondetection: 1
+    uselightscattering: 1
+    showphotomode: 1
+  _autoShowHEO: 1
+  PreviewObjectRoot: {fileID: 0}
+  CurrentShowFile: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  TempAvatar: {fileID: 0}
+  fileMode: 0
+  fileModeTypeValue: 0
+  _Priority: 0
+  _buildingShow: 0
+  heoCircleShadow: {fileID: 0}
+  heoOrVrm: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  vrm: {fileID: 0}
+  glb: {fileID: 0}
+  hem: {fileID: 0}
+  hrmPng: {fileID: 0}
+  hrmAstc: {fileID: 0}
+  hrmEtc2: {fileID: 0}
+  hrmDxt: {fileID: 0}
+  _circleShadowScaleInEditor: {x: 0.6, y: 0.6, z: 0.6}
+  _isBeginactionsFoldout: 0
+  _isEndactionsFoldout: 0
+  _objectMode: 0
+  _isComponentsFoldout: 0
+  _isAdvancedFoldout: 1
+  references:
+    version: 1
+--- !u!114 &182814345830028846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345830028832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: CoinMain
+  _heliScript: {fileID: 469074977633818552, guid: 5f5c0d7e468cf6b48b42959b0d010bd8,
+    type: 3}
+  hsComponent: 
+  hsComponents:
+  - componentName: CoinMain
+    selectedIndex: 15
+--- !u!1 &182814345923598734
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 182814345923598735}
+  - component: {fileID: 182814345923598733}
+  - component: {fileID: 182814345923598732}
+  m_Layer: 0
+  m_Name: Coin5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &182814345923598735
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345923598734}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.4, y: 1, z: 135}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 182814345179617191}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &182814345923598733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345923598734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _object:
+    name: Coin5
+    filename: Field/Coin/Coin.heo
+    filename_png: 
+    filename_astc: 
+    filename_etc2: 
+    pose: 
+    clickable: 0
+    enablebone: 0
+    show: 1
+    autoloading: 1
+    forceshadowcaster: 0
+    forceshadowreceiver: 0
+    foregroundrendering: 0
+    zwriteenable: 1
+    alphablendtoopaque: 0
+    unserializecircleshadow:
+      _use: 0
+      _filename: CircleShadow2/CircleShadow2.heo
+      _scale:
+      - 0.6
+      - 0.6
+      - 0.6
+      _zbias: -0.02
+      _adjustposdownward: 0
+    alphaanim: 0
+    motions: []
+    beginactions: []
+    endactions: []
+    pos:
+    - 1.4
+    - 1
+    - 252.08
+    rotate:
+    - -0
+    - 0
+    - 0
+    scale:
+    - 1
+    - 1
+    - 1
+    components:
+    - CoinManagement
+    - CoinMain
+    lookatcamera: 0
+    collisiondetection: 1
+    uselightscattering: 1
+    showphotomode: 1
+  _autoShowHEO: 1
+  PreviewObjectRoot: {fileID: 0}
+  CurrentShowFile: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  TempAvatar: {fileID: 0}
+  fileMode: 0
+  fileModeTypeValue: 0
+  _Priority: 0
+  _buildingShow: 0
+  heoCircleShadow: {fileID: 0}
+  heoOrVrm: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  vrm: {fileID: 0}
+  glb: {fileID: 0}
+  hem: {fileID: 0}
+  hrmPng: {fileID: 0}
+  hrmAstc: {fileID: 0}
+  hrmEtc2: {fileID: 0}
+  hrmDxt: {fileID: 0}
+  _circleShadowScaleInEditor: {x: 0.6, y: 0.6, z: 0.6}
+  _isBeginactionsFoldout: 1
+  _isEndactionsFoldout: 1
+  _objectMode: 0
+  _isComponentsFoldout: 0
+  _isAdvancedFoldout: 1
+  references:
+    version: 1
+--- !u!114 &182814345923598732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345923598734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: CoinMain
+  _heliScript: {fileID: 469074977633818552, guid: 5f5c0d7e468cf6b48b42959b0d010bd8,
+    type: 3}
+  hsComponent: 
+  hsComponents:
+  - componentName: CoinMain
+    selectedIndex: 15
+--- !u!1 &182814345983090858
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 182814345983090859}
+  - component: {fileID: 182814345983090857}
+  - component: {fileID: 182814345983090856}
+  m_Layer: 0
+  m_Name: Coin4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &182814345983090859
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345983090858}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: 133}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 182814345179617191}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &182814345983090857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345983090858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _object:
+    name: Coin4
+    filename: Field/Coin/Coin.heo
+    filename_png: 
+    filename_astc: 
+    filename_etc2: 
+    pose: 
+    clickable: 0
+    enablebone: 0
+    show: 1
+    autoloading: 1
+    forceshadowcaster: 0
+    forceshadowreceiver: 0
+    foregroundrendering: 0
+    zwriteenable: 1
+    alphablendtoopaque: 0
+    unserializecircleshadow:
+      _use: 0
+      _filename: CircleShadow2/CircleShadow2.heo
+      _scale:
+      - 0.6
+      - 0.6
+      - 0.6
+      _zbias: -0.02
+      _adjustposdownward: 0
+    alphaanim: 0
+    motions: []
+    beginactions: []
+    endactions: []
+    pos:
+    - 0
+    - 1
+    - 250.08
+    rotate:
+    - -0
+    - 0
+    - 0
+    scale:
+    - 1
+    - 1
+    - 1
+    components:
+    - CoinManagement
+    - CoinMain
+    lookatcamera: 0
+    collisiondetection: 1
+    uselightscattering: 1
+    showphotomode: 1
+  _autoShowHEO: 1
+  PreviewObjectRoot: {fileID: 0}
+  CurrentShowFile: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  TempAvatar: {fileID: 0}
+  fileMode: 0
+  fileModeTypeValue: 0
+  _Priority: 0
+  _buildingShow: 0
+  heoCircleShadow: {fileID: 0}
+  heoOrVrm: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  vrm: {fileID: 0}
+  glb: {fileID: 0}
+  hem: {fileID: 0}
+  hrmPng: {fileID: 0}
+  hrmAstc: {fileID: 0}
+  hrmEtc2: {fileID: 0}
+  hrmDxt: {fileID: 0}
+  _circleShadowScaleInEditor: {x: 0.6, y: 0.6, z: 0.6}
+  _isBeginactionsFoldout: 1
+  _isEndactionsFoldout: 1
+  _objectMode: 0
+  _isComponentsFoldout: 0
+  _isAdvancedFoldout: 1
+  references:
+    version: 1
+--- !u!114 &182814345983090856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345983090858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: CoinMain
+  _heliScript: {fileID: 469074977633818552, guid: 5f5c0d7e468cf6b48b42959b0d010bd8,
+    type: 3}
+  hsComponent: 
+  hsComponents:
+  - componentName: CoinMain
+    selectedIndex: 15
+--- !u!1 &182814345994435791
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 182814345994435788}
+  - component: {fileID: 182814345994435789}
+  m_Layer: 0
+  m_Name: CoinSE5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &182814345994435788
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345994435791}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 182814345367485561}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &182814345994435789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345994435791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -247161819, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audio:
+    name: CoinSE5
+    type: se
+    filename: Sound/Coin_SE.mp3
+    loop: 0
+    autoplay: 0
+    overrides: []
+    components: []
+    showphotomode: 1
+    clickable: 0
+    autoloading: 1
+    show: 1
+  audioClip: {fileID: 8300000, guid: 30336212b2092e64c8637043e146de78, type: 3}
+  _isAdvancedFoldout: 0
+  _Priority: 0
+  _audioType: 1
+  references:
+    version: 1
+--- !u!1 &182814345999381907
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 182814345999381904}
+  - component: {fileID: 182814345999381919}
+  - component: {fileID: 182814345999381918}
+  - component: {fileID: 182814345999381905}
+  m_Layer: 0
+  m_Name: CoinManagement
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &182814345999381904
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345999381907}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 182814345179617191}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &182814345999381919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345999381907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1147827095, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _heliodorScripts: []
+  _field:
+    name: CoinManagement
+    filename: Field/CoinManagement.heo
+    components:
+    - CoinManagement
+    overrides: []
+    autoloading: 1
+    lookatcamera: 0
+    alphaanim: 0
+    collisiondetection: 1
+    showphotomode: 1
+    clickable: 0
+    show: 1
+    clickableui:
+      _images: []
+      _clickableItems: []
+  LoadCollider: []
+  UnLoadCollider: []
+  _isAdvancedFoldout: 0
+  _Priority: 0
+  references:
+    version: 1
+--- !u!114 &182814345999381918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345999381907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: CoinManagement
+  _heliScript: {fileID: 469074977633818552, guid: 8375c8ea2d27d6b42ac287953f0c4651,
+    type: 3}
+  hsComponent: 
+  hsComponents:
+  - componentName: CoinManagement
+    selectedIndex: 14
+--- !u!114 &182814345999381905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814345999381907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -917271763, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  properties:
+  - Key: COINMAX
+    Value: 100
+  - Key: Count
+    Value: 0
+--- !u!1 &182814346149740978
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 182814346149740979}
+  - component: {fileID: 182814346149740977}
+  - component: {fileID: 182814346149740976}
+  m_Layer: 0
+  m_Name: Coin40
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &182814346149740979
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814346149740978}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.4, y: 1, z: 381}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 182814345179617191}
+  m_RootOrder: 41
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &182814346149740977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814346149740978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _object:
+    name: Coin40
+    filename: Field/Coin/Coin.heo
+    filename_png: 
+    filename_astc: 
+    filename_etc2: 
+    pose: 
+    clickable: 0
+    enablebone: 0
+    show: 1
+    autoloading: 1
+    forceshadowcaster: 0
+    forceshadowreceiver: 0
+    foregroundrendering: 0
+    zwriteenable: 1
+    alphablendtoopaque: 0
+    unserializecircleshadow:
+      _use: 0
+      _filename: CircleShadow2/CircleShadow2.heo
+      _scale:
+      - 0.6
+      - 0.6
+      - 0.6
+      _zbias: -0.02
+      _adjustposdownward: 0
+    alphaanim: 0
+    motions: []
+    beginactions: []
+    endactions: []
+    pos:
+    - 1.4
+    - 1
+    - 498.08002
+    rotate:
+    - -0
+    - 0
+    - 0
+    scale:
+    - 1
+    - 1
+    - 1
+    components:
+    - CoinManagement
+    - CoinMain
+    lookatcamera: 0
+    collisiondetection: 1
+    uselightscattering: 1
+    showphotomode: 1
+  _autoShowHEO: 1
+  PreviewObjectRoot: {fileID: 0}
+  CurrentShowFile: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  TempAvatar: {fileID: 0}
+  fileMode: 0
+  fileModeTypeValue: 0
+  _Priority: 0
+  _buildingShow: 0
+  heoCircleShadow: {fileID: 0}
+  heoOrVrm: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  vrm: {fileID: 0}
+  glb: {fileID: 0}
+  hem: {fileID: 0}
+  hrmPng: {fileID: 0}
+  hrmAstc: {fileID: 0}
+  hrmEtc2: {fileID: 0}
+  hrmDxt: {fileID: 0}
+  _circleShadowScaleInEditor: {x: 0.6, y: 0.6, z: 0.6}
+  _isBeginactionsFoldout: 1
+  _isEndactionsFoldout: 1
+  _objectMode: 0
+  _isComponentsFoldout: 0
+  _isAdvancedFoldout: 1
+  references:
+    version: 1
+--- !u!114 &182814346149740976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814346149740978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: CoinMain
+  _heliScript: {fileID: 469074977633818552, guid: 5f5c0d7e468cf6b48b42959b0d010bd8,
+    type: 3}
+  hsComponent: 
+  hsComponents:
+  - componentName: CoinMain
+    selectedIndex: 15
+--- !u!1 &182814346187525998
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 182814346187525999}
+  - component: {fileID: 182814346187525997}
+  - component: {fileID: 182814346187525996}
+  m_Layer: 0
+  m_Name: Coin37
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &182814346187525999
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814346187525998}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.4, y: 1, z: 375}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 182814345179617191}
+  m_RootOrder: 38
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &182814346187525997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814346187525998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _object:
+    name: Coin37
+    filename: Field/Coin/Coin.heo
+    filename_png: 
+    filename_astc: 
+    filename_etc2: 
+    pose: 
+    clickable: 0
+    enablebone: 0
+    show: 1
+    autoloading: 1
+    forceshadowcaster: 0
+    forceshadowreceiver: 0
+    foregroundrendering: 0
+    zwriteenable: 1
+    alphablendtoopaque: 0
+    unserializecircleshadow:
+      _use: 0
+      _filename: CircleShadow2/CircleShadow2.heo
+      _scale:
+      - 0.6
+      - 0.6
+      - 0.6
+      _zbias: -0.02
+      _adjustposdownward: 0
+    alphaanim: 0
+    motions: []
+    beginactions: []
+    endactions: []
+    pos:
+    - 1.4
+    - 1
+    - 492.08002
+    rotate:
+    - -0
+    - 0
+    - 0
+    scale:
+    - 1
+    - 1
+    - 1
+    components:
+    - CoinManagement
+    - CoinMain
+    lookatcamera: 0
+    collisiondetection: 1
+    uselightscattering: 1
+    showphotomode: 1
+  _autoShowHEO: 1
+  PreviewObjectRoot: {fileID: 0}
+  CurrentShowFile: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  TempAvatar: {fileID: 0}
+  fileMode: 0
+  fileModeTypeValue: 0
+  _Priority: 0
+  _buildingShow: 0
+  heoCircleShadow: {fileID: 0}
+  heoOrVrm: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  vrm: {fileID: 0}
+  glb: {fileID: 0}
+  hem: {fileID: 0}
+  hrmPng: {fileID: 0}
+  hrmAstc: {fileID: 0}
+  hrmEtc2: {fileID: 0}
+  hrmDxt: {fileID: 0}
+  _circleShadowScaleInEditor: {x: 0.6, y: 0.6, z: 0.6}
+  _isBeginactionsFoldout: 1
+  _isEndactionsFoldout: 1
+  _objectMode: 0
+  _isComponentsFoldout: 0
+  _isAdvancedFoldout: 1
+  references:
+    version: 1
+--- !u!114 &182814346187525996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814346187525998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: CoinMain
+  _heliScript: {fileID: 469074977633818552, guid: 5f5c0d7e468cf6b48b42959b0d010bd8,
+    type: 3}
+  hsComponent: 
+  hsComponents:
+  - componentName: CoinMain
+    selectedIndex: 15
+--- !u!1 &182814346245532470
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 182814346245532471}
+  - component: {fileID: 182814346245532469}
+  - component: {fileID: 182814346245532468}
+  m_Layer: 0
+  m_Name: Coin27
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &182814346245532471
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814346245532470}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.4, y: 1, z: 287}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 182814345179617191}
+  m_RootOrder: 28
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &182814346245532469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814346245532470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _object:
+    name: Coin27
+    filename: Field/Coin/Coin.heo
+    filename_png: 
+    filename_astc: 
+    filename_etc2: 
+    pose: 
+    clickable: 0
+    enablebone: 0
+    show: 1
+    autoloading: 1
+    forceshadowcaster: 0
+    forceshadowreceiver: 0
+    foregroundrendering: 0
+    zwriteenable: 1
+    alphablendtoopaque: 0
+    unserializecircleshadow:
+      _use: 0
+      _filename: CircleShadow2/CircleShadow2.heo
+      _scale:
+      - 0.6
+      - 0.6
+      - 0.6
+      _zbias: -0.02
+      _adjustposdownward: 0
+    alphaanim: 0
+    motions: []
+    beginactions: []
+    endactions: []
+    pos:
+    - -1.4
+    - 1
+    - 404.08002
+    rotate:
+    - -0
+    - 0
+    - 0
+    scale:
+    - 1
+    - 1
+    - 1
+    components:
+    - CoinManagement
+    - CoinMain
+    lookatcamera: 0
+    collisiondetection: 1
+    uselightscattering: 1
+    showphotomode: 1
+  _autoShowHEO: 1
+  PreviewObjectRoot: {fileID: 0}
+  CurrentShowFile: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  TempAvatar: {fileID: 0}
+  fileMode: 0
+  fileModeTypeValue: 0
+  _Priority: 0
+  _buildingShow: 0
+  heoCircleShadow: {fileID: 0}
+  heoOrVrm: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  vrm: {fileID: 0}
+  glb: {fileID: 0}
+  hem: {fileID: 0}
+  hrmPng: {fileID: 0}
+  hrmAstc: {fileID: 0}
+  hrmEtc2: {fileID: 0}
+  hrmDxt: {fileID: 0}
+  _circleShadowScaleInEditor: {x: 0.6, y: 0.6, z: 0.6}
+  _isBeginactionsFoldout: 1
+  _isEndactionsFoldout: 1
+  _objectMode: 0
+  _isComponentsFoldout: 0
+  _isAdvancedFoldout: 1
+  references:
+    version: 1
+--- !u!114 &182814346245532468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814346245532470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: CoinMain
+  _heliScript: {fileID: 469074977633818552, guid: 5f5c0d7e468cf6b48b42959b0d010bd8,
+    type: 3}
+  hsComponent: 
+  hsComponents:
+  - componentName: CoinMain
+    selectedIndex: 15
+--- !u!1 &182814346324055280
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 182814346324055281}
+  - component: {fileID: 182814346324055295}
+  - component: {fileID: 182814346324055294}
+  m_Layer: 0
+  m_Name: Coin19
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &182814346324055281
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814346324055280}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.4, y: 1, z: 196}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 182814345179617191}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &182814346324055295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814346324055280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _object:
+    name: Coin19
+    filename: Field/Coin/Coin.heo
+    filename_png: 
+    filename_astc: 
+    filename_etc2: 
+    pose: 
+    clickable: 0
+    enablebone: 0
+    show: 1
+    autoloading: 1
+    forceshadowcaster: 0
+    forceshadowreceiver: 0
+    foregroundrendering: 0
+    zwriteenable: 1
+    alphablendtoopaque: 0
+    unserializecircleshadow:
+      _use: 0
+      _filename: CircleShadow2/CircleShadow2.heo
+      _scale:
+      - 0.6
+      - 0.6
+      - 0.6
+      _zbias: -0.02
+      _adjustposdownward: 0
+    alphaanim: 0
+    motions: []
+    beginactions: []
+    endactions: []
+    pos:
+    - 1.4
+    - 1
+    - 313.08002
+    rotate:
+    - -0
+    - 0
+    - 0
+    scale:
+    - 1
+    - 1
+    - 1
+    components:
+    - CoinManagement
+    - CoinMain
+    lookatcamera: 0
+    collisiondetection: 1
+    uselightscattering: 1
+    showphotomode: 1
+  _autoShowHEO: 1
+  PreviewObjectRoot: {fileID: 0}
+  CurrentShowFile: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  TempAvatar: {fileID: 0}
+  fileMode: 0
+  fileModeTypeValue: 0
+  _Priority: 0
+  _buildingShow: 0
+  heoCircleShadow: {fileID: 0}
+  heoOrVrm: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  vrm: {fileID: 0}
+  glb: {fileID: 0}
+  hem: {fileID: 0}
+  hrmPng: {fileID: 0}
+  hrmAstc: {fileID: 0}
+  hrmEtc2: {fileID: 0}
+  hrmDxt: {fileID: 0}
+  _circleShadowScaleInEditor: {x: 0.6, y: 0.6, z: 0.6}
+  _isBeginactionsFoldout: 1
+  _isEndactionsFoldout: 1
+  _objectMode: 0
+  _isComponentsFoldout: 0
+  _isAdvancedFoldout: 1
+  references:
+    version: 1
+--- !u!114 &182814346324055294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814346324055280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: CoinMain
+  _heliScript: {fileID: 469074977633818552, guid: 5f5c0d7e468cf6b48b42959b0d010bd8,
+    type: 3}
+  hsComponent: 
+  hsComponents:
+  - componentName: CoinMain
+    selectedIndex: 15
+--- !u!1 &182814346384398353
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 182814346384398366}
+  - component: {fileID: 182814346384398364}
+  - component: {fileID: 182814346384398367}
+  m_Layer: 0
+  m_Name: Coin32
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &182814346384398366
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814346384398353}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.4, y: 1, z: 365}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 182814345179617191}
+  m_RootOrder: 33
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &182814346384398364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814346384398353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _object:
+    name: Coin32
+    filename: Field/Coin/Coin.heo
+    filename_png: 
+    filename_astc: 
+    filename_etc2: 
+    pose: 
+    clickable: 0
+    enablebone: 0
+    show: 1
+    autoloading: 1
+    forceshadowcaster: 0
+    forceshadowreceiver: 0
+    foregroundrendering: 0
+    zwriteenable: 1
+    alphablendtoopaque: 0
+    unserializecircleshadow:
+      _use: 0
+      _filename: CircleShadow2/CircleShadow2.heo
+      _scale:
+      - 0.6
+      - 0.6
+      - 0.6
+      _zbias: -0.02
+      _adjustposdownward: 0
+    alphaanim: 0
+    motions: []
+    beginactions: []
+    endactions: []
+    pos:
+    - 1.4
+    - 1
+    - 482.08002
+    rotate:
+    - -0
+    - 0
+    - 0
+    scale:
+    - 1
+    - 1
+    - 1
+    components:
+    - CoinManagement
+    - CoinMain
+    lookatcamera: 0
+    collisiondetection: 1
+    uselightscattering: 1
+    showphotomode: 1
+  _autoShowHEO: 1
+  PreviewObjectRoot: {fileID: 0}
+  CurrentShowFile: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  TempAvatar: {fileID: 0}
+  fileMode: 0
+  fileModeTypeValue: 0
+  _Priority: 0
+  _buildingShow: 0
+  heoCircleShadow: {fileID: 0}
+  heoOrVrm: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  vrm: {fileID: 0}
+  glb: {fileID: 0}
+  hem: {fileID: 0}
+  hrmPng: {fileID: 0}
+  hrmAstc: {fileID: 0}
+  hrmEtc2: {fileID: 0}
+  hrmDxt: {fileID: 0}
+  _circleShadowScaleInEditor: {x: 0.6, y: 0.6, z: 0.6}
+  _isBeginactionsFoldout: 1
+  _isEndactionsFoldout: 1
+  _objectMode: 0
+  _isComponentsFoldout: 0
+  _isAdvancedFoldout: 1
+  references:
+    version: 1
+--- !u!114 &182814346384398367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814346384398353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: CoinMain
+  _heliScript: {fileID: 469074977633818552, guid: 5f5c0d7e468cf6b48b42959b0d010bd8,
+    type: 3}
+  hsComponent: 
+  hsComponents:
+  - componentName: CoinMain
+    selectedIndex: 15
+--- !u!1 &182814346390310265
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 182814346390310214}
+  - component: {fileID: 182814346390310212}
+  - component: {fileID: 182814346390310215}
+  m_Layer: 0
+  m_Name: Coin16
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &182814346390310214
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814346390310265}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.4, y: 1, z: 190}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 182814345179617191}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &182814346390310212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814346390310265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _object:
+    name: Coin16
+    filename: Field/Coin/Coin.heo
+    filename_png: 
+    filename_astc: 
+    filename_etc2: 
+    pose: 
+    clickable: 0
+    enablebone: 0
+    show: 1
+    autoloading: 1
+    forceshadowcaster: 0
+    forceshadowreceiver: 0
+    foregroundrendering: 0
+    zwriteenable: 1
+    alphablendtoopaque: 0
+    unserializecircleshadow:
+      _use: 0
+      _filename: CircleShadow2/CircleShadow2.heo
+      _scale:
+      - 0.6
+      - 0.6
+      - 0.6
+      _zbias: -0.02
+      _adjustposdownward: 0
+    alphaanim: 0
+    motions: []
+    beginactions: []
+    endactions: []
+    pos:
+    - -1.4
+    - 1
+    - 307.08002
+    rotate:
+    - -0
+    - 0
+    - 0
+    scale:
+    - 1
+    - 1
+    - 1
+    components:
+    - CoinManagement
+    - CoinMain
+    lookatcamera: 0
+    collisiondetection: 1
+    uselightscattering: 1
+    showphotomode: 1
+  _autoShowHEO: 1
+  PreviewObjectRoot: {fileID: 0}
+  CurrentShowFile: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  TempAvatar: {fileID: 0}
+  fileMode: 0
+  fileModeTypeValue: 0
+  _Priority: 0
+  _buildingShow: 0
+  heoCircleShadow: {fileID: 0}
+  heoOrVrm: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  vrm: {fileID: 0}
+  glb: {fileID: 0}
+  hem: {fileID: 0}
+  hrmPng: {fileID: 0}
+  hrmAstc: {fileID: 0}
+  hrmEtc2: {fileID: 0}
+  hrmDxt: {fileID: 0}
+  _circleShadowScaleInEditor: {x: 0.6, y: 0.6, z: 0.6}
+  _isBeginactionsFoldout: 1
+  _isEndactionsFoldout: 1
+  _objectMode: 0
+  _isComponentsFoldout: 0
+  _isAdvancedFoldout: 1
+  references:
+    version: 1
+--- !u!114 &182814346390310215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814346390310265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: CoinMain
+  _heliScript: {fileID: 469074977633818552, guid: 5f5c0d7e468cf6b48b42959b0d010bd8,
+    type: 3}
+  hsComponent: 
+  hsComponents:
+  - componentName: CoinMain
+    selectedIndex: 15
+--- !u!1 &182814346391368485
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 182814346391368482}
+  - component: {fileID: 182814346391368483}
+  m_Layer: 0
+  m_Name: CoinSE7
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &182814346391368482
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814346391368485}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 182814345367485561}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &182814346391368483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814346391368485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -247161819, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audio:
+    name: CoinSE7
+    type: se
+    filename: Sound/Coin_SE.mp3
+    loop: 0
+    autoplay: 0
+    overrides: []
+    components: []
+    showphotomode: 1
+    clickable: 0
+    autoloading: 1
+    show: 1
+  audioClip: {fileID: 8300000, guid: 30336212b2092e64c8637043e146de78, type: 3}
+  _isAdvancedFoldout: 0
+  _Priority: 0
+  _audioType: 1
+  references:
+    version: 1
+--- !u!1 &182814346427805514
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 182814346427805515}
+  - component: {fileID: 182814346427805513}
+  - component: {fileID: 182814346427805512}
+  m_Layer: 0
+  m_Name: Coin7
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &182814346427805515
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814346427805514}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.4, y: 1, z: 139}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 182814345179617191}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &182814346427805513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814346427805514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _object:
+    name: Coin7
+    filename: Field/Coin/Coin.heo
+    filename_png: 
+    filename_astc: 
+    filename_etc2: 
+    pose: 
+    clickable: 0
+    enablebone: 0
+    show: 1
+    autoloading: 1
+    forceshadowcaster: 0
+    forceshadowreceiver: 0
+    foregroundrendering: 0
+    zwriteenable: 1
+    alphablendtoopaque: 0
+    unserializecircleshadow:
+      _use: 0
+      _filename: CircleShadow2/CircleShadow2.heo
+      _scale:
+      - 0.6
+      - 0.6
+      - 0.6
+      _zbias: -0.02
+      _adjustposdownward: 0
+    alphaanim: 0
+    motions: []
+    beginactions: []
+    endactions: []
+    pos:
+    - 1.4
+    - 1
+    - 256.08002
+    rotate:
+    - -0
+    - 0
+    - 0
+    scale:
+    - 1
+    - 1
+    - 1
+    components:
+    - CoinManagement
+    - CoinMain
+    lookatcamera: 0
+    collisiondetection: 1
+    uselightscattering: 1
+    showphotomode: 1
+  _autoShowHEO: 1
+  PreviewObjectRoot: {fileID: 0}
+  CurrentShowFile: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  TempAvatar: {fileID: 0}
+  fileMode: 0
+  fileModeTypeValue: 0
+  _Priority: 0
+  _buildingShow: 0
+  heoCircleShadow: {fileID: 0}
+  heoOrVrm: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  vrm: {fileID: 0}
+  glb: {fileID: 0}
+  hem: {fileID: 0}
+  hrmPng: {fileID: 0}
+  hrmAstc: {fileID: 0}
+  hrmEtc2: {fileID: 0}
+  hrmDxt: {fileID: 0}
+  _circleShadowScaleInEditor: {x: 0.6, y: 0.6, z: 0.6}
+  _isBeginactionsFoldout: 1
+  _isEndactionsFoldout: 1
+  _objectMode: 0
+  _isComponentsFoldout: 0
+  _isAdvancedFoldout: 1
+  references:
+    version: 1
+--- !u!114 &182814346427805512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814346427805514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: CoinMain
+  _heliScript: {fileID: 469074977633818552, guid: 5f5c0d7e468cf6b48b42959b0d010bd8,
+    type: 3}
+  hsComponent: 
+  hsComponents:
+  - componentName: CoinMain
+    selectedIndex: 15
+--- !u!1 &182814346438015742
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 182814346438015743}
+  - component: {fileID: 182814346438015741}
+  - component: {fileID: 182814346438015740}
+  m_Layer: 0
+  m_Name: Coin35
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &182814346438015743
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814346438015742}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.4, y: 1, z: 371}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 182814345179617191}
+  m_RootOrder: 36
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &182814346438015741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814346438015742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _object:
+    name: Coin35
+    filename: Field/Coin/Coin.heo
+    filename_png: 
+    filename_astc: 
+    filename_etc2: 
+    pose: 
+    clickable: 0
+    enablebone: 0
+    show: 1
+    autoloading: 1
+    forceshadowcaster: 0
+    forceshadowreceiver: 0
+    foregroundrendering: 0
+    zwriteenable: 1
+    alphablendtoopaque: 0
+    unserializecircleshadow:
+      _use: 0
+      _filename: CircleShadow2/CircleShadow2.heo
+      _scale:
+      - 0.6
+      - 0.6
+      - 0.6
+      _zbias: -0.02
+      _adjustposdownward: 0
+    alphaanim: 0
+    motions: []
+    beginactions: []
+    endactions: []
+    pos:
+    - 1.4
+    - 1
+    - 488.08002
+    rotate:
+    - -0
+    - 0
+    - 0
+    scale:
+    - 1
+    - 1
+    - 1
+    components:
+    - CoinManagement
+    - CoinMain
+    lookatcamera: 0
+    collisiondetection: 1
+    uselightscattering: 1
+    showphotomode: 1
+  _autoShowHEO: 1
+  PreviewObjectRoot: {fileID: 0}
+  CurrentShowFile: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  TempAvatar: {fileID: 0}
+  fileMode: 0
+  fileModeTypeValue: 0
+  _Priority: 0
+  _buildingShow: 0
+  heoCircleShadow: {fileID: 0}
+  heoOrVrm: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  vrm: {fileID: 0}
+  glb: {fileID: 0}
+  hem: {fileID: 0}
+  hrmPng: {fileID: 0}
+  hrmAstc: {fileID: 0}
+  hrmEtc2: {fileID: 0}
+  hrmDxt: {fileID: 0}
+  _circleShadowScaleInEditor: {x: 0.6, y: 0.6, z: 0.6}
+  _isBeginactionsFoldout: 1
+  _isEndactionsFoldout: 1
+  _objectMode: 0
+  _isComponentsFoldout: 0
+  _isAdvancedFoldout: 1
+  references:
+    version: 1
+--- !u!114 &182814346438015740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814346438015742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: CoinMain
+  _heliScript: {fileID: 469074977633818552, guid: 5f5c0d7e468cf6b48b42959b0d010bd8,
+    type: 3}
+  hsComponent: 
+  hsComponents:
+  - componentName: CoinMain
+    selectedIndex: 15
+--- !u!1 &182814346458527596
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 182814346458527597}
+  - component: {fileID: 182814346458527595}
+  - component: {fileID: 182814346458527594}
+  m_Layer: 0
+  m_Name: Coin22
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &182814346458527597
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814346458527596}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: 277}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 182814345179617191}
+  m_RootOrder: 23
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &182814346458527595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814346458527596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _object:
+    name: Coin22
+    filename: Field/Coin/Coin.heo
+    filename_png: 
+    filename_astc: 
+    filename_etc2: 
+    pose: 
+    clickable: 0
+    enablebone: 0
+    show: 1
+    autoloading: 1
+    forceshadowcaster: 0
+    forceshadowreceiver: 0
+    foregroundrendering: 0
+    zwriteenable: 1
+    alphablendtoopaque: 0
+    unserializecircleshadow:
+      _use: 0
+      _filename: CircleShadow2/CircleShadow2.heo
+      _scale:
+      - 0.6
+      - 0.6
+      - 0.6
+      _zbias: -0.02
+      _adjustposdownward: 0
+    alphaanim: 0
+    motions: []
+    beginactions: []
+    endactions: []
+    pos:
+    - 0
+    - 1
+    - 394.08002
+    rotate:
+    - -0
+    - 0
+    - 0
+    scale:
+    - 1
+    - 1
+    - 1
+    components:
+    - CoinManagement
+    - CoinMain
+    lookatcamera: 0
+    collisiondetection: 1
+    uselightscattering: 1
+    showphotomode: 1
+  _autoShowHEO: 1
+  PreviewObjectRoot: {fileID: 0}
+  CurrentShowFile: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  TempAvatar: {fileID: 0}
+  fileMode: 0
+  fileModeTypeValue: 0
+  _Priority: 0
+  _buildingShow: 0
+  heoCircleShadow: {fileID: 0}
+  heoOrVrm: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  vrm: {fileID: 0}
+  glb: {fileID: 0}
+  hem: {fileID: 0}
+  hrmPng: {fileID: 0}
+  hrmAstc: {fileID: 0}
+  hrmEtc2: {fileID: 0}
+  hrmDxt: {fileID: 0}
+  _circleShadowScaleInEditor: {x: 0.6, y: 0.6, z: 0.6}
+  _isBeginactionsFoldout: 1
+  _isEndactionsFoldout: 1
+  _objectMode: 0
+  _isComponentsFoldout: 0
+  _isAdvancedFoldout: 1
+  references:
+    version: 1
+--- !u!114 &182814346458527594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814346458527596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: CoinMain
+  _heliScript: {fileID: 469074977633818552, guid: 5f5c0d7e468cf6b48b42959b0d010bd8,
+    type: 3}
+  hsComponent: 
+  hsComponents:
+  - componentName: CoinMain
+    selectedIndex: 15
+--- !u!1 &182814346520352014
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 182814346520352015}
+  - component: {fileID: 182814346520352013}
+  - component: {fileID: 182814346520352012}
+  m_Layer: 0
+  m_Name: Coin10
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &182814346520352015
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814346520352014}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.4, y: 1, z: 145}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 182814345179617191}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &182814346520352013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814346520352014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _object:
+    name: Coin10
+    filename: Field/Coin/Coin.heo
+    filename_png: 
+    filename_astc: 
+    filename_etc2: 
+    pose: 
+    clickable: 0
+    enablebone: 0
+    show: 1
+    autoloading: 1
+    forceshadowcaster: 0
+    forceshadowreceiver: 0
+    foregroundrendering: 0
+    zwriteenable: 1
+    alphablendtoopaque: 0
+    unserializecircleshadow:
+      _use: 0
+      _filename: CircleShadow2/CircleShadow2.heo
+      _scale:
+      - 0.6
+      - 0.6
+      - 0.6
+      _zbias: -0.02
+      _adjustposdownward: 0
+    alphaanim: 0
+    motions: []
+    beginactions: []
+    endactions: []
+    pos:
+    - 1.4
+    - 1
+    - 262.08002
+    rotate:
+    - -0
+    - 0
+    - 0
+    scale:
+    - 1
+    - 1
+    - 1
+    components:
+    - CoinManagement
+    - CoinMain
+    lookatcamera: 0
+    collisiondetection: 1
+    uselightscattering: 1
+    showphotomode: 1
+  _autoShowHEO: 1
+  PreviewObjectRoot: {fileID: 0}
+  CurrentShowFile: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  TempAvatar: {fileID: 0}
+  fileMode: 0
+  fileModeTypeValue: 0
+  _Priority: 0
+  _buildingShow: 0
+  heoCircleShadow: {fileID: 0}
+  heoOrVrm: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  vrm: {fileID: 0}
+  glb: {fileID: 0}
+  hem: {fileID: 0}
+  hrmPng: {fileID: 0}
+  hrmAstc: {fileID: 0}
+  hrmEtc2: {fileID: 0}
+  hrmDxt: {fileID: 0}
+  _circleShadowScaleInEditor: {x: 0.6, y: 0.6, z: 0.6}
+  _isBeginactionsFoldout: 1
+  _isEndactionsFoldout: 1
+  _objectMode: 0
+  _isComponentsFoldout: 0
+  _isAdvancedFoldout: 1
+  references:
+    version: 1
+--- !u!114 &182814346520352012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814346520352014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: CoinMain
+  _heliScript: {fileID: 469074977633818552, guid: 5f5c0d7e468cf6b48b42959b0d010bd8,
+    type: 3}
+  hsComponent: 
+  hsComponents:
+  - componentName: CoinMain
+    selectedIndex: 15
+--- !u!1 &182814346534907789
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 182814346534907786}
+  - component: {fileID: 182814346534907784}
+  - component: {fileID: 182814346534907787}
+  m_Layer: 0
+  m_Name: Coin9
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &182814346534907786
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814346534907789}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.4, y: 1, z: 143}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 182814345179617191}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &182814346534907784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814346534907789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _object:
+    name: Coin9
+    filename: Field/Coin/Coin.heo
+    filename_png: 
+    filename_astc: 
+    filename_etc2: 
+    pose: 
+    clickable: 0
+    enablebone: 0
+    show: 1
+    autoloading: 1
+    forceshadowcaster: 0
+    forceshadowreceiver: 0
+    foregroundrendering: 0
+    zwriteenable: 1
+    alphablendtoopaque: 0
+    unserializecircleshadow:
+      _use: 0
+      _filename: CircleShadow2/CircleShadow2.heo
+      _scale:
+      - 0.6
+      - 0.6
+      - 0.6
+      _zbias: -0.02
+      _adjustposdownward: 0
+    alphaanim: 0
+    motions: []
+    beginactions: []
+    endactions: []
+    pos:
+    - 1.4
+    - 1
+    - 260.08002
+    rotate:
+    - -0
+    - 0
+    - 0
+    scale:
+    - 1
+    - 1
+    - 1
+    components:
+    - CoinManagement
+    - CoinMain
+    lookatcamera: 0
+    collisiondetection: 1
+    uselightscattering: 1
+    showphotomode: 1
+  _autoShowHEO: 1
+  PreviewObjectRoot: {fileID: 0}
+  CurrentShowFile: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  TempAvatar: {fileID: 0}
+  fileMode: 0
+  fileModeTypeValue: 0
+  _Priority: 0
+  _buildingShow: 0
+  heoCircleShadow: {fileID: 0}
+  heoOrVrm: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  vrm: {fileID: 0}
+  glb: {fileID: 0}
+  hem: {fileID: 0}
+  hrmPng: {fileID: 0}
+  hrmAstc: {fileID: 0}
+  hrmEtc2: {fileID: 0}
+  hrmDxt: {fileID: 0}
+  _circleShadowScaleInEditor: {x: 0.6, y: 0.6, z: 0.6}
+  _isBeginactionsFoldout: 1
+  _isEndactionsFoldout: 1
+  _objectMode: 0
+  _isComponentsFoldout: 0
+  _isAdvancedFoldout: 1
+  references:
+    version: 1
+--- !u!114 &182814346534907787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814346534907789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: CoinMain
+  _heliScript: {fileID: 469074977633818552, guid: 5f5c0d7e468cf6b48b42959b0d010bd8,
+    type: 3}
+  hsComponent: 
+  hsComponents:
+  - componentName: CoinMain
+    selectedIndex: 15
+--- !u!1 &182814346576894368
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 182814346576894369}
+  - component: {fileID: 182814346576894383}
+  - component: {fileID: 182814346576894382}
+  m_Layer: 0
+  m_Name: Coin26
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &182814346576894369
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814346576894368}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.4, y: 1, z: 285}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 182814345179617191}
+  m_RootOrder: 27
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &182814346576894383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814346576894368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _object:
+    name: Coin26
+    filename: Field/Coin/Coin.heo
+    filename_png: 
+    filename_astc: 
+    filename_etc2: 
+    pose: 
+    clickable: 0
+    enablebone: 0
+    show: 1
+    autoloading: 1
+    forceshadowcaster: 0
+    forceshadowreceiver: 0
+    foregroundrendering: 0
+    zwriteenable: 1
+    alphablendtoopaque: 0
+    unserializecircleshadow:
+      _use: 0
+      _filename: CircleShadow2/CircleShadow2.heo
+      _scale:
+      - 0.6
+      - 0.6
+      - 0.6
+      _zbias: -0.02
+      _adjustposdownward: 0
+    alphaanim: 0
+    motions: []
+    beginactions: []
+    endactions: []
+    pos:
+    - -1.4
+    - 1
+    - 402.08002
+    rotate:
+    - -0
+    - 0
+    - 0
+    scale:
+    - 1
+    - 1
+    - 1
+    components:
+    - CoinManagement
+    - CoinMain
+    lookatcamera: 0
+    collisiondetection: 1
+    uselightscattering: 1
+    showphotomode: 1
+  _autoShowHEO: 1
+  PreviewObjectRoot: {fileID: 0}
+  CurrentShowFile: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  TempAvatar: {fileID: 0}
+  fileMode: 0
+  fileModeTypeValue: 0
+  _Priority: 0
+  _buildingShow: 0
+  heoCircleShadow: {fileID: 0}
+  heoOrVrm: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  vrm: {fileID: 0}
+  glb: {fileID: 0}
+  hem: {fileID: 0}
+  hrmPng: {fileID: 0}
+  hrmAstc: {fileID: 0}
+  hrmEtc2: {fileID: 0}
+  hrmDxt: {fileID: 0}
+  _circleShadowScaleInEditor: {x: 0.6, y: 0.6, z: 0.6}
+  _isBeginactionsFoldout: 1
+  _isEndactionsFoldout: 1
+  _objectMode: 0
+  _isComponentsFoldout: 0
+  _isAdvancedFoldout: 1
+  references:
+    version: 1
+--- !u!114 &182814346576894382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814346576894368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: CoinMain
+  _heliScript: {fileID: 469074977633818552, guid: 5f5c0d7e468cf6b48b42959b0d010bd8,
+    type: 3}
+  hsComponent: 
+  hsComponents:
+  - componentName: CoinMain
+    selectedIndex: 15
+--- !u!1 &182814346588364534
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 182814346588364535}
+  - component: {fileID: 182814346588364533}
+  - component: {fileID: 182814346588364532}
+  m_Layer: 0
+  m_Name: Coin30
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &182814346588364535
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814346588364534}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: 293}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 182814345179617191}
+  m_RootOrder: 31
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &182814346588364533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814346588364534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _object:
+    name: Coin30
+    filename: Field/Coin/Coin.heo
+    filename_png: 
+    filename_astc: 
+    filename_etc2: 
+    pose: 
+    clickable: 0
+    enablebone: 0
+    show: 1
+    autoloading: 1
+    forceshadowcaster: 0
+    forceshadowreceiver: 0
+    foregroundrendering: 0
+    zwriteenable: 1
+    alphablendtoopaque: 0
+    unserializecircleshadow:
+      _use: 0
+      _filename: CircleShadow2/CircleShadow2.heo
+      _scale:
+      - 0.6
+      - 0.6
+      - 0.6
+      _zbias: -0.02
+      _adjustposdownward: 0
+    alphaanim: 0
+    motions: []
+    beginactions: []
+    endactions: []
+    pos:
+    - 0
+    - 1
+    - 410.08002
+    rotate:
+    - -0
+    - 0
+    - 0
+    scale:
+    - 1
+    - 1
+    - 1
+    components:
+    - CoinManagement
+    - CoinMain
+    lookatcamera: 0
+    collisiondetection: 1
+    uselightscattering: 1
+    showphotomode: 1
+  _autoShowHEO: 1
+  PreviewObjectRoot: {fileID: 0}
+  CurrentShowFile: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  TempAvatar: {fileID: 0}
+  fileMode: 0
+  fileModeTypeValue: 0
+  _Priority: 0
+  _buildingShow: 0
+  heoCircleShadow: {fileID: 0}
+  heoOrVrm: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  vrm: {fileID: 0}
+  glb: {fileID: 0}
+  hem: {fileID: 0}
+  hrmPng: {fileID: 0}
+  hrmAstc: {fileID: 0}
+  hrmEtc2: {fileID: 0}
+  hrmDxt: {fileID: 0}
+  _circleShadowScaleInEditor: {x: 0.6, y: 0.6, z: 0.6}
+  _isBeginactionsFoldout: 1
+  _isEndactionsFoldout: 1
+  _objectMode: 0
+  _isComponentsFoldout: 0
+  _isAdvancedFoldout: 1
+  references:
+    version: 1
+--- !u!114 &182814346588364532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814346588364534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: CoinMain
+  _heliScript: {fileID: 469074977633818552, guid: 5f5c0d7e468cf6b48b42959b0d010bd8,
+    type: 3}
+  hsComponent: 
+  hsComponents:
+  - componentName: CoinMain
+    selectedIndex: 15
+--- !u!1 &182814346590641135
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 182814346590641132}
+  - component: {fileID: 182814346590641130}
+  - component: {fileID: 182814346590641133}
+  m_Layer: 0
+  m_Name: Coin17
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &182814346590641132
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814346590641135}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.4, y: 1, z: 192}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 182814345179617191}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &182814346590641130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814346590641135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _object:
+    name: Coin17
+    filename: Field/Coin/Coin.heo
+    filename_png: 
+    filename_astc: 
+    filename_etc2: 
+    pose: 
+    clickable: 0
+    enablebone: 0
+    show: 1
+    autoloading: 1
+    forceshadowcaster: 0
+    forceshadowreceiver: 0
+    foregroundrendering: 0
+    zwriteenable: 1
+    alphablendtoopaque: 0
+    unserializecircleshadow:
+      _use: 0
+      _filename: CircleShadow2/CircleShadow2.heo
+      _scale:
+      - 0.6
+      - 0.6
+      - 0.6
+      _zbias: -0.02
+      _adjustposdownward: 0
+    alphaanim: 0
+    motions: []
+    beginactions: []
+    endactions: []
+    pos:
+    - -1.4
+    - 1
+    - 309.08002
+    rotate:
+    - -0
+    - 0
+    - 0
+    scale:
+    - 1
+    - 1
+    - 1
+    components:
+    - CoinManagement
+    - CoinMain
+    lookatcamera: 0
+    collisiondetection: 1
+    uselightscattering: 1
+    showphotomode: 1
+  _autoShowHEO: 1
+  PreviewObjectRoot: {fileID: 0}
+  CurrentShowFile: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  TempAvatar: {fileID: 0}
+  fileMode: 0
+  fileModeTypeValue: 0
+  _Priority: 0
+  _buildingShow: 0
+  heoCircleShadow: {fileID: 0}
+  heoOrVrm: {fileID: 8794674264650990340, guid: dc046dae3242c864e803c51e8b2f0f62,
+    type: 3}
+  vrm: {fileID: 0}
+  glb: {fileID: 0}
+  hem: {fileID: 0}
+  hrmPng: {fileID: 0}
+  hrmAstc: {fileID: 0}
+  hrmEtc2: {fileID: 0}
+  hrmDxt: {fileID: 0}
+  _circleShadowScaleInEditor: {x: 0.6, y: 0.6, z: 0.6}
+  _isBeginactionsFoldout: 1
+  _isEndactionsFoldout: 1
+  _objectMode: 0
+  _isComponentsFoldout: 0
+  _isAdvancedFoldout: 1
+  references:
+    version: 1
+--- !u!114 &182814346590641133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814346590641135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: CoinMain
+  _heliScript: {fileID: 469074977633818552, guid: 5f5c0d7e468cf6b48b42959b0d010bd8,
+    type: 3}
+  hsComponent: 
+  hsComponents:
+  - componentName: CoinMain
+    selectedIndex: 15
+--- !u!1 &182814346618363459
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 182814346618363456}
+  - component: {fileID: 182814346618363457}
+  m_Layer: 0
+  m_Name: CoinSE8
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &182814346618363456
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814346618363459}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 182814345367485561}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &182814346618363457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182814346618363459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -247161819, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audio:
+    name: CoinSE8
+    type: se
+    filename: Sound/Coin_SE.mp3
+    loop: 0
+    autoplay: 0
+    overrides: []
+    components: []
+    showphotomode: 1
+    clickable: 0
+    autoloading: 1
+    show: 1
+  audioClip: {fileID: 8300000, guid: 30336212b2092e64c8637043e146de78, type: 3}
+  _isAdvancedFoldout: 0
+  _Priority: 0
+  _audioType: 1
+  references:
+    version: 1
