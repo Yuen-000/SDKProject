@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3815866552286121510
+--- !u!1 &1460009444221663969
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,139 +8,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3815866552286121511}
-  - component: {fileID: 3815866552286121506}
-  - component: {fileID: 3815866552286121505}
-  - component: {fileID: 3815866552286121504}
-  m_Layer: 0
-  m_Name: Gate3LeftWall
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3815866552286121511
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3815866552286121510}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7, y: 4.5, z: 0}
-  m_LocalScale: {x: 8, y: 8, z: 1}
-  m_Children: []
-  m_Father: {fileID: 8926401401197271776}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3815866552286121506
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3815866552286121510}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -894626317, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _plane:
-    name: Gate3LeftWall
-    filename: Image/wood02_noground.png
-    filenameen: Image/wood02_noground.png
-    pos:
-    - -7
-    - 4.5
-    - 1007.6
-    rotate:
-    - -0
-    - 0
-    - 0
-    scale:
-    - 8
-    - 8
-    - 1
-    alphablending: 1
-    billboard: 0
-    zbias: 0
-    show: 1
-    overrides: []
-    lookatcamera: 0
-    doubleside: 0
-    components:
-    - Gate3LeftAnimation
-    showphotomode: 1
-    clickable: 0
-    autoloading: 1
-  textureInJP: {fileID: 2800000, guid: 2853c8b9eeaf6824592ff34030d7ddd7, type: 3}
-  textureInEN: {fileID: 2800000, guid: 2853c8b9eeaf6824592ff34030d7ddd7, type: 3}
-  _isAdvancedFoldout: 1
-  _Priority: 0
-  PreviewFlag: 1
-  PreviewObject: {fileID: 0}
-  Reshow: 0
-  JPLang: 1
-  references:
-    version: 1
---- !u!114 &3815866552286121505
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3815866552286121510}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  selectedIndex: 0
-  selectedIndexes: 00000000
-  ScriptName: Gate3Animation
-  _heliScript: {fileID: 469074977633818552, guid: 1f58f47ef27e70b4f913718df7707ef3,
-    type: 3}
-  hsComponent: 
-  hsComponents:
-  - componentName: Gate3LeftAnimation
-    selectedIndex: 27
---- !u!114 &3815866552286121504
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3815866552286121510}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -917271763, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  properties:
-  - Key: LENGTH
-    Value: 8
-  - Key: WIDTH
-    Value: 0
-  - Key: POS_X
-    Value: -7
-  - Key: POS_Y
-    Value: 0.5
-  - Key: POS_Z
-    Value: 1005
-  - Key: FINAL_ANGLE
-    Value: -60.0
---- !u!1 &5462295787787252689
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5462295787787252718}
-  - component: {fileID: 5462295787787252717}
-  - component: {fileID: 5462295787787252716}
-  - component: {fileID: 5462295787787252719}
+  - component: {fileID: 1460009444221663966}
+  - component: {fileID: 1460009444221663965}
+  - component: {fileID: 1460009444221663964}
+  - component: {fileID: 1460009444221663967}
   m_Layer: 0
   m_Name: Gate3RightWall
   m_TagString: Untagged
@@ -148,27 +19,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5462295787787252718
+--- !u!4 &1460009444221663966
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5462295787787252689}
+  m_GameObject: {fileID: 1460009444221663969}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 7, y: 4.5, z: 0}
   m_LocalScale: {x: 8, y: 8, z: 1}
   m_Children: []
-  m_Father: {fileID: 8926401401197271776}
+  m_Father: {fileID: 2625586528835752912}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5462295787787252717
+--- !u!114 &1460009444221663965
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5462295787787252689}
+  m_GameObject: {fileID: 1460009444221663969}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -894626317, guid: aceab675429f9e946b912a758820ab12, type: 3}
@@ -181,7 +52,7 @@ MonoBehaviour:
     pos:
     - 7
     - 4.5
-    - 1007.6
+    - 1005
     rotate:
     - -0
     - 0
@@ -213,13 +84,13 @@ MonoBehaviour:
   JPLang: 1
   references:
     version: 1
---- !u!114 &5462295787787252716
+--- !u!114 &1460009444221663964
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5462295787787252689}
+  m_GameObject: {fileID: 1460009444221663969}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
@@ -232,15 +103,15 @@ MonoBehaviour:
     type: 3}
   hsComponent: 
   hsComponents:
-  - componentName: Gate3RightAnimation
-    selectedIndex: 27
---- !u!114 &5462295787787252719
+  - componentName: Gate3LeftAnimation
+    selectedIndex: 28
+--- !u!114 &1460009444221663967
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5462295787787252689}
+  m_GameObject: {fileID: 1460009444221663969}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -917271763, guid: aceab675429f9e946b912a758820ab12, type: 3}
@@ -259,7 +130,7 @@ MonoBehaviour:
     Value: 1005
   - Key: FINAL_ANGLE
     Value: 60.0
---- !u!1 &8926401401197271777
+--- !u!1 &2625586528835752913
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -267,7 +138,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8926401401197271776}
+  - component: {fileID: 2625586528835752912}
   m_Layer: 0
   m_Name: ForestRendaAction
   m_TagString: Untagged
@@ -275,19 +146,148 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8926401401197271776
+--- !u!4 &2625586528835752912
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8926401401197271777}
+  m_GameObject: {fileID: 2625586528835752913}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 390}
+  m_LocalPosition: {x: 0, y: 0, z: 1005}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 3815866552286121511}
-  - {fileID: 5462295787787252718}
+  - {fileID: 7744970522372917015}
+  - {fileID: 1460009444221663966}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7744970522372917014
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7744970522372917015}
+  - component: {fileID: 7744970522372917010}
+  - component: {fileID: 7744970522372917009}
+  - component: {fileID: 7744970522372917008}
+  m_Layer: 0
+  m_Name: Gate3LeftWall
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7744970522372917015
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7744970522372917014}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -7, y: 4.5, z: 0}
+  m_LocalScale: {x: 8, y: 8, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2625586528835752912}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7744970522372917010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7744970522372917014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -894626317, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _plane:
+    name: Gate3LeftWall
+    filename: Image/wood02_noground.png
+    filenameen: Image/wood02_noground.png
+    pos:
+    - -7
+    - 4.5
+    - 1005
+    rotate:
+    - -0
+    - 0
+    - 0
+    scale:
+    - 8
+    - 8
+    - 1
+    alphablending: 1
+    billboard: 0
+    zbias: 0
+    show: 1
+    overrides: []
+    lookatcamera: 0
+    doubleside: 0
+    components:
+    - Gate3LeftAnimation
+    showphotomode: 1
+    clickable: 0
+    autoloading: 1
+  textureInJP: {fileID: 2800000, guid: 2853c8b9eeaf6824592ff34030d7ddd7, type: 3}
+  textureInEN: {fileID: 2800000, guid: 2853c8b9eeaf6824592ff34030d7ddd7, type: 3}
+  _isAdvancedFoldout: 1
+  _Priority: 0
+  PreviewFlag: 1
+  PreviewObject: {fileID: 0}
+  Reshow: 0
+  JPLang: 1
+  references:
+    version: 1
+--- !u!114 &7744970522372917009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7744970522372917014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: Gate3Animation
+  _heliScript: {fileID: 469074977633818552, guid: 1f58f47ef27e70b4f913718df7707ef3,
+    type: 3}
+  hsComponent: 
+  hsComponents:
+  - componentName: Gate3LeftAnimation
+    selectedIndex: 28
+--- !u!114 &7744970522372917008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7744970522372917014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -917271763, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  properties:
+  - Key: LENGTH
+    Value: 8
+  - Key: WIDTH
+    Value: 0
+  - Key: POS_X
+    Value: -7
+  - Key: POS_Y
+    Value: 0.5
+  - Key: POS_Z
+    Value: 1005
+  - Key: FINAL_ANGLE
+    Value: -60.0
