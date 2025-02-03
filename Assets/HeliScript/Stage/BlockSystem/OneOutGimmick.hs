@@ -10,6 +10,9 @@ component OneOutGimmick
     Item blockItem;
     Item gameOverItem;
 
+    //SE
+    Item damageSE;
+
     //アイテムのVector3
     Vector3 blockItemPos;
     Vector3 playerPos;
@@ -39,6 +42,9 @@ component OneOutGimmick
 
         //gameoverアイテム
         gameOverItem = hsItemGet("GameoverScript");
+
+        //DamageのSE
+        damageSE = hsItemGet("DamageSE");
 
         //ギミックブロック
         blockItem = hsItemGetSelf();
@@ -143,18 +149,21 @@ component OneOutGimmick
             case "LeftPoint":
             if(playerPos.Distance(leftPointPos) < judgmentFrontDistance)
             {
+                PlaySE();
                 PlayerGameOver();
             }
                 break;
             case "MidPoint":
             if(playerPos.Distance(midPointPos) < judgmentFrontDistance)
             {
+                PlaySE();
                 PlayerGameOver();
             }
                 break;
             case "RightPoint":
             if(playerPos.Distance(rightPointPos) < judgmentFrontDistance)
             {
+                PlaySE();
                 PlayerGameOver();
             }
                 break;
@@ -162,6 +171,7 @@ component OneOutGimmick
             if(playerPos.Distance(leftPointPos) < judgmentFrontDistance || 
                 playerPos.Distance(midPointPos) < judgmentFrontDistance)
             {
+                PlaySE();
                 PlayerGameOver();
             }
                 break;
@@ -169,6 +179,7 @@ component OneOutGimmick
             if(playerPos.Distance(rightPointPos) < judgmentFrontDistance || 
                 playerPos.Distance(midPointPos) < judgmentFrontDistance)
             {
+                PlaySE();
                 PlayerGameOver();
             }
                 break;
@@ -177,9 +188,16 @@ component OneOutGimmick
                 playerPos.Distance(midPointPos) < judgmentFrontDistance || 
                 playerPos.Distance(rightPointPos) < judgmentFrontDistance)
             {
+                PlaySE();
                 PlayerGameOver();
             }
                 break;
         }
+    }
+
+    //SEを流す
+    void PlaySE()
+    {
+        damageSE.Play();
     }
 }
