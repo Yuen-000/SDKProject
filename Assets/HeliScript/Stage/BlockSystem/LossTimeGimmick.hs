@@ -10,6 +10,9 @@ component LossTimeGimmick
     Item lostTimeItem;
     Item timerItem;
     Item blockItem;
+    
+    //SE
+    Item damageSE;
 
     //アイテムのVector3
     Vector3 blockItemPos;
@@ -50,6 +53,9 @@ component LossTimeGimmick
         
         //decreaseTimeのアイテム
         timerItem = hsItemGet("Timer");
+
+        //DamageのSE
+        damageSE = hsItemGet("DamageSE");
 
         //ギミックブロック
         blockItem = hsItemGetSelf();
@@ -184,18 +190,21 @@ component LossTimeGimmick
             if(playerPos.Distance(leftPointPos) < judgmentFrontDistance)
             {
                 PlayerLostTime();
+                PlaySE();
             }
                 break;
             case "MidPoint":
             if(playerPos.Distance(midPointPos) < judgmentFrontDistance)
             {
                 PlayerLostTime();
+                PlaySE();
             }
                 break;
             case "RightPoint":
             if(playerPos.Distance(rightPointPos) < judgmentFrontDistance)
             {
                 PlayerLostTime();
+                PlaySE();
             }
                 break;
             case "LeftMidPoint":
@@ -203,6 +212,7 @@ component LossTimeGimmick
                 playerPos.Distance(midPointPos) < judgmentFrontDistance)
             {
                 PlayerLostTime();
+                PlaySE();
             }
                 break;
             case "RightMidPoint":
@@ -210,6 +220,7 @@ component LossTimeGimmick
                 playerPos.Distance(midPointPos) < judgmentFrontDistance)
             {
                 PlayerLostTime();
+                PlaySE();
             }
                 break;
             case "AllPoint":
@@ -218,8 +229,15 @@ component LossTimeGimmick
                 playerPos.Distance(rightPointPos) < judgmentFrontDistance)
             {
                 PlayerLostTime();
+                PlaySE();
             }
                 break;
         }
+    }
+
+    //SEを流す
+    void PlaySE()
+    {
+        damageSE.Play();
     }
 }

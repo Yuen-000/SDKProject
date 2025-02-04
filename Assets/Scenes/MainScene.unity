@@ -9071,6 +9071,81 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -19.88
       objectReference: {fileID: 0}
+    - target: {fileID: 8687228964704272599, guid: 3b866c9a42c3b314c889ef5db35f8613,
+        type: 3}
+      propertyPath: _actionTrigger.actions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8687228964704272599, guid: 3b866c9a42c3b314c889ef5db35f8613,
+        type: 3}
+      propertyPath: _actionTrigger.actions.Array.data[1]
+      value: HIKKY.VketCloudSDK.Builder.Components HIKKY.VketCloudSDK.Builder.Model.CallScript
+      objectReference: {fileID: 0}
+    - target: {fileID: 8687228964704272599, guid: 3b866c9a42c3b314c889ef5db35f8613,
+        type: 3}
+      propertyPath: _actionTrigger.actions.Array.data[1].name
+      value: GameoverScript
+      objectReference: {fileID: 0}
+    - target: {fileID: 8687228964704272599, guid: 3b866c9a42c3b314c889ef5db35f8613,
+        type: 3}
+      propertyPath: _actionTrigger.actions.Array.data[1].text
+      value: GameOver,,
+      objectReference: {fileID: 0}
+    - target: {fileID: 8687228964704272599, guid: 3b866c9a42c3b314c889ef5db35f8613,
+        type: 3}
+      propertyPath: _actionTrigger.actions.Array.data[1].category
+      value: scene
+      objectReference: {fileID: 0}
+    - target: {fileID: 8687228964704272599, guid: 3b866c9a42c3b314c889ef5db35f8613,
+        type: 3}
+      propertyPath: _actionTrigger.actions.Array.data[1].stringArg
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8687228964704272599, guid: 3b866c9a42c3b314c889ef5db35f8613,
+        type: 3}
+      propertyPath: _actionTrigger.actions.Array.data[1].functionName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8687228964704272599, guid: 3b866c9a42c3b314c889ef5db35f8613,
+        type: 3}
+      propertyPath: _actionTrigger.actions.Array.data[1].categoryIndex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8687228964704272599, guid: 3b866c9a42c3b314c889ef5db35f8613,
+        type: 3}
+      propertyPath: _actionTrigger.actions.Array.data[1].componentName
+      value: GameOver
+      objectReference: {fileID: 0}
+    - target: {fileID: 8687228964704272599, guid: 3b866c9a42c3b314c889ef5db35f8613,
+        type: 3}
+      propertyPath: _actionTrigger.actions.Array.data[1].categorylabels.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8687228964704272599, guid: 3b866c9a42c3b314c889ef5db35f8613,
+        type: 3}
+      propertyPath: _actionTrigger.actions.Array.data[1].categoryOptions.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8687228964704272599, guid: 3b866c9a42c3b314c889ef5db35f8613,
+        type: 3}
+      propertyPath: _actionTrigger.actions.Array.data[1].categorylabels.Array.data[0]
+      value: Scene
+      objectReference: {fileID: 0}
+    - target: {fileID: 8687228964704272599, guid: 3b866c9a42c3b314c889ef5db35f8613,
+        type: 3}
+      propertyPath: _actionTrigger.actions.Array.data[1].categorylabels.Array.data[1]
+      value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 8687228964704272599, guid: 3b866c9a42c3b314c889ef5db35f8613,
+        type: 3}
+      propertyPath: _actionTrigger.actions.Array.data[1].categoryOptions.Array.data[0]
+      value: scene
+      objectReference: {fileID: 0}
+    - target: {fileID: 8687228964704272599, guid: 3b866c9a42c3b314c889ef5db35f8613,
+        type: 3}
+      propertyPath: _actionTrigger.actions.Array.data[1].categoryOptions.Array.data[1]
+      value: canvas
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b866c9a42c3b314c889ef5db35f8613, type: 3}
 --- !u!4 &591298435 stripped
@@ -10594,6 +10669,39 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 659113198}
   m_Mesh: {fileID: 4300000, guid: 938f727ebe2097b41b4316b1b5d89069, type: 3}
+--- !u!1 &660862681
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 660862682}
+  m_Layer: 0
+  m_Name: ForestItemParent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &660862682
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 660862681}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2316338583406982684}
+  - {fileID: 2316338584080188865}
+  - {fileID: 2316338583484500941}
+  m_Father: {fileID: 1660729582155641813}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &666418630
 GameObject:
   m_ObjectHideFlags: 0
@@ -11927,11 +12035,16 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 4999936410806606582, guid: 44bb589980795c549a473774afef95cd,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44bb589980795c549a473774afef95cd, type: 3}
 --- !u!4 &741151771 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 100772491527888100, guid: 44bb589980795c549a473774afef95cd,
+  m_CorrespondingSourceObject: {fileID: 4999936410806606582, guid: 44bb589980795c549a473774afef95cd,
     type: 3}
   m_PrefabInstance: {fileID: 741151770}
   m_PrefabAsset: {fileID: 0}
@@ -12778,7 +12891,7 @@ Transform:
   - {fileID: 846931415}
   - {fileID: 1196122451}
   - {fileID: 1333164850}
-  - {fileID: 1570433052}
+  - {fileID: 1660729583728988526}
   - {fileID: 879798337}
   - {fileID: 2139690906}
   - {fileID: 1627239100}
@@ -14360,6 +14473,39 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 891949192}
   m_Mesh: {fileID: 4300000, guid: 938f727ebe2097b41b4316b1b5d89069, type: 3}
+--- !u!1 &900521893
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 900521894}
+  m_Layer: 0
+  m_Name: ForestItemParent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &900521894
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 900521893}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2316338583385260952}
+  - {fileID: 2316338584263014214}
+  - {fileID: 2316338582889046897}
+  m_Father: {fileID: 1660729582785220656}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &903138695
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19232,6 +19378,21 @@ PrefabInstance:
       propertyPath: PreviewObjectRoot
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 1433727570354488533, guid: f09138ddd07cd0d45bc5e1177d6edc7e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437638379064079807, guid: f09138ddd07cd0d45bc5e1177d6edc7e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5990947920648297773, guid: f09138ddd07cd0d45bc5e1177d6edc7e,
+        type: 3}
+      propertyPath: PreviewObjectRoot
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6334074847434836824, guid: f09138ddd07cd0d45bc5e1177d6edc7e,
         type: 3}
       propertyPath: m_Name
@@ -19302,16 +19463,36 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 6690396158394753785, guid: f09138ddd07cd0d45bc5e1177d6edc7e,
+        type: 3}
+      propertyPath: PreviewObjectRoot
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 7661546021264050141, guid: f09138ddd07cd0d45bc5e1177d6edc7e,
         type: 3}
       propertyPath: PreviewObjectRoot
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 8258412372804394136, guid: f09138ddd07cd0d45bc5e1177d6edc7e,
+        type: 3}
+      propertyPath: PreviewObjectRoot
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8769018991625440964, guid: f09138ddd07cd0d45bc5e1177d6edc7e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9071666293148175909, guid: f09138ddd07cd0d45bc5e1177d6edc7e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f09138ddd07cd0d45bc5e1177d6edc7e, type: 3}
 --- !u!4 &1196122451 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 6385005124288502643, guid: f09138ddd07cd0d45bc5e1177d6edc7e,
+  m_CorrespondingSourceObject: {fileID: 1437638379064079807, guid: f09138ddd07cd0d45bc5e1177d6edc7e,
     type: 3}
   m_PrefabInstance: {fileID: 1196122450}
   m_PrefabAsset: {fileID: 0}
@@ -22523,6 +22704,38 @@ MonoBehaviour:
   _isAdvancedFoldout: 0
   references:
     version: 1
+--- !u!1 &1415420156
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1415420157}
+  m_Layer: 0
+  m_Name: CastleCityItemParent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1415420157
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1415420156}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8744059607528538085}
+  - {fileID: 8744059607550339805}
+  m_Father: {fileID: 1660729582155641813}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1419162348
 GameObject:
   m_ObjectHideFlags: 0
@@ -25082,204 +25295,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1001 &1570433051
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 816765146}
-    m_Modifications:
-    - target: {fileID: 1660729582135391080, guid: c478065e03315ce44a65a33c63e491ed,
-        type: 3}
-      propertyPath: Reshow
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1660729582135391080, guid: c478065e03315ce44a65a33c63e491ed,
-        type: 3}
-      propertyPath: PreviewFlag
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1660729582135391080, guid: c478065e03315ce44a65a33c63e491ed,
-        type: 3}
-      propertyPath: PreviewObject
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1660729582135391086, guid: c478065e03315ce44a65a33c63e491ed,
-        type: 3}
-      propertyPath: hsComponents.Array.data[0].selectedIndex
-      value: 24
-      objectReference: {fileID: 0}
-    - target: {fileID: 1660729582371400939, guid: c478065e03315ce44a65a33c63e491ed,
-        type: 3}
-      propertyPath: hsComponents.Array.data[0].selectedIndex
-      value: 18
-      objectReference: {fileID: 0}
-    - target: {fileID: 1660729582434701313, guid: c478065e03315ce44a65a33c63e491ed,
-        type: 3}
-      propertyPath: Reshow
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1660729582434701313, guid: c478065e03315ce44a65a33c63e491ed,
-        type: 3}
-      propertyPath: PreviewFlag
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1660729582434701313, guid: c478065e03315ce44a65a33c63e491ed,
-        type: 3}
-      propertyPath: PreviewObject
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1660729582434701314, guid: c478065e03315ce44a65a33c63e491ed,
-        type: 3}
-      propertyPath: ScriptName
-      value: MagnetMain
-      objectReference: {fileID: 0}
-    - target: {fileID: 1660729582434701314, guid: c478065e03315ce44a65a33c63e491ed,
-        type: 3}
-      propertyPath: _heliScript
-      value: 
-      objectReference: {fileID: 469074977633818552, guid: 8e2d3b4f0ff471c458588186bf45f1e3,
-        type: 3}
-    - target: {fileID: 1660729582434701314, guid: c478065e03315ce44a65a33c63e491ed,
-        type: 3}
-      propertyPath: hsComponents.Array.data[0].selectedIndex
-      value: 22
-      objectReference: {fileID: 0}
-    - target: {fileID: 1660729582724227352, guid: c478065e03315ce44a65a33c63e491ed,
-        type: 3}
-      propertyPath: Reshow
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1660729582724227352, guid: c478065e03315ce44a65a33c63e491ed,
-        type: 3}
-      propertyPath: PreviewFlag
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1660729582724227352, guid: c478065e03315ce44a65a33c63e491ed,
-        type: 3}
-      propertyPath: PreviewObject
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1660729582724227358, guid: c478065e03315ce44a65a33c63e491ed,
-        type: 3}
-      propertyPath: hsComponents.Array.data[0].selectedIndex
-      value: 24
-      objectReference: {fileID: 0}
-    - target: {fileID: 1660729582883240309, guid: c478065e03315ce44a65a33c63e491ed,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 1660729582883240309, guid: c478065e03315ce44a65a33c63e491ed,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1660729582883240309, guid: c478065e03315ce44a65a33c63e491ed,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1660729582883240309, guid: c478065e03315ce44a65a33c63e491ed,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1660729582883240309, guid: c478065e03315ce44a65a33c63e491ed,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1660729582883240309, guid: c478065e03315ce44a65a33c63e491ed,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1660729582883240309, guid: c478065e03315ce44a65a33c63e491ed,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1660729582883240309, guid: c478065e03315ce44a65a33c63e491ed,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1660729582883240309, guid: c478065e03315ce44a65a33c63e491ed,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1660729582883240309, guid: c478065e03315ce44a65a33c63e491ed,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1660729582883240309, guid: c478065e03315ce44a65a33c63e491ed,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1660729582883240310, guid: c478065e03315ce44a65a33c63e491ed,
-        type: 3}
-      propertyPath: m_Name
-      value: ItemParent
-      objectReference: {fileID: 0}
-    - target: {fileID: 1660729583289779688, guid: c478065e03315ce44a65a33c63e491ed,
-        type: 3}
-      propertyPath: ScriptName
-      value: MagnetManagement
-      objectReference: {fileID: 0}
-    - target: {fileID: 1660729583289779688, guid: c478065e03315ce44a65a33c63e491ed,
-        type: 3}
-      propertyPath: _heliScript
-      value: 
-      objectReference: {fileID: 469074977633818552, guid: b358117e124e8d143a727b3f1be6d704,
-        type: 3}
-    - target: {fileID: 1660729583289779688, guid: c478065e03315ce44a65a33c63e491ed,
-        type: 3}
-      propertyPath: hsComponents.Array.data[0].selectedIndex
-      value: 21
-      objectReference: {fileID: 0}
-    - target: {fileID: 1660729583728587238, guid: c478065e03315ce44a65a33c63e491ed,
-        type: 3}
-      propertyPath: Reshow
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1660729583728587238, guid: c478065e03315ce44a65a33c63e491ed,
-        type: 3}
-      propertyPath: PreviewFlag
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1660729583728587238, guid: c478065e03315ce44a65a33c63e491ed,
-        type: 3}
-      propertyPath: PreviewObject
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1660729583728587239, guid: c478065e03315ce44a65a33c63e491ed,
-        type: 3}
-      propertyPath: ScriptName
-      value: SpeedUpMain
-      objectReference: {fileID: 0}
-    - target: {fileID: 1660729583728587239, guid: c478065e03315ce44a65a33c63e491ed,
-        type: 3}
-      propertyPath: _heliScript
-      value: 
-      objectReference: {fileID: 469074977633818552, guid: 99afb742ed3808e469a15176362f443e,
-        type: 3}
-    - target: {fileID: 1660729583728587239, guid: c478065e03315ce44a65a33c63e491ed,
-        type: 3}
-      propertyPath: hsComponents.Array.data[0].selectedIndex
-      value: 20
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: c478065e03315ce44a65a33c63e491ed, type: 3}
---- !u!4 &1570433052 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1660729582883240309, guid: c478065e03315ce44a65a33c63e491ed,
-    type: 3}
-  m_PrefabInstance: {fileID: 1570433051}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1571442190
 GameObject:
   m_ObjectHideFlags: 0
@@ -26404,6 +26419,38 @@ MonoBehaviour:
   JPLang: 1
   references:
     version: 1
+--- !u!1 &1628614802
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1628614803}
+  m_Layer: 0
+  m_Name: CastleCityItemParent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1628614803
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1628614802}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8744059608375047076}
+  - {fileID: 8744059607975520031}
+  m_Father: {fileID: 1660729582785220656}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1635972848
 GameObject:
   m_ObjectHideFlags: 0
@@ -35611,6 +35658,67 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2123211682}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2125567752
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2125567753}
+  - component: {fileID: 2125567754}
+  m_Layer: 0
+  m_Name: DamageSE
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2125567753
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2125567752}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1671580352}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2125567754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2125567752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -247161819, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audio:
+    name: DamageSE
+    type: se
+    filename: Sound/Damage_SE.mp3
+    loop: 0
+    autoplay: 0
+    overrides: []
+    components: []
+    showphotomode: 1
+    clickable: 0
+    autoloading: 1
+    show: 1
+  audioClip: {fileID: 8300000, guid: 501b213ba80e01049bdbf76cedf1a979, type: 3}
+  _isAdvancedFoldout: 0
+  _Priority: 0
+  _audioType: 1
+  references:
+    version: 1
 --- !u!1 &2133124621
 GameObject:
   m_ObjectHideFlags: 0
@@ -35936,6 +36044,1404 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2142978273}
   m_Mesh: {fileID: 4300000, guid: c4f9c28a6050a9f46a1cd17e6b2d65e8, type: 3}
+--- !u!1 &1660729582155641812
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1660729582155641813}
+  m_Layer: 0
+  m_Name: SpeedUpParent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1660729582155641813
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660729582155641812}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1660729583099446526}
+  - {fileID: 1660729583046785099}
+  - {fileID: 1415420157}
+  - {fileID: 660862682}
+  m_Father: {fileID: 1660729583728988526}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1660729582256565744
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1660729582256565745}
+  - component: {fileID: 1660729582256565748}
+  - component: {fileID: 1660729582256565747}
+  - component: {fileID: 1660729582256565746}
+  m_Layer: 0
+  m_Name: MagnetManagement
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1660729582256565745
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660729582256565744}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1660729582785220656}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1660729582256565746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660729582256565744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -917271763, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  properties:
+  - Key: MAGNETMAX
+    Value: 5
+--- !u!114 &1660729582256565747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660729582256565744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: MagnetManagement
+  _heliScript: {fileID: 469074977633818552, guid: b358117e124e8d143a727b3f1be6d704,
+    type: 3}
+  hsComponent: 
+  hsComponents:
+  - componentName: MagnetManagement
+    selectedIndex: 21
+--- !u!114 &1660729582256565748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660729582256565744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1147827095, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _heliodorScripts: []
+  _field:
+    name: MagnetManagement
+    filename: Field/MagnetManagement/MagnetManagement.heo
+    components:
+    - MagnetManagement
+    overrides: []
+    autoloading: 1
+    lookatcamera: 0
+    alphaanim: 0
+    collisiondetection: 1
+    showphotomode: 1
+    clickable: 0
+    show: 1
+    clickableui:
+      _images: []
+      _clickableItems: []
+  LoadCollider: []
+  UnLoadCollider: []
+  _isAdvancedFoldout: 0
+  _Priority: 0
+  references:
+    version: 1
+--- !u!114 &1660729582572265216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660729582572265228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 2030893995, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _particle:
+    name: MagnetParticle
+    filename: Particle/Effect_CollectCoin_08/Effect_CollectCoin_08.hep
+    pos:
+    - 0
+    - 0
+    - -100
+    rotate:
+    - -0
+    - 0
+    - 0
+    loop: 1
+    autoplay: 1
+    autoloading: 1
+    isAdvancedFoldout: 0
+    components:
+    - MagnetParticle
+    showphotomode: 1
+    clickable: 0
+    show: 1
+  hep: {fileID: 8549007397814093194, guid: 5cc417ec290f542498db171998adf872, type: 3}
+  _Priority: 0
+  _isAdvancedFoldout: 1
+--- !u!1 &1660729582572265228
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1660729582572265229}
+  - component: {fileID: 1660729582572265216}
+  - component: {fileID: 1660729582572265231}
+  - component: {fileID: 1660729582572265230}
+  m_Layer: 0
+  m_Name: MagnetParticle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1660729582572265229
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660729582572265228}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -100}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1660729582785220656}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1660729582572265230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660729582572265228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -917271763, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  properties:
+  - Key: POS_Y
+    Value: 1.5
+  - Key: POS_Z
+    Value: 0
+--- !u!114 &1660729582572265231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660729582572265228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: MagnetParticle
+  _heliScript: {fileID: 469074977633818552, guid: cd0d8960e2bd2a84db7c5be1ef32ae8a,
+    type: 3}
+  hsComponent: 
+  hsComponents:
+  - componentName: MagnetParticle
+    selectedIndex: 23
+--- !u!4 &1660729582785220656
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660729582785220671}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1660729582572265229}
+  - {fileID: 1660729583402703730}
+  - {fileID: 1660729583891663106}
+  - {fileID: 1660729582256565745}
+  - {fileID: 1628614803}
+  - {fileID: 900521894}
+  m_Father: {fileID: 1660729583728988526}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1660729582785220671
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1660729582785220656}
+  m_Layer: 0
+  m_Name: MagnetParent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1660729583046785098
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1660729583046785099}
+  - component: {fileID: 1660729583046785102}
+  - component: {fileID: 1660729583046785101}
+  - component: {fileID: 1660729583046785100}
+  m_Layer: 0
+  m_Name: SpeedUpManagement
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1660729583046785099
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660729583046785098}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1660729582155641813}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1660729583046785100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660729583046785098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -917271763, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  properties:
+  - Key: SPEEDUPMAX
+    Value: 5
+--- !u!114 &1660729583046785101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660729583046785098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: 
+  _heliScript: {fileID: 0}
+  hsComponent: 
+  hsComponents:
+  - componentName: SpeedUpManagement
+    selectedIndex: 19
+--- !u!114 &1660729583046785102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660729583046785098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1147827095, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _heliodorScripts: []
+  _field:
+    name: SpeedUpManagement
+    filename: Field/SpeedUpManagement/SpeedUpManagement.heo
+    components:
+    - SpeedUpManagement
+    overrides: []
+    autoloading: 1
+    lookatcamera: 0
+    alphaanim: 0
+    collisiondetection: 1
+    showphotomode: 1
+    clickable: 0
+    show: 1
+    clickableui:
+      _images: []
+      _clickableItems: []
+  LoadCollider: []
+  UnLoadCollider: []
+  _isAdvancedFoldout: 0
+  _Priority: 0
+  references:
+    version: 1
+--- !u!114 &1660729583099446512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660729583099446525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: SpeedUpParticle
+  _heliScript: {fileID: 469074977633818552, guid: 7282feb34b449bd45933276b79ec59bf,
+    type: 3}
+  hsComponent: 
+  hsComponents:
+  - componentName: SpeedUpParticle
+    selectedIndex: 18
+--- !u!114 &1660729583099446513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660729583099446525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 2030893995, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _particle:
+    name: SpeedUpParticle
+    filename: Particle/Effect_SpeedUp_09/Effect_SpeedUp_09.hep
+    pos:
+    - 0
+    - 0
+    - -100
+    rotate:
+    - -0
+    - 0
+    - 0
+    loop: 1
+    autoplay: 1
+    autoloading: 1
+    isAdvancedFoldout: 0
+    components:
+    - SpeedUpParticle
+    showphotomode: 1
+    clickable: 0
+    show: 1
+  hep: {fileID: 8549007397814093194, guid: 65a830e070d27544e8cf8d62c5d7661c, type: 3}
+  _Priority: 0
+  _isAdvancedFoldout: 1
+--- !u!1 &1660729583099446525
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1660729583099446526}
+  - component: {fileID: 1660729583099446513}
+  - component: {fileID: 1660729583099446512}
+  - component: {fileID: 1660729583099446527}
+  m_Layer: 0
+  m_Name: SpeedUpParticle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1660729583099446526
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660729583099446525}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -100}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1660729582155641813}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1660729583099446527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660729583099446525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -917271763, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  properties:
+  - Key: POS_Y
+    Value: 0.0
+  - Key: POS_Z
+    Value: 0.0
+--- !u!1 &1660729583402703729
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1660729583402703730}
+  - component: {fileID: 1660729583402703731}
+  - component: {fileID: 1660729583402703733}
+  - component: {fileID: 1660729583402703732}
+  m_Layer: 0
+  m_Name: MagnetParticle0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1660729583402703730
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660729583402703729}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -1, z: 0}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
+  m_Children: []
+  m_Father: {fileID: 1660729582785220656}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1660729583402703731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660729583402703729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -894626317, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _plane:
+    name: MagnetParticle0
+    filename: Image/zisyaku_EF_1_v2.png
+    filenameen: Image/zisyaku_EF_1_v2.png
+    pos:
+    - 0
+    - -1
+    - 0
+    rotate:
+    - -0
+    - 0
+    - 0
+    scale:
+    - 2.5
+    - 2.5
+    - 2.5
+    alphablending: 1
+    billboard: 0
+    zbias: 0
+    show: 1
+    overrides: []
+    lookatcamera: 0
+    doubleside: 1
+    components:
+    - MagnetParticlPlanes
+    - MagnetParticldPlanes
+    - MagnetParticlePlanes
+    showphotomode: 1
+    clickable: 0
+    autoloading: 1
+  textureInJP: {fileID: 2800000, guid: 8bec2f23158bf3a4f95144177dfa0697, type: 3}
+  textureInEN: {fileID: 2800000, guid: 8bec2f23158bf3a4f95144177dfa0697, type: 3}
+  _isAdvancedFoldout: 1
+  _Priority: 0
+  PreviewFlag: 1
+  PreviewObject: {fileID: 0}
+  Reshow: 0
+  JPLang: 1
+  references:
+    version: 1
+--- !u!114 &1660729583402703732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660729583402703729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -917271763, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  properties:
+  - Key: POS_Y
+    Value: 1.0
+  - Key: POS_Z
+    Value: 0
+  - Key: ROTATE_SPEED
+    Value: 5.0
+  - Key: ROTATE_DIRECTION
+    Value: -1.0
+  - Key: INITIAL_ANGLE
+    Value: 0.0
+  - Key: X_INICLINATION
+    Value: 90.0
+--- !u!114 &1660729583402703733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660729583402703729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: MagnetParticlePlanes
+  _heliScript: {fileID: 469074977633818552, guid: 0c06d80ce07e43d4fb92494f1e430efd,
+    type: 3}
+  hsComponent: 
+  hsComponents:
+  - componentName: MagnetParticlePlanes
+    selectedIndex: 24
+--- !u!1 &1660729583728988525
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1660729583728988526}
+  m_Layer: 0
+  m_Name: ItemParent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1660729583728988526
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660729583728988525}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1660729582155641813}
+  - {fileID: 1660729582785220656}
+  m_Father: {fileID: 816765146}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1660729583891663105
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1660729583891663106}
+  - component: {fileID: 1660729583891663107}
+  - component: {fileID: 1660729583891663109}
+  - component: {fileID: 1660729583891663108}
+  m_Layer: 0
+  m_Name: MagnetParticle1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1660729583891663106
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660729583891663105}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -1, z: 0}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
+  m_Children: []
+  m_Father: {fileID: 1660729582785220656}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1660729583891663107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660729583891663105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -894626317, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _plane:
+    name: MagnetParticle1
+    filename: Image/zisyaku_EF_2_v2.png
+    filenameen: Image/zisyaku_EF_2_v2.png
+    pos:
+    - 0
+    - -1
+    - 0
+    rotate:
+    - -0
+    - 0
+    - 0
+    scale:
+    - 2.5
+    - 2.5
+    - 2.5
+    alphablending: 1
+    billboard: 0
+    zbias: 0
+    show: 1
+    overrides: []
+    lookatcamera: 0
+    doubleside: 1
+    components:
+    - MagnetParticlPlanes
+    - MagnetParticldPlanes
+    - MagnetParticlePlanes
+    showphotomode: 1
+    clickable: 0
+    autoloading: 1
+  textureInJP: {fileID: 2800000, guid: 941b229a4eccdf84ba72bebfbf079776, type: 3}
+  textureInEN: {fileID: 2800000, guid: 941b229a4eccdf84ba72bebfbf079776, type: 3}
+  _isAdvancedFoldout: 1
+  _Priority: 0
+  PreviewFlag: 1
+  PreviewObject: {fileID: 0}
+  Reshow: 0
+  JPLang: 1
+  references:
+    version: 1
+--- !u!114 &1660729583891663108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660729583891663105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -917271763, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  properties:
+  - Key: POS_Y
+    Value: 0.9
+  - Key: POS_Z
+    Value: 0
+  - Key: ROTATE_SPEED
+    Value: 5.0
+  - Key: ROTATE_DIRECTION
+    Value: 1.0
+  - Key: INITIAL_ANGLE
+    Value: 0.0
+  - Key: X_INICLINATION
+    Value: 90.0
+--- !u!114 &1660729583891663109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660729583891663105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: MagnetParticlePlanes
+  _heliScript: {fileID: 469074977633818552, guid: 0c06d80ce07e43d4fb92494f1e430efd,
+    type: 3}
+  hsComponent: 
+  hsComponents:
+  - componentName: MagnetParticlePlanes
+    selectedIndex: 24
+--- !u!114 &2316338582889046896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2316338582889046898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: 
+  _heliScript: {fileID: 0}
+  hsComponent: 
+  hsComponents:
+  - componentName: MagnetMain
+    selectedIndex: 21
+--- !u!4 &2316338582889046897
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2316338582889046898}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: 910.19}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
+  m_Children: []
+  m_Father: {fileID: 900521894}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2316338582889046898
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2316338582889046897}
+  - component: {fileID: 2316338582889046911}
+  - component: {fileID: 2316338582889046896}
+  m_Layer: 0
+  m_Name: Magnet4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2316338582889046911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2316338582889046898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -894626317, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _plane:
+    name: Magnet4
+    filename: Image/Item_Magnet.png
+    filenameen: Image/Item_Magnet.png
+    pos:
+    - 0
+    - 1
+    - 910.19
+    rotate:
+    - -0
+    - 0
+    - 0
+    scale:
+    - 0.8
+    - 0.8
+    - 0.8
+    alphablending: 1
+    billboard: 0
+    zbias: 0
+    show: 1
+    overrides: []
+    lookatcamera: 1
+    doubleside: 0
+    components:
+    - SpeedUpMain
+    - MagnetMain
+    showphotomode: 1
+    clickable: 0
+    autoloading: 1
+  textureInJP: {fileID: 2800000, guid: 70639f17e6ce3644c86279817cac8b4f, type: 3}
+  textureInEN: {fileID: 2800000, guid: 70639f17e6ce3644c86279817cac8b4f, type: 3}
+  _isAdvancedFoldout: 1
+  _Priority: 0
+  PreviewFlag: 1
+  PreviewObject: {fileID: 0}
+  Reshow: 0
+  JPLang: 1
+  references:
+    version: 1
+--- !u!4 &2316338583385260952
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2316338583385260953}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: 630.19}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
+  m_Children: []
+  m_Father: {fileID: 900521894}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2316338583385260953
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2316338583385260952}
+  - component: {fileID: 2316338583385260966}
+  - component: {fileID: 2316338583385260967}
+  m_Layer: 0
+  m_Name: Magnet2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2316338583385260966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2316338583385260953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -894626317, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _plane:
+    name: Magnet2
+    filename: Image/Item_Magnet.png
+    filenameen: Image/Item_Magnet.png
+    pos:
+    - 0
+    - 1
+    - 630.19
+    rotate:
+    - -0
+    - 0
+    - 0
+    scale:
+    - 0.8
+    - 0.8
+    - 0.8
+    alphablending: 1
+    billboard: 0
+    zbias: 0
+    show: 1
+    overrides: []
+    lookatcamera: 1
+    doubleside: 0
+    components:
+    - SpeedUpMain
+    - MagnetMain
+    showphotomode: 1
+    clickable: 0
+    autoloading: 1
+  textureInJP: {fileID: 2800000, guid: 70639f17e6ce3644c86279817cac8b4f, type: 3}
+  textureInEN: {fileID: 2800000, guid: 70639f17e6ce3644c86279817cac8b4f, type: 3}
+  _isAdvancedFoldout: 1
+  _Priority: 0
+  PreviewFlag: 1
+  PreviewObject: {fileID: 0}
+  Reshow: 0
+  JPLang: 1
+  references:
+    version: 1
+--- !u!114 &2316338583385260967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2316338583385260953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: 
+  _heliScript: {fileID: 0}
+  hsComponent: 
+  hsComponents:
+  - componentName: MagnetMain
+    selectedIndex: 21
+--- !u!114 &2316338583406982682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2316338583406982685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -894626317, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _plane:
+    name: SpeedUp2
+    filename: Image/Item_SpeedUp.png
+    filenameen: Image/Item_SpeedUp.png
+    pos:
+    - -1.4
+    - 1
+    - 695.19
+    rotate:
+    - -0
+    - 0
+    - 0
+    scale:
+    - 0.8
+    - 0.8
+    - 0.8
+    alphablending: 1
+    billboard: 0
+    zbias: 0
+    show: 1
+    overrides: []
+    lookatcamera: 1
+    doubleside: 0
+    components:
+    - SpeedUpMain
+    showphotomode: 1
+    clickable: 0
+    autoloading: 1
+  textureInJP: {fileID: 2800000, guid: 01b8ec6be18800c4aa4e000b65915bc5, type: 3}
+  textureInEN: {fileID: 2800000, guid: 01b8ec6be18800c4aa4e000b65915bc5, type: 3}
+  _isAdvancedFoldout: 1
+  _Priority: 0
+  PreviewFlag: 1
+  PreviewObject: {fileID: 0}
+  Reshow: 0
+  JPLang: 1
+  references:
+    version: 1
+--- !u!114 &2316338583406982683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2316338583406982685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: 
+  _heliScript: {fileID: 0}
+  hsComponent: 
+  hsComponents:
+  - componentName: SpeedUpMain
+    selectedIndex: 18
+--- !u!4 &2316338583406982684
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2316338583406982685}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.4, y: 1, z: 695.19}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
+  m_Children: []
+  m_Father: {fileID: 660862682}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2316338583406982685
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2316338583406982684}
+  - component: {fileID: 2316338583406982682}
+  - component: {fileID: 2316338583406982683}
+  m_Layer: 0
+  m_Name: SpeedUp2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2316338583484500939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2316338583484500942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -894626317, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _plane:
+    name: SpeedUp4
+    filename: Image/Item_SpeedUp.png
+    filenameen: Image/Item_SpeedUp.png
+    pos:
+    - 1.4
+    - 1
+    - 870.19
+    rotate:
+    - -0
+    - 0
+    - 0
+    scale:
+    - 0.8
+    - 0.8
+    - 0.8
+    alphablending: 1
+    billboard: 0
+    zbias: 0
+    show: 1
+    overrides: []
+    lookatcamera: 1
+    doubleside: 0
+    components:
+    - SpeedUpMain
+    showphotomode: 1
+    clickable: 0
+    autoloading: 1
+  textureInJP: {fileID: 2800000, guid: 01b8ec6be18800c4aa4e000b65915bc5, type: 3}
+  textureInEN: {fileID: 2800000, guid: 01b8ec6be18800c4aa4e000b65915bc5, type: 3}
+  _isAdvancedFoldout: 1
+  _Priority: 0
+  PreviewFlag: 1
+  PreviewObject: {fileID: 0}
+  Reshow: 0
+  JPLang: 1
+  references:
+    version: 1
+--- !u!114 &2316338583484500940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2316338583484500942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: 
+  _heliScript: {fileID: 0}
+  hsComponent: 
+  hsComponents:
+  - componentName: SpeedUpMain
+    selectedIndex: 18
+--- !u!4 &2316338583484500941
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2316338583484500942}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.4, y: 1, z: 870.19}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
+  m_Children: []
+  m_Father: {fileID: 660862682}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2316338583484500942
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2316338583484500941}
+  - component: {fileID: 2316338583484500939}
+  - component: {fileID: 2316338583484500940}
+  m_Layer: 0
+  m_Name: SpeedUp4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2316338584080188864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2316338584080188866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: 
+  _heliScript: {fileID: 0}
+  hsComponent: 
+  hsComponents:
+  - componentName: SpeedUpMain
+    selectedIndex: 18
+--- !u!4 &2316338584080188865
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2316338584080188866}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: 760.19}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
+  m_Children: []
+  m_Father: {fileID: 660862682}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2316338584080188866
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2316338584080188865}
+  - component: {fileID: 2316338584080188879}
+  - component: {fileID: 2316338584080188864}
+  m_Layer: 0
+  m_Name: SpeedUp3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2316338584080188879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2316338584080188866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -894626317, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _plane:
+    name: SpeedUp3
+    filename: Image/Item_SpeedUp.png
+    filenameen: Image/Item_SpeedUp.png
+    pos:
+    - 0
+    - 1
+    - 760.19
+    rotate:
+    - -0
+    - 0
+    - 0
+    scale:
+    - 0.8
+    - 0.8
+    - 0.8
+    alphablending: 1
+    billboard: 0
+    zbias: 0
+    show: 1
+    overrides: []
+    lookatcamera: 1
+    doubleside: 0
+    components:
+    - SpeedUpMain
+    showphotomode: 1
+    clickable: 0
+    autoloading: 1
+  textureInJP: {fileID: 2800000, guid: 01b8ec6be18800c4aa4e000b65915bc5, type: 3}
+  textureInEN: {fileID: 2800000, guid: 01b8ec6be18800c4aa4e000b65915bc5, type: 3}
+  _isAdvancedFoldout: 1
+  _Priority: 0
+  PreviewFlag: 1
+  PreviewObject: {fileID: 0}
+  Reshow: 0
+  JPLang: 1
+  references:
+    version: 1
+--- !u!114 &2316338584263014212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2316338584263014215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -894626317, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _plane:
+    name: Magnet3
+    filename: Image/Item_Magnet.png
+    filenameen: Image/Item_Magnet.png
+    pos:
+    - 1.4
+    - 1
+    - 800.19
+    rotate:
+    - -0
+    - 0
+    - 0
+    scale:
+    - 0.8
+    - 0.8
+    - 0.8
+    alphablending: 1
+    billboard: 0
+    zbias: 0
+    show: 1
+    overrides: []
+    lookatcamera: 1
+    doubleside: 0
+    components:
+    - SpeedUpMain
+    - MagnetMain
+    showphotomode: 1
+    clickable: 0
+    autoloading: 1
+  textureInJP: {fileID: 2800000, guid: 70639f17e6ce3644c86279817cac8b4f, type: 3}
+  textureInEN: {fileID: 2800000, guid: 70639f17e6ce3644c86279817cac8b4f, type: 3}
+  _isAdvancedFoldout: 1
+  _Priority: 0
+  PreviewFlag: 1
+  PreviewObject: {fileID: 0}
+  Reshow: 0
+  JPLang: 1
+  references:
+    version: 1
+--- !u!114 &2316338584263014213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2316338584263014215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: 
+  _heliScript: {fileID: 0}
+  hsComponent: 
+  hsComponents:
+  - componentName: MagnetMain
+    selectedIndex: 21
+--- !u!4 &2316338584263014214
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2316338584263014215}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.4, y: 1, z: 800.19}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
+  m_Children: []
+  m_Father: {fileID: 900521894}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2316338584263014215
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2316338584263014214}
+  - component: {fileID: 2316338584263014212}
+  - component: {fileID: 2316338584263014213}
+  m_Layer: 0
+  m_Name: Magnet3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!4 &3286133270558594218
 Transform:
   m_ObjectHideFlags: 0
@@ -42575,3 +44081,413 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &8744059607528538084
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8744059607528538085}
+  - component: {fileID: 8744059607528538107}
+  - component: {fileID: 8744059607528538106}
+  m_Layer: 0
+  m_Name: SpeedUp0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8744059607528538085
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8744059607528538084}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.4, y: 1, z: 233.72}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
+  m_Children: []
+  m_Father: {fileID: 1415420157}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8744059607528538106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8744059607528538084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: 
+  _heliScript: {fileID: 0}
+  hsComponent: 
+  hsComponents:
+  - componentName: SpeedUpMain
+    selectedIndex: 20
+--- !u!114 &8744059607528538107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8744059607528538084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -894626317, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _plane:
+    name: SpeedUp0
+    filename: Image/Item_SpeedUp.png
+    filenameen: Image/Item_SpeedUp.png
+    pos:
+    - -1.4
+    - 1
+    - 233.72
+    rotate:
+    - -0
+    - 0
+    - 0
+    scale:
+    - 0.8
+    - 0.8
+    - 0.8
+    alphablending: 1
+    billboard: 0
+    zbias: 0
+    show: 1
+    overrides: []
+    lookatcamera: 1
+    doubleside: 0
+    components:
+    - SpeedUpMain
+    showphotomode: 1
+    clickable: 0
+    autoloading: 1
+  textureInJP: {fileID: 2800000, guid: 01b8ec6be18800c4aa4e000b65915bc5, type: 3}
+  textureInEN: {fileID: 2800000, guid: 01b8ec6be18800c4aa4e000b65915bc5, type: 3}
+  _isAdvancedFoldout: 1
+  _Priority: 0
+  PreviewFlag: 1
+  PreviewObject: {fileID: 0}
+  Reshow: 0
+  JPLang: 1
+  references:
+    version: 1
+--- !u!114 &8744059607550339794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8744059607550339804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: 
+  _heliScript: {fileID: 0}
+  hsComponent: 
+  hsComponents:
+  - componentName: SpeedUpMain
+    selectedIndex: 20
+--- !u!114 &8744059607550339795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8744059607550339804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -894626317, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _plane:
+    name: SpeedUp1
+    filename: Image/Item_SpeedUp.png
+    filenameen: Image/Item_SpeedUp.png
+    pos:
+    - 1.4
+    - 1
+    - 463.72
+    rotate:
+    - -0
+    - 0
+    - 0
+    scale:
+    - 1
+    - 1
+    - 1
+    alphablending: 1
+    billboard: 0
+    zbias: 0
+    show: 1
+    overrides: []
+    lookatcamera: 1
+    doubleside: 0
+    components:
+    - SpeedUpMain
+    showphotomode: 1
+    clickable: 0
+    autoloading: 1
+  textureInJP: {fileID: 2800000, guid: 01b8ec6be18800c4aa4e000b65915bc5, type: 3}
+  textureInEN: {fileID: 2800000, guid: 01b8ec6be18800c4aa4e000b65915bc5, type: 3}
+  _isAdvancedFoldout: 1
+  _Priority: 0
+  PreviewFlag: 1
+  PreviewObject: {fileID: 0}
+  Reshow: 0
+  JPLang: 1
+  references:
+    version: 1
+--- !u!1 &8744059607550339804
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8744059607550339805}
+  - component: {fileID: 8744059607550339795}
+  - component: {fileID: 8744059607550339794}
+  m_Layer: 0
+  m_Name: SpeedUp1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8744059607550339805
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8744059607550339804}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.4, y: 1, z: 463.72}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1415420157}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8744059607975520028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8744059607975520030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: 
+  _heliScript: {fileID: 0}
+  hsComponent: 
+  hsComponents:
+  - componentName: MagnetMain
+    selectedIndex: 22
+--- !u!114 &8744059607975520029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8744059607975520030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -894626317, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _plane:
+    name: Magnet1
+    filename: Image/Item_Magnet.png
+    filenameen: Image/Item_Magnet.png
+    pos:
+    - 1.4
+    - 1
+    - 400.34
+    rotate:
+    - -0
+    - 0
+    - 0
+    scale:
+    - 0.8
+    - 0.8
+    - 0.8
+    alphablending: 1
+    billboard: 0
+    zbias: 0
+    show: 1
+    overrides: []
+    lookatcamera: 1
+    doubleside: 0
+    components:
+    - SpeedUpMain
+    - MagnetMain
+    showphotomode: 1
+    clickable: 0
+    autoloading: 1
+  textureInJP: {fileID: 2800000, guid: 70639f17e6ce3644c86279817cac8b4f, type: 3}
+  textureInEN: {fileID: 2800000, guid: 70639f17e6ce3644c86279817cac8b4f, type: 3}
+  _isAdvancedFoldout: 1
+  _Priority: 0
+  PreviewFlag: 1
+  PreviewObject: {fileID: 0}
+  Reshow: 0
+  JPLang: 1
+  references:
+    version: 1
+--- !u!1 &8744059607975520030
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8744059607975520031}
+  - component: {fileID: 8744059607975520029}
+  - component: {fileID: 8744059607975520028}
+  m_Layer: 0
+  m_Name: Magnet1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8744059607975520031
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8744059607975520030}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.4, y: 1, z: 400.34}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
+  m_Children: []
+  m_Father: {fileID: 1628614803}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &8744059608375047076
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8744059608375047079}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: 285.34}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
+  m_Children: []
+  m_Father: {fileID: 1628614803}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8744059608375047077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8744059608375047079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIndex: 0
+  selectedIndexes: 00000000
+  ScriptName: 
+  _heliScript: {fileID: 0}
+  hsComponent: 
+  hsComponents:
+  - componentName: MagnetMain
+    selectedIndex: 22
+--- !u!1 &8744059608375047079
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8744059608375047076}
+  - component: {fileID: 8744059608375047098}
+  - component: {fileID: 8744059608375047077}
+  m_Layer: 0
+  m_Name: Magnet0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &8744059608375047098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8744059608375047079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -894626317, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _plane:
+    name: Magnet0
+    filename: Image/Item_Magnet.png
+    filenameen: Image/Item_Magnet.png
+    pos:
+    - 0
+    - 1
+    - 285.34
+    rotate:
+    - -0
+    - 0
+    - 0
+    scale:
+    - 0.8
+    - 0.8
+    - 0.8
+    alphablending: 1
+    billboard: 0
+    zbias: 0
+    show: 1
+    overrides: []
+    lookatcamera: 1
+    doubleside: 0
+    components:
+    - SpeedUpMain
+    - MagnetMain
+    showphotomode: 1
+    clickable: 0
+    autoloading: 1
+  textureInJP: {fileID: 2800000, guid: 70639f17e6ce3644c86279817cac8b4f, type: 3}
+  textureInEN: {fileID: 2800000, guid: 70639f17e6ce3644c86279817cac8b4f, type: 3}
+  _isAdvancedFoldout: 1
+  _Priority: 0
+  PreviewFlag: 1
+  PreviewObject: {fileID: 0}
+  Reshow: 0
+  JPLang: 1
+  references:
+    version: 1
