@@ -27,6 +27,9 @@ component ActionButton
     //å¯â âπ
     Item actionSE;
 
+    //ã≠êßÉAÉEÉg
+    bool isForceGameOver;
+
     public ActionButton()
     {
         hsSystemOutput("Script:ActionButton\n");
@@ -46,6 +49,8 @@ component ActionButton
         retryItem = hsItemGet("GameoverScript");
 
         myPlayerComponent = hsItemGet("PlayerSettings");
+
+        isForceGameOver = false;
     }
 
     public void Update()
@@ -61,6 +66,14 @@ component ActionButton
                     actionClear();
                 }
             }
+        }
+
+        
+
+        if(isForceGameOver)
+        {
+            actionFailed();
+            isForceGameOver = false;
         }
     }
 
@@ -134,8 +147,18 @@ component ActionButton
 
     public void SetActionFlagFalse()
     {
+        hsSystemOutput("Now you CANNOT press the button\n");
         isActionTime = false;
         pressCount = 0;
         timer = 0;
+    }
+
+    public void recieveForceGameOver()
+    {
+        if(isActionTime)
+        {
+            hsSystemOutput("Force GameOver\n");
+            isForceGameOver = true;
+        }
     }
 }
