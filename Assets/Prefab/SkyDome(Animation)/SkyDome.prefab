@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &177893206552053293
+--- !u!1 &3518723339722412920
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,10 +8,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6107801129851871880}
-  - component: {fileID: 2103742862353584025}
-  - component: {fileID: 8643209309688364486}
-  - component: {fileID: 6739140750800356704}
+  - component: {fileID: 7380907300677400541}
+  - component: {fileID: 3430892089311959756}
+  - component: {fileID: 4998957940995565715}
+  - component: {fileID: 8010558069642285109}
   m_Layer: 0
   m_Name: SkyDome
   m_TagString: Untagged
@@ -19,13 +19,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6107801129851871880
+--- !u!4 &7380907300677400541
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 177893206552053293}
+  m_GameObject: {fileID: 3518723339722412920}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -33,13 +33,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2103742862353584025
+--- !u!114 &3430892089311959756
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 177893206552053293}
+  m_GameObject: {fileID: 3518723339722412920}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1112944936, guid: aceab675429f9e946b912a758820ab12, type: 3}
@@ -119,13 +119,13 @@ MonoBehaviour:
   _isAdvancedFoldout: 0
   references:
     version: 1
---- !u!114 &8643209309688364486
+--- !u!114 &4998957940995565715
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 177893206552053293}
+  m_GameObject: {fileID: 3518723339722412920}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
@@ -133,19 +133,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectedIndex: 0
   selectedIndexes: 00000000
-  ScriptName: 
-  _heliScript: {fileID: 0}
+  ScriptName: SkyDomeAnimation
+  _heliScript: {fileID: 469074977633818552, guid: fce3edfb74c020242a11414105f44a14,
+    type: 3}
   hsComponent: 
   hsComponents:
   - componentName: SkyDomeAnimation
-    selectedIndex: 24
---- !u!114 &6739140750800356704
+    selectedIndex: 28
+--- !u!114 &8010558069642285109
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 177893206552053293}
+  m_GameObject: {fileID: 3518723339722412920}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -917271763, guid: aceab675429f9e946b912a758820ab12, type: 3}

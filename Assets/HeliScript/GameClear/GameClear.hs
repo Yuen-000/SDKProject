@@ -142,19 +142,19 @@ component GameClear
     //タイマを止める
     void StopTimer()
     {
-        timeSystem.CallComponentMethod("TimeSystem", "StopCountTimer", "");
+        timeSystem.CallComponentMethod("TimeSystemKomine", "StopCountTimer", "");
     }
 
     //タイマをリスタート
     void ResetTimer()
     {
-        timeSystem.CallComponentMethod("TimeSystem", "ResetTimmer", "");
+        timeSystem.CallComponentMethod("TimeSystemKomine", "ResetTimer", "");
     }
 
     //タイムをリザルトに反映する
     void ResultTimeUI()
     {
-        timeSystem.CallComponentMethod("TimeSystem", "ResultTimeUI", "");        
+        timeSystem.CallComponentMethod("TimeSystemKomine", "ResultTimeUI", "");        
     }
 
     //小峯追加分、Autorunのカメラが動いているフラグをオン

@@ -98,19 +98,40 @@ component GameOver
         SetAutorunCamera();
 
         //小峯追加分、諸々をリセット
-        Item gateL = hsItemGet("Gate1LeftDoor");
-        Item gateR = hsItemGet("Gate1RightDoor");
+        Item gate1L = hsItemGet("Gate1LeftDoor");
+        Item gate1R = hsItemGet("Gate1RightDoor");
 
-        gateL.CallComponentMethod("Gate1LeftAnimation", "reset", "");
-        gateR.CallComponentMethod("Gate1RightAnimation", "reset", "");
+        gate1L.CallComponentMethod("Gate1LeftAnimation", "reset", "");
+        gate1R.CallComponentMethod("Gate1RightAnimation", "reset", "");
+
+        Item gate2L = hsItemGet("Gate2LeftDoor");
+        Item gate2R = hsItemGet("Gate2RightDoor");
+
+        gate2L.CallComponentMethod("Gate2LeftAnimation", "setClose", "");
+        gate2R.CallComponentMethod("Gate2RightAnimation", "setClose", "");
+        
+        Item gate3L = hsItemGet("Gate3LeftWall");
+        Item gate3R = hsItemGet("Gate3RightWall");
+
+        gate3L.CallComponentMethod("Gate3LeftAnimation", "setClose", "");
+        gate3R.CallComponentMethod("Gate3RightAnimation", "setClose", "");
 
         Item button = hsItemGet("ActionButtonScript");
 
+        button.CallComponentMethod("ActionButton", "recieveForceGameOver", "");
         button.CallComponentMethod("ActionButton", "SetActionFlagFalse", "");
 
         Item area1 = hsItemGet("ActionArea1");
 
         area1.CallComponentMethod("ActionStartArea", "endActionTime", "");
+
+        Item area2 = hsItemGet("ActionArea2");
+
+        area2.CallComponentMethod("ActionStartArea", "endActionTime", "");
+
+        Item area3 = hsItemGet("ActionArea3");
+
+        area3.CallComponentMethod("ActionStartArea", "endActionTime", "");
 
         //小峯追加分、通常BGMの再生を止め、ゲームオーバーのBGMを流す
         SetOverBGM();
@@ -164,13 +185,13 @@ component GameOver
     //タイマを止める
     void StopTimer()
     {
-        timeSystem.CallComponentMethod("TimeSystem", "StopCountTimer", "");
+        timeSystem.CallComponentMethod("TimeSystemKomine", "StopCountTimer", "");
     }
 
     //タイマをリスタート
     void ResetTimer()
     {
-        timeSystem.CallComponentMethod("TimeSystem", "ResetTimmer", "");
+        timeSystem.CallComponentMethod("TimeSystemKomine", "ResetTimer", "");
     }
 
     //小峯追加分、Autorunのカメラが動いているフラグをオン
