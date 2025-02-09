@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &9169141988808656831
+--- !u!1 &6055143782032013485
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,105 +8,105 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 9169141988808656824}
-  - component: {fileID: 9169141988808656826}
-  - component: {fileID: 9169141988808656827}
-  - component: {fileID: 9169141988808656825}
+  - component: {fileID: 6055143782032013486}
   m_Layer: 0
-  m_Name: Timer
+  m_Name: Time
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &9169141988808656824
-RectTransform:
+--- !u!4 &6055143782032013486
+Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9169141988808656831}
+  m_GameObject: {fileID: 6055143782032013485}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 6055143782429778643}
+  - {fileID: 6055143782922878352}
+  - {fileID: 6055143782846344080}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6055143782429778642
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6055143782429778643}
+  - component: {fileID: 6055143782429778637}
+  - component: {fileID: 6055143782429778636}
+  m_Layer: 0
+  m_Name: TimeSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6055143782429778643
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6055143782429778642}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 9169141989997380230}
-  m_RootOrder: 1
+  m_Father: {fileID: 6055143782032013486}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &9169141988808656826
+--- !u!114 &6055143782429778637
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9169141988808656831}
+  m_GameObject: {fileID: 6055143782429778642}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1570965333, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Script: {fileID: 1147827095, guid: aceab675429f9e946b912a758820ab12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _textPlane:
-    _name: Timer
-    _pos:
-    - 0
-    - 0
-    - 0
-    _rotate:
-    - -0
-    - 0
-    - 0
-    _scale:
-    - 1
-    - 1
-    - 1
-    _color:
-    - 1
-    - 1
-    - 1
-    - 1
-    _fontsize: 256
-    _horizontalToolbar: 0
-    _verticalToolbar: 0
-    _alignment: 0
-    _charaspace: 0
-    _linespace: 1
-    _overflowwrap: 0
-    _texturesize:
-    - 512
-    - 512
-    _text: 0:00
-    _alphablending: 1
-    _billboard: 0
-    _zbias: -0.05
-    _show: 1
-    _overrides: []
+  _heliodorScripts: []
+  _field:
+    name: TimeSystem
+    filename: Field/TimeSystem/TimeSystem.heo
     components:
-    - UIFollowPlayer
-    _lookatcamera: 0
-    _showphotomode: 1
-    _autoloading: 1
+    - TimeSystemKomine
+    overrides: []
+    autoloading: 1
+    lookatcamera: 0
+    alphaanim: 0
+    collisiondetection: 1
+    showphotomode: 1
     clickable: 0
-  _color: {r: 1, g: 1, b: 1, a: 1}
-  _texturesize: {x: 512, y: 512}
-  _Priority: 0
-  PreviewState: 1
-  _subTextObject: {fileID: 0}
-  ReShow: 0
+    show: 1
+    clickableui:
+      _images: []
+      _clickableItems: []
+  LoadCollider: []
+  UnLoadCollider: []
   _isAdvancedFoldout: 0
+  _Priority: 0
   references:
     version: 1
---- !u!114 &9169141988808656827
+--- !u!114 &6055143782429778636
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9169141988808656831}
+  m_GameObject: {fileID: 6055143782429778642}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
@@ -114,31 +114,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectedIndex: 0
   selectedIndexes: 00000000
-  ScriptName: UIFollowPlayer
-  _heliScript: {fileID: 469074977633818552, guid: 93ff74963a405104899a2224a9ab3293,
+  ScriptName: TimeSystemKomine
+  _heliScript: {fileID: 469074977633818552, guid: 8932801acceb7e44c97f4219c5121387,
     type: 3}
   hsComponent: 
   hsComponents:
-  - componentName: UIFollowPlayer
-    selectedIndex: 7
---- !u!114 &9169141988808656825
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9169141988808656831}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -917271763, guid: aceab675429f9e946b912a758820ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  properties:
-  - Key: TIME_MAX
-    Value: 180
-  - Key: YPos
-    Value: 2.5
---- !u!1 &9169141988899934655
+  - componentName: TimeSystemKomine
+    selectedIndex: 29
+--- !u!1 &6055143782846344087
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -146,9 +129,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 9169141988899934648}
-  - component: {fileID: 9169141988899934649}
-  - component: {fileID: 9169141988899934650}
+  - component: {fileID: 6055143782846344080}
+  - component: {fileID: 6055143782846344081}
+  - component: {fileID: 6055143782846344082}
   m_Layer: 0
   m_Name: DecreaseTimeUI
   m_TagString: Untagged
@@ -156,27 +139,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &9169141988899934648
+--- !u!4 &6055143782846344080
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9169141988899934655}
+  m_GameObject: {fileID: 6055143782846344087}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.577, y: -0.345, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 9169141989997380230}
+  m_Father: {fileID: 6055143782032013486}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &9169141988899934649
+--- !u!114 &6055143782846344081
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9169141988899934655}
+  m_GameObject: {fileID: 6055143782846344087}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1570965333, guid: aceab675429f9e946b912a758820ab12, type: 3}
@@ -231,13 +214,13 @@ MonoBehaviour:
   _isAdvancedFoldout: 0
   references:
     version: 1
---- !u!114 &9169141988899934650
+--- !u!114 &6055143782846344082
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9169141988899934655}
+  m_GameObject: {fileID: 6055143782846344087}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -917271763, guid: aceab675429f9e946b912a758820ab12, type: 3}
@@ -252,7 +235,7 @@ MonoBehaviour:
     Value: 0.01
   - Key: ShowTime
     Value: 50
---- !u!1 &9169141989321677050
+--- !u!1 &6055143782922878359
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -260,72 +243,105 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 9169141989321677051}
-  - component: {fileID: 9169141989321677029}
-  - component: {fileID: 9169141989321677028}
+  - component: {fileID: 6055143782922878352}
+  - component: {fileID: 6055143782922878354}
+  - component: {fileID: 6055143782922878355}
+  - component: {fileID: 6055143782922878353}
   m_Layer: 0
-  m_Name: TimeSystem
+  m_Name: Timer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &9169141989321677051
-Transform:
+--- !u!224 &6055143782922878352
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9169141989321677050}
+  m_GameObject: {fileID: 6055143782922878359}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 9169141989997380230}
-  m_RootOrder: 0
+  m_Father: {fileID: 6055143782032013486}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &9169141989321677029
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &6055143782922878354
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9169141989321677050}
+  m_GameObject: {fileID: 6055143782922878359}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1147827095, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Script: {fileID: 1570965333, guid: aceab675429f9e946b912a758820ab12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _heliodorScripts: []
-  _field:
-    name: TimeSystem
-    filename: Field/TimeSystem/TimeSystem.heo
+  _textPlane:
+    _name: Timer
+    _pos:
+    - 0
+    - 0
+    - 0
+    _rotate:
+    - -0
+    - 0
+    - 0
+    _scale:
+    - 1
+    - 1
+    - 1
+    _color:
+    - 1
+    - 1
+    - 1
+    - 1
+    _fontsize: 256
+    _horizontalToolbar: 0
+    _verticalToolbar: 0
+    _alignment: 0
+    _charaspace: 0
+    _linespace: 1
+    _overflowwrap: 0
+    _texturesize:
+    - 512
+    - 512
+    _text: 0:00
+    _alphablending: 1
+    _billboard: 0
+    _zbias: -0.05
+    _show: 0
+    _overrides: []
     components:
-    - TimeSystemKomine
-    overrides: []
-    autoloading: 1
-    lookatcamera: 0
-    alphaanim: 0
-    collisiondetection: 1
-    showphotomode: 1
+    - UIFollowPlayer
+    _lookatcamera: 0
+    _showphotomode: 1
+    _autoloading: 1
     clickable: 0
-    show: 1
-    clickableui:
-      _images: []
-      _clickableItems: []
-  LoadCollider: []
-  UnLoadCollider: []
-  _isAdvancedFoldout: 0
+  _color: {r: 1, g: 1, b: 1, a: 1}
+  _texturesize: {x: 512, y: 512}
   _Priority: 0
+  PreviewState: 1
+  _subTextObject: {fileID: 0}
+  ReShow: 0
+  _isAdvancedFoldout: 0
   references:
     version: 1
---- !u!114 &9169141989321677028
+--- !u!114 &6055143782922878355
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9169141989321677050}
+  m_GameObject: {fileID: 6055143782922878359}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1289834228, guid: aceab675429f9e946b912a758820ab12, type: 3}
@@ -340,36 +356,20 @@ MonoBehaviour:
   hsComponents:
   - componentName: TimeSystemKomine
     selectedIndex: 29
---- !u!1 &9169141989997380229
-GameObject:
+--- !u!114 &6055143782922878353
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 9169141989997380230}
-  m_Layer: 0
-  m_Name: Time
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &9169141989997380230
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9169141989997380229}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 9169141989321677051}
-  - {fileID: 9169141988808656824}
-  - {fileID: 9169141988899934648}
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_GameObject: {fileID: 6055143782922878359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -917271763, guid: aceab675429f9e946b912a758820ab12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  properties:
+  - Key: TIME_MAX
+    Value: 180
+  - Key: YPos
+    Value: 2.5

@@ -19,7 +19,7 @@ component TimeSystemKomine
 
         isCount = false;
 
-        StartCountTimer();
+        //StartCountTimer();
     }
 
     public void Update()

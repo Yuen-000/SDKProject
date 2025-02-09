@@ -99,12 +99,15 @@ component PlayerAutoRun
     //磁石エフェクトを消す
     bool deleteMagnet;
 
+    //ストップ
+    bool isStop;
+
     public PlayerAutoRun()
     {
         hsSystemOutput("Script:PlayerAutoRun\n");
-        hsSystemOutput("Date:20250111\n");
-        hsSystemOutput("Version:13.0.0\n");
-        hsSystemOutput("Update Content:Fix Effect\n");
+        hsSystemOutput("Date:20250209\n");
+        hsSystemOutput("Version:14.0.0\n");
+        hsSystemOutput("Update Content:Support for stop\n");
         myPlayer = new Player();
         myPlayer = hsPlayerGet();
 
@@ -177,6 +180,8 @@ component PlayerAutoRun
         deleteSpeedUp = false;
 
         deleteMagnet = false;
+
+        isStop = true;
     }
 
     public void Update()
@@ -247,9 +252,16 @@ component PlayerAutoRun
             //カーソルでの移動を相殺
             newPlayerPos.z = previousPlayerPos.z;
 
-            //前に進むベクトル
-            Vector3 autoRunDistance = makeVector3(0.0f,0.0f,speedCurrent);
-            newPlayerPos.Add(autoRunDistance);
+            if(isStop)
+            {
+                newPlayerPos.x = previousPlayerPos.x;
+                newPlayerPos.y = previousPlayerPos.y;
+            }
+            else{
+                //前に進むベクトル
+                Vector3 autoRunDistance = makeVector3(0.0f,0.0f,speedCurrent);
+                newPlayerPos.Add(autoRunDistance);
+            }
 
             //ここで位置をセット
             myPlayer.SetPos(newPlayerPos);
@@ -308,4 +320,8 @@ component PlayerAutoRun
         deleteMagnet = true;
     }
 
+    public void setStopFalse()
+    {
+        isStop = false;
+    }
 }
