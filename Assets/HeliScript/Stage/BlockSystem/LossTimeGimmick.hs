@@ -107,7 +107,7 @@ component LossTimeGimmick
 
         if(lostTimeItem !== null)
         {
-            lostTimeItem.CallComponentMethod("TimeSystem", "ReduceTime", "");
+            lostTimeItem.CallComponentMethod("TimeSystemKomine", "ReduceTime", "");
             timerItem.CallComponentMethod("UIFollowPlayer", "ShowDecreaseTime", "");
         }
     }
