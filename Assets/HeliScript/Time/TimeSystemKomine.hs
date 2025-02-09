@@ -7,6 +7,7 @@ component TimeSystemKomine
 
     int counter;
     int TIME_MAX;
+    int decreaseTime;
 
     //カウントのトリガー
     bool isCount;
@@ -16,10 +17,11 @@ component TimeSystemKomine
         timer = hsItemGet("Timer");
         TIME_MAX = timer.GetProperty("TIME_MAX").ToInt() * 60;
         counter = TIME_MAX;
+        decreaseTime = timer.GetProperty("ReduceTime").ToInt();
 
         isCount = false;
 
-        StartCountTimer();
+        //StartCountTimer();
     }
 
     public void Update()
@@ -69,6 +71,12 @@ component TimeSystemKomine
     void PlayerGameOver()
     {
         gameOverItem.CallComponentMethod("GameOver", "GetGameOver", "");
+    }
+
+    //時間をマイナスdecreaseTimeにする
+    public void ReduceTime()
+    {
+        counter = counter - decreaseTime;
     }
 
 ///////////////////////////////////////////////
