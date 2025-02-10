@@ -18,6 +18,7 @@ component TimeSystemKomine
         TIME_MAX = timer.GetProperty("TIME_MAX").ToInt() * 60;
         counter = TIME_MAX;
         decreaseTime = timer.GetProperty("ReduceTime").ToInt();
+        resultTimer = hsItemGet("ResultTimer");
 
         isCount = false;
 
