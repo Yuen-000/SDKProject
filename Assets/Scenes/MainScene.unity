@@ -30236,7 +30236,7 @@ MonoBehaviour:
   - componentName: PlayerAutoRun
     selectedIndex: 3
   - componentName: ActionTimeManagement
-    selectedIndex: 12
+    selectedIndex: 8
 --- !u!114 &1772255641
 MonoBehaviour:
   m_ObjectHideFlags: 0
