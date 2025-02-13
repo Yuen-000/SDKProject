@@ -2379,6 +2379,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 816765146}
     m_Modifications:
+    - target: {fileID: 1729233134549574822, guid: 7b4ace764ab52204297c7a382d60788e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1729233134956003035, guid: 7b4ace764ab52204297c7a382d60788e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1729233135398287256, guid: 7b4ace764ab52204297c7a382d60788e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1729233135449612696, guid: 7b4ace764ab52204297c7a382d60788e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9169141988808656826, guid: 7b4ace764ab52204297c7a382d60788e,
+        type: 3}
+      propertyPath: ReShow
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9169141988808656826, guid: 7b4ace764ab52204297c7a382d60788e,
+        type: 3}
+      propertyPath: PreviewState
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9169141988808656826, guid: 7b4ace764ab52204297c7a382d60788e,
         type: 3}
       propertyPath: _subTextObject
@@ -2388,6 +2418,16 @@ PrefabInstance:
         type: 3}
       propertyPath: hsComponents.Array.data[0].selectedIndex
       value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 9169141988899934649, guid: 7b4ace764ab52204297c7a382d60788e,
+        type: 3}
+      propertyPath: ReShow
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9169141988899934649, guid: 7b4ace764ab52204297c7a382d60788e,
+        type: 3}
+      propertyPath: PreviewState
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9169141988899934649, guid: 7b4ace764ab52204297c7a382d60788e,
         type: 3}
@@ -2463,7 +2503,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 7b4ace764ab52204297c7a382d60788e, type: 3}
 --- !u!4 &181932181 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 9169141989997380230, guid: 7b4ace764ab52204297c7a382d60788e,
+  m_CorrespondingSourceObject: {fileID: 1729233134549574822, guid: 7b4ace764ab52204297c7a382d60788e,
     type: 3}
   m_PrefabInstance: {fileID: 181932180}
   m_PrefabAsset: {fileID: 0}
@@ -3665,7 +3705,7 @@ MonoBehaviour:
     _name: Castle_LeftLostTime_02
     _pos:
     - -2
-    - 0.5
+    - 0
     - 122
     _rotate:
     - -0
@@ -11518,7 +11558,7 @@ MonoBehaviour:
     _name: Castle_LeftOneOut_01
     _pos:
     - -2
-    - 0.5
+    - 0
     - 40
     _rotate:
     - -0
@@ -13606,6 +13646,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 816765146}
     m_Modifications:
+    - target: {fileID: 2093273135504861228, guid: 15eb3ed7017b5bc4b8721c1394f2c2d7,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 2244846996807009544, guid: 15eb3ed7017b5bc4b8721c1394f2c2d7,
         type: 3}
       propertyPath: m_Name
@@ -13680,7 +13725,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 15eb3ed7017b5bc4b8721c1394f2c2d7, type: 3}
 --- !u!4 &846931415 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 6805100008120840851, guid: 15eb3ed7017b5bc4b8721c1394f2c2d7,
+  m_CorrespondingSourceObject: {fileID: 2093273135504861228, guid: 15eb3ed7017b5bc4b8721c1394f2c2d7,
     type: 3}
   m_PrefabInstance: {fileID: 846931414}
   m_PrefabAsset: {fileID: 0}
@@ -14608,7 +14653,7 @@ MonoBehaviour:
     _name: Castle_MidLostTime_01
     _pos:
     - 0
-    - 0.5
+    - 0
     - 75
     _rotate:
     - -0
@@ -17093,7 +17138,7 @@ MonoBehaviour:
     _name: Castle_RightOneOut_02
     _pos:
     - 2
-    - 0.5
+    - 0
     - 97.5
     _rotate:
     - -0
@@ -17844,7 +17889,7 @@ MonoBehaviour:
     _name: Castle_RightOneOut_03
     _pos:
     - 2
-    - 0.5
+    - 0
     - 131
     _rotate:
     - -0
@@ -18237,6 +18282,7 @@ MonoBehaviour:
   - HeliScript/MagnetParticlePlanes.hs
   - HeliScript/Gate3Animation.hs
   - HeliScript/Gate2Animation.hs
+  - HeliScript/TimeSystemKomine.hs
   spatiumCode: default
 --- !u!4 &1123728783
 Transform:
@@ -19561,6 +19607,11 @@ PrefabInstance:
         type: 3}
       propertyPath: PreviewObjectRoot
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5673208249993997931, guid: f09138ddd07cd0d45bc5e1177d6edc7e,
+        type: 3}
+      propertyPath: _object.pos.Array.data[2]
+      value: 553
       objectReference: {fileID: 0}
     - target: {fileID: 5990947920648297773, guid: f09138ddd07cd0d45bc5e1177d6edc7e,
         type: 3}
@@ -30252,7 +30303,7 @@ MonoBehaviour:
   _heliodorScripts: []
   _field:
     name: PlayerSettings
-    filename: Field/PlayerSettings.heo
+    filename: Field/PlayerSettings/PlayerSettings.heo
     components:
     - PlayerAutoRun
     - ActionTimeManagement
@@ -33394,7 +33445,7 @@ MonoBehaviour:
     _name: Castle_LeftLostTime_01
     _pos:
     - -2
-    - 0.5
+    - 0
     - 112
     _rotate:
     - -0
@@ -33533,7 +33584,7 @@ MonoBehaviour:
     _name: Castle_RightOneOut_01
     _pos:
     - 2
-    - 0.5
+    - 0
     - 90
     _rotate:
     - -0
@@ -33672,7 +33723,7 @@ MonoBehaviour:
     _name: Castle_MidOneOut_02
     _pos:
     - 0
-    - 0.5
+    - 0
     - 105.5
     _rotate:
     - -0
@@ -34735,7 +34786,7 @@ MonoBehaviour:
     _name: Castle_MidOneOut_01
     _pos:
     - 0
-    - 0.5
+    - 0
     - 40
     _rotate:
     - -0
@@ -35837,7 +35888,7 @@ MonoBehaviour:
   _heliodorScripts: []
   _field:
     name: CastleOneOutGimmick
-    filename: Field/CastleOneOutGimmick.heo
+    filename: Field/CastleOneOutGimmick/CastleOneOutGimmick.heo
     components: []
     overrides: []
     autoloading: 1
@@ -35950,7 +36001,7 @@ MonoBehaviour:
     _name: Castle_MidLostTime_02
     _pos:
     - 0
-    - 0.5
+    - 0
     - 117
     _rotate:
     - -0
@@ -36743,7 +36794,7 @@ MonoBehaviour:
   _heliodorScripts: []
   _field:
     name: MagnetManagement
-    filename: Field/MagnetManagement.heo
+    filename: Field/MagnetManagement/MagnetManagement.heo
     components:
     - MagnetManagement
     overrides: []
@@ -36988,7 +37039,7 @@ MonoBehaviour:
   _heliodorScripts: []
   _field:
     name: SpeedUpManagement
-    filename: Field/SpeedUpManagement.heo
+    filename: Field/SpeedUpManagement/SpeedUpManagement.heo
     components:
     - SpeedUpManagement
     overrides: []
